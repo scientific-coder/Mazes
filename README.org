@@ -1,0 +1,6 @@
+#+BEGIN_SRC sh
+boot serve -d target watch reload cljs-repl cljs tart -d target
+#+END_SRC
+#+BEGIN_SRC 
+boot dev
+#+END_SRC
