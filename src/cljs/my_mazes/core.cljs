@@ -34,7 +34,7 @@
                  [r c])
             (/ cell-size SQRT2))))
 
-(defn scene->graph[polys]
+(defn scene->graphB[polys]
   (let [cells (map-indexed #(hash-map :id %1  :borders %2) polys)
         indexed (zipmap (iterate inc 0) cells)
         with-matching-seg (fn[[xy0 xy1] cell]
@@ -46,6 +46,33 @@
                         (some (partial with-matching-seg xy0-xy1) (vals (dissoc indexed id))))
         neighbors #(map (partial matching-cell (:id %)) (partition 2 1 (:borders %)))]
     (reduce-kv #(assoc %1 %2 (assoc %3 :neighbors (neighbors %3)))
+               {} indexed)))
+
+(defn barycenter[xys]
+  (g/scale (reduce m/+ xys) (/ 1. (count xys))))
+
+;; create an index of segments (the middle of the segments) with id of the cell as meta data
+
+(defn cell->barys-id [c]
+  (map #(with-meta (barycenter %) (:id c)) (partition 2 1 (:borders c))))
+
+(defn index-cells[cells]
+  (kd/build-tree (reduce into [] (map cell->barys-id cells))))
+
+(defn matching-seg[t id seg ]
+  (let[b (barycenter seg)]
+    (->> (kd/nearest-neighbor t b 2)
+         (map #(vector (meta %) (:point %)))
+         (filter (fn[[id-t b-t]] (and (not= id-t id) (m/delta= b-t b))))
+         (map first)
+         first)))
+
+(defn scene->graph[polys]
+  (let [cells (map-indexed #(hash-map :id %1  :borders %2) polys)
+        t (index-cells cells)
+        indexed (zipmap (iterate inc 0) cells)
+        neighbors #(map (partial (partition 2 1 (:borders %))))]
+    (reduce-kv #(assoc %1 %2 (assoc %3 :neighbors (map (partial matching-seg t %2) (partition 2 1 (:borders %3)))))
                {} indexed)))
 
 (defn pick-random-non-nil[bias xs]
@@ -83,8 +110,6 @@
                       (if (or (< y y-T) (< (abs (- x x-center)) x-d))
                         0.1
                         0.9)))))
-(defn barycenter[xys]
-  (g/scale (reduce m/+ xys) (/ 1. (count xys))))
 
 (defn remove-walls [indexed-cells id-start bias-f]
   (loop[visited #{}
@@ -147,16 +172,14 @@
             (rest vs)))))
 
 (enable-console-print!)
-(def points [[8 8] [3 1] [6 6] [7 7] [1 3] [4 4] [5 5]])
-;; Build a kdtree from a set of points
-(def tree (kd/build-tree points))
-(println "Tree:" tree)
 (def w 1024)
 (def h 1024)
 (def paint! (partial draw-scene! (dom/by-id "app") w h))
-(def test-scene (square-grid 10 10 64))
+(def test-scene (square-grid 20 20 32))
 (def scene-bb (bounding-box test-scene))
+(def start-time (.getTime (js/Date.)))
 (def test-graph (scene->graph test-scene))
+(println (- (.getTime (js/Date.)) start-time))
 ;; TODO have random-biased take id or cell instead of x y and then n
 ;; at construction, can create a map id -> barycenter
 ;; and id -> normal vector angles list
