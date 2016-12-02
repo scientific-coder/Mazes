@@ -51,7 +51,7 @@
          (filter (fn[[id-t b-t]] (and (not= id-t id) (m/delta= b-t b))))
          (map first)
          first)))
-
+;; TODO add :border-angles
 (defn scene->graph[polys]
   (let [cells (map-indexed #(hash-map :id %1  :borders %2) polys)
         t (index-cells cells)
@@ -59,6 +59,12 @@
         neighbors #(map (partial (partition 2 1 (:borders %))))]
     (reduce-kv #(assoc %1 %2 (assoc %3 :neighbors (map (partial matching-seg t %2) (partition 2 1 (:borders %3)))))
                {} indexed)))
+
+;; TODO make-bias w h -> bias x y -> f angle
+;; pick-random-non-nil
+;; in : f neighbors-id-or-nil angles
+;; seq des coeffs (f angle) ou nil si neighbor-id est nil
+;; 
 
 (defn pick-random-non-nil[bias xs]
   (when (seq (keep identity xs))
@@ -86,6 +92,10 @@
 
 (defn make-horizontal-bias[[[x-min y-min][x-max y-max]]]
   (let[w (- x-max x-min)](alternate-bias (fn [[x y]] (/ x w)))))
+
+(defn make-vertical-bias[[[x-min y-min][x-max y-max]]]
+  (let[h (- y-max y-min)](alternate-bias (fn [[x y]] (/ y h)))))
+
 
 (defn make-T-bias [[[x-min y-min][x-max y-max]]]
   (let[y-T (+ y-min (/ (- y-max y-min) 4))
@@ -157,49 +167,38 @@
             (rest vs)))))
 
 (enable-console-print!)
-;; (def w 1024)
-;; (def h 1024)
-;; (def paint! (partial draw-scene! (dom/by-id "maze") w h))
-;; (def test-scene (square-grid 3 3 32))
-;; (def scene-bb (bounding-box test-scene))
-;; (def start-time (.getTime (js/Date.)))
-;; (def test-graph (scene->graph test-scene))
-;; (println (- (.getTime (js/Date.)) start-time))
-;; ;; TODO have random-biased take id or cell instead of x y and then n
-;; ;; at construction, can create a map id -> barycenter
-;; ;; and id -> normal vector angles list
-;; (def test-rw (remove-walls test-graph 0 (make-T-bias scene-bb)))
-;; (def test-maze (maze->polylines (vals test-graph) test-rw))
-;;(println test-maze)
-(defonce app-state (r/atom {:update-maze true}))
+(defonce app-state (r/atom {}))
 (defn swap*!
   "Similar to clojure.core/swap!, but records history and returns atom."
   [ref f & args]
-  (swap! ref
-         (fn [ref-val] (apply f ref-val  args)))
+  (swap! ref (fn [ref-val] (apply f ref-val  args)))
   ref)
 
 (defn update-maze![]
-  (let[{:keys [rows cols]} @app-state
-       _(println "update !")
+  (let[{:keys [rows cols bias]} @app-state
+       _ (println (str "bias: "bias))
        scene (square-grid cols rows 1)
        pen-width 6
        scene-bb (bounding-box scene)
        [[x-min y-min][x-max y-max]] scene-bb
-       graph (scene->graph scene)]
-       (when (:update-maze @app-state)(->> scene
-                 bounding-box
-                 make-T-bias
-                 (remove-walls graph 0)
-                 (maze->polylines (vals graph))
-                 (remove-min less-than-seg?)
-                 (remove-min (complement less-than-seg?))
-                 (swap*! app-state assoc :maze)))))
+       graph (scene->graph scene)
+       bias-f (condp = bias
+                "vertical" make-vertical-bias
+                "horizontal" make-horizontal-bias
+                "T" make-T-bias
+                (fn[_] no-bias)
+                )]
+    (->> scene
+         bounding-box
+         bias-f
+         (remove-walls graph 0)
+         (maze->polylines (vals graph))
+         (remove-min less-than-seg?)
+         (remove-min (complement less-than-seg?))
+         (swap*! app-state assoc :maze))))
 
 (defn do-paint![]
-  (let[{:keys [maze size update-maze]} @app-state
-       _(println (str "paint! " update-maze))
-       _ (when update-maze (update-maze!))
+  (let[{:keys [maze size]} @app-state
        pen-width 6
        zoomed-maze (transform-polylines #(g/scale % size) maze)
        scene-bb (bounding-box zoomed-maze)
@@ -213,37 +212,32 @@
                     (transform-polylines (partial m/+  (m/- (barycenter [(vec2 0 0)(vec2 w h)]) (barycenter scene-bb)))))))))
 (println "Done !")
 
-(def error-state (r/atom nil))
-
-(defn set-error!
-  [err]
-  (reset! error-state err)
-  (when err
-    (js/setTimeout #(set-error! nil) 1000)))
-
 ;; Components
 
-(defn user-error
-  "Component displaying current error message"
-  []
-  (when-let [err @error-state]
-    [:p {:style {:background "red" :padding "10px" :color "white"}} err]))
-(defn slider [param value min max width update-maze]
+(defn slider [param value min max width]
   [:input {:type "range" :value value :min min :max max
            :style {:width (str width "%")}
            :on-change (fn [e]
-                        (do (swap*! app-state assoc param (int (.-target.value e)) :update-maze update-maze)
-                        (do-paint!)))}])
+                        (do (swap*! app-state assoc param (int (.-target.value e)))
+                            (when (not= :size param)
+                              (update-maze!))
+                            (do-paint!)))}])
 
-
+(defn menu [id param values]
+(let [current (param @app-state)]
+  [:select {:id current :name current :value current :on-change #(do (swap*! app-state assoc param (.-target.value %))
+                                                      (update-maze!)
+                                                      (do-paint!))}
+   (for [v values]
+     ^{:key v}[:option v])]))
 (defn main-panel
   "Application root component"
   []
   [:div
-   [user-error]
-   [:p [slider :cols (:cols @app-state) 2 40 50 true] "cols: " (:cols @app-state)]
-   [:p [slider :rows (:rows @app-state) 2 40 50 true] "rows : " (:rows @app-state)]
-   [:p [slider :size (:size @app-state) 10 100 50 false] "size : " (:size @app-state)]
+   [:p [slider :cols (:cols @app-state) 2 100 50] "cols: " (:cols @app-state)]
+   [:p [slider :rows (:rows @app-state) 2 100 50] "rows : " (:rows @app-state)]
+   [:p [slider :size (:size @app-state) 10 100 50] "size : " (:size @app-state)]
+   (menu "Bias" :bias ["unbiased" "vertical" "horizontal" "T"])
    ])
 
 (defn init-app
@@ -252,7 +246,8 @@
   (swap*! app-state merge
           {:cols 2
            :rows 2
-           :size 32}))
+           :size 32
+           :bias "unbiased"}))
 
 (defn main
   "Application main entry point. Initializes app-state and
@@ -261,8 +256,9 @@
   (init-app)
   (r/render-component
     [main-panel]
-    ;;(.-body js/document)
-    (.getElementById js/document "app")))
+    (.getElementById js/document "app"))
+  (update-maze!)
+  (do-paint!))
 
 
 (main)
