@@ -28,5 +28,5 @@
    (watch)
    (reload :on-jsload 'my-mazes.core/main)
    (cljs-repl) ;; before cljs task
-   (cljs)
+   (cljs :optimizations :advanced)
    (target :dir #{"target"})))

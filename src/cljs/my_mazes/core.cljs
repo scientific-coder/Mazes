@@ -171,25 +171,46 @@
 ;; (def test-rw (remove-walls test-graph 0 (make-T-bias scene-bb)))
 ;; (def test-maze (maze->polylines (vals test-graph) test-rw))
 ;;(println test-maze)
-(defonce app-state (r/atom {}))
+(defonce app-state (r/atom {:update-maze true}))
+(defn swap*!
+  "Similar to clojure.core/swap!, but records history and returns atom."
+  [ref f & args]
+  (swap! ref
+         (fn [ref-val] (apply f ref-val  args)))
+  ref)
 
-(defn do-paint![]
-  (let[{:keys [rows cols size]} @app-state
-       scene (square-grid cols rows size)
+(defn update-maze![]
+  (let[{:keys [rows cols]} @app-state
+       _(println "update !")
+       scene (square-grid cols rows 1)
        pen-width 6
        scene-bb (bounding-box scene)
        [[x-min y-min][x-max y-max]] scene-bb
-       graph (scene->graph scene)
-       r-w (remove-walls graph 0 (make-T-bias scene-bb))
-       maze (maze->polylines (vals graph) r-w)
-       w (+ (- x-max x-min) pen-width)
-       h (+ (- y-max y-min) pen-width)
-       paint! (partial draw-scene! (dom/by-id "maze") w h)]
+       graph (scene->graph scene)]
+       (when (:update-maze @app-state)(->> scene
+                 bounding-box
+                 make-T-bias
+                 (remove-walls graph 0)
+                 (maze->polylines (vals graph))
+                 (remove-min less-than-seg?)
+                 (remove-min (complement less-than-seg?))
+                 (swap*! app-state assoc :maze)))))
+
+(defn do-paint![]
+  (let[{:keys [maze size update-maze]} @app-state
+       _(println (str "paint! " update-maze))
+       _ (when update-maze (update-maze!))
+       pen-width 6
+       zoomed-maze (transform-polylines #(g/scale % size) maze)
+       scene-bb (bounding-box zoomed-maze)
+       [[x-min y-min][x-max y-max]] scene-bb
+       w (max 64 (+ (- x-max x-min) pen-width))
+       h (max 64 (+ (- y-max y-min) pen-width))
+       paint! (partial draw-scene! (dom/by-id "maze") w h)
+       _ (swap*! app-state assoc :dummy nil)]
     (paint! (map (partial svg-polyline "#00F" pen-width)
-               (->> maze
-                    (transform-polylines (partial m/+  (m/- (barycenter [(vec2 0 0)(vec2 w h)]) (barycenter scene-bb))))
-                    (remove-min less-than-seg?) (remove-min (complement less-than-seg?)))))
-    ))
+               (->> zoomed-maze
+                    (transform-polylines (partial m/+  (m/- (barycenter [(vec2 0 0)(vec2 w h)]) (barycenter scene-bb)))))))))
 (println "Done !")
 
 (def error-state (r/atom nil))
@@ -200,14 +221,6 @@
   (when err
     (js/setTimeout #(set-error! nil) 1000)))
 
-(defn swap*!
-  "Similar to clojure.core/swap!, but records history and returns atom."
-  [ref f & args]
-  (swap! ref
-         (fn [ref-val] (apply f ref-val  args)))
-  (do-paint!)
-  ref)
-
 ;; Components
 
 (defn user-error
@@ -215,11 +228,12 @@
   []
   (when-let [err @error-state]
     [:p {:style {:background "red" :padding "10px" :color "white"}} err]))
-(defn slider [param value min max width]
+(defn slider [param value min max width update-maze]
   [:input {:type "range" :value value :min min :max max
            :style {:width (str width "%")}
            :on-change (fn [e]
-                        (swap*! app-state assoc param (int (.-target.value e))))}])
+                        (do (swap*! app-state assoc param (int (.-target.value e)) :update-maze update-maze)
+                        (do-paint!)))}])
 
 
 (defn main-panel
@@ -227,9 +241,9 @@
   []
   [:div
    [user-error]
-   [:p [slider :cols (:cols @app-state) 2 40 50] "cols: " (:cols @app-state)  ]
-   [:p [slider :rows (:rows @app-state) 2 40 50] "rows : " (:rows @app-state) ]
-   [:p [slider :size (:size @app-state) 10 100 50] "size : " (:size @app-state) ]
+   [:p [slider :cols (:cols @app-state) 2 40 50 true] "cols: " (:cols @app-state)]
+   [:p [slider :rows (:rows @app-state) 2 40 50 true] "rows : " (:rows @app-state)]
+   [:p [slider :size (:size @app-state) 10 100 50 false] "size : " (:size @app-state)]
    ])
 
 (defn init-app

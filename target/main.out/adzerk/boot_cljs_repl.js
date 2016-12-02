@@ -1,17 +1,15 @@
-// Compiled by ClojureScript 1.9.293 {}
+// Compiled by ClojureScript 1.9.293 {:static-fns true, :optimize-constants true}
 goog.provide('adzerk.boot_cljs_repl');
 goog.require('cljs.core');
 goog.require('weasel.repl');
-var repl_conn_16644 = null;
-if(cljs.core.truth_((function (){var and__7377__auto__ = repl_conn_16644;
+var repl_conn_22127 = null;
+if(cljs.core.truth_((function (){var and__7377__auto__ = repl_conn_22127;
 if(cljs.core.truth_(and__7377__auto__)){
-return cljs.core.not.call(null,weasel.repl.alive_QMARK_.call(null));
+return cljs.core.not(weasel.repl.alive_QMARK_());
 } else {
 return and__7377__auto__;
 }
 })())){
-weasel.repl.connect.call(null,null,new cljs.core.Keyword(null,"print","print",1299562414),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"repl","repl",-35398667),null,new cljs.core.Keyword(null,"console","console",1228072057),null], null), null));
+weasel.repl.connect.cljs$core$IFn$_invoke$arity$variadic(null,cljs.core.array_seq([cljs.core.cst$kw$print,new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$repl,null,cljs.core.cst$kw$console,null], null), null)], 0));
 } else {
 }
-
-//# sourceMappingURL=boot_cljs_repl.js.map
