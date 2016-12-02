@@ -7,10 +7,9 @@
    [thi.ng.geom.svg.core :as svg]
   ;; [thi.ng.geom.webgl.animator :refer [animate]]
    [thi.ng.domus.core :as dom]
+   [reagent.core :as r]
    [kdtree :as kd]
    [shodan.inspection :as shodan]))
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defn abs[n]
   (if (<= 0 n) n (- n)))
@@ -33,20 +32,6 @@
     (square (map (comp (partial + (/ cell-size 2)) (partial * cell-size))
                  [r c])
             (/ cell-size SQRT2))))
-
-(defn scene->graphB[polys]
-  (let [cells (map-indexed #(hash-map :id %1  :borders %2) polys)
-        indexed (zipmap (iterate inc 0) cells)
-        with-matching-seg (fn[[xy0 xy1] cell]
-                            (if (some #(or (m/delta= [xy0 xy1] %) (m/delta= [xy1 xy0] %))
-                                      (partition 2 1 (:borders cell)))
-                              (:id cell)
-                              nil))
-        matching-cell (fn[id xy0-xy1]
-                        (some (partial with-matching-seg xy0-xy1) (vals (dissoc indexed id))))
-        neighbors #(map (partial matching-cell (:id %)) (partition 2 1 (:borders %)))]
-    (reduce-kv #(assoc %1 %2 (assoc %3 :neighbors (neighbors %3)))
-               {} indexed)))
 
 (defn barycenter[xys]
   (g/scale (reduce m/+ xys) (/ 1. (count xys))))
@@ -172,23 +157,100 @@
             (rest vs)))))
 
 (enable-console-print!)
-(def w 1024)
-(def h 1024)
-(def paint! (partial draw-scene! (dom/by-id "app") w h))
-(def test-scene (square-grid 20 20 32))
-(def scene-bb (bounding-box test-scene))
-(def start-time (.getTime (js/Date.)))
-(def test-graph (scene->graph test-scene))
-(println (- (.getTime (js/Date.)) start-time))
-;; TODO have random-biased take id or cell instead of x y and then n
-;; at construction, can create a map id -> barycenter
-;; and id -> normal vector angles list
-(def test-rw (remove-walls test-graph 0 (make-T-bias scene-bb)))
-(def test-maze (maze->polylines (vals test-graph) test-rw))
+;; (def w 1024)
+;; (def h 1024)
+;; (def paint! (partial draw-scene! (dom/by-id "maze") w h))
+;; (def test-scene (square-grid 3 3 32))
+;; (def scene-bb (bounding-box test-scene))
+;; (def start-time (.getTime (js/Date.)))
+;; (def test-graph (scene->graph test-scene))
+;; (println (- (.getTime (js/Date.)) start-time))
+;; ;; TODO have random-biased take id or cell instead of x y and then n
+;; ;; at construction, can create a map id -> barycenter
+;; ;; and id -> normal vector angles list
+;; (def test-rw (remove-walls test-graph 0 (make-T-bias scene-bb)))
+;; (def test-maze (maze->polylines (vals test-graph) test-rw))
 ;;(println test-maze)
-(paint! (map (partial svg-polyline "#00F" 5)
-             (->> test-maze
-                  (transform-polylines (partial m/+  (m/- (barycenter [(vec2 0 0)(vec2 w h)]) (barycenter scene-bb))))
-                  (remove-min less-than-seg?) (remove-min (complement less-than-seg?)))))
+(defonce app-state (r/atom {}))
+
+(defn do-paint![]
+  (let[{:keys [rows cols size]} @app-state
+       scene (square-grid cols rows size)
+       pen-width 6
+       scene-bb (bounding-box scene)
+       [[x-min y-min][x-max y-max]] scene-bb
+       graph (scene->graph scene)
+       r-w (remove-walls graph 0 (make-T-bias scene-bb))
+       maze (maze->polylines (vals graph) r-w)
+       w (+ (- x-max x-min) pen-width)
+       h (+ (- y-max y-min) pen-width)
+       paint! (partial draw-scene! (dom/by-id "maze") w h)]
+    (paint! (map (partial svg-polyline "#00F" pen-width)
+               (->> maze
+                    (transform-polylines (partial m/+  (m/- (barycenter [(vec2 0 0)(vec2 w h)]) (barycenter scene-bb))))
+                    (remove-min less-than-seg?) (remove-min (complement less-than-seg?)))))
+    ))
 (println "Done !")
-(defonce state (atom {}))
+
+(def error-state (r/atom nil))
+
+(defn set-error!
+  [err]
+  (reset! error-state err)
+  (when err
+    (js/setTimeout #(set-error! nil) 1000)))
+
+(defn swap*!
+  "Similar to clojure.core/swap!, but records history and returns atom."
+  [ref f & args]
+  (swap! ref
+         (fn [ref-val] (apply f ref-val  args)))
+  (do-paint!)
+  ref)
+
+;; Components
+
+(defn user-error
+  "Component displaying current error message"
+  []
+  (when-let [err @error-state]
+    [:p {:style {:background "red" :padding "10px" :color "white"}} err]))
+(defn slider [param value min max width]
+  [:input {:type "range" :value value :min min :max max
+           :style {:width (str width "%")}
+           :on-change (fn [e]
+                        (swap*! app-state assoc param (int (.-target.value e))))}])
+
+
+(defn main-panel
+  "Application root component"
+  []
+  [:div
+   [user-error]
+   [:p [slider :cols (:cols @app-state) 2 40 50] "cols: " (:cols @app-state)  ]
+   [:p [slider :rows (:rows @app-state) 2 40 50] "rows : " (:rows @app-state) ]
+   [:p [slider :size (:size @app-state) 10 100 50] "size : " (:size @app-state) ]
+   ])
+
+(defn init-app
+  "Initializes app-state atom with default state"
+  []
+  (swap*! app-state merge
+          {:cols 2
+           :rows 2
+           :size 32}))
+
+(defn main
+  "Application main entry point. Initializes app-state and
+  kicks off React component lifecycle."
+  []
+  (init-app)
+  (r/render-component
+    [main-panel]
+    ;;(.-body js/document)
+    (.getElementById js/document "app")))
+
+
+(main)
+(println "main called")
+

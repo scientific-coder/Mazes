@@ -213,23 +213,23 @@ throw cljs.core.missing_protocol.call(null,"IHeading.slope-yz",_);
 thi.ng.geom.core.INormal = function(){};
 
 thi.ng.geom.core.normal = (function thi$ng$geom$core$normal(var_args){
-var args8908 = [];
-var len__8605__auto___8911 = arguments.length;
-var i__8606__auto___8912 = (0);
+var args9048 = [];
+var len__8605__auto___9051 = arguments.length;
+var i__8606__auto___9052 = (0);
 while(true){
-if((i__8606__auto___8912 < len__8605__auto___8911)){
-args8908.push((arguments[i__8606__auto___8912]));
+if((i__8606__auto___9052 < len__8605__auto___9051)){
+args9048.push((arguments[i__8606__auto___9052]));
 
-var G__8913 = (i__8606__auto___8912 + (1));
-i__8606__auto___8912 = G__8913;
+var G__9053 = (i__8606__auto___9052 + (1));
+i__8606__auto___9052 = G__9053;
 continue;
 } else {
 }
 break;
 }
 
-var G__8910 = args8908.length;
-switch (G__8910) {
+var G__9050 = args9048.length;
+switch (G__9050) {
 case 1:
 return thi.ng.geom.core.normal.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -239,7 +239,7 @@ return thi.ng.geom.core.normal.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(a
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8908.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9048.length)].join('')));
 
 }
 });
@@ -361,23 +361,23 @@ throw cljs.core.missing_protocol.call(null,"IReflect.reflect",_);
 thi.ng.geom.core.IVectorReduce = function(){};
 
 thi.ng.geom.core.reduce_vector = (function thi$ng$geom$core$reduce_vector(var_args){
-var args8915 = [];
-var len__8605__auto___8918 = arguments.length;
-var i__8606__auto___8919 = (0);
+var args9055 = [];
+var len__8605__auto___9058 = arguments.length;
+var i__8606__auto___9059 = (0);
 while(true){
-if((i__8606__auto___8919 < len__8605__auto___8918)){
-args8915.push((arguments[i__8606__auto___8919]));
+if((i__8606__auto___9059 < len__8605__auto___9058)){
+args9055.push((arguments[i__8606__auto___9059]));
 
-var G__8920 = (i__8606__auto___8919 + (1));
-i__8606__auto___8919 = G__8920;
+var G__9060 = (i__8606__auto___9059 + (1));
+i__8606__auto___9059 = G__9060;
 continue;
 } else {
 }
 break;
 }
 
-var G__8917 = args8915.length;
-switch (G__8917) {
+var G__9057 = args9055.length;
+switch (G__9057) {
 case 3:
 return thi.ng.geom.core.reduce_vector.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -387,7 +387,7 @@ return thi.ng.geom.core.reduce_vector.cljs$core$IFn$_invoke$arity$4((arguments[(
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8915.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9055.length)].join('')));
 
 }
 });
@@ -691,23 +691,23 @@ throw cljs.core.missing_protocol.call(null,"IVectorTransform.transform-vector",_
 thi.ng.geom.core.IMatrixConvert = function(){};
 
 thi.ng.geom.core.as_matrix = (function thi$ng$geom$core$as_matrix(var_args){
-var args8922 = [];
-var len__8605__auto___8925 = arguments.length;
-var i__8606__auto___8926 = (0);
+var args9062 = [];
+var len__8605__auto___9065 = arguments.length;
+var i__8606__auto___9066 = (0);
 while(true){
-if((i__8606__auto___8926 < len__8605__auto___8925)){
-args8922.push((arguments[i__8606__auto___8926]));
+if((i__8606__auto___9066 < len__8605__auto___9065)){
+args9062.push((arguments[i__8606__auto___9066]));
 
-var G__8927 = (i__8606__auto___8926 + (1));
-i__8606__auto___8926 = G__8927;
+var G__9067 = (i__8606__auto___9066 + (1));
+i__8606__auto___9066 = G__9067;
 continue;
 } else {
 }
 break;
 }
 
-var G__8924 = args8922.length;
-switch (G__8924) {
+var G__9064 = args9062.length;
+switch (G__9064) {
 case 1:
 return thi.ng.geom.core.as_matrix.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -717,7 +717,7 @@ return thi.ng.geom.core.as_matrix.cljs$core$IFn$_invoke$arity$2((arguments[(0)])
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8922.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9062.length)].join('')));
 
 }
 });
@@ -953,23 +953,23 @@ throw cljs.core.missing_protocol.call(null,"IDirectedGraph.out-vertices",_);
 thi.ng.geom.core.IGraphConvert = function(){};
 
 thi.ng.geom.core.as_graph = (function thi$ng$geom$core$as_graph(var_args){
-var args8929 = [];
-var len__8605__auto___8932 = arguments.length;
-var i__8606__auto___8933 = (0);
+var args9069 = [];
+var len__8605__auto___9072 = arguments.length;
+var i__8606__auto___9073 = (0);
 while(true){
-if((i__8606__auto___8933 < len__8605__auto___8932)){
-args8929.push((arguments[i__8606__auto___8933]));
+if((i__8606__auto___9073 < len__8605__auto___9072)){
+args9069.push((arguments[i__8606__auto___9073]));
 
-var G__8934 = (i__8606__auto___8933 + (1));
-i__8606__auto___8933 = G__8934;
+var G__9074 = (i__8606__auto___9073 + (1));
+i__8606__auto___9073 = G__9074;
 continue;
 } else {
 }
 break;
 }
 
-var G__8931 = args8929.length;
-switch (G__8931) {
+var G__9071 = args9069.length;
+switch (G__9071) {
 case 1:
 return thi.ng.geom.core.as_graph.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -979,7 +979,7 @@ return thi.ng.geom.core.as_graph.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8929.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9069.length)].join('')));
 
 }
 });
@@ -1032,23 +1032,23 @@ thi.ng.geom.core.as_graph.cljs$lang$maxFixedArity = 2;
 thi.ng.geom.core.IVertexAccess = function(){};
 
 thi.ng.geom.core.vertices = (function thi$ng$geom$core$vertices(var_args){
-var args8936 = [];
-var len__8605__auto___8939 = arguments.length;
-var i__8606__auto___8940 = (0);
+var args9076 = [];
+var len__8605__auto___9079 = arguments.length;
+var i__8606__auto___9080 = (0);
 while(true){
-if((i__8606__auto___8940 < len__8605__auto___8939)){
-args8936.push((arguments[i__8606__auto___8940]));
+if((i__8606__auto___9080 < len__8605__auto___9079)){
+args9076.push((arguments[i__8606__auto___9080]));
 
-var G__8941 = (i__8606__auto___8940 + (1));
-i__8606__auto___8940 = G__8941;
+var G__9081 = (i__8606__auto___9080 + (1));
+i__8606__auto___9080 = G__9081;
 continue;
 } else {
 }
 break;
 }
 
-var G__8938 = args8936.length;
-switch (G__8938) {
+var G__9078 = args9076.length;
+switch (G__9078) {
 case 1:
 return thi.ng.geom.core.vertices.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -1058,7 +1058,7 @@ return thi.ng.geom.core.vertices.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8936.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9076.length)].join('')));
 
 }
 });
@@ -1111,23 +1111,23 @@ thi.ng.geom.core.vertices.cljs$lang$maxFixedArity = 2;
 thi.ng.geom.core.IEdgeAccess = function(){};
 
 thi.ng.geom.core.edges = (function thi$ng$geom$core$edges(var_args){
-var args8943 = [];
-var len__8605__auto___8946 = arguments.length;
-var i__8606__auto___8947 = (0);
+var args9083 = [];
+var len__8605__auto___9086 = arguments.length;
+var i__8606__auto___9087 = (0);
 while(true){
-if((i__8606__auto___8947 < len__8605__auto___8946)){
-args8943.push((arguments[i__8606__auto___8947]));
+if((i__8606__auto___9087 < len__8605__auto___9086)){
+args9083.push((arguments[i__8606__auto___9087]));
 
-var G__8948 = (i__8606__auto___8947 + (1));
-i__8606__auto___8947 = G__8948;
+var G__9088 = (i__8606__auto___9087 + (1));
+i__8606__auto___9087 = G__9088;
 continue;
 } else {
 }
 break;
 }
 
-var G__8945 = args8943.length;
-switch (G__8945) {
+var G__9085 = args9083.length;
+switch (G__9085) {
 case 1:
 return thi.ng.geom.core.edges.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -1137,7 +1137,7 @@ return thi.ng.geom.core.edges.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(ar
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8943.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9083.length)].join('')));
 
 }
 });
@@ -1221,23 +1221,23 @@ throw cljs.core.missing_protocol.call(null,"IFaceAccess.add-face",_);
  *  they're returned as the 2nd element in each face vector.
  */
 thi.ng.geom.core.faces = (function thi$ng$geom$core$faces(var_args){
-var args8950 = [];
-var len__8605__auto___8953 = arguments.length;
-var i__8606__auto___8954 = (0);
+var args9090 = [];
+var len__8605__auto___9093 = arguments.length;
+var i__8606__auto___9094 = (0);
 while(true){
-if((i__8606__auto___8954 < len__8605__auto___8953)){
-args8950.push((arguments[i__8606__auto___8954]));
+if((i__8606__auto___9094 < len__8605__auto___9093)){
+args9090.push((arguments[i__8606__auto___9094]));
 
-var G__8955 = (i__8606__auto___8954 + (1));
-i__8606__auto___8954 = G__8955;
+var G__9095 = (i__8606__auto___9094 + (1));
+i__8606__auto___9094 = G__9095;
 continue;
 } else {
 }
 break;
 }
 
-var G__8952 = args8950.length;
-switch (G__8952) {
+var G__9092 = args9090.length;
+switch (G__9092) {
 case 1:
 return thi.ng.geom.core.faces.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -1247,7 +1247,7 @@ return thi.ng.geom.core.faces.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(ar
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8950.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9090.length)].join('')));
 
 }
 });
@@ -1465,23 +1465,23 @@ throw cljs.core.missing_protocol.call(null,"INormalAccess.vertex-normal",_);
 thi.ng.geom.core.IAttributeAccess = function(){};
 
 thi.ng.geom.core.attribs = (function thi$ng$geom$core$attribs(var_args){
-var args8957 = [];
-var len__8605__auto___8960 = arguments.length;
-var i__8606__auto___8961 = (0);
+var args9097 = [];
+var len__8605__auto___9100 = arguments.length;
+var i__8606__auto___9101 = (0);
 while(true){
-if((i__8606__auto___8961 < len__8605__auto___8960)){
-args8957.push((arguments[i__8606__auto___8961]));
+if((i__8606__auto___9101 < len__8605__auto___9100)){
+args9097.push((arguments[i__8606__auto___9101]));
 
-var G__8962 = (i__8606__auto___8961 + (1));
-i__8606__auto___8961 = G__8962;
+var G__9102 = (i__8606__auto___9101 + (1));
+i__8606__auto___9101 = G__9102;
 continue;
 } else {
 }
 break;
 }
 
-var G__8959 = args8957.length;
-switch (G__8959) {
+var G__9099 = args9097.length;
+switch (G__9099) {
 case 2:
 return thi.ng.geom.core.attribs.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -1491,7 +1491,7 @@ return thi.ng.geom.core.attribs.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8957.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9097.length)].join('')));
 
 }
 });
@@ -1816,23 +1816,23 @@ thi.ng.geom.core.ICenter = function(){};
  * Returns updated entity centered around world origin or given point
  */
 thi.ng.geom.core.center = (function thi$ng$geom$core$center(var_args){
-var args8964 = [];
-var len__8605__auto___8967 = arguments.length;
-var i__8606__auto___8968 = (0);
+var args9104 = [];
+var len__8605__auto___9107 = arguments.length;
+var i__8606__auto___9108 = (0);
 while(true){
-if((i__8606__auto___8968 < len__8605__auto___8967)){
-args8964.push((arguments[i__8606__auto___8968]));
+if((i__8606__auto___9108 < len__8605__auto___9107)){
+args9104.push((arguments[i__8606__auto___9108]));
 
-var G__8969 = (i__8606__auto___8968 + (1));
-i__8606__auto___8968 = G__8969;
+var G__9109 = (i__8606__auto___9108 + (1));
+i__8606__auto___9108 = G__9109;
 continue;
 } else {
 }
 break;
 }
 
-var G__8966 = args8964.length;
-switch (G__8966) {
+var G__9106 = args9104.length;
+switch (G__9106) {
 case 1:
 return thi.ng.geom.core.center.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -1842,7 +1842,7 @@ return thi.ng.geom.core.center.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(a
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8964.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9104.length)].join('')));
 
 }
 });
@@ -2183,23 +2183,23 @@ throw cljs.core.missing_protocol.call(null,"IInset.inset",_);
 thi.ng.geom.core.IIntersect = function(){};
 
 thi.ng.geom.core.intersect_line = (function thi$ng$geom$core$intersect_line(var_args){
-var args8971 = [];
-var len__8605__auto___8977 = arguments.length;
-var i__8606__auto___8978 = (0);
+var args9111 = [];
+var len__8605__auto___9117 = arguments.length;
+var i__8606__auto___9118 = (0);
 while(true){
-if((i__8606__auto___8978 < len__8605__auto___8977)){
-args8971.push((arguments[i__8606__auto___8978]));
+if((i__8606__auto___9118 < len__8605__auto___9117)){
+args9111.push((arguments[i__8606__auto___9118]));
 
-var G__8979 = (i__8606__auto___8978 + (1));
-i__8606__auto___8978 = G__8979;
+var G__9119 = (i__8606__auto___9118 + (1));
+i__8606__auto___9118 = G__9119;
 continue;
 } else {
 }
 break;
 }
 
-var G__8973 = args8971.length;
-switch (G__8973) {
+var G__9113 = args9111.length;
+switch (G__9113) {
 case 2:
 return thi.ng.geom.core.intersect_line.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -2209,7 +2209,7 @@ return thi.ng.geom.core.intersect_line.cljs$core$IFn$_invoke$arity$3((arguments[
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8971.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9111.length)].join('')));
 
 }
 });
@@ -2256,23 +2256,23 @@ thi.ng.geom.core.intersect_line.cljs$lang$maxFixedArity = 3;
 
 
 thi.ng.geom.core.intersect_ray = (function thi$ng$geom$core$intersect_ray(var_args){
-var args8974 = [];
-var len__8605__auto___8981 = arguments.length;
-var i__8606__auto___8982 = (0);
+var args9114 = [];
+var len__8605__auto___9121 = arguments.length;
+var i__8606__auto___9122 = (0);
 while(true){
-if((i__8606__auto___8982 < len__8605__auto___8981)){
-args8974.push((arguments[i__8606__auto___8982]));
+if((i__8606__auto___9122 < len__8605__auto___9121)){
+args9114.push((arguments[i__8606__auto___9122]));
 
-var G__8983 = (i__8606__auto___8982 + (1));
-i__8606__auto___8982 = G__8983;
+var G__9123 = (i__8606__auto___9122 + (1));
+i__8606__auto___9122 = G__9123;
 continue;
 } else {
 }
 break;
 }
 
-var G__8976 = args8974.length;
-switch (G__8976) {
+var G__9116 = args9114.length;
+switch (G__9116) {
 case 2:
 return thi.ng.geom.core.intersect_ray.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -2282,7 +2282,7 @@ return thi.ng.geom.core.intersect_ray.cljs$core$IFn$_invoke$arity$3((arguments[(
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8974.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9114.length)].join('')));
 
 }
 });
@@ -2357,23 +2357,23 @@ thi.ng.geom.core.IMeshConvert = function(){};
  * Transforms the current enitity into a mesh instance
  */
 thi.ng.geom.core.as_mesh = (function thi$ng$geom$core$as_mesh(var_args){
-var args8985 = [];
-var len__8605__auto___8988 = arguments.length;
-var i__8606__auto___8989 = (0);
+var args9125 = [];
+var len__8605__auto___9128 = arguments.length;
+var i__8606__auto___9129 = (0);
 while(true){
-if((i__8606__auto___8989 < len__8605__auto___8988)){
-args8985.push((arguments[i__8606__auto___8989]));
+if((i__8606__auto___9129 < len__8605__auto___9128)){
+args9125.push((arguments[i__8606__auto___9129]));
 
-var G__8990 = (i__8606__auto___8989 + (1));
-i__8606__auto___8989 = G__8990;
+var G__9130 = (i__8606__auto___9129 + (1));
+i__8606__auto___9129 = G__9130;
 continue;
 } else {
 }
 break;
 }
 
-var G__8987 = args8985.length;
-switch (G__8987) {
+var G__9127 = args9125.length;
+switch (G__9127) {
 case 1:
 return thi.ng.geom.core.as_mesh.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -2383,7 +2383,7 @@ return thi.ng.geom.core.as_mesh.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8985.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9125.length)].join('')));
 
 }
 });
@@ -2483,23 +2483,23 @@ thi.ng.geom.core.IPolygonConvert = function(){};
  * Transforms current entity into a Polygon2 instance
  */
 thi.ng.geom.core.as_polygon = (function thi$ng$geom$core$as_polygon(var_args){
-var args8992 = [];
-var len__8605__auto___8995 = arguments.length;
-var i__8606__auto___8996 = (0);
+var args9132 = [];
+var len__8605__auto___9135 = arguments.length;
+var i__8606__auto___9136 = (0);
 while(true){
-if((i__8606__auto___8996 < len__8605__auto___8995)){
-args8992.push((arguments[i__8606__auto___8996]));
+if((i__8606__auto___9136 < len__8605__auto___9135)){
+args9132.push((arguments[i__8606__auto___9136]));
 
-var G__8997 = (i__8606__auto___8996 + (1));
-i__8606__auto___8996 = G__8997;
+var G__9137 = (i__8606__auto___9136 + (1));
+i__8606__auto___9136 = G__9137;
 continue;
 } else {
 }
 break;
 }
 
-var G__8994 = args8992.length;
-switch (G__8994) {
+var G__9134 = args9132.length;
+switch (G__9134) {
 case 1:
 return thi.ng.geom.core.as_polygon.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -2509,7 +2509,7 @@ return thi.ng.geom.core.as_polygon.cljs$core$IFn$_invoke$arity$2((arguments[(0)]
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8992.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9132.length)].join('')));
 
 }
 });
@@ -2587,23 +2587,23 @@ throw cljs.core.missing_protocol.call(null,"IProximity.closest-point",_);
 thi.ng.geom.core.ISample = function(){};
 
 thi.ng.geom.core.point_at = (function thi$ng$geom$core$point_at(var_args){
-var args8999 = [];
-var len__8605__auto___9002 = arguments.length;
-var i__8606__auto___9003 = (0);
+var args9139 = [];
+var len__8605__auto___9142 = arguments.length;
+var i__8606__auto___9143 = (0);
 while(true){
-if((i__8606__auto___9003 < len__8605__auto___9002)){
-args8999.push((arguments[i__8606__auto___9003]));
+if((i__8606__auto___9143 < len__8605__auto___9142)){
+args9139.push((arguments[i__8606__auto___9143]));
 
-var G__9004 = (i__8606__auto___9003 + (1));
-i__8606__auto___9003 = G__9004;
+var G__9144 = (i__8606__auto___9143 + (1));
+i__8606__auto___9143 = G__9144;
 continue;
 } else {
 }
 break;
 }
 
-var G__9001 = args8999.length;
-switch (G__9001) {
+var G__9141 = args9139.length;
+switch (G__9141) {
 case 2:
 return thi.ng.geom.core.point_at.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -2613,7 +2613,7 @@ return thi.ng.geom.core.point_at.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8999.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9139.length)].join('')));
 
 }
 });
@@ -2742,23 +2742,23 @@ throw cljs.core.missing_protocol.call(null,"ISample.sample-with-resolution",_);
 thi.ng.geom.core.ISlice = function(){};
 
 thi.ng.geom.core.slice_with = (function thi$ng$geom$core$slice_with(var_args){
-var args9006 = [];
-var len__8605__auto___9009 = arguments.length;
-var i__8606__auto___9010 = (0);
+var args9146 = [];
+var len__8605__auto___9149 = arguments.length;
+var i__8606__auto___9150 = (0);
 while(true){
-if((i__8606__auto___9010 < len__8605__auto___9009)){
-args9006.push((arguments[i__8606__auto___9010]));
+if((i__8606__auto___9150 < len__8605__auto___9149)){
+args9146.push((arguments[i__8606__auto___9150]));
 
-var G__9011 = (i__8606__auto___9010 + (1));
-i__8606__auto___9010 = G__9011;
+var G__9151 = (i__8606__auto___9150 + (1));
+i__8606__auto___9150 = G__9151;
 continue;
 } else {
 }
 break;
 }
 
-var G__9008 = args9006.length;
-switch (G__9008) {
+var G__9148 = args9146.length;
+switch (G__9148) {
 case 2:
 return thi.ng.geom.core.slice_with.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -2772,7 +2772,7 @@ return thi.ng.geom.core.slice_with.cljs$core$IFn$_invoke$arity$4((arguments[(0)]
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9006.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9146.length)].join('')));
 
 }
 });
@@ -2844,23 +2844,23 @@ thi.ng.geom.core.slice_with.cljs$lang$maxFixedArity = 4;
 thi.ng.geom.core.ISubdivide = function(){};
 
 thi.ng.geom.core.subdivide = (function thi$ng$geom$core$subdivide(var_args){
-var args9013 = [];
-var len__8605__auto___9016 = arguments.length;
-var i__8606__auto___9017 = (0);
+var args9153 = [];
+var len__8605__auto___9156 = arguments.length;
+var i__8606__auto___9157 = (0);
 while(true){
-if((i__8606__auto___9017 < len__8605__auto___9016)){
-args9013.push((arguments[i__8606__auto___9017]));
+if((i__8606__auto___9157 < len__8605__auto___9156)){
+args9153.push((arguments[i__8606__auto___9157]));
 
-var G__9018 = (i__8606__auto___9017 + (1));
-i__8606__auto___9017 = G__9018;
+var G__9158 = (i__8606__auto___9157 + (1));
+i__8606__auto___9157 = G__9158;
 continue;
 } else {
 }
 break;
 }
 
-var G__9015 = args9013.length;
-switch (G__9015) {
+var G__9155 = args9153.length;
+switch (G__9155) {
 case 1:
 return thi.ng.geom.core.subdivide.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -2870,7 +2870,7 @@ return thi.ng.geom.core.subdivide.cljs$core$IFn$_invoke$arity$2((arguments[(0)])
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9013.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9153.length)].join('')));
 
 }
 });
@@ -2961,23 +2961,23 @@ throw cljs.core.missing_protocol.call(null,"ISubdivide.subdivide-face",_);
 thi.ng.geom.core.ITessellate = function(){};
 
 thi.ng.geom.core.tessellate = (function thi$ng$geom$core$tessellate(var_args){
-var args9020 = [];
-var len__8605__auto___9023 = arguments.length;
-var i__8606__auto___9024 = (0);
+var args9160 = [];
+var len__8605__auto___9163 = arguments.length;
+var i__8606__auto___9164 = (0);
 while(true){
-if((i__8606__auto___9024 < len__8605__auto___9023)){
-args9020.push((arguments[i__8606__auto___9024]));
+if((i__8606__auto___9164 < len__8605__auto___9163)){
+args9160.push((arguments[i__8606__auto___9164]));
 
-var G__9025 = (i__8606__auto___9024 + (1));
-i__8606__auto___9024 = G__9025;
+var G__9165 = (i__8606__auto___9164 + (1));
+i__8606__auto___9164 = G__9165;
 continue;
 } else {
 }
 break;
 }
 
-var G__9022 = args9020.length;
-switch (G__9022) {
+var G__9162 = args9160.length;
+switch (G__9162) {
 case 1:
 return thi.ng.geom.core.tessellate.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -2987,7 +2987,7 @@ return thi.ng.geom.core.tessellate.cljs$core$IFn$_invoke$arity$2((arguments[(0)]
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9020.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9160.length)].join('')));
 
 }
 });

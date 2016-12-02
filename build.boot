@@ -13,6 +13,7 @@
                  [org.clojure/tools.nrepl "0.2.12" :scope "test"]
                  [thi.ng/geom "0.0.1178-SNAPSHOT"]
                  [thi.ng/domus "0.3.0-SNAPSHOT"]
+                 [reagent "0.6.0" ]
                  [shodan "0.4.2"]])
 
  (require '[adzerk.boot-cljs :refer [cljs]]
@@ -25,7 +26,7 @@
   (comp
    (serve :dir "target")
    (watch)
-   (reload)
+   (reload :on-jsload 'my-mazes.core/main)
    (cljs-repl) ;; before cljs task
    (cljs)
    (target :dir #{"target"})))

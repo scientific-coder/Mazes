@@ -1016,23 +1016,23 @@ thi.ng.dstruct.streams.OutputStreamWrapper.prototype.thi$ng$dstruct$streams$IOut
 thi.ng.dstruct.streams.OutputStreamWrapper.prototype.thi$ng$dstruct$streams$IOutputStream$write_utf8_bytes$arity$2 = (function (_,str){
 var self__ = this;
 var ___$1 = this;
-var utf8_9497 = thi.ng.dstruct.streams.utf8_str.call(null,str);
-var len_9498 = cljs.core.count.call(null,utf8_9497);
-thi.ng.dstruct.streams.ensure_size.call(null,___$1,cljs.core.count.call(null,utf8_9497));
+var utf8_9637 = thi.ng.dstruct.streams.utf8_str.call(null,str);
+var len_9638 = cljs.core.count.call(null,utf8_9637);
+thi.ng.dstruct.streams.ensure_size.call(null,___$1,cljs.core.count.call(null,utf8_9637));
 
-var i_9499 = (0);
-var p_9500 = self__.pos;
+var i_9639 = (0);
+var p_9640 = self__.pos;
 while(true){
-if((i_9499 < len_9498)){
-self__.dv.setUint8(p_9500,utf8_9497.charCodeAt(i_9499));
+if((i_9639 < len_9638)){
+self__.dv.setUint8(p_9640,utf8_9637.charCodeAt(i_9639));
 
-var G__9501 = (i_9499 + (1));
-var G__9502 = (p_9500 + (1));
-i_9499 = G__9501;
-p_9500 = G__9502;
+var G__9641 = (i_9639 + (1));
+var G__9642 = (p_9640 + (1));
+i_9639 = G__9641;
+p_9640 = G__9642;
 continue;
 } else {
-self__.pos = p_9500;
+self__.pos = p_9640;
 }
 break;
 }
@@ -1301,23 +1301,23 @@ return null;
  *   returned.
  */
 thi.ng.dstruct.streams.as_data_url = (function thi$ng$dstruct$streams$as_data_url(var_args){
-var args9503 = [];
-var len__8605__auto___9506 = arguments.length;
-var i__8606__auto___9507 = (0);
+var args9643 = [];
+var len__8605__auto___9646 = arguments.length;
+var i__8606__auto___9647 = (0);
 while(true){
-if((i__8606__auto___9507 < len__8605__auto___9506)){
-args9503.push((arguments[i__8606__auto___9507]));
+if((i__8606__auto___9647 < len__8605__auto___9646)){
+args9643.push((arguments[i__8606__auto___9647]));
 
-var G__9508 = (i__8606__auto___9507 + (1));
-i__8606__auto___9507 = G__9508;
+var G__9648 = (i__8606__auto___9647 + (1));
+i__8606__auto___9647 = G__9648;
 continue;
 } else {
 }
 break;
 }
 
-var G__9505 = args9503.length;
-switch (G__9505) {
+var G__9645 = args9643.length;
+switch (G__9645) {
 case 1:
 return thi.ng.dstruct.streams.as_data_url.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -1327,7 +1327,7 @@ return thi.ng.dstruct.streams.as_data_url.cljs$core$IFn$_invoke$arity$2((argumen
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9503.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9643.length)].join('')));
 
 }
 });
@@ -1357,23 +1357,23 @@ thi.ng.dstruct.streams.as_data_url.cljs$lang$maxFixedArity = 2;
  *   type, calls fn with data url string, returns nil.
  */
 thi.ng.dstruct.streams.as_data_url_async = (function thi$ng$dstruct$streams$as_data_url_async(var_args){
-var args9511 = [];
-var len__8605__auto___9514 = arguments.length;
-var i__8606__auto___9515 = (0);
+var args9651 = [];
+var len__8605__auto___9654 = arguments.length;
+var i__8606__auto___9655 = (0);
 while(true){
-if((i__8606__auto___9515 < len__8605__auto___9514)){
-args9511.push((arguments[i__8606__auto___9515]));
+if((i__8606__auto___9655 < len__8605__auto___9654)){
+args9651.push((arguments[i__8606__auto___9655]));
 
-var G__9516 = (i__8606__auto___9515 + (1));
-i__8606__auto___9515 = G__9516;
+var G__9656 = (i__8606__auto___9655 + (1));
+i__8606__auto___9655 = G__9656;
 continue;
 } else {
 }
 break;
 }
 
-var G__9513 = args9511.length;
-switch (G__9513) {
+var G__9653 = args9651.length;
+switch (G__9653) {
 case 2:
 return thi.ng.dstruct.streams.as_data_url_async.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -1383,7 +1383,7 @@ return thi.ng.dstruct.streams.as_data_url_async.cljs$core$IFn$_invoke$arity$3((a
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9511.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9651.length)].join('')));
 
 }
 });
@@ -1395,8 +1395,8 @@ return thi.ng.dstruct.streams.as_data_url_async.call(null,stream,cb,"application
 thi.ng.dstruct.streams.as_data_url_async.cljs$core$IFn$_invoke$arity$3 = (function (stream,cb,mime){
 var fr = (new FileReader());
 fr.onload = ((function (fr){
-return (function (p1__9510_SHARP_){
-return cb.call(null,p1__9510_SHARP_.target.result);
+return (function (p1__9650_SHARP_){
+return cb.call(null,p1__9650_SHARP_.target.result);
 });})(fr))
 ;
 
@@ -1408,23 +1408,23 @@ return null;
 thi.ng.dstruct.streams.as_data_url_async.cljs$lang$maxFixedArity = 3;
 
 thi.ng.dstruct.streams.input_stream = (function thi$ng$dstruct$streams$input_stream(var_args){
-var args9518 = [];
-var len__8605__auto___9521 = arguments.length;
-var i__8606__auto___9522 = (0);
+var args9658 = [];
+var len__8605__auto___9661 = arguments.length;
+var i__8606__auto___9662 = (0);
 while(true){
-if((i__8606__auto___9522 < len__8605__auto___9521)){
-args9518.push((arguments[i__8606__auto___9522]));
+if((i__8606__auto___9662 < len__8605__auto___9661)){
+args9658.push((arguments[i__8606__auto___9662]));
 
-var G__9523 = (i__8606__auto___9522 + (1));
-i__8606__auto___9522 = G__9523;
+var G__9663 = (i__8606__auto___9662 + (1));
+i__8606__auto___9662 = G__9663;
 continue;
 } else {
 }
 break;
 }
 
-var G__9520 = args9518.length;
-switch (G__9520) {
+var G__9660 = args9658.length;
+switch (G__9660) {
 case 1:
 return thi.ng.dstruct.streams.input_stream.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -1434,7 +1434,7 @@ return thi.ng.dstruct.streams.input_stream.cljs$core$IFn$_invoke$arity$2((argume
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9518.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9658.length)].join('')));
 
 }
 });
@@ -1450,23 +1450,23 @@ return (new thi.ng.dstruct.streams.InputStreamWrapper(buf,(new DataView(buf)),po
 thi.ng.dstruct.streams.input_stream.cljs$lang$maxFixedArity = 2;
 
 thi.ng.dstruct.streams.output_stream = (function thi$ng$dstruct$streams$output_stream(var_args){
-var args9525 = [];
-var len__8605__auto___9528 = arguments.length;
-var i__8606__auto___9529 = (0);
+var args9665 = [];
+var len__8605__auto___9668 = arguments.length;
+var i__8606__auto___9669 = (0);
 while(true){
-if((i__8606__auto___9529 < len__8605__auto___9528)){
-args9525.push((arguments[i__8606__auto___9529]));
+if((i__8606__auto___9669 < len__8605__auto___9668)){
+args9665.push((arguments[i__8606__auto___9669]));
 
-var G__9530 = (i__8606__auto___9529 + (1));
-i__8606__auto___9529 = G__9530;
+var G__9670 = (i__8606__auto___9669 + (1));
+i__8606__auto___9669 = G__9670;
 continue;
 } else {
 }
 break;
 }
 
-var G__9527 = args9525.length;
-switch (G__9527) {
+var G__9667 = args9665.length;
+switch (G__9667) {
 case 0:
 return thi.ng.dstruct.streams.output_stream.cljs$core$IFn$_invoke$arity$0();
 
@@ -1480,7 +1480,7 @@ return thi.ng.dstruct.streams.output_stream.cljs$core$IFn$_invoke$arity$2((argum
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9525.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9665.length)].join('')));
 
 }
 });

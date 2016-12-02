@@ -35,11 +35,11 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.Graph.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11559,else__8062__auto__){
+thi.ng.geom.types.Graph.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11699,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11561 = (((k11559 instanceof cljs.core.Keyword))?k11559.fqn:null);
-switch (G__11561) {
+var G__11701 = (((k11699 instanceof cljs.core.Keyword))?k11699.fqn:null);
+switch (G__11701) {
 case "vertices":
 return self__.vertices;
 
@@ -49,7 +49,7 @@ return self__.edges;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11559,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11699,else__8062__auto__);
 
 }
 });
@@ -67,10 +67,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.Graph.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.Graph.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11558){
+thi.ng.geom.types.Graph.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11698){
 var self__ = this;
-var G__11558__$1 = this;
-return (new cljs.core.RecordIter((0),G__11558__$1,2,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"edges","edges",-694791395)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11698__$1 = this;
+return (new cljs.core.RecordIter((0),G__11698__$1,2,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"edges","edges",-694791395)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.Graph.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -136,18 +136,18 @@ return (new thi.ng.geom.types.Graph(self__.vertices,self__.edges,self__.__meta,c
 }
 });
 
-thi.ng.geom.types.Graph.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11558){
+thi.ng.geom.types.Graph.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11698){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11562 = cljs.core.keyword_identical_QMARK_;
-var expr__11563 = k__8067__auto__;
-if(cljs.core.truth_(pred__11562.call(null,new cljs.core.Keyword(null,"vertices","vertices",2008905731),expr__11563))){
-return (new thi.ng.geom.types.Graph(G__11558,self__.edges,self__.__meta,self__.__extmap,null));
+var pred__11702 = cljs.core.keyword_identical_QMARK_;
+var expr__11703 = k__8067__auto__;
+if(cljs.core.truth_(pred__11702.call(null,new cljs.core.Keyword(null,"vertices","vertices",2008905731),expr__11703))){
+return (new thi.ng.geom.types.Graph(G__11698,self__.edges,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11562.call(null,new cljs.core.Keyword(null,"edges","edges",-694791395),expr__11563))){
-return (new thi.ng.geom.types.Graph(self__.vertices,G__11558,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11702.call(null,new cljs.core.Keyword(null,"edges","edges",-694791395),expr__11703))){
+return (new thi.ng.geom.types.Graph(self__.vertices,G__11698,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.Graph(self__.vertices,self__.edges,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11558),null));
+return (new thi.ng.geom.types.Graph(self__.vertices,self__.edges,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11698),null));
 }
 }
 });
@@ -158,10 +158,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"vertices","vertices",2008905731),self__.vertices],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"edges","edges",-694791395),self__.edges],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.Graph.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11558){
+thi.ng.geom.types.Graph.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11698){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.Graph(self__.vertices,self__.edges,G__11558,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.Graph(self__.vertices,self__.edges,G__11698,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.Graph.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -192,8 +192,8 @@ thi.ng.geom.types.__GT_Graph = (function thi$ng$geom$types$__GT_Graph(vertices,e
 return (new thi.ng.geom.types.Graph(vertices,edges,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_Graph = (function thi$ng$geom$types$map__GT_Graph(G__11560){
-return (new thi.ng.geom.types.Graph(new cljs.core.Keyword(null,"vertices","vertices",2008905731).cljs$core$IFn$_invoke$arity$1(G__11560),new cljs.core.Keyword(null,"edges","edges",-694791395).cljs$core$IFn$_invoke$arity$1(G__11560),null,cljs.core.dissoc.call(null,G__11560,new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"edges","edges",-694791395)),null));
+thi.ng.geom.types.map__GT_Graph = (function thi$ng$geom$types$map__GT_Graph(G__11700){
+return (new thi.ng.geom.types.Graph(new cljs.core.Keyword(null,"vertices","vertices",2008905731).cljs$core$IFn$_invoke$arity$1(G__11700),new cljs.core.Keyword(null,"edges","edges",-694791395).cljs$core$IFn$_invoke$arity$1(G__11700),null,cljs.core.dissoc.call(null,G__11700,new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"edges","edges",-694791395)),null));
 });
 
 
@@ -228,17 +228,17 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.Bezier2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11567,else__8062__auto__){
+thi.ng.geom.types.Bezier2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11707,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11569 = (((k11567 instanceof cljs.core.Keyword))?k11567.fqn:null);
-switch (G__11569) {
+var G__11709 = (((k11707 instanceof cljs.core.Keyword))?k11707.fqn:null);
+switch (G__11709) {
 case "points":
 return self__.points;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11567,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11707,else__8062__auto__);
 
 }
 });
@@ -256,10 +256,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.Bezier2.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.Bezier2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11566){
+thi.ng.geom.types.Bezier2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11706){
 var self__ = this;
-var G__11566__$1 = this;
-return (new cljs.core.RecordIter((0),G__11566__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11706__$1 = this;
+return (new cljs.core.RecordIter((0),G__11706__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.Bezier2.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -325,15 +325,15 @@ return (new thi.ng.geom.types.Bezier2(self__.points,self__.__meta,cljs.core.not_
 }
 });
 
-thi.ng.geom.types.Bezier2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11566){
+thi.ng.geom.types.Bezier2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11706){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11570 = cljs.core.keyword_identical_QMARK_;
-var expr__11571 = k__8067__auto__;
-if(cljs.core.truth_(pred__11570.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11571))){
-return (new thi.ng.geom.types.Bezier2(G__11566,self__.__meta,self__.__extmap,null));
+var pred__11710 = cljs.core.keyword_identical_QMARK_;
+var expr__11711 = k__8067__auto__;
+if(cljs.core.truth_(pred__11710.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11711))){
+return (new thi.ng.geom.types.Bezier2(G__11706,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.Bezier2(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11566),null));
+return (new thi.ng.geom.types.Bezier2(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11706),null));
 }
 });
 
@@ -343,10 +343,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"points","points",-1486596883),self__.points],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.Bezier2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11566){
+thi.ng.geom.types.Bezier2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11706){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.Bezier2(self__.points,G__11566,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.Bezier2(self__.points,G__11706,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.Bezier2.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -377,8 +377,8 @@ thi.ng.geom.types.__GT_Bezier2 = (function thi$ng$geom$types$__GT_Bezier2(points
 return (new thi.ng.geom.types.Bezier2(points,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_Bezier2 = (function thi$ng$geom$types$map__GT_Bezier2(G__11568){
-return (new thi.ng.geom.types.Bezier2(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11568),null,cljs.core.dissoc.call(null,G__11568,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
+thi.ng.geom.types.map__GT_Bezier2 = (function thi$ng$geom$types$map__GT_Bezier2(G__11708){
+return (new thi.ng.geom.types.Bezier2(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11708),null,cljs.core.dissoc.call(null,G__11708,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
 });
 
 
@@ -414,11 +414,11 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.Circle2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11575,else__8062__auto__){
+thi.ng.geom.types.Circle2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11715,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11577 = (((k11575 instanceof cljs.core.Keyword))?k11575.fqn:null);
-switch (G__11577) {
+var G__11717 = (((k11715 instanceof cljs.core.Keyword))?k11715.fqn:null);
+switch (G__11717) {
 case "p":
 return self__.p;
 
@@ -428,7 +428,7 @@ return self__.r;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11575,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11715,else__8062__auto__);
 
 }
 });
@@ -446,10 +446,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.Circle2.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.Circle2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11574){
+thi.ng.geom.types.Circle2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11714){
 var self__ = this;
-var G__11574__$1 = this;
-return (new cljs.core.RecordIter((0),G__11574__$1,2,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"r","r",-471384190)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11714__$1 = this;
+return (new cljs.core.RecordIter((0),G__11714__$1,2,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"r","r",-471384190)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.Circle2.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -515,18 +515,18 @@ return (new thi.ng.geom.types.Circle2(self__.p,self__.r,self__.__meta,cljs.core.
 }
 });
 
-thi.ng.geom.types.Circle2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11574){
+thi.ng.geom.types.Circle2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11714){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11578 = cljs.core.keyword_identical_QMARK_;
-var expr__11579 = k__8067__auto__;
-if(cljs.core.truth_(pred__11578.call(null,new cljs.core.Keyword(null,"p","p",151049309),expr__11579))){
-return (new thi.ng.geom.types.Circle2(G__11574,self__.r,self__.__meta,self__.__extmap,null));
+var pred__11718 = cljs.core.keyword_identical_QMARK_;
+var expr__11719 = k__8067__auto__;
+if(cljs.core.truth_(pred__11718.call(null,new cljs.core.Keyword(null,"p","p",151049309),expr__11719))){
+return (new thi.ng.geom.types.Circle2(G__11714,self__.r,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11578.call(null,new cljs.core.Keyword(null,"r","r",-471384190),expr__11579))){
-return (new thi.ng.geom.types.Circle2(self__.p,G__11574,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11718.call(null,new cljs.core.Keyword(null,"r","r",-471384190),expr__11719))){
+return (new thi.ng.geom.types.Circle2(self__.p,G__11714,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.Circle2(self__.p,self__.r,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11574),null));
+return (new thi.ng.geom.types.Circle2(self__.p,self__.r,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11714),null));
 }
 }
 });
@@ -537,10 +537,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"p","p",151049309),self__.p],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"r","r",-471384190),self__.r],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.Circle2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11574){
+thi.ng.geom.types.Circle2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11714){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.Circle2(self__.p,self__.r,G__11574,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.Circle2(self__.p,self__.r,G__11714,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.Circle2.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -571,8 +571,8 @@ thi.ng.geom.types.__GT_Circle2 = (function thi$ng$geom$types$__GT_Circle2(p,r){
 return (new thi.ng.geom.types.Circle2(p,r,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_Circle2 = (function thi$ng$geom$types$map__GT_Circle2(G__11576){
-return (new thi.ng.geom.types.Circle2(new cljs.core.Keyword(null,"p","p",151049309).cljs$core$IFn$_invoke$arity$1(G__11576),new cljs.core.Keyword(null,"r","r",-471384190).cljs$core$IFn$_invoke$arity$1(G__11576),null,cljs.core.dissoc.call(null,G__11576,new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"r","r",-471384190)),null));
+thi.ng.geom.types.map__GT_Circle2 = (function thi$ng$geom$types$map__GT_Circle2(G__11716){
+return (new thi.ng.geom.types.Circle2(new cljs.core.Keyword(null,"p","p",151049309).cljs$core$IFn$_invoke$arity$1(G__11716),new cljs.core.Keyword(null,"r","r",-471384190).cljs$core$IFn$_invoke$arity$1(G__11716),null,cljs.core.dissoc.call(null,G__11716,new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"r","r",-471384190)),null));
 });
 
 
@@ -609,11 +609,11 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.Ellipse2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11583,else__8062__auto__){
+thi.ng.geom.types.Ellipse2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11723,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11585 = (((k11583 instanceof cljs.core.Keyword))?k11583.fqn:null);
-switch (G__11585) {
+var G__11725 = (((k11723 instanceof cljs.core.Keyword))?k11723.fqn:null);
+switch (G__11725) {
 case "p":
 return self__.p;
 
@@ -627,7 +627,7 @@ return self__.ry;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11583,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11723,else__8062__auto__);
 
 }
 });
@@ -645,10 +645,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.Ellipse2.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.Ellipse2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11582){
+thi.ng.geom.types.Ellipse2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11722){
 var self__ = this;
-var G__11582__$1 = this;
-return (new cljs.core.RecordIter((0),G__11582__$1,3,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"rx","rx",1627208482),new cljs.core.Keyword(null,"ry","ry",-334598563)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11722__$1 = this;
+return (new cljs.core.RecordIter((0),G__11722__$1,3,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"rx","rx",1627208482),new cljs.core.Keyword(null,"ry","ry",-334598563)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.Ellipse2.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -714,21 +714,21 @@ return (new thi.ng.geom.types.Ellipse2(self__.p,self__.rx,self__.ry,self__.__met
 }
 });
 
-thi.ng.geom.types.Ellipse2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11582){
+thi.ng.geom.types.Ellipse2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11722){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11586 = cljs.core.keyword_identical_QMARK_;
-var expr__11587 = k__8067__auto__;
-if(cljs.core.truth_(pred__11586.call(null,new cljs.core.Keyword(null,"p","p",151049309),expr__11587))){
-return (new thi.ng.geom.types.Ellipse2(G__11582,self__.rx,self__.ry,self__.__meta,self__.__extmap,null));
+var pred__11726 = cljs.core.keyword_identical_QMARK_;
+var expr__11727 = k__8067__auto__;
+if(cljs.core.truth_(pred__11726.call(null,new cljs.core.Keyword(null,"p","p",151049309),expr__11727))){
+return (new thi.ng.geom.types.Ellipse2(G__11722,self__.rx,self__.ry,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11586.call(null,new cljs.core.Keyword(null,"rx","rx",1627208482),expr__11587))){
-return (new thi.ng.geom.types.Ellipse2(self__.p,G__11582,self__.ry,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11726.call(null,new cljs.core.Keyword(null,"rx","rx",1627208482),expr__11727))){
+return (new thi.ng.geom.types.Ellipse2(self__.p,G__11722,self__.ry,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11586.call(null,new cljs.core.Keyword(null,"ry","ry",-334598563),expr__11587))){
-return (new thi.ng.geom.types.Ellipse2(self__.p,self__.rx,G__11582,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11726.call(null,new cljs.core.Keyword(null,"ry","ry",-334598563),expr__11727))){
+return (new thi.ng.geom.types.Ellipse2(self__.p,self__.rx,G__11722,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.Ellipse2(self__.p,self__.rx,self__.ry,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11582),null));
+return (new thi.ng.geom.types.Ellipse2(self__.p,self__.rx,self__.ry,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11722),null));
 }
 }
 }
@@ -740,10 +740,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"p","p",151049309),self__.p],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"rx","rx",1627208482),self__.rx],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"ry","ry",-334598563),self__.ry],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.Ellipse2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11582){
+thi.ng.geom.types.Ellipse2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11722){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.Ellipse2(self__.p,self__.rx,self__.ry,G__11582,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.Ellipse2(self__.p,self__.rx,self__.ry,G__11722,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.Ellipse2.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -774,8 +774,8 @@ thi.ng.geom.types.__GT_Ellipse2 = (function thi$ng$geom$types$__GT_Ellipse2(p,rx
 return (new thi.ng.geom.types.Ellipse2(p,rx,ry,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_Ellipse2 = (function thi$ng$geom$types$map__GT_Ellipse2(G__11584){
-return (new thi.ng.geom.types.Ellipse2(new cljs.core.Keyword(null,"p","p",151049309).cljs$core$IFn$_invoke$arity$1(G__11584),new cljs.core.Keyword(null,"rx","rx",1627208482).cljs$core$IFn$_invoke$arity$1(G__11584),new cljs.core.Keyword(null,"ry","ry",-334598563).cljs$core$IFn$_invoke$arity$1(G__11584),null,cljs.core.dissoc.call(null,G__11584,new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"rx","rx",1627208482),new cljs.core.Keyword(null,"ry","ry",-334598563)),null));
+thi.ng.geom.types.map__GT_Ellipse2 = (function thi$ng$geom$types$map__GT_Ellipse2(G__11724){
+return (new thi.ng.geom.types.Ellipse2(new cljs.core.Keyword(null,"p","p",151049309).cljs$core$IFn$_invoke$arity$1(G__11724),new cljs.core.Keyword(null,"rx","rx",1627208482).cljs$core$IFn$_invoke$arity$1(G__11724),new cljs.core.Keyword(null,"ry","ry",-334598563).cljs$core$IFn$_invoke$arity$1(G__11724),null,cljs.core.dissoc.call(null,G__11724,new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"rx","rx",1627208482),new cljs.core.Keyword(null,"ry","ry",-334598563)),null));
 });
 
 
@@ -810,17 +810,17 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.Line2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11591,else__8062__auto__){
+thi.ng.geom.types.Line2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11731,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11593 = (((k11591 instanceof cljs.core.Keyword))?k11591.fqn:null);
-switch (G__11593) {
+var G__11733 = (((k11731 instanceof cljs.core.Keyword))?k11731.fqn:null);
+switch (G__11733) {
 case "points":
 return self__.points;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11591,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11731,else__8062__auto__);
 
 }
 });
@@ -838,10 +838,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.Line2.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.Line2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11590){
+thi.ng.geom.types.Line2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11730){
 var self__ = this;
-var G__11590__$1 = this;
-return (new cljs.core.RecordIter((0),G__11590__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11730__$1 = this;
+return (new cljs.core.RecordIter((0),G__11730__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.Line2.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -907,15 +907,15 @@ return (new thi.ng.geom.types.Line2(self__.points,self__.__meta,cljs.core.not_em
 }
 });
 
-thi.ng.geom.types.Line2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11590){
+thi.ng.geom.types.Line2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11730){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11594 = cljs.core.keyword_identical_QMARK_;
-var expr__11595 = k__8067__auto__;
-if(cljs.core.truth_(pred__11594.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11595))){
-return (new thi.ng.geom.types.Line2(G__11590,self__.__meta,self__.__extmap,null));
+var pred__11734 = cljs.core.keyword_identical_QMARK_;
+var expr__11735 = k__8067__auto__;
+if(cljs.core.truth_(pred__11734.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11735))){
+return (new thi.ng.geom.types.Line2(G__11730,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.Line2(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11590),null));
+return (new thi.ng.geom.types.Line2(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11730),null));
 }
 });
 
@@ -925,10 +925,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"points","points",-1486596883),self__.points],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.Line2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11590){
+thi.ng.geom.types.Line2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11730){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.Line2(self__.points,G__11590,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.Line2(self__.points,G__11730,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.Line2.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -959,8 +959,8 @@ thi.ng.geom.types.__GT_Line2 = (function thi$ng$geom$types$__GT_Line2(points){
 return (new thi.ng.geom.types.Line2(points,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_Line2 = (function thi$ng$geom$types$map__GT_Line2(G__11592){
-return (new thi.ng.geom.types.Line2(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11592),null,cljs.core.dissoc.call(null,G__11592,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
+thi.ng.geom.types.map__GT_Line2 = (function thi$ng$geom$types$map__GT_Line2(G__11732){
+return (new thi.ng.geom.types.Line2(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11732),null,cljs.core.dissoc.call(null,G__11732,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
 });
 
 
@@ -995,17 +995,17 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.LineStrip2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11599,else__8062__auto__){
+thi.ng.geom.types.LineStrip2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11739,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11601 = (((k11599 instanceof cljs.core.Keyword))?k11599.fqn:null);
-switch (G__11601) {
+var G__11741 = (((k11739 instanceof cljs.core.Keyword))?k11739.fqn:null);
+switch (G__11741) {
 case "points":
 return self__.points;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11599,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11739,else__8062__auto__);
 
 }
 });
@@ -1023,10 +1023,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.LineStrip2.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.LineStrip2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11598){
+thi.ng.geom.types.LineStrip2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11738){
 var self__ = this;
-var G__11598__$1 = this;
-return (new cljs.core.RecordIter((0),G__11598__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11738__$1 = this;
+return (new cljs.core.RecordIter((0),G__11738__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.LineStrip2.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -1092,15 +1092,15 @@ return (new thi.ng.geom.types.LineStrip2(self__.points,self__.__meta,cljs.core.n
 }
 });
 
-thi.ng.geom.types.LineStrip2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11598){
+thi.ng.geom.types.LineStrip2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11738){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11602 = cljs.core.keyword_identical_QMARK_;
-var expr__11603 = k__8067__auto__;
-if(cljs.core.truth_(pred__11602.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11603))){
-return (new thi.ng.geom.types.LineStrip2(G__11598,self__.__meta,self__.__extmap,null));
+var pred__11742 = cljs.core.keyword_identical_QMARK_;
+var expr__11743 = k__8067__auto__;
+if(cljs.core.truth_(pred__11742.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11743))){
+return (new thi.ng.geom.types.LineStrip2(G__11738,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.LineStrip2(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11598),null));
+return (new thi.ng.geom.types.LineStrip2(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11738),null));
 }
 });
 
@@ -1110,10 +1110,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"points","points",-1486596883),self__.points],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.LineStrip2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11598){
+thi.ng.geom.types.LineStrip2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11738){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.LineStrip2(self__.points,G__11598,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.LineStrip2(self__.points,G__11738,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.LineStrip2.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -1144,8 +1144,8 @@ thi.ng.geom.types.__GT_LineStrip2 = (function thi$ng$geom$types$__GT_LineStrip2(
 return (new thi.ng.geom.types.LineStrip2(points,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_LineStrip2 = (function thi$ng$geom$types$map__GT_LineStrip2(G__11600){
-return (new thi.ng.geom.types.LineStrip2(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11600),null,cljs.core.dissoc.call(null,G__11600,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
+thi.ng.geom.types.map__GT_LineStrip2 = (function thi$ng$geom$types$map__GT_LineStrip2(G__11740){
+return (new thi.ng.geom.types.LineStrip2(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11740),null,cljs.core.dissoc.call(null,G__11740,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
 });
 
 
@@ -1186,11 +1186,11 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.Mesh2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11607,else__8062__auto__){
+thi.ng.geom.types.Mesh2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11747,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11609 = (((k11607 instanceof cljs.core.Keyword))?k11607.fqn:null);
-switch (G__11609) {
+var G__11749 = (((k11747 instanceof cljs.core.Keyword))?k11747.fqn:null);
+switch (G__11749) {
 case "vertices":
 return self__.vertices;
 
@@ -1220,7 +1220,7 @@ return self__.attribs;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11607,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11747,else__8062__auto__);
 
 }
 });
@@ -1238,10 +1238,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.Mesh2.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.Mesh2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11606){
+thi.ng.geom.types.Mesh2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11746){
 var self__ = this;
-var G__11606__$1 = this;
-return (new cljs.core.RecordIter((0),G__11606__$1,7,new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"normals","normals",-1508109067),new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563),new cljs.core.Keyword(null,"vnormals","vnormals",-914875284),new cljs.core.Keyword(null,"edges","edges",-694791395),new cljs.core.Keyword(null,"faces","faces",-73909544),new cljs.core.Keyword(null,"attribs","attribs",-137878093)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11746__$1 = this;
+return (new cljs.core.RecordIter((0),G__11746__$1,7,new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"normals","normals",-1508109067),new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563),new cljs.core.Keyword(null,"vnormals","vnormals",-914875284),new cljs.core.Keyword(null,"edges","edges",-694791395),new cljs.core.Keyword(null,"faces","faces",-73909544),new cljs.core.Keyword(null,"attribs","attribs",-137878093)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.Mesh2.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -1307,33 +1307,33 @@ return (new thi.ng.geom.types.Mesh2(self__.vertices,self__.normals,self__.fnorma
 }
 });
 
-thi.ng.geom.types.Mesh2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11606){
+thi.ng.geom.types.Mesh2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11746){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11610 = cljs.core.keyword_identical_QMARK_;
-var expr__11611 = k__8067__auto__;
-if(cljs.core.truth_(pred__11610.call(null,new cljs.core.Keyword(null,"vertices","vertices",2008905731),expr__11611))){
-return (new thi.ng.geom.types.Mesh2(G__11606,self__.normals,self__.fnormals,self__.vnormals,self__.edges,self__.faces,self__.attribs,self__.__meta,self__.__extmap,null));
+var pred__11750 = cljs.core.keyword_identical_QMARK_;
+var expr__11751 = k__8067__auto__;
+if(cljs.core.truth_(pred__11750.call(null,new cljs.core.Keyword(null,"vertices","vertices",2008905731),expr__11751))){
+return (new thi.ng.geom.types.Mesh2(G__11746,self__.normals,self__.fnormals,self__.vnormals,self__.edges,self__.faces,self__.attribs,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11610.call(null,new cljs.core.Keyword(null,"normals","normals",-1508109067),expr__11611))){
-return (new thi.ng.geom.types.Mesh2(self__.vertices,G__11606,self__.fnormals,self__.vnormals,self__.edges,self__.faces,self__.attribs,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11750.call(null,new cljs.core.Keyword(null,"normals","normals",-1508109067),expr__11751))){
+return (new thi.ng.geom.types.Mesh2(self__.vertices,G__11746,self__.fnormals,self__.vnormals,self__.edges,self__.faces,self__.attribs,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11610.call(null,new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563),expr__11611))){
-return (new thi.ng.geom.types.Mesh2(self__.vertices,self__.normals,G__11606,self__.vnormals,self__.edges,self__.faces,self__.attribs,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11750.call(null,new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563),expr__11751))){
+return (new thi.ng.geom.types.Mesh2(self__.vertices,self__.normals,G__11746,self__.vnormals,self__.edges,self__.faces,self__.attribs,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11610.call(null,new cljs.core.Keyword(null,"vnormals","vnormals",-914875284),expr__11611))){
-return (new thi.ng.geom.types.Mesh2(self__.vertices,self__.normals,self__.fnormals,G__11606,self__.edges,self__.faces,self__.attribs,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11750.call(null,new cljs.core.Keyword(null,"vnormals","vnormals",-914875284),expr__11751))){
+return (new thi.ng.geom.types.Mesh2(self__.vertices,self__.normals,self__.fnormals,G__11746,self__.edges,self__.faces,self__.attribs,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11610.call(null,new cljs.core.Keyword(null,"edges","edges",-694791395),expr__11611))){
-return (new thi.ng.geom.types.Mesh2(self__.vertices,self__.normals,self__.fnormals,self__.vnormals,G__11606,self__.faces,self__.attribs,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11750.call(null,new cljs.core.Keyword(null,"edges","edges",-694791395),expr__11751))){
+return (new thi.ng.geom.types.Mesh2(self__.vertices,self__.normals,self__.fnormals,self__.vnormals,G__11746,self__.faces,self__.attribs,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11610.call(null,new cljs.core.Keyword(null,"faces","faces",-73909544),expr__11611))){
-return (new thi.ng.geom.types.Mesh2(self__.vertices,self__.normals,self__.fnormals,self__.vnormals,self__.edges,G__11606,self__.attribs,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11750.call(null,new cljs.core.Keyword(null,"faces","faces",-73909544),expr__11751))){
+return (new thi.ng.geom.types.Mesh2(self__.vertices,self__.normals,self__.fnormals,self__.vnormals,self__.edges,G__11746,self__.attribs,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11610.call(null,new cljs.core.Keyword(null,"attribs","attribs",-137878093),expr__11611))){
-return (new thi.ng.geom.types.Mesh2(self__.vertices,self__.normals,self__.fnormals,self__.vnormals,self__.edges,self__.faces,G__11606,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11750.call(null,new cljs.core.Keyword(null,"attribs","attribs",-137878093),expr__11751))){
+return (new thi.ng.geom.types.Mesh2(self__.vertices,self__.normals,self__.fnormals,self__.vnormals,self__.edges,self__.faces,G__11746,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.Mesh2(self__.vertices,self__.normals,self__.fnormals,self__.vnormals,self__.edges,self__.faces,self__.attribs,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11606),null));
+return (new thi.ng.geom.types.Mesh2(self__.vertices,self__.normals,self__.fnormals,self__.vnormals,self__.edges,self__.faces,self__.attribs,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11746),null));
 }
 }
 }
@@ -1349,10 +1349,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"vertices","vertices",2008905731),self__.vertices],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"normals","normals",-1508109067),self__.normals],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563),self__.fnormals],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"vnormals","vnormals",-914875284),self__.vnormals],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"edges","edges",-694791395),self__.edges],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"faces","faces",-73909544),self__.faces],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"attribs","attribs",-137878093),self__.attribs],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.Mesh2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11606){
+thi.ng.geom.types.Mesh2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11746){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.Mesh2(self__.vertices,self__.normals,self__.fnormals,self__.vnormals,self__.edges,self__.faces,self__.attribs,G__11606,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.Mesh2(self__.vertices,self__.normals,self__.fnormals,self__.vnormals,self__.edges,self__.faces,self__.attribs,G__11746,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.Mesh2.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -1383,8 +1383,8 @@ thi.ng.geom.types.__GT_Mesh2 = (function thi$ng$geom$types$__GT_Mesh2(vertices,n
 return (new thi.ng.geom.types.Mesh2(vertices,normals,fnormals,vnormals,edges,faces,attribs,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_Mesh2 = (function thi$ng$geom$types$map__GT_Mesh2(G__11608){
-return (new thi.ng.geom.types.Mesh2(new cljs.core.Keyword(null,"vertices","vertices",2008905731).cljs$core$IFn$_invoke$arity$1(G__11608),new cljs.core.Keyword(null,"normals","normals",-1508109067).cljs$core$IFn$_invoke$arity$1(G__11608),new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563).cljs$core$IFn$_invoke$arity$1(G__11608),new cljs.core.Keyword(null,"vnormals","vnormals",-914875284).cljs$core$IFn$_invoke$arity$1(G__11608),new cljs.core.Keyword(null,"edges","edges",-694791395).cljs$core$IFn$_invoke$arity$1(G__11608),new cljs.core.Keyword(null,"faces","faces",-73909544).cljs$core$IFn$_invoke$arity$1(G__11608),new cljs.core.Keyword(null,"attribs","attribs",-137878093).cljs$core$IFn$_invoke$arity$1(G__11608),null,cljs.core.dissoc.call(null,G__11608,new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"normals","normals",-1508109067),new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563),new cljs.core.Keyword(null,"vnormals","vnormals",-914875284),new cljs.core.Keyword(null,"edges","edges",-694791395),new cljs.core.Keyword(null,"faces","faces",-73909544),new cljs.core.Keyword(null,"attribs","attribs",-137878093)),null));
+thi.ng.geom.types.map__GT_Mesh2 = (function thi$ng$geom$types$map__GT_Mesh2(G__11748){
+return (new thi.ng.geom.types.Mesh2(new cljs.core.Keyword(null,"vertices","vertices",2008905731).cljs$core$IFn$_invoke$arity$1(G__11748),new cljs.core.Keyword(null,"normals","normals",-1508109067).cljs$core$IFn$_invoke$arity$1(G__11748),new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563).cljs$core$IFn$_invoke$arity$1(G__11748),new cljs.core.Keyword(null,"vnormals","vnormals",-914875284).cljs$core$IFn$_invoke$arity$1(G__11748),new cljs.core.Keyword(null,"edges","edges",-694791395).cljs$core$IFn$_invoke$arity$1(G__11748),new cljs.core.Keyword(null,"faces","faces",-73909544).cljs$core$IFn$_invoke$arity$1(G__11748),new cljs.core.Keyword(null,"attribs","attribs",-137878093).cljs$core$IFn$_invoke$arity$1(G__11748),null,cljs.core.dissoc.call(null,G__11748,new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"normals","normals",-1508109067),new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563),new cljs.core.Keyword(null,"vnormals","vnormals",-914875284),new cljs.core.Keyword(null,"edges","edges",-694791395),new cljs.core.Keyword(null,"faces","faces",-73909544),new cljs.core.Keyword(null,"attribs","attribs",-137878093)),null));
 });
 
 
@@ -1419,17 +1419,17 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.Path2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11615,else__8062__auto__){
+thi.ng.geom.types.Path2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11755,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11617 = (((k11615 instanceof cljs.core.Keyword))?k11615.fqn:null);
-switch (G__11617) {
+var G__11757 = (((k11755 instanceof cljs.core.Keyword))?k11755.fqn:null);
+switch (G__11757) {
 case "segments":
 return self__.segments;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11615,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11755,else__8062__auto__);
 
 }
 });
@@ -1447,10 +1447,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.Path2.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.Path2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11614){
+thi.ng.geom.types.Path2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11754){
 var self__ = this;
-var G__11614__$1 = this;
-return (new cljs.core.RecordIter((0),G__11614__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"segments","segments",1937535949)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11754__$1 = this;
+return (new cljs.core.RecordIter((0),G__11754__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"segments","segments",1937535949)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.Path2.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -1516,15 +1516,15 @@ return (new thi.ng.geom.types.Path2(self__.segments,self__.__meta,cljs.core.not_
 }
 });
 
-thi.ng.geom.types.Path2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11614){
+thi.ng.geom.types.Path2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11754){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11618 = cljs.core.keyword_identical_QMARK_;
-var expr__11619 = k__8067__auto__;
-if(cljs.core.truth_(pred__11618.call(null,new cljs.core.Keyword(null,"segments","segments",1937535949),expr__11619))){
-return (new thi.ng.geom.types.Path2(G__11614,self__.__meta,self__.__extmap,null));
+var pred__11758 = cljs.core.keyword_identical_QMARK_;
+var expr__11759 = k__8067__auto__;
+if(cljs.core.truth_(pred__11758.call(null,new cljs.core.Keyword(null,"segments","segments",1937535949),expr__11759))){
+return (new thi.ng.geom.types.Path2(G__11754,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.Path2(self__.segments,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11614),null));
+return (new thi.ng.geom.types.Path2(self__.segments,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11754),null));
 }
 });
 
@@ -1534,10 +1534,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"segments","segments",1937535949),self__.segments],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.Path2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11614){
+thi.ng.geom.types.Path2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11754){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.Path2(self__.segments,G__11614,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.Path2(self__.segments,G__11754,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.Path2.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -1568,8 +1568,8 @@ thi.ng.geom.types.__GT_Path2 = (function thi$ng$geom$types$__GT_Path2(segments){
 return (new thi.ng.geom.types.Path2(segments,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_Path2 = (function thi$ng$geom$types$map__GT_Path2(G__11616){
-return (new thi.ng.geom.types.Path2(new cljs.core.Keyword(null,"segments","segments",1937535949).cljs$core$IFn$_invoke$arity$1(G__11616),null,cljs.core.dissoc.call(null,G__11616,new cljs.core.Keyword(null,"segments","segments",1937535949)),null));
+thi.ng.geom.types.map__GT_Path2 = (function thi$ng$geom$types$map__GT_Path2(G__11756){
+return (new thi.ng.geom.types.Path2(new cljs.core.Keyword(null,"segments","segments",1937535949).cljs$core$IFn$_invoke$arity$1(G__11756),null,cljs.core.dissoc.call(null,G__11756,new cljs.core.Keyword(null,"segments","segments",1937535949)),null));
 });
 
 
@@ -1604,17 +1604,17 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.Polygon2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11623,else__8062__auto__){
+thi.ng.geom.types.Polygon2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11763,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11625 = (((k11623 instanceof cljs.core.Keyword))?k11623.fqn:null);
-switch (G__11625) {
+var G__11765 = (((k11763 instanceof cljs.core.Keyword))?k11763.fqn:null);
+switch (G__11765) {
 case "points":
 return self__.points;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11623,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11763,else__8062__auto__);
 
 }
 });
@@ -1632,10 +1632,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.Polygon2.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.Polygon2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11622){
+thi.ng.geom.types.Polygon2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11762){
 var self__ = this;
-var G__11622__$1 = this;
-return (new cljs.core.RecordIter((0),G__11622__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11762__$1 = this;
+return (new cljs.core.RecordIter((0),G__11762__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.Polygon2.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -1701,15 +1701,15 @@ return (new thi.ng.geom.types.Polygon2(self__.points,self__.__meta,cljs.core.not
 }
 });
 
-thi.ng.geom.types.Polygon2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11622){
+thi.ng.geom.types.Polygon2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11762){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11626 = cljs.core.keyword_identical_QMARK_;
-var expr__11627 = k__8067__auto__;
-if(cljs.core.truth_(pred__11626.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11627))){
-return (new thi.ng.geom.types.Polygon2(G__11622,self__.__meta,self__.__extmap,null));
+var pred__11766 = cljs.core.keyword_identical_QMARK_;
+var expr__11767 = k__8067__auto__;
+if(cljs.core.truth_(pred__11766.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11767))){
+return (new thi.ng.geom.types.Polygon2(G__11762,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.Polygon2(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11622),null));
+return (new thi.ng.geom.types.Polygon2(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11762),null));
 }
 });
 
@@ -1719,10 +1719,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"points","points",-1486596883),self__.points],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.Polygon2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11622){
+thi.ng.geom.types.Polygon2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11762){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.Polygon2(self__.points,G__11622,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.Polygon2(self__.points,G__11762,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.Polygon2.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -1753,8 +1753,8 @@ thi.ng.geom.types.__GT_Polygon2 = (function thi$ng$geom$types$__GT_Polygon2(poin
 return (new thi.ng.geom.types.Polygon2(points,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_Polygon2 = (function thi$ng$geom$types$map__GT_Polygon2(G__11624){
-return (new thi.ng.geom.types.Polygon2(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11624),null,cljs.core.dissoc.call(null,G__11624,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
+thi.ng.geom.types.map__GT_Polygon2 = (function thi$ng$geom$types$map__GT_Polygon2(G__11764){
+return (new thi.ng.geom.types.Polygon2(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11764),null,cljs.core.dissoc.call(null,G__11764,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
 });
 
 
@@ -1790,11 +1790,11 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.Rect2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11631,else__8062__auto__){
+thi.ng.geom.types.Rect2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11771,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11633 = (((k11631 instanceof cljs.core.Keyword))?k11631.fqn:null);
-switch (G__11633) {
+var G__11773 = (((k11771 instanceof cljs.core.Keyword))?k11771.fqn:null);
+switch (G__11773) {
 case "p":
 return self__.p;
 
@@ -1804,7 +1804,7 @@ return self__.size;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11631,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11771,else__8062__auto__);
 
 }
 });
@@ -1822,10 +1822,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.Rect2.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.Rect2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11630){
+thi.ng.geom.types.Rect2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11770){
 var self__ = this;
-var G__11630__$1 = this;
-return (new cljs.core.RecordIter((0),G__11630__$1,2,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"size","size",1098693007)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11770__$1 = this;
+return (new cljs.core.RecordIter((0),G__11770__$1,2,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"size","size",1098693007)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.Rect2.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -1891,18 +1891,18 @@ return (new thi.ng.geom.types.Rect2(self__.p,self__.size,self__.__meta,cljs.core
 }
 });
 
-thi.ng.geom.types.Rect2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11630){
+thi.ng.geom.types.Rect2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11770){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11634 = cljs.core.keyword_identical_QMARK_;
-var expr__11635 = k__8067__auto__;
-if(cljs.core.truth_(pred__11634.call(null,new cljs.core.Keyword(null,"p","p",151049309),expr__11635))){
-return (new thi.ng.geom.types.Rect2(G__11630,self__.size,self__.__meta,self__.__extmap,null));
+var pred__11774 = cljs.core.keyword_identical_QMARK_;
+var expr__11775 = k__8067__auto__;
+if(cljs.core.truth_(pred__11774.call(null,new cljs.core.Keyword(null,"p","p",151049309),expr__11775))){
+return (new thi.ng.geom.types.Rect2(G__11770,self__.size,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11634.call(null,new cljs.core.Keyword(null,"size","size",1098693007),expr__11635))){
-return (new thi.ng.geom.types.Rect2(self__.p,G__11630,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11774.call(null,new cljs.core.Keyword(null,"size","size",1098693007),expr__11775))){
+return (new thi.ng.geom.types.Rect2(self__.p,G__11770,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.Rect2(self__.p,self__.size,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11630),null));
+return (new thi.ng.geom.types.Rect2(self__.p,self__.size,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11770),null));
 }
 }
 });
@@ -1913,10 +1913,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"p","p",151049309),self__.p],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"size","size",1098693007),self__.size],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.Rect2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11630){
+thi.ng.geom.types.Rect2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11770){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.Rect2(self__.p,self__.size,G__11630,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.Rect2(self__.p,self__.size,G__11770,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.Rect2.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -1947,8 +1947,8 @@ thi.ng.geom.types.__GT_Rect2 = (function thi$ng$geom$types$__GT_Rect2(p,size){
 return (new thi.ng.geom.types.Rect2(p,size,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_Rect2 = (function thi$ng$geom$types$map__GT_Rect2(G__11632){
-return (new thi.ng.geom.types.Rect2(new cljs.core.Keyword(null,"p","p",151049309).cljs$core$IFn$_invoke$arity$1(G__11632),new cljs.core.Keyword(null,"size","size",1098693007).cljs$core$IFn$_invoke$arity$1(G__11632),null,cljs.core.dissoc.call(null,G__11632,new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"size","size",1098693007)),null));
+thi.ng.geom.types.map__GT_Rect2 = (function thi$ng$geom$types$map__GT_Rect2(G__11772){
+return (new thi.ng.geom.types.Rect2(new cljs.core.Keyword(null,"p","p",151049309).cljs$core$IFn$_invoke$arity$1(G__11772),new cljs.core.Keyword(null,"size","size",1098693007).cljs$core$IFn$_invoke$arity$1(G__11772),null,cljs.core.dissoc.call(null,G__11772,new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"size","size",1098693007)),null));
 });
 
 
@@ -1983,17 +1983,17 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.Triangle2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11639,else__8062__auto__){
+thi.ng.geom.types.Triangle2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11779,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11641 = (((k11639 instanceof cljs.core.Keyword))?k11639.fqn:null);
-switch (G__11641) {
+var G__11781 = (((k11779 instanceof cljs.core.Keyword))?k11779.fqn:null);
+switch (G__11781) {
 case "points":
 return self__.points;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11639,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11779,else__8062__auto__);
 
 }
 });
@@ -2011,10 +2011,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.Triangle2.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.Triangle2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11638){
+thi.ng.geom.types.Triangle2.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11778){
 var self__ = this;
-var G__11638__$1 = this;
-return (new cljs.core.RecordIter((0),G__11638__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11778__$1 = this;
+return (new cljs.core.RecordIter((0),G__11778__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.Triangle2.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -2080,15 +2080,15 @@ return (new thi.ng.geom.types.Triangle2(self__.points,self__.__meta,cljs.core.no
 }
 });
 
-thi.ng.geom.types.Triangle2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11638){
+thi.ng.geom.types.Triangle2.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11778){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11642 = cljs.core.keyword_identical_QMARK_;
-var expr__11643 = k__8067__auto__;
-if(cljs.core.truth_(pred__11642.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11643))){
-return (new thi.ng.geom.types.Triangle2(G__11638,self__.__meta,self__.__extmap,null));
+var pred__11782 = cljs.core.keyword_identical_QMARK_;
+var expr__11783 = k__8067__auto__;
+if(cljs.core.truth_(pred__11782.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11783))){
+return (new thi.ng.geom.types.Triangle2(G__11778,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.Triangle2(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11638),null));
+return (new thi.ng.geom.types.Triangle2(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11778),null));
 }
 });
 
@@ -2098,10 +2098,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"points","points",-1486596883),self__.points],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.Triangle2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11638){
+thi.ng.geom.types.Triangle2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11778){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.Triangle2(self__.points,G__11638,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.Triangle2(self__.points,G__11778,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.Triangle2.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -2132,8 +2132,8 @@ thi.ng.geom.types.__GT_Triangle2 = (function thi$ng$geom$types$__GT_Triangle2(po
 return (new thi.ng.geom.types.Triangle2(points,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_Triangle2 = (function thi$ng$geom$types$map__GT_Triangle2(G__11640){
-return (new thi.ng.geom.types.Triangle2(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11640),null,cljs.core.dissoc.call(null,G__11640,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
+thi.ng.geom.types.map__GT_Triangle2 = (function thi$ng$geom$types$map__GT_Triangle2(G__11780){
+return (new thi.ng.geom.types.Triangle2(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11780),null,cljs.core.dissoc.call(null,G__11780,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
 });
 
 
@@ -2169,11 +2169,11 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.AABB.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11647,else__8062__auto__){
+thi.ng.geom.types.AABB.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11787,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11649 = (((k11647 instanceof cljs.core.Keyword))?k11647.fqn:null);
-switch (G__11649) {
+var G__11789 = (((k11787 instanceof cljs.core.Keyword))?k11787.fqn:null);
+switch (G__11789) {
 case "p":
 return self__.p;
 
@@ -2183,7 +2183,7 @@ return self__.size;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11647,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11787,else__8062__auto__);
 
 }
 });
@@ -2201,10 +2201,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.AABB.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.AABB.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11646){
+thi.ng.geom.types.AABB.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11786){
 var self__ = this;
-var G__11646__$1 = this;
-return (new cljs.core.RecordIter((0),G__11646__$1,2,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"size","size",1098693007)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11786__$1 = this;
+return (new cljs.core.RecordIter((0),G__11786__$1,2,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"size","size",1098693007)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.AABB.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -2270,18 +2270,18 @@ return (new thi.ng.geom.types.AABB(self__.p,self__.size,self__.__meta,cljs.core.
 }
 });
 
-thi.ng.geom.types.AABB.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11646){
+thi.ng.geom.types.AABB.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11786){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11650 = cljs.core.keyword_identical_QMARK_;
-var expr__11651 = k__8067__auto__;
-if(cljs.core.truth_(pred__11650.call(null,new cljs.core.Keyword(null,"p","p",151049309),expr__11651))){
-return (new thi.ng.geom.types.AABB(G__11646,self__.size,self__.__meta,self__.__extmap,null));
+var pred__11790 = cljs.core.keyword_identical_QMARK_;
+var expr__11791 = k__8067__auto__;
+if(cljs.core.truth_(pred__11790.call(null,new cljs.core.Keyword(null,"p","p",151049309),expr__11791))){
+return (new thi.ng.geom.types.AABB(G__11786,self__.size,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11650.call(null,new cljs.core.Keyword(null,"size","size",1098693007),expr__11651))){
-return (new thi.ng.geom.types.AABB(self__.p,G__11646,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11790.call(null,new cljs.core.Keyword(null,"size","size",1098693007),expr__11791))){
+return (new thi.ng.geom.types.AABB(self__.p,G__11786,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.AABB(self__.p,self__.size,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11646),null));
+return (new thi.ng.geom.types.AABB(self__.p,self__.size,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11786),null));
 }
 }
 });
@@ -2292,10 +2292,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"p","p",151049309),self__.p],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"size","size",1098693007),self__.size],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.AABB.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11646){
+thi.ng.geom.types.AABB.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11786){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.AABB(self__.p,self__.size,G__11646,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.AABB(self__.p,self__.size,G__11786,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.AABB.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -2326,8 +2326,8 @@ thi.ng.geom.types.__GT_AABB = (function thi$ng$geom$types$__GT_AABB(p,size){
 return (new thi.ng.geom.types.AABB(p,size,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_AABB = (function thi$ng$geom$types$map__GT_AABB(G__11648){
-return (new thi.ng.geom.types.AABB(new cljs.core.Keyword(null,"p","p",151049309).cljs$core$IFn$_invoke$arity$1(G__11648),new cljs.core.Keyword(null,"size","size",1098693007).cljs$core$IFn$_invoke$arity$1(G__11648),null,cljs.core.dissoc.call(null,G__11648,new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"size","size",1098693007)),null));
+thi.ng.geom.types.map__GT_AABB = (function thi$ng$geom$types$map__GT_AABB(G__11788){
+return (new thi.ng.geom.types.AABB(new cljs.core.Keyword(null,"p","p",151049309).cljs$core$IFn$_invoke$arity$1(G__11788),new cljs.core.Keyword(null,"size","size",1098693007).cljs$core$IFn$_invoke$arity$1(G__11788),null,cljs.core.dissoc.call(null,G__11788,new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"size","size",1098693007)),null));
 });
 
 
@@ -2362,17 +2362,17 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.Cuboid.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11655,else__8062__auto__){
+thi.ng.geom.types.Cuboid.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11795,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11657 = (((k11655 instanceof cljs.core.Keyword))?k11655.fqn:null);
-switch (G__11657) {
+var G__11797 = (((k11795 instanceof cljs.core.Keyword))?k11795.fqn:null);
+switch (G__11797) {
 case "points":
 return self__.points;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11655,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11795,else__8062__auto__);
 
 }
 });
@@ -2390,10 +2390,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.Cuboid.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.Cuboid.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11654){
+thi.ng.geom.types.Cuboid.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11794){
 var self__ = this;
-var G__11654__$1 = this;
-return (new cljs.core.RecordIter((0),G__11654__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11794__$1 = this;
+return (new cljs.core.RecordIter((0),G__11794__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.Cuboid.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -2459,15 +2459,15 @@ return (new thi.ng.geom.types.Cuboid(self__.points,self__.__meta,cljs.core.not_e
 }
 });
 
-thi.ng.geom.types.Cuboid.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11654){
+thi.ng.geom.types.Cuboid.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11794){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11658 = cljs.core.keyword_identical_QMARK_;
-var expr__11659 = k__8067__auto__;
-if(cljs.core.truth_(pred__11658.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11659))){
-return (new thi.ng.geom.types.Cuboid(G__11654,self__.__meta,self__.__extmap,null));
+var pred__11798 = cljs.core.keyword_identical_QMARK_;
+var expr__11799 = k__8067__auto__;
+if(cljs.core.truth_(pred__11798.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11799))){
+return (new thi.ng.geom.types.Cuboid(G__11794,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.Cuboid(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11654),null));
+return (new thi.ng.geom.types.Cuboid(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11794),null));
 }
 });
 
@@ -2477,10 +2477,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"points","points",-1486596883),self__.points],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.Cuboid.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11654){
+thi.ng.geom.types.Cuboid.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11794){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.Cuboid(self__.points,G__11654,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.Cuboid(self__.points,G__11794,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.Cuboid.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -2511,8 +2511,8 @@ thi.ng.geom.types.__GT_Cuboid = (function thi$ng$geom$types$__GT_Cuboid(points){
 return (new thi.ng.geom.types.Cuboid(points,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_Cuboid = (function thi$ng$geom$types$map__GT_Cuboid(G__11656){
-return (new thi.ng.geom.types.Cuboid(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11656),null,cljs.core.dissoc.call(null,G__11656,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
+thi.ng.geom.types.map__GT_Cuboid = (function thi$ng$geom$types$map__GT_Cuboid(G__11796){
+return (new thi.ng.geom.types.Cuboid(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11796),null,cljs.core.dissoc.call(null,G__11796,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
 });
 
 
@@ -2547,17 +2547,17 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.Bezier3.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11663,else__8062__auto__){
+thi.ng.geom.types.Bezier3.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11803,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11665 = (((k11663 instanceof cljs.core.Keyword))?k11663.fqn:null);
-switch (G__11665) {
+var G__11805 = (((k11803 instanceof cljs.core.Keyword))?k11803.fqn:null);
+switch (G__11805) {
 case "points":
 return self__.points;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11663,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11803,else__8062__auto__);
 
 }
 });
@@ -2575,10 +2575,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.Bezier3.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.Bezier3.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11662){
+thi.ng.geom.types.Bezier3.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11802){
 var self__ = this;
-var G__11662__$1 = this;
-return (new cljs.core.RecordIter((0),G__11662__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11802__$1 = this;
+return (new cljs.core.RecordIter((0),G__11802__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.Bezier3.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -2644,15 +2644,15 @@ return (new thi.ng.geom.types.Bezier3(self__.points,self__.__meta,cljs.core.not_
 }
 });
 
-thi.ng.geom.types.Bezier3.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11662){
+thi.ng.geom.types.Bezier3.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11802){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11666 = cljs.core.keyword_identical_QMARK_;
-var expr__11667 = k__8067__auto__;
-if(cljs.core.truth_(pred__11666.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11667))){
-return (new thi.ng.geom.types.Bezier3(G__11662,self__.__meta,self__.__extmap,null));
+var pred__11806 = cljs.core.keyword_identical_QMARK_;
+var expr__11807 = k__8067__auto__;
+if(cljs.core.truth_(pred__11806.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11807))){
+return (new thi.ng.geom.types.Bezier3(G__11802,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.Bezier3(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11662),null));
+return (new thi.ng.geom.types.Bezier3(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11802),null));
 }
 });
 
@@ -2662,10 +2662,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"points","points",-1486596883),self__.points],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.Bezier3.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11662){
+thi.ng.geom.types.Bezier3.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11802){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.Bezier3(self__.points,G__11662,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.Bezier3(self__.points,G__11802,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.Bezier3.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -2696,8 +2696,8 @@ thi.ng.geom.types.__GT_Bezier3 = (function thi$ng$geom$types$__GT_Bezier3(points
 return (new thi.ng.geom.types.Bezier3(points,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_Bezier3 = (function thi$ng$geom$types$map__GT_Bezier3(G__11664){
-return (new thi.ng.geom.types.Bezier3(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11664),null,cljs.core.dissoc.call(null,G__11664,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
+thi.ng.geom.types.map__GT_Bezier3 = (function thi$ng$geom$types$map__GT_Bezier3(G__11804){
+return (new thi.ng.geom.types.Bezier3(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11804),null,cljs.core.dissoc.call(null,G__11804,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
 });
 
 
@@ -2734,11 +2734,11 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.BasicMesh.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11671,else__8062__auto__){
+thi.ng.geom.types.BasicMesh.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11811,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11673 = (((k11671 instanceof cljs.core.Keyword))?k11671.fqn:null);
-switch (G__11673) {
+var G__11813 = (((k11811 instanceof cljs.core.Keyword))?k11811.fqn:null);
+switch (G__11813) {
 case "vertices":
 return self__.vertices;
 
@@ -2752,7 +2752,7 @@ return self__.fnormals;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11671,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11811,else__8062__auto__);
 
 }
 });
@@ -2770,10 +2770,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.BasicMesh.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.BasicMesh.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11670){
+thi.ng.geom.types.BasicMesh.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11810){
 var self__ = this;
-var G__11670__$1 = this;
-return (new cljs.core.RecordIter((0),G__11670__$1,3,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"faces","faces",-73909544),new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11810__$1 = this;
+return (new cljs.core.RecordIter((0),G__11810__$1,3,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"faces","faces",-73909544),new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.BasicMesh.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -2839,21 +2839,21 @@ return (new thi.ng.geom.types.BasicMesh(self__.vertices,self__.faces,self__.fnor
 }
 });
 
-thi.ng.geom.types.BasicMesh.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11670){
+thi.ng.geom.types.BasicMesh.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11810){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11674 = cljs.core.keyword_identical_QMARK_;
-var expr__11675 = k__8067__auto__;
-if(cljs.core.truth_(pred__11674.call(null,new cljs.core.Keyword(null,"vertices","vertices",2008905731),expr__11675))){
-return (new thi.ng.geom.types.BasicMesh(G__11670,self__.faces,self__.fnormals,self__.__meta,self__.__extmap,null));
+var pred__11814 = cljs.core.keyword_identical_QMARK_;
+var expr__11815 = k__8067__auto__;
+if(cljs.core.truth_(pred__11814.call(null,new cljs.core.Keyword(null,"vertices","vertices",2008905731),expr__11815))){
+return (new thi.ng.geom.types.BasicMesh(G__11810,self__.faces,self__.fnormals,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11674.call(null,new cljs.core.Keyword(null,"faces","faces",-73909544),expr__11675))){
-return (new thi.ng.geom.types.BasicMesh(self__.vertices,G__11670,self__.fnormals,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11814.call(null,new cljs.core.Keyword(null,"faces","faces",-73909544),expr__11815))){
+return (new thi.ng.geom.types.BasicMesh(self__.vertices,G__11810,self__.fnormals,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11674.call(null,new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563),expr__11675))){
-return (new thi.ng.geom.types.BasicMesh(self__.vertices,self__.faces,G__11670,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11814.call(null,new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563),expr__11815))){
+return (new thi.ng.geom.types.BasicMesh(self__.vertices,self__.faces,G__11810,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.BasicMesh(self__.vertices,self__.faces,self__.fnormals,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11670),null));
+return (new thi.ng.geom.types.BasicMesh(self__.vertices,self__.faces,self__.fnormals,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11810),null));
 }
 }
 }
@@ -2865,10 +2865,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"vertices","vertices",2008905731),self__.vertices],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"faces","faces",-73909544),self__.faces],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563),self__.fnormals],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.BasicMesh.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11670){
+thi.ng.geom.types.BasicMesh.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11810){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.BasicMesh(self__.vertices,self__.faces,self__.fnormals,G__11670,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.BasicMesh(self__.vertices,self__.faces,self__.fnormals,G__11810,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.BasicMesh.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -2899,8 +2899,8 @@ thi.ng.geom.types.__GT_BasicMesh = (function thi$ng$geom$types$__GT_BasicMesh(ve
 return (new thi.ng.geom.types.BasicMesh(vertices,faces,fnormals,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_BasicMesh = (function thi$ng$geom$types$map__GT_BasicMesh(G__11672){
-return (new thi.ng.geom.types.BasicMesh(new cljs.core.Keyword(null,"vertices","vertices",2008905731).cljs$core$IFn$_invoke$arity$1(G__11672),new cljs.core.Keyword(null,"faces","faces",-73909544).cljs$core$IFn$_invoke$arity$1(G__11672),new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563).cljs$core$IFn$_invoke$arity$1(G__11672),null,cljs.core.dissoc.call(null,G__11672,new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"faces","faces",-73909544),new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563)),null));
+thi.ng.geom.types.map__GT_BasicMesh = (function thi$ng$geom$types$map__GT_BasicMesh(G__11812){
+return (new thi.ng.geom.types.BasicMesh(new cljs.core.Keyword(null,"vertices","vertices",2008905731).cljs$core$IFn$_invoke$arity$1(G__11812),new cljs.core.Keyword(null,"faces","faces",-73909544).cljs$core$IFn$_invoke$arity$1(G__11812),new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563).cljs$core$IFn$_invoke$arity$1(G__11812),null,cljs.core.dissoc.call(null,G__11812,new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"faces","faces",-73909544),new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563)),null));
 });
 
 
@@ -2940,11 +2940,11 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.GMesh.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11679,else__8062__auto__){
+thi.ng.geom.types.GMesh.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11819,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11681 = (((k11679 instanceof cljs.core.Keyword))?k11679.fqn:null);
-switch (G__11681) {
+var G__11821 = (((k11819 instanceof cljs.core.Keyword))?k11819.fqn:null);
+switch (G__11821) {
 case "vertices":
 return self__.vertices;
 
@@ -2970,7 +2970,7 @@ return self__.faces;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11679,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11819,else__8062__auto__);
 
 }
 });
@@ -2988,10 +2988,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.GMesh.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.GMesh.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11678){
+thi.ng.geom.types.GMesh.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11818){
 var self__ = this;
-var G__11678__$1 = this;
-return (new cljs.core.RecordIter((0),G__11678__$1,6,new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"normals","normals",-1508109067),new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563),new cljs.core.Keyword(null,"vnormals","vnormals",-914875284),new cljs.core.Keyword(null,"edges","edges",-694791395),new cljs.core.Keyword(null,"faces","faces",-73909544)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11818__$1 = this;
+return (new cljs.core.RecordIter((0),G__11818__$1,6,new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"normals","normals",-1508109067),new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563),new cljs.core.Keyword(null,"vnormals","vnormals",-914875284),new cljs.core.Keyword(null,"edges","edges",-694791395),new cljs.core.Keyword(null,"faces","faces",-73909544)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.GMesh.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -3057,30 +3057,30 @@ return (new thi.ng.geom.types.GMesh(self__.vertices,self__.normals,self__.fnorma
 }
 });
 
-thi.ng.geom.types.GMesh.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11678){
+thi.ng.geom.types.GMesh.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11818){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11682 = cljs.core.keyword_identical_QMARK_;
-var expr__11683 = k__8067__auto__;
-if(cljs.core.truth_(pred__11682.call(null,new cljs.core.Keyword(null,"vertices","vertices",2008905731),expr__11683))){
-return (new thi.ng.geom.types.GMesh(G__11678,self__.normals,self__.fnormals,self__.vnormals,self__.edges,self__.faces,self__.__meta,self__.__extmap,null));
+var pred__11822 = cljs.core.keyword_identical_QMARK_;
+var expr__11823 = k__8067__auto__;
+if(cljs.core.truth_(pred__11822.call(null,new cljs.core.Keyword(null,"vertices","vertices",2008905731),expr__11823))){
+return (new thi.ng.geom.types.GMesh(G__11818,self__.normals,self__.fnormals,self__.vnormals,self__.edges,self__.faces,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11682.call(null,new cljs.core.Keyword(null,"normals","normals",-1508109067),expr__11683))){
-return (new thi.ng.geom.types.GMesh(self__.vertices,G__11678,self__.fnormals,self__.vnormals,self__.edges,self__.faces,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11822.call(null,new cljs.core.Keyword(null,"normals","normals",-1508109067),expr__11823))){
+return (new thi.ng.geom.types.GMesh(self__.vertices,G__11818,self__.fnormals,self__.vnormals,self__.edges,self__.faces,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11682.call(null,new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563),expr__11683))){
-return (new thi.ng.geom.types.GMesh(self__.vertices,self__.normals,G__11678,self__.vnormals,self__.edges,self__.faces,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11822.call(null,new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563),expr__11823))){
+return (new thi.ng.geom.types.GMesh(self__.vertices,self__.normals,G__11818,self__.vnormals,self__.edges,self__.faces,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11682.call(null,new cljs.core.Keyword(null,"vnormals","vnormals",-914875284),expr__11683))){
-return (new thi.ng.geom.types.GMesh(self__.vertices,self__.normals,self__.fnormals,G__11678,self__.edges,self__.faces,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11822.call(null,new cljs.core.Keyword(null,"vnormals","vnormals",-914875284),expr__11823))){
+return (new thi.ng.geom.types.GMesh(self__.vertices,self__.normals,self__.fnormals,G__11818,self__.edges,self__.faces,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11682.call(null,new cljs.core.Keyword(null,"edges","edges",-694791395),expr__11683))){
-return (new thi.ng.geom.types.GMesh(self__.vertices,self__.normals,self__.fnormals,self__.vnormals,G__11678,self__.faces,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11822.call(null,new cljs.core.Keyword(null,"edges","edges",-694791395),expr__11823))){
+return (new thi.ng.geom.types.GMesh(self__.vertices,self__.normals,self__.fnormals,self__.vnormals,G__11818,self__.faces,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11682.call(null,new cljs.core.Keyword(null,"faces","faces",-73909544),expr__11683))){
-return (new thi.ng.geom.types.GMesh(self__.vertices,self__.normals,self__.fnormals,self__.vnormals,self__.edges,G__11678,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11822.call(null,new cljs.core.Keyword(null,"faces","faces",-73909544),expr__11823))){
+return (new thi.ng.geom.types.GMesh(self__.vertices,self__.normals,self__.fnormals,self__.vnormals,self__.edges,G__11818,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.GMesh(self__.vertices,self__.normals,self__.fnormals,self__.vnormals,self__.edges,self__.faces,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11678),null));
+return (new thi.ng.geom.types.GMesh(self__.vertices,self__.normals,self__.fnormals,self__.vnormals,self__.edges,self__.faces,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11818),null));
 }
 }
 }
@@ -3095,10 +3095,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"vertices","vertices",2008905731),self__.vertices],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"normals","normals",-1508109067),self__.normals],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563),self__.fnormals],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"vnormals","vnormals",-914875284),self__.vnormals],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"edges","edges",-694791395),self__.edges],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"faces","faces",-73909544),self__.faces],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.GMesh.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11678){
+thi.ng.geom.types.GMesh.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11818){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.GMesh(self__.vertices,self__.normals,self__.fnormals,self__.vnormals,self__.edges,self__.faces,G__11678,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.GMesh(self__.vertices,self__.normals,self__.fnormals,self__.vnormals,self__.edges,self__.faces,G__11818,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.GMesh.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -3129,8 +3129,8 @@ thi.ng.geom.types.__GT_GMesh = (function thi$ng$geom$types$__GT_GMesh(vertices,n
 return (new thi.ng.geom.types.GMesh(vertices,normals,fnormals,vnormals,edges,faces,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_GMesh = (function thi$ng$geom$types$map__GT_GMesh(G__11680){
-return (new thi.ng.geom.types.GMesh(new cljs.core.Keyword(null,"vertices","vertices",2008905731).cljs$core$IFn$_invoke$arity$1(G__11680),new cljs.core.Keyword(null,"normals","normals",-1508109067).cljs$core$IFn$_invoke$arity$1(G__11680),new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563).cljs$core$IFn$_invoke$arity$1(G__11680),new cljs.core.Keyword(null,"vnormals","vnormals",-914875284).cljs$core$IFn$_invoke$arity$1(G__11680),new cljs.core.Keyword(null,"edges","edges",-694791395).cljs$core$IFn$_invoke$arity$1(G__11680),new cljs.core.Keyword(null,"faces","faces",-73909544).cljs$core$IFn$_invoke$arity$1(G__11680),null,cljs.core.dissoc.call(null,G__11680,new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"normals","normals",-1508109067),new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563),new cljs.core.Keyword(null,"vnormals","vnormals",-914875284),new cljs.core.Keyword(null,"edges","edges",-694791395),new cljs.core.Keyword(null,"faces","faces",-73909544)),null));
+thi.ng.geom.types.map__GT_GMesh = (function thi$ng$geom$types$map__GT_GMesh(G__11820){
+return (new thi.ng.geom.types.GMesh(new cljs.core.Keyword(null,"vertices","vertices",2008905731).cljs$core$IFn$_invoke$arity$1(G__11820),new cljs.core.Keyword(null,"normals","normals",-1508109067).cljs$core$IFn$_invoke$arity$1(G__11820),new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563).cljs$core$IFn$_invoke$arity$1(G__11820),new cljs.core.Keyword(null,"vnormals","vnormals",-914875284).cljs$core$IFn$_invoke$arity$1(G__11820),new cljs.core.Keyword(null,"edges","edges",-694791395).cljs$core$IFn$_invoke$arity$1(G__11820),new cljs.core.Keyword(null,"faces","faces",-73909544).cljs$core$IFn$_invoke$arity$1(G__11820),null,cljs.core.dissoc.call(null,G__11820,new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"normals","normals",-1508109067),new cljs.core.Keyword(null,"fnormals","fnormals",-1783998563),new cljs.core.Keyword(null,"vnormals","vnormals",-914875284),new cljs.core.Keyword(null,"edges","edges",-694791395),new cljs.core.Keyword(null,"faces","faces",-73909544)),null));
 });
 
 
@@ -3167,11 +3167,11 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.IndexedMesh.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11687,else__8062__auto__){
+thi.ng.geom.types.IndexedMesh.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11827,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11689 = (((k11687 instanceof cljs.core.Keyword))?k11687.fqn:null);
-switch (G__11689) {
+var G__11829 = (((k11827 instanceof cljs.core.Keyword))?k11827.fqn:null);
+switch (G__11829) {
 case "vertices":
 return self__.vertices;
 
@@ -3185,7 +3185,7 @@ return self__.attribs;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11687,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11827,else__8062__auto__);
 
 }
 });
@@ -3203,10 +3203,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.IndexedMesh.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.IndexedMesh.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11686){
+thi.ng.geom.types.IndexedMesh.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11826){
 var self__ = this;
-var G__11686__$1 = this;
-return (new cljs.core.RecordIter((0),G__11686__$1,3,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"faces","faces",-73909544),new cljs.core.Keyword(null,"attribs","attribs",-137878093)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11826__$1 = this;
+return (new cljs.core.RecordIter((0),G__11826__$1,3,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"faces","faces",-73909544),new cljs.core.Keyword(null,"attribs","attribs",-137878093)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.IndexedMesh.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -3272,21 +3272,21 @@ return (new thi.ng.geom.types.IndexedMesh(self__.vertices,self__.faces,self__.at
 }
 });
 
-thi.ng.geom.types.IndexedMesh.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11686){
+thi.ng.geom.types.IndexedMesh.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11826){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11690 = cljs.core.keyword_identical_QMARK_;
-var expr__11691 = k__8067__auto__;
-if(cljs.core.truth_(pred__11690.call(null,new cljs.core.Keyword(null,"vertices","vertices",2008905731),expr__11691))){
-return (new thi.ng.geom.types.IndexedMesh(G__11686,self__.faces,self__.attribs,self__.__meta,self__.__extmap,null));
+var pred__11830 = cljs.core.keyword_identical_QMARK_;
+var expr__11831 = k__8067__auto__;
+if(cljs.core.truth_(pred__11830.call(null,new cljs.core.Keyword(null,"vertices","vertices",2008905731),expr__11831))){
+return (new thi.ng.geom.types.IndexedMesh(G__11826,self__.faces,self__.attribs,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11690.call(null,new cljs.core.Keyword(null,"faces","faces",-73909544),expr__11691))){
-return (new thi.ng.geom.types.IndexedMesh(self__.vertices,G__11686,self__.attribs,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11830.call(null,new cljs.core.Keyword(null,"faces","faces",-73909544),expr__11831))){
+return (new thi.ng.geom.types.IndexedMesh(self__.vertices,G__11826,self__.attribs,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11690.call(null,new cljs.core.Keyword(null,"attribs","attribs",-137878093),expr__11691))){
-return (new thi.ng.geom.types.IndexedMesh(self__.vertices,self__.faces,G__11686,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11830.call(null,new cljs.core.Keyword(null,"attribs","attribs",-137878093),expr__11831))){
+return (new thi.ng.geom.types.IndexedMesh(self__.vertices,self__.faces,G__11826,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.IndexedMesh(self__.vertices,self__.faces,self__.attribs,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11686),null));
+return (new thi.ng.geom.types.IndexedMesh(self__.vertices,self__.faces,self__.attribs,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11826),null));
 }
 }
 }
@@ -3298,10 +3298,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"vertices","vertices",2008905731),self__.vertices],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"faces","faces",-73909544),self__.faces],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"attribs","attribs",-137878093),self__.attribs],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.IndexedMesh.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11686){
+thi.ng.geom.types.IndexedMesh.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11826){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.IndexedMesh(self__.vertices,self__.faces,self__.attribs,G__11686,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.IndexedMesh(self__.vertices,self__.faces,self__.attribs,G__11826,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.IndexedMesh.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -3332,8 +3332,8 @@ thi.ng.geom.types.__GT_IndexedMesh = (function thi$ng$geom$types$__GT_IndexedMes
 return (new thi.ng.geom.types.IndexedMesh(vertices,faces,attribs,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_IndexedMesh = (function thi$ng$geom$types$map__GT_IndexedMesh(G__11688){
-return (new thi.ng.geom.types.IndexedMesh(new cljs.core.Keyword(null,"vertices","vertices",2008905731).cljs$core$IFn$_invoke$arity$1(G__11688),new cljs.core.Keyword(null,"faces","faces",-73909544).cljs$core$IFn$_invoke$arity$1(G__11688),new cljs.core.Keyword(null,"attribs","attribs",-137878093).cljs$core$IFn$_invoke$arity$1(G__11688),null,cljs.core.dissoc.call(null,G__11688,new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"faces","faces",-73909544),new cljs.core.Keyword(null,"attribs","attribs",-137878093)),null));
+thi.ng.geom.types.map__GT_IndexedMesh = (function thi$ng$geom$types$map__GT_IndexedMesh(G__11828){
+return (new thi.ng.geom.types.IndexedMesh(new cljs.core.Keyword(null,"vertices","vertices",2008905731).cljs$core$IFn$_invoke$arity$1(G__11828),new cljs.core.Keyword(null,"faces","faces",-73909544).cljs$core$IFn$_invoke$arity$1(G__11828),new cljs.core.Keyword(null,"attribs","attribs",-137878093).cljs$core$IFn$_invoke$arity$1(G__11828),null,cljs.core.dissoc.call(null,G__11828,new cljs.core.Keyword(null,"vertices","vertices",2008905731),new cljs.core.Keyword(null,"faces","faces",-73909544),new cljs.core.Keyword(null,"attribs","attribs",-137878093)),null));
 });
 
 
@@ -3368,17 +3368,17 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.Line3.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11695,else__8062__auto__){
+thi.ng.geom.types.Line3.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11835,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11697 = (((k11695 instanceof cljs.core.Keyword))?k11695.fqn:null);
-switch (G__11697) {
+var G__11837 = (((k11835 instanceof cljs.core.Keyword))?k11835.fqn:null);
+switch (G__11837) {
 case "points":
 return self__.points;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11695,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11835,else__8062__auto__);
 
 }
 });
@@ -3396,10 +3396,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.Line3.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.Line3.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11694){
+thi.ng.geom.types.Line3.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11834){
 var self__ = this;
-var G__11694__$1 = this;
-return (new cljs.core.RecordIter((0),G__11694__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11834__$1 = this;
+return (new cljs.core.RecordIter((0),G__11834__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.Line3.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -3465,15 +3465,15 @@ return (new thi.ng.geom.types.Line3(self__.points,self__.__meta,cljs.core.not_em
 }
 });
 
-thi.ng.geom.types.Line3.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11694){
+thi.ng.geom.types.Line3.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11834){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11698 = cljs.core.keyword_identical_QMARK_;
-var expr__11699 = k__8067__auto__;
-if(cljs.core.truth_(pred__11698.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11699))){
-return (new thi.ng.geom.types.Line3(G__11694,self__.__meta,self__.__extmap,null));
+var pred__11838 = cljs.core.keyword_identical_QMARK_;
+var expr__11839 = k__8067__auto__;
+if(cljs.core.truth_(pred__11838.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11839))){
+return (new thi.ng.geom.types.Line3(G__11834,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.Line3(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11694),null));
+return (new thi.ng.geom.types.Line3(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11834),null));
 }
 });
 
@@ -3483,10 +3483,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"points","points",-1486596883),self__.points],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.Line3.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11694){
+thi.ng.geom.types.Line3.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11834){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.Line3(self__.points,G__11694,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.Line3(self__.points,G__11834,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.Line3.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -3517,8 +3517,8 @@ thi.ng.geom.types.__GT_Line3 = (function thi$ng$geom$types$__GT_Line3(points){
 return (new thi.ng.geom.types.Line3(points,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_Line3 = (function thi$ng$geom$types$map__GT_Line3(G__11696){
-return (new thi.ng.geom.types.Line3(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11696),null,cljs.core.dissoc.call(null,G__11696,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
+thi.ng.geom.types.map__GT_Line3 = (function thi$ng$geom$types$map__GT_Line3(G__11836){
+return (new thi.ng.geom.types.Line3(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11836),null,cljs.core.dissoc.call(null,G__11836,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
 });
 
 
@@ -3553,17 +3553,17 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.LineStrip3.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11703,else__8062__auto__){
+thi.ng.geom.types.LineStrip3.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11843,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11705 = (((k11703 instanceof cljs.core.Keyword))?k11703.fqn:null);
-switch (G__11705) {
+var G__11845 = (((k11843 instanceof cljs.core.Keyword))?k11843.fqn:null);
+switch (G__11845) {
 case "points":
 return self__.points;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11703,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11843,else__8062__auto__);
 
 }
 });
@@ -3581,10 +3581,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.LineStrip3.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.LineStrip3.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11702){
+thi.ng.geom.types.LineStrip3.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11842){
 var self__ = this;
-var G__11702__$1 = this;
-return (new cljs.core.RecordIter((0),G__11702__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11842__$1 = this;
+return (new cljs.core.RecordIter((0),G__11842__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.LineStrip3.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -3650,15 +3650,15 @@ return (new thi.ng.geom.types.LineStrip3(self__.points,self__.__meta,cljs.core.n
 }
 });
 
-thi.ng.geom.types.LineStrip3.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11702){
+thi.ng.geom.types.LineStrip3.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11842){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11706 = cljs.core.keyword_identical_QMARK_;
-var expr__11707 = k__8067__auto__;
-if(cljs.core.truth_(pred__11706.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11707))){
-return (new thi.ng.geom.types.LineStrip3(G__11702,self__.__meta,self__.__extmap,null));
+var pred__11846 = cljs.core.keyword_identical_QMARK_;
+var expr__11847 = k__8067__auto__;
+if(cljs.core.truth_(pred__11846.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11847))){
+return (new thi.ng.geom.types.LineStrip3(G__11842,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.LineStrip3(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11702),null));
+return (new thi.ng.geom.types.LineStrip3(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11842),null));
 }
 });
 
@@ -3668,10 +3668,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"points","points",-1486596883),self__.points],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.LineStrip3.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11702){
+thi.ng.geom.types.LineStrip3.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11842){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.LineStrip3(self__.points,G__11702,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.LineStrip3(self__.points,G__11842,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.LineStrip3.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -3702,8 +3702,8 @@ thi.ng.geom.types.__GT_LineStrip3 = (function thi$ng$geom$types$__GT_LineStrip3(
 return (new thi.ng.geom.types.LineStrip3(points,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_LineStrip3 = (function thi$ng$geom$types$map__GT_LineStrip3(G__11704){
-return (new thi.ng.geom.types.LineStrip3(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11704),null,cljs.core.dissoc.call(null,G__11704,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
+thi.ng.geom.types.map__GT_LineStrip3 = (function thi$ng$geom$types$map__GT_LineStrip3(G__11844){
+return (new thi.ng.geom.types.LineStrip3(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11844),null,cljs.core.dissoc.call(null,G__11844,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
 });
 
 
@@ -3739,11 +3739,11 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.Plane.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11711,else__8062__auto__){
+thi.ng.geom.types.Plane.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11851,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11713 = (((k11711 instanceof cljs.core.Keyword))?k11711.fqn:null);
-switch (G__11713) {
+var G__11853 = (((k11851 instanceof cljs.core.Keyword))?k11851.fqn:null);
+switch (G__11853) {
 case "n":
 return self__.n;
 
@@ -3753,7 +3753,7 @@ return self__.w;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11711,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11851,else__8062__auto__);
 
 }
 });
@@ -3771,10 +3771,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.Plane.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.Plane.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11710){
+thi.ng.geom.types.Plane.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11850){
 var self__ = this;
-var G__11710__$1 = this;
-return (new cljs.core.RecordIter((0),G__11710__$1,2,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"n","n",562130025),new cljs.core.Keyword(null,"w","w",354169001)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11850__$1 = this;
+return (new cljs.core.RecordIter((0),G__11850__$1,2,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"n","n",562130025),new cljs.core.Keyword(null,"w","w",354169001)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.Plane.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -3840,18 +3840,18 @@ return (new thi.ng.geom.types.Plane(self__.n,self__.w,self__.__meta,cljs.core.no
 }
 });
 
-thi.ng.geom.types.Plane.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11710){
+thi.ng.geom.types.Plane.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11850){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11714 = cljs.core.keyword_identical_QMARK_;
-var expr__11715 = k__8067__auto__;
-if(cljs.core.truth_(pred__11714.call(null,new cljs.core.Keyword(null,"n","n",562130025),expr__11715))){
-return (new thi.ng.geom.types.Plane(G__11710,self__.w,self__.__meta,self__.__extmap,null));
+var pred__11854 = cljs.core.keyword_identical_QMARK_;
+var expr__11855 = k__8067__auto__;
+if(cljs.core.truth_(pred__11854.call(null,new cljs.core.Keyword(null,"n","n",562130025),expr__11855))){
+return (new thi.ng.geom.types.Plane(G__11850,self__.w,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11714.call(null,new cljs.core.Keyword(null,"w","w",354169001),expr__11715))){
-return (new thi.ng.geom.types.Plane(self__.n,G__11710,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11854.call(null,new cljs.core.Keyword(null,"w","w",354169001),expr__11855))){
+return (new thi.ng.geom.types.Plane(self__.n,G__11850,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.Plane(self__.n,self__.w,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11710),null));
+return (new thi.ng.geom.types.Plane(self__.n,self__.w,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11850),null));
 }
 }
 });
@@ -3862,10 +3862,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"n","n",562130025),self__.n],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"w","w",354169001),self__.w],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.Plane.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11710){
+thi.ng.geom.types.Plane.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11850){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.Plane(self__.n,self__.w,G__11710,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.Plane(self__.n,self__.w,G__11850,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.Plane.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -3896,8 +3896,8 @@ thi.ng.geom.types.__GT_Plane = (function thi$ng$geom$types$__GT_Plane(n,w){
 return (new thi.ng.geom.types.Plane(n,w,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_Plane = (function thi$ng$geom$types$map__GT_Plane(G__11712){
-return (new thi.ng.geom.types.Plane(new cljs.core.Keyword(null,"n","n",562130025).cljs$core$IFn$_invoke$arity$1(G__11712),new cljs.core.Keyword(null,"w","w",354169001).cljs$core$IFn$_invoke$arity$1(G__11712),null,cljs.core.dissoc.call(null,G__11712,new cljs.core.Keyword(null,"n","n",562130025),new cljs.core.Keyword(null,"w","w",354169001)),null));
+thi.ng.geom.types.map__GT_Plane = (function thi$ng$geom$types$map__GT_Plane(G__11852){
+return (new thi.ng.geom.types.Plane(new cljs.core.Keyword(null,"n","n",562130025).cljs$core$IFn$_invoke$arity$1(G__11852),new cljs.core.Keyword(null,"w","w",354169001).cljs$core$IFn$_invoke$arity$1(G__11852),null,cljs.core.dissoc.call(null,G__11852,new cljs.core.Keyword(null,"n","n",562130025),new cljs.core.Keyword(null,"w","w",354169001)),null));
 });
 
 
@@ -3932,17 +3932,17 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.Quad3.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11719,else__8062__auto__){
+thi.ng.geom.types.Quad3.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11859,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11721 = (((k11719 instanceof cljs.core.Keyword))?k11719.fqn:null);
-switch (G__11721) {
+var G__11861 = (((k11859 instanceof cljs.core.Keyword))?k11859.fqn:null);
+switch (G__11861) {
 case "points":
 return self__.points;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11719,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11859,else__8062__auto__);
 
 }
 });
@@ -3960,10 +3960,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.Quad3.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.Quad3.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11718){
+thi.ng.geom.types.Quad3.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11858){
 var self__ = this;
-var G__11718__$1 = this;
-return (new cljs.core.RecordIter((0),G__11718__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11858__$1 = this;
+return (new cljs.core.RecordIter((0),G__11858__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.Quad3.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -4029,15 +4029,15 @@ return (new thi.ng.geom.types.Quad3(self__.points,self__.__meta,cljs.core.not_em
 }
 });
 
-thi.ng.geom.types.Quad3.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11718){
+thi.ng.geom.types.Quad3.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11858){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11722 = cljs.core.keyword_identical_QMARK_;
-var expr__11723 = k__8067__auto__;
-if(cljs.core.truth_(pred__11722.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11723))){
-return (new thi.ng.geom.types.Quad3(G__11718,self__.__meta,self__.__extmap,null));
+var pred__11862 = cljs.core.keyword_identical_QMARK_;
+var expr__11863 = k__8067__auto__;
+if(cljs.core.truth_(pred__11862.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11863))){
+return (new thi.ng.geom.types.Quad3(G__11858,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.Quad3(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11718),null));
+return (new thi.ng.geom.types.Quad3(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11858),null));
 }
 });
 
@@ -4047,10 +4047,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"points","points",-1486596883),self__.points],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.Quad3.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11718){
+thi.ng.geom.types.Quad3.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11858){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.Quad3(self__.points,G__11718,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.Quad3(self__.points,G__11858,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.Quad3.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -4081,8 +4081,8 @@ thi.ng.geom.types.__GT_Quad3 = (function thi$ng$geom$types$__GT_Quad3(points){
 return (new thi.ng.geom.types.Quad3(points,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_Quad3 = (function thi$ng$geom$types$map__GT_Quad3(G__11720){
-return (new thi.ng.geom.types.Quad3(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11720),null,cljs.core.dissoc.call(null,G__11720,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
+thi.ng.geom.types.map__GT_Quad3 = (function thi$ng$geom$types$map__GT_Quad3(G__11860){
+return (new thi.ng.geom.types.Quad3(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11860),null,cljs.core.dissoc.call(null,G__11860,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
 });
 
 
@@ -4118,11 +4118,11 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.Sphere.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11727,else__8062__auto__){
+thi.ng.geom.types.Sphere.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11867,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11729 = (((k11727 instanceof cljs.core.Keyword))?k11727.fqn:null);
-switch (G__11729) {
+var G__11869 = (((k11867 instanceof cljs.core.Keyword))?k11867.fqn:null);
+switch (G__11869) {
 case "p":
 return self__.p;
 
@@ -4132,7 +4132,7 @@ return self__.r;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11727,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11867,else__8062__auto__);
 
 }
 });
@@ -4150,10 +4150,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.Sphere.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.Sphere.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11726){
+thi.ng.geom.types.Sphere.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11866){
 var self__ = this;
-var G__11726__$1 = this;
-return (new cljs.core.RecordIter((0),G__11726__$1,2,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"r","r",-471384190)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11866__$1 = this;
+return (new cljs.core.RecordIter((0),G__11866__$1,2,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"r","r",-471384190)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.Sphere.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -4219,18 +4219,18 @@ return (new thi.ng.geom.types.Sphere(self__.p,self__.r,self__.__meta,cljs.core.n
 }
 });
 
-thi.ng.geom.types.Sphere.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11726){
+thi.ng.geom.types.Sphere.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11866){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11730 = cljs.core.keyword_identical_QMARK_;
-var expr__11731 = k__8067__auto__;
-if(cljs.core.truth_(pred__11730.call(null,new cljs.core.Keyword(null,"p","p",151049309),expr__11731))){
-return (new thi.ng.geom.types.Sphere(G__11726,self__.r,self__.__meta,self__.__extmap,null));
+var pred__11870 = cljs.core.keyword_identical_QMARK_;
+var expr__11871 = k__8067__auto__;
+if(cljs.core.truth_(pred__11870.call(null,new cljs.core.Keyword(null,"p","p",151049309),expr__11871))){
+return (new thi.ng.geom.types.Sphere(G__11866,self__.r,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__11730.call(null,new cljs.core.Keyword(null,"r","r",-471384190),expr__11731))){
-return (new thi.ng.geom.types.Sphere(self__.p,G__11726,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__11870.call(null,new cljs.core.Keyword(null,"r","r",-471384190),expr__11871))){
+return (new thi.ng.geom.types.Sphere(self__.p,G__11866,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.Sphere(self__.p,self__.r,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11726),null));
+return (new thi.ng.geom.types.Sphere(self__.p,self__.r,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11866),null));
 }
 }
 });
@@ -4241,10 +4241,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"p","p",151049309),self__.p],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"r","r",-471384190),self__.r],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.Sphere.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11726){
+thi.ng.geom.types.Sphere.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11866){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.Sphere(self__.p,self__.r,G__11726,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.Sphere(self__.p,self__.r,G__11866,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.Sphere.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -4275,8 +4275,8 @@ thi.ng.geom.types.__GT_Sphere = (function thi$ng$geom$types$__GT_Sphere(p,r){
 return (new thi.ng.geom.types.Sphere(p,r,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_Sphere = (function thi$ng$geom$types$map__GT_Sphere(G__11728){
-return (new thi.ng.geom.types.Sphere(new cljs.core.Keyword(null,"p","p",151049309).cljs$core$IFn$_invoke$arity$1(G__11728),new cljs.core.Keyword(null,"r","r",-471384190).cljs$core$IFn$_invoke$arity$1(G__11728),null,cljs.core.dissoc.call(null,G__11728,new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"r","r",-471384190)),null));
+thi.ng.geom.types.map__GT_Sphere = (function thi$ng$geom$types$map__GT_Sphere(G__11868){
+return (new thi.ng.geom.types.Sphere(new cljs.core.Keyword(null,"p","p",151049309).cljs$core$IFn$_invoke$arity$1(G__11868),new cljs.core.Keyword(null,"r","r",-471384190).cljs$core$IFn$_invoke$arity$1(G__11868),null,cljs.core.dissoc.call(null,G__11868,new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"r","r",-471384190)),null));
 });
 
 
@@ -4311,17 +4311,17 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.Tetrahedron.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11735,else__8062__auto__){
+thi.ng.geom.types.Tetrahedron.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11875,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11737 = (((k11735 instanceof cljs.core.Keyword))?k11735.fqn:null);
-switch (G__11737) {
+var G__11877 = (((k11875 instanceof cljs.core.Keyword))?k11875.fqn:null);
+switch (G__11877) {
 case "points":
 return self__.points;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11735,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11875,else__8062__auto__);
 
 }
 });
@@ -4339,10 +4339,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.Tetrahedron.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.Tetrahedron.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11734){
+thi.ng.geom.types.Tetrahedron.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11874){
 var self__ = this;
-var G__11734__$1 = this;
-return (new cljs.core.RecordIter((0),G__11734__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11874__$1 = this;
+return (new cljs.core.RecordIter((0),G__11874__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.Tetrahedron.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -4408,15 +4408,15 @@ return (new thi.ng.geom.types.Tetrahedron(self__.points,self__.__meta,cljs.core.
 }
 });
 
-thi.ng.geom.types.Tetrahedron.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11734){
+thi.ng.geom.types.Tetrahedron.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11874){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11738 = cljs.core.keyword_identical_QMARK_;
-var expr__11739 = k__8067__auto__;
-if(cljs.core.truth_(pred__11738.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11739))){
-return (new thi.ng.geom.types.Tetrahedron(G__11734,self__.__meta,self__.__extmap,null));
+var pred__11878 = cljs.core.keyword_identical_QMARK_;
+var expr__11879 = k__8067__auto__;
+if(cljs.core.truth_(pred__11878.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11879))){
+return (new thi.ng.geom.types.Tetrahedron(G__11874,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.Tetrahedron(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11734),null));
+return (new thi.ng.geom.types.Tetrahedron(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11874),null));
 }
 });
 
@@ -4426,10 +4426,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"points","points",-1486596883),self__.points],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.Tetrahedron.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11734){
+thi.ng.geom.types.Tetrahedron.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11874){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.Tetrahedron(self__.points,G__11734,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.Tetrahedron(self__.points,G__11874,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.Tetrahedron.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -4460,8 +4460,8 @@ thi.ng.geom.types.__GT_Tetrahedron = (function thi$ng$geom$types$__GT_Tetrahedro
 return (new thi.ng.geom.types.Tetrahedron(points,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_Tetrahedron = (function thi$ng$geom$types$map__GT_Tetrahedron(G__11736){
-return (new thi.ng.geom.types.Tetrahedron(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11736),null,cljs.core.dissoc.call(null,G__11736,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
+thi.ng.geom.types.map__GT_Tetrahedron = (function thi$ng$geom$types$map__GT_Tetrahedron(G__11876){
+return (new thi.ng.geom.types.Tetrahedron(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11876),null,cljs.core.dissoc.call(null,G__11876,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
 });
 
 
@@ -4496,17 +4496,17 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-thi.ng.geom.types.Triangle3.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11743,else__8062__auto__){
+thi.ng.geom.types.Triangle3.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k11883,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__11745 = (((k11743 instanceof cljs.core.Keyword))?k11743.fqn:null);
-switch (G__11745) {
+var G__11885 = (((k11883 instanceof cljs.core.Keyword))?k11883.fqn:null);
+switch (G__11885) {
 case "points":
 return self__.points;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k11743,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k11883,else__8062__auto__);
 
 }
 });
@@ -4524,10 +4524,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 thi.ng.geom.types.Triangle3.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-thi.ng.geom.types.Triangle3.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11742){
+thi.ng.geom.types.Triangle3.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__11882){
 var self__ = this;
-var G__11742__$1 = this;
-return (new cljs.core.RecordIter((0),G__11742__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__11882__$1 = this;
+return (new cljs.core.RecordIter((0),G__11882__$1,1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"points","points",-1486596883)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 thi.ng.geom.types.Triangle3.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -4593,15 +4593,15 @@ return (new thi.ng.geom.types.Triangle3(self__.points,self__.__meta,cljs.core.no
 }
 });
 
-thi.ng.geom.types.Triangle3.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11742){
+thi.ng.geom.types.Triangle3.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__11882){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__11746 = cljs.core.keyword_identical_QMARK_;
-var expr__11747 = k__8067__auto__;
-if(cljs.core.truth_(pred__11746.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11747))){
-return (new thi.ng.geom.types.Triangle3(G__11742,self__.__meta,self__.__extmap,null));
+var pred__11886 = cljs.core.keyword_identical_QMARK_;
+var expr__11887 = k__8067__auto__;
+if(cljs.core.truth_(pred__11886.call(null,new cljs.core.Keyword(null,"points","points",-1486596883),expr__11887))){
+return (new thi.ng.geom.types.Triangle3(G__11882,self__.__meta,self__.__extmap,null));
 } else {
-return (new thi.ng.geom.types.Triangle3(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11742),null));
+return (new thi.ng.geom.types.Triangle3(self__.points,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__11882),null));
 }
 });
 
@@ -4611,10 +4611,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"points","points",-1486596883),self__.points],null))], null),self__.__extmap));
 });
 
-thi.ng.geom.types.Triangle3.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11742){
+thi.ng.geom.types.Triangle3.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__11882){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new thi.ng.geom.types.Triangle3(self__.points,G__11742,self__.__extmap,self__.__hash));
+return (new thi.ng.geom.types.Triangle3(self__.points,G__11882,self__.__extmap,self__.__hash));
 });
 
 thi.ng.geom.types.Triangle3.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -4645,8 +4645,8 @@ thi.ng.geom.types.__GT_Triangle3 = (function thi$ng$geom$types$__GT_Triangle3(po
 return (new thi.ng.geom.types.Triangle3(points,null,null,null));
 });
 
-thi.ng.geom.types.map__GT_Triangle3 = (function thi$ng$geom$types$map__GT_Triangle3(G__11744){
-return (new thi.ng.geom.types.Triangle3(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11744),null,cljs.core.dissoc.call(null,G__11744,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
+thi.ng.geom.types.map__GT_Triangle3 = (function thi$ng$geom$types$map__GT_Triangle3(G__11884){
+return (new thi.ng.geom.types.Triangle3(new cljs.core.Keyword(null,"points","points",-1486596883).cljs$core$IFn$_invoke$arity$1(G__11884),null,cljs.core.dissoc.call(null,G__11884,new cljs.core.Keyword(null,"points","points",-1486596883)),null));
 });
 
 

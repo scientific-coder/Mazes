@@ -45,13 +45,13 @@ var to__$1 = (cljs.core.truth_(goog.isNumber(to))?(((to < (0)))?((this$.length +
 var len = Math.max((to__$1 - from__$1),(0));
 var ctor = this$.constructor;
 var dest = new ctor(len);
-var i_12201 = (0);
+var i_12723 = (0);
 while(true){
-if((i_12201 < len)){
-(dest[i_12201] = (this$[(from__$1 + i_12201)]));
+if((i_12723 < len)){
+(dest[i_12723] = (this$[(from__$1 + i_12723)]));
 
-var G__12202 = (i_12201 + (1));
-i_12201 = G__12202;
+var G__12724 = (i_12723 + (1));
+i_12723 = G__12724;
 continue;
 } else {
 }
@@ -77,16 +77,16 @@ return (new Int8Array(size_or_coll));
 } else {
 var len = cljs.core.count.call(null,size_or_coll);
 var buf = (new Int8Array(len));
-var i_12203 = (0);
-var coll_12204 = size_or_coll;
+var i_12725 = (0);
+var coll_12726 = size_or_coll;
 while(true){
-if((i_12203 < len)){
-(buf[i_12203] = cljs.core.first.call(null,coll_12204));
+if((i_12725 < len)){
+(buf[i_12725] = cljs.core.first.call(null,coll_12726));
 
-var G__12205 = (i_12203 + (1));
-var G__12206 = cljs.core.next.call(null,coll_12204);
-i_12203 = G__12205;
-coll_12204 = G__12206;
+var G__12727 = (i_12725 + (1));
+var G__12728 = cljs.core.next.call(null,coll_12726);
+i_12725 = G__12727;
+coll_12726 = G__12728;
 continue;
 } else {
 }
@@ -104,23 +104,23 @@ return buf;
  *   and item length.
  */
 thi.ng.typedarrays.core.int8_view = (function thi$ng$typedarrays$core$int8_view(var_args){
-var args12207 = [];
-var len__8605__auto___12210 = arguments.length;
-var i__8606__auto___12211 = (0);
+var args12729 = [];
+var len__8605__auto___12732 = arguments.length;
+var i__8606__auto___12733 = (0);
 while(true){
-if((i__8606__auto___12211 < len__8605__auto___12210)){
-args12207.push((arguments[i__8606__auto___12211]));
+if((i__8606__auto___12733 < len__8605__auto___12732)){
+args12729.push((arguments[i__8606__auto___12733]));
 
-var G__12212 = (i__8606__auto___12211 + (1));
-i__8606__auto___12211 = G__12212;
+var G__12734 = (i__8606__auto___12733 + (1));
+i__8606__auto___12733 = G__12734;
 continue;
 } else {
 }
 break;
 }
 
-var G__12209 = args12207.length;
-switch (G__12209) {
+var G__12731 = args12729.length;
+switch (G__12731) {
 case 1:
 return thi.ng.typedarrays.core.int8_view.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -130,7 +130,7 @@ return thi.ng.typedarrays.core.int8_view.cljs$core$IFn$_invoke$arity$3((argument
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12207.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12729.length)].join('')));
 
 }
 });
@@ -158,16 +158,16 @@ return (new Uint8Array(size_or_coll));
 } else {
 var len = cljs.core.count.call(null,size_or_coll);
 var buf = (new Uint8Array(len));
-var i_12214 = (0);
-var coll_12215 = size_or_coll;
+var i_12736 = (0);
+var coll_12737 = size_or_coll;
 while(true){
-if((i_12214 < len)){
-(buf[i_12214] = cljs.core.first.call(null,coll_12215));
+if((i_12736 < len)){
+(buf[i_12736] = cljs.core.first.call(null,coll_12737));
 
-var G__12216 = (i_12214 + (1));
-var G__12217 = cljs.core.next.call(null,coll_12215);
-i_12214 = G__12216;
-coll_12215 = G__12217;
+var G__12738 = (i_12736 + (1));
+var G__12739 = cljs.core.next.call(null,coll_12737);
+i_12736 = G__12738;
+coll_12737 = G__12739;
 continue;
 } else {
 }
@@ -185,23 +185,23 @@ return buf;
  *   and item length.
  */
 thi.ng.typedarrays.core.uint8_view = (function thi$ng$typedarrays$core$uint8_view(var_args){
-var args12218 = [];
-var len__8605__auto___12221 = arguments.length;
-var i__8606__auto___12222 = (0);
+var args12740 = [];
+var len__8605__auto___12743 = arguments.length;
+var i__8606__auto___12744 = (0);
 while(true){
-if((i__8606__auto___12222 < len__8605__auto___12221)){
-args12218.push((arguments[i__8606__auto___12222]));
+if((i__8606__auto___12744 < len__8605__auto___12743)){
+args12740.push((arguments[i__8606__auto___12744]));
 
-var G__12223 = (i__8606__auto___12222 + (1));
-i__8606__auto___12222 = G__12223;
+var G__12745 = (i__8606__auto___12744 + (1));
+i__8606__auto___12744 = G__12745;
 continue;
 } else {
 }
 break;
 }
 
-var G__12220 = args12218.length;
-switch (G__12220) {
+var G__12742 = args12740.length;
+switch (G__12742) {
 case 1:
 return thi.ng.typedarrays.core.uint8_view.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -211,7 +211,7 @@ return thi.ng.typedarrays.core.uint8_view.cljs$core$IFn$_invoke$arity$3((argumen
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12218.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12740.length)].join('')));
 
 }
 });
@@ -239,16 +239,16 @@ return (new Uint8ClampedArray(size_or_coll));
 } else {
 var len = cljs.core.count.call(null,size_or_coll);
 var buf = (new Uint8ClampedArray(len));
-var i_12225 = (0);
-var coll_12226 = size_or_coll;
+var i_12747 = (0);
+var coll_12748 = size_or_coll;
 while(true){
-if((i_12225 < len)){
-(buf[i_12225] = cljs.core.first.call(null,coll_12226));
+if((i_12747 < len)){
+(buf[i_12747] = cljs.core.first.call(null,coll_12748));
 
-var G__12227 = (i_12225 + (1));
-var G__12228 = cljs.core.next.call(null,coll_12226);
-i_12225 = G__12227;
-coll_12226 = G__12228;
+var G__12749 = (i_12747 + (1));
+var G__12750 = cljs.core.next.call(null,coll_12748);
+i_12747 = G__12749;
+coll_12748 = G__12750;
 continue;
 } else {
 }
@@ -266,23 +266,23 @@ return buf;
  *   and item length.
  */
 thi.ng.typedarrays.core.uint8_clamped_view = (function thi$ng$typedarrays$core$uint8_clamped_view(var_args){
-var args12229 = [];
-var len__8605__auto___12232 = arguments.length;
-var i__8606__auto___12233 = (0);
+var args12751 = [];
+var len__8605__auto___12754 = arguments.length;
+var i__8606__auto___12755 = (0);
 while(true){
-if((i__8606__auto___12233 < len__8605__auto___12232)){
-args12229.push((arguments[i__8606__auto___12233]));
+if((i__8606__auto___12755 < len__8605__auto___12754)){
+args12751.push((arguments[i__8606__auto___12755]));
 
-var G__12234 = (i__8606__auto___12233 + (1));
-i__8606__auto___12233 = G__12234;
+var G__12756 = (i__8606__auto___12755 + (1));
+i__8606__auto___12755 = G__12756;
 continue;
 } else {
 }
 break;
 }
 
-var G__12231 = args12229.length;
-switch (G__12231) {
+var G__12753 = args12751.length;
+switch (G__12753) {
 case 1:
 return thi.ng.typedarrays.core.uint8_clamped_view.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -292,7 +292,7 @@ return thi.ng.typedarrays.core.uint8_clamped_view.cljs$core$IFn$_invoke$arity$3(
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12229.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12751.length)].join('')));
 
 }
 });
@@ -320,16 +320,16 @@ return (new Int16Array(size_or_coll));
 } else {
 var len = cljs.core.count.call(null,size_or_coll);
 var buf = (new Int16Array(len));
-var i_12236 = (0);
-var coll_12237 = size_or_coll;
+var i_12758 = (0);
+var coll_12759 = size_or_coll;
 while(true){
-if((i_12236 < len)){
-(buf[i_12236] = cljs.core.first.call(null,coll_12237));
+if((i_12758 < len)){
+(buf[i_12758] = cljs.core.first.call(null,coll_12759));
 
-var G__12238 = (i_12236 + (1));
-var G__12239 = cljs.core.next.call(null,coll_12237);
-i_12236 = G__12238;
-coll_12237 = G__12239;
+var G__12760 = (i_12758 + (1));
+var G__12761 = cljs.core.next.call(null,coll_12759);
+i_12758 = G__12760;
+coll_12759 = G__12761;
 continue;
 } else {
 }
@@ -347,23 +347,23 @@ return buf;
  *   and item length.
  */
 thi.ng.typedarrays.core.int16_view = (function thi$ng$typedarrays$core$int16_view(var_args){
-var args12240 = [];
-var len__8605__auto___12243 = arguments.length;
-var i__8606__auto___12244 = (0);
+var args12762 = [];
+var len__8605__auto___12765 = arguments.length;
+var i__8606__auto___12766 = (0);
 while(true){
-if((i__8606__auto___12244 < len__8605__auto___12243)){
-args12240.push((arguments[i__8606__auto___12244]));
+if((i__8606__auto___12766 < len__8605__auto___12765)){
+args12762.push((arguments[i__8606__auto___12766]));
 
-var G__12245 = (i__8606__auto___12244 + (1));
-i__8606__auto___12244 = G__12245;
+var G__12767 = (i__8606__auto___12766 + (1));
+i__8606__auto___12766 = G__12767;
 continue;
 } else {
 }
 break;
 }
 
-var G__12242 = args12240.length;
-switch (G__12242) {
+var G__12764 = args12762.length;
+switch (G__12764) {
 case 1:
 return thi.ng.typedarrays.core.int16_view.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -373,7 +373,7 @@ return thi.ng.typedarrays.core.int16_view.cljs$core$IFn$_invoke$arity$3((argumen
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12240.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12762.length)].join('')));
 
 }
 });
@@ -401,16 +401,16 @@ return (new Uint16Array(size_or_coll));
 } else {
 var len = cljs.core.count.call(null,size_or_coll);
 var buf = (new Uint16Array(len));
-var i_12247 = (0);
-var coll_12248 = size_or_coll;
+var i_12769 = (0);
+var coll_12770 = size_or_coll;
 while(true){
-if((i_12247 < len)){
-(buf[i_12247] = cljs.core.first.call(null,coll_12248));
+if((i_12769 < len)){
+(buf[i_12769] = cljs.core.first.call(null,coll_12770));
 
-var G__12249 = (i_12247 + (1));
-var G__12250 = cljs.core.next.call(null,coll_12248);
-i_12247 = G__12249;
-coll_12248 = G__12250;
+var G__12771 = (i_12769 + (1));
+var G__12772 = cljs.core.next.call(null,coll_12770);
+i_12769 = G__12771;
+coll_12770 = G__12772;
 continue;
 } else {
 }
@@ -428,23 +428,23 @@ return buf;
  *   and item length.
  */
 thi.ng.typedarrays.core.uint16_view = (function thi$ng$typedarrays$core$uint16_view(var_args){
-var args12251 = [];
-var len__8605__auto___12254 = arguments.length;
-var i__8606__auto___12255 = (0);
+var args12773 = [];
+var len__8605__auto___12776 = arguments.length;
+var i__8606__auto___12777 = (0);
 while(true){
-if((i__8606__auto___12255 < len__8605__auto___12254)){
-args12251.push((arguments[i__8606__auto___12255]));
+if((i__8606__auto___12777 < len__8605__auto___12776)){
+args12773.push((arguments[i__8606__auto___12777]));
 
-var G__12256 = (i__8606__auto___12255 + (1));
-i__8606__auto___12255 = G__12256;
+var G__12778 = (i__8606__auto___12777 + (1));
+i__8606__auto___12777 = G__12778;
 continue;
 } else {
 }
 break;
 }
 
-var G__12253 = args12251.length;
-switch (G__12253) {
+var G__12775 = args12773.length;
+switch (G__12775) {
 case 1:
 return thi.ng.typedarrays.core.uint16_view.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -454,7 +454,7 @@ return thi.ng.typedarrays.core.uint16_view.cljs$core$IFn$_invoke$arity$3((argume
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12251.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12773.length)].join('')));
 
 }
 });
@@ -482,16 +482,16 @@ return (new Int32Array(size_or_coll));
 } else {
 var len = cljs.core.count.call(null,size_or_coll);
 var buf = (new Int32Array(len));
-var i_12258 = (0);
-var coll_12259 = size_or_coll;
+var i_12780 = (0);
+var coll_12781 = size_or_coll;
 while(true){
-if((i_12258 < len)){
-(buf[i_12258] = cljs.core.first.call(null,coll_12259));
+if((i_12780 < len)){
+(buf[i_12780] = cljs.core.first.call(null,coll_12781));
 
-var G__12260 = (i_12258 + (1));
-var G__12261 = cljs.core.next.call(null,coll_12259);
-i_12258 = G__12260;
-coll_12259 = G__12261;
+var G__12782 = (i_12780 + (1));
+var G__12783 = cljs.core.next.call(null,coll_12781);
+i_12780 = G__12782;
+coll_12781 = G__12783;
 continue;
 } else {
 }
@@ -509,23 +509,23 @@ return buf;
  *   and item length.
  */
 thi.ng.typedarrays.core.int32_view = (function thi$ng$typedarrays$core$int32_view(var_args){
-var args12262 = [];
-var len__8605__auto___12265 = arguments.length;
-var i__8606__auto___12266 = (0);
+var args12784 = [];
+var len__8605__auto___12787 = arguments.length;
+var i__8606__auto___12788 = (0);
 while(true){
-if((i__8606__auto___12266 < len__8605__auto___12265)){
-args12262.push((arguments[i__8606__auto___12266]));
+if((i__8606__auto___12788 < len__8605__auto___12787)){
+args12784.push((arguments[i__8606__auto___12788]));
 
-var G__12267 = (i__8606__auto___12266 + (1));
-i__8606__auto___12266 = G__12267;
+var G__12789 = (i__8606__auto___12788 + (1));
+i__8606__auto___12788 = G__12789;
 continue;
 } else {
 }
 break;
 }
 
-var G__12264 = args12262.length;
-switch (G__12264) {
+var G__12786 = args12784.length;
+switch (G__12786) {
 case 1:
 return thi.ng.typedarrays.core.int32_view.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -535,7 +535,7 @@ return thi.ng.typedarrays.core.int32_view.cljs$core$IFn$_invoke$arity$3((argumen
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12262.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12784.length)].join('')));
 
 }
 });
@@ -563,16 +563,16 @@ return (new Uint32Array(size_or_coll));
 } else {
 var len = cljs.core.count.call(null,size_or_coll);
 var buf = (new Uint32Array(len));
-var i_12269 = (0);
-var coll_12270 = size_or_coll;
+var i_12791 = (0);
+var coll_12792 = size_or_coll;
 while(true){
-if((i_12269 < len)){
-(buf[i_12269] = cljs.core.first.call(null,coll_12270));
+if((i_12791 < len)){
+(buf[i_12791] = cljs.core.first.call(null,coll_12792));
 
-var G__12271 = (i_12269 + (1));
-var G__12272 = cljs.core.next.call(null,coll_12270);
-i_12269 = G__12271;
-coll_12270 = G__12272;
+var G__12793 = (i_12791 + (1));
+var G__12794 = cljs.core.next.call(null,coll_12792);
+i_12791 = G__12793;
+coll_12792 = G__12794;
 continue;
 } else {
 }
@@ -590,23 +590,23 @@ return buf;
  *   and item length.
  */
 thi.ng.typedarrays.core.uint32_view = (function thi$ng$typedarrays$core$uint32_view(var_args){
-var args12273 = [];
-var len__8605__auto___12276 = arguments.length;
-var i__8606__auto___12277 = (0);
+var args12795 = [];
+var len__8605__auto___12798 = arguments.length;
+var i__8606__auto___12799 = (0);
 while(true){
-if((i__8606__auto___12277 < len__8605__auto___12276)){
-args12273.push((arguments[i__8606__auto___12277]));
+if((i__8606__auto___12799 < len__8605__auto___12798)){
+args12795.push((arguments[i__8606__auto___12799]));
 
-var G__12278 = (i__8606__auto___12277 + (1));
-i__8606__auto___12277 = G__12278;
+var G__12800 = (i__8606__auto___12799 + (1));
+i__8606__auto___12799 = G__12800;
 continue;
 } else {
 }
 break;
 }
 
-var G__12275 = args12273.length;
-switch (G__12275) {
+var G__12797 = args12795.length;
+switch (G__12797) {
 case 1:
 return thi.ng.typedarrays.core.uint32_view.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -616,7 +616,7 @@ return thi.ng.typedarrays.core.uint32_view.cljs$core$IFn$_invoke$arity$3((argume
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12273.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12795.length)].join('')));
 
 }
 });
@@ -644,16 +644,16 @@ return (new Float32Array(size_or_coll));
 } else {
 var len = cljs.core.count.call(null,size_or_coll);
 var buf = (new Float32Array(len));
-var i_12280 = (0);
-var coll_12281 = size_or_coll;
+var i_12802 = (0);
+var coll_12803 = size_or_coll;
 while(true){
-if((i_12280 < len)){
-(buf[i_12280] = cljs.core.first.call(null,coll_12281));
+if((i_12802 < len)){
+(buf[i_12802] = cljs.core.first.call(null,coll_12803));
 
-var G__12282 = (i_12280 + (1));
-var G__12283 = cljs.core.next.call(null,coll_12281);
-i_12280 = G__12282;
-coll_12281 = G__12283;
+var G__12804 = (i_12802 + (1));
+var G__12805 = cljs.core.next.call(null,coll_12803);
+i_12802 = G__12804;
+coll_12803 = G__12805;
 continue;
 } else {
 }
@@ -671,23 +671,23 @@ return buf;
  *   and item length.
  */
 thi.ng.typedarrays.core.float32_view = (function thi$ng$typedarrays$core$float32_view(var_args){
-var args12284 = [];
-var len__8605__auto___12287 = arguments.length;
-var i__8606__auto___12288 = (0);
+var args12806 = [];
+var len__8605__auto___12809 = arguments.length;
+var i__8606__auto___12810 = (0);
 while(true){
-if((i__8606__auto___12288 < len__8605__auto___12287)){
-args12284.push((arguments[i__8606__auto___12288]));
+if((i__8606__auto___12810 < len__8605__auto___12809)){
+args12806.push((arguments[i__8606__auto___12810]));
 
-var G__12289 = (i__8606__auto___12288 + (1));
-i__8606__auto___12288 = G__12289;
+var G__12811 = (i__8606__auto___12810 + (1));
+i__8606__auto___12810 = G__12811;
 continue;
 } else {
 }
 break;
 }
 
-var G__12286 = args12284.length;
-switch (G__12286) {
+var G__12808 = args12806.length;
+switch (G__12808) {
 case 1:
 return thi.ng.typedarrays.core.float32_view.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -697,7 +697,7 @@ return thi.ng.typedarrays.core.float32_view.cljs$core$IFn$_invoke$arity$3((argum
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12284.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12806.length)].join('')));
 
 }
 });
@@ -725,16 +725,16 @@ return (new Float64Array(size_or_coll));
 } else {
 var len = cljs.core.count.call(null,size_or_coll);
 var buf = (new Float64Array(len));
-var i_12291 = (0);
-var coll_12292 = size_or_coll;
+var i_12813 = (0);
+var coll_12814 = size_or_coll;
 while(true){
-if((i_12291 < len)){
-(buf[i_12291] = cljs.core.first.call(null,coll_12292));
+if((i_12813 < len)){
+(buf[i_12813] = cljs.core.first.call(null,coll_12814));
 
-var G__12293 = (i_12291 + (1));
-var G__12294 = cljs.core.next.call(null,coll_12292);
-i_12291 = G__12293;
-coll_12292 = G__12294;
+var G__12815 = (i_12813 + (1));
+var G__12816 = cljs.core.next.call(null,coll_12814);
+i_12813 = G__12815;
+coll_12814 = G__12816;
 continue;
 } else {
 }
@@ -752,23 +752,23 @@ return buf;
  *   and item length.
  */
 thi.ng.typedarrays.core.float64_view = (function thi$ng$typedarrays$core$float64_view(var_args){
-var args12295 = [];
-var len__8605__auto___12298 = arguments.length;
-var i__8606__auto___12299 = (0);
+var args12817 = [];
+var len__8605__auto___12820 = arguments.length;
+var i__8606__auto___12821 = (0);
 while(true){
-if((i__8606__auto___12299 < len__8605__auto___12298)){
-args12295.push((arguments[i__8606__auto___12299]));
+if((i__8606__auto___12821 < len__8605__auto___12820)){
+args12817.push((arguments[i__8606__auto___12821]));
 
-var G__12300 = (i__8606__auto___12299 + (1));
-i__8606__auto___12299 = G__12300;
+var G__12822 = (i__8606__auto___12821 + (1));
+i__8606__auto___12821 = G__12822;
 continue;
 } else {
 }
 break;
 }
 
-var G__12297 = args12295.length;
-switch (G__12297) {
+var G__12819 = args12817.length;
+switch (G__12819) {
 case 1:
 return thi.ng.typedarrays.core.float64_view.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -778,7 +778,7 @@ return thi.ng.typedarrays.core.float64_view.cljs$core$IFn$_invoke$arity$3((argum
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12295.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12817.length)].join('')));
 
 }
 });

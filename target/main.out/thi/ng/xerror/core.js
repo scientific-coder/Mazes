@@ -14,23 +14,23 @@ thi.ng.xerror.core.arity_error_BANG_ = (function thi$ng$xerror$core$arity_error_
 return thi.ng.xerror.core.throw_BANG_.call(null,[cljs.core.str("Wrong number of args: "),cljs.core.str(n)].join(''));
 });
 thi.ng.xerror.core.illegal_arg_BANG_ = (function thi$ng$xerror$core$illegal_arg_BANG_(var_args){
-var args9481 = [];
-var len__8605__auto___9484 = arguments.length;
-var i__8606__auto___9485 = (0);
+var args9621 = [];
+var len__8605__auto___9624 = arguments.length;
+var i__8606__auto___9625 = (0);
 while(true){
-if((i__8606__auto___9485 < len__8605__auto___9484)){
-args9481.push((arguments[i__8606__auto___9485]));
+if((i__8606__auto___9625 < len__8605__auto___9624)){
+args9621.push((arguments[i__8606__auto___9625]));
 
-var G__9486 = (i__8606__auto___9485 + (1));
-i__8606__auto___9485 = G__9486;
+var G__9626 = (i__8606__auto___9625 + (1));
+i__8606__auto___9625 = G__9626;
 continue;
 } else {
 }
 break;
 }
 
-var G__9483 = args9481.length;
-switch (G__9483) {
+var G__9623 = args9621.length;
+switch (G__9623) {
 case 1:
 return thi.ng.xerror.core.illegal_arg_BANG_.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -40,7 +40,7 @@ return thi.ng.xerror.core.illegal_arg_BANG_.cljs$core$IFn$_invoke$arity$2((argum
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9481.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9621.length)].join('')));
 
 }
 });
@@ -56,23 +56,23 @@ return thi.ng.xerror.core.throw_BANG_.call(null,[cljs.core.str(msg),cljs.core.st
 thi.ng.xerror.core.illegal_arg_BANG_.cljs$lang$maxFixedArity = 2;
 
 thi.ng.xerror.core.unsupported_BANG_ = (function thi$ng$xerror$core$unsupported_BANG_(var_args){
-var args9488 = [];
-var len__8605__auto___9491 = arguments.length;
-var i__8606__auto___9492 = (0);
+var args9628 = [];
+var len__8605__auto___9631 = arguments.length;
+var i__8606__auto___9632 = (0);
 while(true){
-if((i__8606__auto___9492 < len__8605__auto___9491)){
-args9488.push((arguments[i__8606__auto___9492]));
+if((i__8606__auto___9632 < len__8605__auto___9631)){
+args9628.push((arguments[i__8606__auto___9632]));
 
-var G__9493 = (i__8606__auto___9492 + (1));
-i__8606__auto___9492 = G__9493;
+var G__9633 = (i__8606__auto___9632 + (1));
+i__8606__auto___9632 = G__9633;
 continue;
 } else {
 }
 break;
 }
 
-var G__9490 = args9488.length;
-switch (G__9490) {
+var G__9630 = args9628.length;
+switch (G__9630) {
 case 0:
 return thi.ng.xerror.core.unsupported_BANG_.cljs$core$IFn$_invoke$arity$0();
 
@@ -82,7 +82,7 @@ return thi.ng.xerror.core.unsupported_BANG_.cljs$core$IFn$_invoke$arity$1((argum
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9488.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9628.length)].join('')));
 
 }
 });

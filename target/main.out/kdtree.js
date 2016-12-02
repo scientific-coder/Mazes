@@ -35,11 +35,11 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-kdtree.Node.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k16008,else__8062__auto__){
+kdtree.Node.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k16650,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__16010 = (((k16008 instanceof cljs.core.Keyword))?k16008.fqn:null);
-switch (G__16010) {
+var G__16652 = (((k16650 instanceof cljs.core.Keyword))?k16650.fqn:null);
+switch (G__16652) {
 case "left":
 return self__.left;
 
@@ -53,7 +53,7 @@ return self__.value;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k16008,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k16650,else__8062__auto__);
 
 }
 });
@@ -71,10 +71,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 kdtree.Node.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-kdtree.Node.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__16007){
+kdtree.Node.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__16649){
 var self__ = this;
-var G__16007__$1 = this;
-return (new cljs.core.RecordIter((0),G__16007__$1,3,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"left","left",-399115937),new cljs.core.Keyword(null,"right","right",-452581833),new cljs.core.Keyword(null,"value","value",305978217)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__16649__$1 = this;
+return (new cljs.core.RecordIter((0),G__16649__$1,3,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"left","left",-399115937),new cljs.core.Keyword(null,"right","right",-452581833),new cljs.core.Keyword(null,"value","value",305978217)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 kdtree.Node.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -140,21 +140,21 @@ return (new kdtree.Node(self__.left,self__.right,self__.value,self__.__meta,cljs
 }
 });
 
-kdtree.Node.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__16007){
+kdtree.Node.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__16649){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__16011 = cljs.core.keyword_identical_QMARK_;
-var expr__16012 = k__8067__auto__;
-if(cljs.core.truth_(pred__16011.call(null,new cljs.core.Keyword(null,"left","left",-399115937),expr__16012))){
-return (new kdtree.Node(G__16007,self__.right,self__.value,self__.__meta,self__.__extmap,null));
+var pred__16653 = cljs.core.keyword_identical_QMARK_;
+var expr__16654 = k__8067__auto__;
+if(cljs.core.truth_(pred__16653.call(null,new cljs.core.Keyword(null,"left","left",-399115937),expr__16654))){
+return (new kdtree.Node(G__16649,self__.right,self__.value,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__16011.call(null,new cljs.core.Keyword(null,"right","right",-452581833),expr__16012))){
-return (new kdtree.Node(self__.left,G__16007,self__.value,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__16653.call(null,new cljs.core.Keyword(null,"right","right",-452581833),expr__16654))){
+return (new kdtree.Node(self__.left,G__16649,self__.value,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__16011.call(null,new cljs.core.Keyword(null,"value","value",305978217),expr__16012))){
-return (new kdtree.Node(self__.left,self__.right,G__16007,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__16653.call(null,new cljs.core.Keyword(null,"value","value",305978217),expr__16654))){
+return (new kdtree.Node(self__.left,self__.right,G__16649,self__.__meta,self__.__extmap,null));
 } else {
-return (new kdtree.Node(self__.left,self__.right,self__.value,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__16007),null));
+return (new kdtree.Node(self__.left,self__.right,self__.value,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__16649),null));
 }
 }
 }
@@ -166,10 +166,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"left","left",-399115937),self__.left],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"right","right",-452581833),self__.right],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"value","value",305978217),self__.value],null))], null),self__.__extmap));
 });
 
-kdtree.Node.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__16007){
+kdtree.Node.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__16649){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new kdtree.Node(self__.left,self__.right,self__.value,G__16007,self__.__extmap,self__.__hash));
+return (new kdtree.Node(self__.left,self__.right,self__.value,G__16649,self__.__extmap,self__.__hash));
 });
 
 kdtree.Node.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -200,8 +200,8 @@ kdtree.__GT_Node = (function kdtree$__GT_Node(left,right,value){
 return (new kdtree.Node(left,right,value,null,null,null));
 });
 
-kdtree.map__GT_Node = (function kdtree$map__GT_Node(G__16009){
-return (new kdtree.Node(new cljs.core.Keyword(null,"left","left",-399115937).cljs$core$IFn$_invoke$arity$1(G__16009),new cljs.core.Keyword(null,"right","right",-452581833).cljs$core$IFn$_invoke$arity$1(G__16009),new cljs.core.Keyword(null,"value","value",305978217).cljs$core$IFn$_invoke$arity$1(G__16009),null,cljs.core.dissoc.call(null,G__16009,new cljs.core.Keyword(null,"left","left",-399115937),new cljs.core.Keyword(null,"right","right",-452581833),new cljs.core.Keyword(null,"value","value",305978217)),null));
+kdtree.map__GT_Node = (function kdtree$map__GT_Node(G__16651){
+return (new kdtree.Node(new cljs.core.Keyword(null,"left","left",-399115937).cljs$core$IFn$_invoke$arity$1(G__16651),new cljs.core.Keyword(null,"right","right",-452581833).cljs$core$IFn$_invoke$arity$1(G__16651),new cljs.core.Keyword(null,"value","value",305978217).cljs$core$IFn$_invoke$arity$1(G__16651),null,cljs.core.dissoc.call(null,G__16651,new cljs.core.Keyword(null,"left","left",-399115937),new cljs.core.Keyword(null,"right","right",-452581833),new cljs.core.Keyword(null,"value","value",305978217)),null));
 });
 
 
@@ -237,11 +237,11 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.call(null,this__8059__auto____$1,k__8060__auto__,null);
 });
 
-kdtree.Result.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k16016,else__8062__auto__){
+kdtree.Result.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k16658,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__16018 = (((k16016 instanceof cljs.core.Keyword))?k16016.fqn:null);
-switch (G__16018) {
+var G__16660 = (((k16658 instanceof cljs.core.Keyword))?k16658.fqn:null);
+switch (G__16660) {
 case "point":
 return self__.point;
 
@@ -251,7 +251,7 @@ return self__.dist_squared;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k16016,else__8062__auto__);
+return cljs.core.get.call(null,self__.__extmap,k16658,else__8062__auto__);
 
 }
 });
@@ -269,10 +269,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__8074__auto__,pr_pair__80
 
 kdtree.Result.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-kdtree.Result.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__16015){
+kdtree.Result.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__16657){
 var self__ = this;
-var G__16015__$1 = this;
-return (new cljs.core.RecordIter((0),G__16015__$1,2,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"point","point",1813198264),new cljs.core.Keyword(null,"dist-squared","dist-squared",1889811989)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__16657__$1 = this;
+return (new cljs.core.RecordIter((0),G__16657__$1,2,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"point","point",1813198264),new cljs.core.Keyword(null,"dist-squared","dist-squared",1889811989)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 kdtree.Result.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -338,18 +338,18 @@ return (new kdtree.Result(self__.point,self__.dist_squared,self__.__meta,cljs.co
 }
 });
 
-kdtree.Result.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__16015){
+kdtree.Result.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__16657){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__16019 = cljs.core.keyword_identical_QMARK_;
-var expr__16020 = k__8067__auto__;
-if(cljs.core.truth_(pred__16019.call(null,new cljs.core.Keyword(null,"point","point",1813198264),expr__16020))){
-return (new kdtree.Result(G__16015,self__.dist_squared,self__.__meta,self__.__extmap,null));
+var pred__16661 = cljs.core.keyword_identical_QMARK_;
+var expr__16662 = k__8067__auto__;
+if(cljs.core.truth_(pred__16661.call(null,new cljs.core.Keyword(null,"point","point",1813198264),expr__16662))){
+return (new kdtree.Result(G__16657,self__.dist_squared,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__16019.call(null,new cljs.core.Keyword(null,"dist-squared","dist-squared",1889811989),expr__16020))){
-return (new kdtree.Result(self__.point,G__16015,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__16661.call(null,new cljs.core.Keyword(null,"dist-squared","dist-squared",1889811989),expr__16662))){
+return (new kdtree.Result(self__.point,G__16657,self__.__meta,self__.__extmap,null));
 } else {
-return (new kdtree.Result(self__.point,self__.dist_squared,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__16015),null));
+return (new kdtree.Result(self__.point,self__.dist_squared,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__8067__auto__,G__16657),null));
 }
 }
 });
@@ -360,10 +360,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"point","point",1813198264),self__.point],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"dist-squared","dist-squared",1889811989),self__.dist_squared],null))], null),self__.__extmap));
 });
 
-kdtree.Result.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__16015){
+kdtree.Result.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__16657){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new kdtree.Result(self__.point,self__.dist_squared,G__16015,self__.__extmap,self__.__hash));
+return (new kdtree.Result(self__.point,self__.dist_squared,G__16657,self__.__extmap,self__.__hash));
 });
 
 kdtree.Result.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -394,8 +394,8 @@ kdtree.__GT_Result = (function kdtree$__GT_Result(point,dist_squared){
 return (new kdtree.Result(point,dist_squared,null,null,null));
 });
 
-kdtree.map__GT_Result = (function kdtree$map__GT_Result(G__16017){
-return (new kdtree.Result(new cljs.core.Keyword(null,"point","point",1813198264).cljs$core$IFn$_invoke$arity$1(G__16017),new cljs.core.Keyword(null,"dist-squared","dist-squared",1889811989).cljs$core$IFn$_invoke$arity$1(G__16017),null,cljs.core.dissoc.call(null,G__16017,new cljs.core.Keyword(null,"point","point",1813198264),new cljs.core.Keyword(null,"dist-squared","dist-squared",1889811989)),null));
+kdtree.map__GT_Result = (function kdtree$map__GT_Result(G__16659){
+return (new kdtree.Result(new cljs.core.Keyword(null,"point","point",1813198264).cljs$core$IFn$_invoke$arity$1(G__16659),new cljs.core.Keyword(null,"dist-squared","dist-squared",1889811989).cljs$core$IFn$_invoke$arity$1(G__16659),null,cljs.core.dissoc.call(null,G__16659,new cljs.core.Keyword(null,"point","point",1813198264),new cljs.core.Keyword(null,"dist-squared","dist-squared",1889811989)),null));
 });
 
 /**
@@ -409,10 +409,10 @@ if((ind === a.length)){
 return res;
 } else {
 var v = ((a[ind]) - (b[ind]));
-var G__16023 = (res + (v * v));
-var G__16024 = (ind + (1));
-res = G__16023;
-ind = G__16024;
+var G__16665 = (res + (v * v));
+var G__16666 = (ind + (1));
+res = G__16665;
+ind = G__16666;
 continue;
 }
 break;
@@ -426,8 +426,8 @@ var point_count = cljs.core.count.call(null,points);
 var k = cljs.core.count.call(null,cljs.core.nth.call(null,points,(0)));
 var dimension = cljs.core.mod.call(null,depth,k);
 var points__$1 = cljs.core.vec.call(null,cljs.core.sort_by.call(null,((function (point_count,k,dimension){
-return (function (p1__16025_SHARP_){
-return cljs.core.nth.call(null,p1__16025_SHARP_,dimension);
+return (function (p1__16667_SHARP_){
+return cljs.core.nth.call(null,p1__16667_SHARP_,dimension);
 });})(point_count,k,dimension))
 ,points));
 var median = cljs.core.quot.call(null,point_count,(2));
@@ -437,8 +437,8 @@ if(cljs.core._EQ_.call(null,(0),n)){
 return n;
 } else {
 if(cljs.core._EQ_.call(null,cljs.core.nth.call(null,points__$1.call(null,n),dimension),cljs.core.nth.call(null,points__$1.call(null,(n - (1))),dimension))){
-var G__16026 = (n - (1));
-n = G__16026;
+var G__16668 = (n - (1));
+n = G__16668;
 continue;
 } else {
 return n;
@@ -496,12 +496,12 @@ return node2;
 ;
 if(cljs.core._EQ_.call(null,dimension,cljs.core.mod.call(null,depth,k))){
 if(cljs.core.truth_(new cljs.core.Keyword(null,"left","left",-399115937).cljs$core$IFn$_invoke$arity$1(tree))){
-var G__16027 = new cljs.core.Keyword(null,"left","left",-399115937).cljs$core$IFn$_invoke$arity$1(tree);
-var G__16028 = dimension;
-var G__16029 = (depth + (1));
-tree = G__16027;
-dimension = G__16028;
-depth = G__16029;
+var G__16669 = new cljs.core.Keyword(null,"left","left",-399115937).cljs$core$IFn$_invoke$arity$1(tree);
+var G__16670 = dimension;
+var G__16671 = (depth + (1));
+tree = G__16669;
+dimension = G__16670;
+depth = G__16671;
 continue;
 } else {
 return tree;
@@ -534,8 +534,8 @@ if((i === a.length)){
 return true;
 } else {
 if(((a[i]) === (b[i]))){
-var G__16030 = (i + (1));
-i = G__16030;
+var G__16672 = (i + (1));
+i = G__16672;
 continue;
 } else {
 return false;
@@ -599,20 +599,20 @@ return cljs.core.conj_BANG_.call(null,vec__$1,value__$1);
 } else {
 var existing = cljs.core.nth.call(null,vec__$1,ind);
 if((new cljs.core.Keyword(null,"dist-squared","dist-squared",1889811989).cljs$core$IFn$_invoke$arity$1(value__$1) < new cljs.core.Keyword(null,"dist-squared","dist-squared",1889811989).cljs$core$IFn$_invoke$arity$1(existing))){
-var G__16031 = (ind + (1));
-var G__16032 = existing;
-var G__16033 = cljs.core.assoc_BANG_.call(null,vec__$1,ind,value__$1);
-ind = G__16031;
-value__$1 = G__16032;
-vec__$1 = G__16033;
+var G__16673 = (ind + (1));
+var G__16674 = existing;
+var G__16675 = cljs.core.assoc_BANG_.call(null,vec__$1,ind,value__$1);
+ind = G__16673;
+value__$1 = G__16674;
+vec__$1 = G__16675;
 continue;
 } else {
-var G__16034 = (ind + (1));
-var G__16035 = value__$1;
-var G__16036 = vec__$1;
-ind = G__16034;
-value__$1 = G__16035;
-vec__$1 = G__16036;
+var G__16676 = (ind + (1));
+var G__16677 = value__$1;
+var G__16678 = vec__$1;
+ind = G__16676;
+value__$1 = G__16677;
+vec__$1 = G__16678;
 continue;
 }
 
@@ -637,16 +637,16 @@ var best_with_cur = kdtree.insert_sorted_BANG_.call(null,best,cljs.core.with_met
 var best_near = kdtree.nearest_neighbor_internal.call(null,closest_semiplane,point,n,next_dimension,best_with_cur);
 var worst_nearest = new cljs.core.Keyword(null,"dist-squared","dist-squared",1889811989).cljs$core$IFn$_invoke$arity$1(cljs.core.nth.call(null,best_near,(cljs.core.count.call(null,best_near) - (1))));
 if(((dim_dist * dim_dist) < worst_nearest)){
-var G__16037 = farthest_semiplane;
-var G__16038 = point;
-var G__16039 = n;
-var G__16040 = next_dimension;
-var G__16041 = best_near;
-tree = G__16037;
-point = G__16038;
-n = G__16039;
-dimension = G__16040;
-best = G__16041;
+var G__16679 = farthest_semiplane;
+var G__16680 = point;
+var G__16681 = n;
+var G__16682 = next_dimension;
+var G__16683 = best_near;
+tree = G__16679;
+point = G__16680;
+n = G__16681;
+dimension = G__16682;
+best = G__16683;
 continue;
 } else {
 return best_near;
@@ -661,23 +661,23 @@ break;
  * otherwise, the result is a list of length n.
  */
 kdtree.nearest_neighbor = (function kdtree$nearest_neighbor(var_args){
-var args16043 = [];
-var len__8605__auto___16046 = arguments.length;
-var i__8606__auto___16047 = (0);
+var args16685 = [];
+var len__8605__auto___16688 = arguments.length;
+var i__8606__auto___16689 = (0);
 while(true){
-if((i__8606__auto___16047 < len__8605__auto___16046)){
-args16043.push((arguments[i__8606__auto___16047]));
+if((i__8606__auto___16689 < len__8605__auto___16688)){
+args16685.push((arguments[i__8606__auto___16689]));
 
-var G__16048 = (i__8606__auto___16047 + (1));
-i__8606__auto___16047 = G__16048;
+var G__16690 = (i__8606__auto___16689 + (1));
+i__8606__auto___16689 = G__16690;
 continue;
 } else {
 }
 break;
 }
 
-var G__16045 = args16043.length;
-switch (G__16045) {
+var G__16687 = args16685.length;
+switch (G__16687) {
 case 2:
 return kdtree.nearest_neighbor.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -687,7 +687,7 @@ return kdtree.nearest_neighbor.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(a
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args16043.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args16685.length)].join('')));
 
 }
 });
@@ -697,8 +697,8 @@ return cljs.core.first.call(null,kdtree.nearest_neighbor.call(null,tree,point,(1
 });
 
 kdtree.nearest_neighbor.cljs$core$IFn$_invoke$arity$3 = (function (tree,point,n){
-return cljs.core.map.call(null,(function (p1__16042_SHARP_){
-return cljs.core.update_in.call(null,p1__16042_SHARP_,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"point","point",1813198264)], null),cljs.core.vec);
+return cljs.core.map.call(null,(function (p1__16684_SHARP_){
+return cljs.core.update_in.call(null,p1__16684_SHARP_,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"point","point",1813198264)], null),cljs.core.vec);
 }),cljs.core.persistent_BANG_.call(null,kdtree.nearest_neighbor_internal.call(null,tree,cljs.core.double_array.call(null,point),n,(0),cljs.core.transient$.call(null,cljs.core.PersistentVector.EMPTY))));
 });
 
@@ -716,8 +716,8 @@ var left = (axis_intv[(0)]);
 var right = (axis_intv[(1)]);
 var value = (point[ind]);
 if(((left <= value)) && ((value <= right))){
-var G__16050 = (ind + (1));
-ind = G__16050;
+var G__16692 = (ind + (1));
+ind = G__16692;
 continue;
 } else {
 return false;
