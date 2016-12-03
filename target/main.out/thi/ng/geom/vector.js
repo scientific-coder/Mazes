@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.9.293 {:static-fns true, :optimize-constants true}
+// Compiled by ClojureScript 1.9.293 {}
 goog.provide('thi.ng.geom.vector');
 goog.require('cljs.core');
 goog.require('thi.ng.geom.core');
@@ -75,7 +75,7 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$ITransform$ = cljs.core.PROTO
 thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$ITransform$transform$arity$2 = (function (_,m){
 var self__ = this;
 var ___$1 = this;
-return thi.ng.geom.core.transform_vector(m,___$1);
+return thi.ng.geom.core.transform_vector.call(null,m,___$1);
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMutableMathOps$ = cljs.core.PROTOCOL_SENTINEL;
@@ -95,25 +95,25 @@ return ___$1;
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMutableMathOps$__BANG_$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var G__14947_15325 = self__.buf;
+var G__10046_10395 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec2)){
-var G__14948_15326 = v.buf;
-(self__.buf[(0)] = ((G__14947_15325[(0)]) - (G__14948_15326[(0)])));
+var G__10047_10396 = v.buf;
+(self__.buf[(0)] = ((G__10046_10395[(0)]) - (G__10047_10396[(0)])));
 
-(self__.buf[(1)] = ((G__14947_15325[(1)]) - (G__14948_15326[(1)])));
+(self__.buf[(1)] = ((G__10046_10395[(1)]) - (G__10047_10396[(1)])));
 
 self__._hash = null;
 } else {
 if(typeof v === 'number'){
-(self__.buf[(0)] = ((G__14947_15325[(0)]) - v));
+(self__.buf[(0)] = ((G__10046_10395[(0)]) - v));
 
-(self__.buf[(1)] = ((G__14947_15325[(1)]) - v));
+(self__.buf[(1)] = ((G__10046_10395[(1)]) - v));
 
 self__._hash = null;
 } else {
-(self__.buf[(0)] = ((G__14947_15325[(0)]) - cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(self__.buf[(0)] = ((G__10046_10395[(0)]) - cljs.core.nth.call(null,v,(0),0.0)));
 
-(self__.buf[(1)] = ((G__14947_15325[(1)]) - cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(self__.buf[(1)] = ((G__10046_10395[(1)]) - cljs.core.nth.call(null,v,(1),0.0)));
 
 self__._hash = null;
 }
@@ -125,24 +125,24 @@ return ___$1;
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMutableMathOps$__BANG_$arity$3 = (function (_,v1,v2){
 var self__ = this;
 var ___$1 = this;
-var G__14956_15327 = typeof v1 === 'number';
-var G__14957_15328 = typeof v2 === 'number';
-if(((G__14956_15327)?G__14957_15328:false)){
+var G__10055_10397 = typeof v1 === 'number';
+var G__10056_10398 = typeof v2 === 'number';
+if(((G__10055_10397)?G__10056_10398:false)){
 (self__.buf[(0)] = ((self__.buf[(0)]) - v1));
 
 (self__.buf[(1)] = ((self__.buf[(1)]) - v2));
 } else {
-var G__14958_15329 = ((!(G__14956_15327))?(v1 instanceof thi.ng.geom.vector.Vec2):null);
-var G__14959_15330 = ((!(G__14957_15328))?(v2 instanceof thi.ng.geom.vector.Vec2):null);
-var G__14950_15331 = (cljs.core.truth_(G__14958_15329)?v1.buf:null);
-var G__14951_15332 = (cljs.core.truth_(G__14959_15330)?v2.buf:null);
-var G__14952_15333 = (cljs.core.truth_(G__14958_15329)?(G__14950_15331[(0)]):((G__14956_15327)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(0),0.0)));
-var G__14953_15334 = (cljs.core.truth_(G__14958_15329)?(G__14950_15331[(1)]):((G__14956_15327)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(1),0.0)));
-var G__14954_15335 = (cljs.core.truth_(G__14959_15330)?(G__14951_15332[(0)]):((G__14957_15328)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__14955_15336 = (cljs.core.truth_(G__14959_15330)?(G__14951_15332[(1)]):((G__14957_15328)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-(self__.buf[(0)] = (((self__.buf[(0)]) - G__14952_15333) - G__14954_15335));
+var G__10057_10399 = ((!(G__10055_10397))?(v1 instanceof thi.ng.geom.vector.Vec2):null);
+var G__10058_10400 = ((!(G__10056_10398))?(v2 instanceof thi.ng.geom.vector.Vec2):null);
+var G__10049_10401 = (cljs.core.truth_(G__10057_10399)?v1.buf:null);
+var G__10050_10402 = (cljs.core.truth_(G__10058_10400)?v2.buf:null);
+var G__10051_10403 = (cljs.core.truth_(G__10057_10399)?(G__10049_10401[(0)]):((G__10055_10397)?v1:cljs.core.nth.call(null,v1,(0),0.0)));
+var G__10052_10404 = (cljs.core.truth_(G__10057_10399)?(G__10049_10401[(1)]):((G__10055_10397)?v1:cljs.core.nth.call(null,v1,(1),0.0)));
+var G__10053_10405 = (cljs.core.truth_(G__10058_10400)?(G__10050_10402[(0)]):((G__10056_10398)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__10054_10406 = (cljs.core.truth_(G__10058_10400)?(G__10050_10402[(1)]):((G__10056_10398)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+(self__.buf[(0)] = (((self__.buf[(0)]) - G__10051_10403) - G__10053_10405));
 
-(self__.buf[(1)] = (((self__.buf[(1)]) - G__14953_15334) - G__14955_15336));
+(self__.buf[(1)] = (((self__.buf[(1)]) - G__10052_10404) - G__10054_10406));
 }
 
 self__._hash = null;
@@ -159,25 +159,25 @@ return ___$1;
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMutableMathOps$_STAR__BANG_$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var G__14960_15337 = self__.buf;
+var G__10059_10407 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec2)){
-var G__14961_15338 = v.buf;
-(self__.buf[(0)] = ((G__14960_15337[(0)]) * (G__14961_15338[(0)])));
+var G__10060_10408 = v.buf;
+(self__.buf[(0)] = ((G__10059_10407[(0)]) * (G__10060_10408[(0)])));
 
-(self__.buf[(1)] = ((G__14960_15337[(1)]) * (G__14961_15338[(1)])));
+(self__.buf[(1)] = ((G__10059_10407[(1)]) * (G__10060_10408[(1)])));
 
 self__._hash = null;
 } else {
 if(typeof v === 'number'){
-(self__.buf[(0)] = ((G__14960_15337[(0)]) * v));
+(self__.buf[(0)] = ((G__10059_10407[(0)]) * v));
 
-(self__.buf[(1)] = ((G__14960_15337[(1)]) * v));
+(self__.buf[(1)] = ((G__10059_10407[(1)]) * v));
 
 self__._hash = null;
 } else {
-(self__.buf[(0)] = ((G__14960_15337[(0)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(self__.buf[(0)] = ((G__10059_10407[(0)]) * cljs.core.nth.call(null,v,(0),0.0)));
 
-(self__.buf[(1)] = ((G__14960_15337[(1)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(self__.buf[(1)] = ((G__10059_10407[(1)]) * cljs.core.nth.call(null,v,(1),0.0)));
 
 self__._hash = null;
 }
@@ -189,24 +189,24 @@ return ___$1;
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMutableMathOps$_STAR__BANG_$arity$3 = (function (_,v1,v2){
 var self__ = this;
 var ___$1 = this;
-var G__14969_15339 = typeof v1 === 'number';
-var G__14970_15340 = typeof v2 === 'number';
-if(((G__14969_15339)?G__14970_15340:false)){
+var G__10068_10409 = typeof v1 === 'number';
+var G__10069_10410 = typeof v2 === 'number';
+if(((G__10068_10409)?G__10069_10410:false)){
 (self__.buf[(0)] = ((self__.buf[(0)]) * v1));
 
 (self__.buf[(1)] = ((self__.buf[(1)]) * v2));
 } else {
-var G__14971_15341 = ((!(G__14969_15339))?(v1 instanceof thi.ng.geom.vector.Vec2):null);
-var G__14972_15342 = ((!(G__14970_15340))?(v2 instanceof thi.ng.geom.vector.Vec2):null);
-var G__14963_15343 = (cljs.core.truth_(G__14971_15341)?v1.buf:null);
-var G__14964_15344 = (cljs.core.truth_(G__14972_15342)?v2.buf:null);
-var G__14965_15345 = (cljs.core.truth_(G__14971_15341)?(G__14963_15343[(0)]):((G__14969_15339)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(0),0.0)));
-var G__14966_15346 = (cljs.core.truth_(G__14971_15341)?(G__14963_15343[(1)]):((G__14969_15339)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(1),0.0)));
-var G__14967_15347 = (cljs.core.truth_(G__14972_15342)?(G__14964_15344[(0)]):((G__14970_15340)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__14968_15348 = (cljs.core.truth_(G__14972_15342)?(G__14964_15344[(1)]):((G__14970_15340)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-(self__.buf[(0)] = (((self__.buf[(0)]) * G__14965_15345) * G__14967_15347));
+var G__10070_10411 = ((!(G__10068_10409))?(v1 instanceof thi.ng.geom.vector.Vec2):null);
+var G__10071_10412 = ((!(G__10069_10410))?(v2 instanceof thi.ng.geom.vector.Vec2):null);
+var G__10062_10413 = (cljs.core.truth_(G__10070_10411)?v1.buf:null);
+var G__10063_10414 = (cljs.core.truth_(G__10071_10412)?v2.buf:null);
+var G__10064_10415 = (cljs.core.truth_(G__10070_10411)?(G__10062_10413[(0)]):((G__10068_10409)?v1:cljs.core.nth.call(null,v1,(0),0.0)));
+var G__10065_10416 = (cljs.core.truth_(G__10070_10411)?(G__10062_10413[(1)]):((G__10068_10409)?v1:cljs.core.nth.call(null,v1,(1),0.0)));
+var G__10066_10417 = (cljs.core.truth_(G__10071_10412)?(G__10063_10414[(0)]):((G__10069_10410)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__10067_10418 = (cljs.core.truth_(G__10071_10412)?(G__10063_10414[(1)]):((G__10069_10410)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+(self__.buf[(0)] = (((self__.buf[(0)]) * G__10064_10415) * G__10066_10417));
 
-(self__.buf[(1)] = (((self__.buf[(1)]) * G__14966_15346) * G__14968_15348));
+(self__.buf[(1)] = (((self__.buf[(1)]) * G__10065_10416) * G__10067_10418));
 }
 
 self__._hash = null;
@@ -217,22 +217,22 @@ return ___$1;
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMutableMathOps$subm_BANG_$arity$3 = (function (_,a,b){
 var self__ = this;
 var ___$1 = this;
-var G__14982_15349 = (a instanceof thi.ng.geom.vector.Vec2);
-var G__14983_15350 = (b instanceof thi.ng.geom.vector.Vec2);
-var G__14984_15351 = ((!(G__14982_15349))?typeof a === 'number':null);
-var G__14985_15352 = ((!(G__14983_15350))?typeof b === 'number':null);
-var G__14973_15353 = self__.buf;
-var G__14974_15354 = ((G__14982_15349)?a.buf:null);
-var G__14975_15355 = ((G__14983_15350)?b.buf:null);
-var G__14976_15356 = (G__14973_15353[(0)]);
-var G__14977_15357 = (G__14973_15353[(1)]);
-var G__14978_15358 = ((G__14982_15349)?(G__14974_15354[(0)]):(cljs.core.truth_(G__14984_15351)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(0),0.0)));
-var G__14979_15359 = ((G__14982_15349)?(G__14974_15354[(1)]):(cljs.core.truth_(G__14984_15351)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(1),0.0)));
-var G__14980_15360 = ((G__14983_15350)?(G__14975_15355[(0)]):(cljs.core.truth_(G__14985_15352)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(0),1.0)));
-var G__14981_15361 = ((G__14983_15350)?(G__14975_15355[(1)]):(cljs.core.truth_(G__14985_15352)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(1),1.0)));
-(self__.buf[(0)] = ((G__14976_15356 - G__14978_15358) * G__14980_15360));
+var G__10081_10419 = (a instanceof thi.ng.geom.vector.Vec2);
+var G__10082_10420 = (b instanceof thi.ng.geom.vector.Vec2);
+var G__10083_10421 = ((!(G__10081_10419))?typeof a === 'number':null);
+var G__10084_10422 = ((!(G__10082_10420))?typeof b === 'number':null);
+var G__10072_10423 = self__.buf;
+var G__10073_10424 = ((G__10081_10419)?a.buf:null);
+var G__10074_10425 = ((G__10082_10420)?b.buf:null);
+var G__10075_10426 = (G__10072_10423[(0)]);
+var G__10076_10427 = (G__10072_10423[(1)]);
+var G__10077_10428 = ((G__10081_10419)?(G__10073_10424[(0)]):(cljs.core.truth_(G__10083_10421)?a:cljs.core.nth.call(null,a,(0),0.0)));
+var G__10078_10429 = ((G__10081_10419)?(G__10073_10424[(1)]):(cljs.core.truth_(G__10083_10421)?a:cljs.core.nth.call(null,a,(1),0.0)));
+var G__10079_10430 = ((G__10082_10420)?(G__10074_10425[(0)]):(cljs.core.truth_(G__10084_10422)?b:cljs.core.nth.call(null,b,(0),1.0)));
+var G__10080_10431 = ((G__10082_10420)?(G__10074_10425[(1)]):(cljs.core.truth_(G__10084_10422)?b:cljs.core.nth.call(null,b,(1),1.0)));
+(self__.buf[(0)] = ((G__10075_10426 - G__10077_10428) * G__10079_10430));
 
-(self__.buf[(1)] = ((G__14977_15357 - G__14979_15359) * G__14981_15361));
+(self__.buf[(1)] = ((G__10076_10427 - G__10078_10429) * G__10080_10431));
 
 self__._hash = null;
 
@@ -242,22 +242,22 @@ return ___$1;
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMutableMathOps$msub_BANG_$arity$3 = (function (_,a,b){
 var self__ = this;
 var ___$1 = this;
-var G__14995_15362 = (a instanceof thi.ng.geom.vector.Vec2);
-var G__14996_15363 = (b instanceof thi.ng.geom.vector.Vec2);
-var G__14997_15364 = ((!(G__14995_15362))?typeof a === 'number':null);
-var G__14998_15365 = ((!(G__14996_15363))?typeof b === 'number':null);
-var G__14986_15366 = self__.buf;
-var G__14987_15367 = ((G__14995_15362)?a.buf:null);
-var G__14988_15368 = ((G__14996_15363)?b.buf:null);
-var G__14989_15369 = (G__14986_15366[(0)]);
-var G__14990_15370 = (G__14986_15366[(1)]);
-var G__14991_15371 = ((G__14995_15362)?(G__14987_15367[(0)]):(cljs.core.truth_(G__14997_15364)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(0),1.0)));
-var G__14992_15372 = ((G__14995_15362)?(G__14987_15367[(1)]):(cljs.core.truth_(G__14997_15364)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(1),1.0)));
-var G__14993_15373 = ((G__14996_15363)?(G__14988_15368[(0)]):(cljs.core.truth_(G__14998_15365)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(0),0.0)));
-var G__14994_15374 = ((G__14996_15363)?(G__14988_15368[(1)]):(cljs.core.truth_(G__14998_15365)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(1),0.0)));
-(self__.buf[(0)] = ((G__14989_15369 * G__14991_15371) - G__14993_15373));
+var G__10094_10432 = (a instanceof thi.ng.geom.vector.Vec2);
+var G__10095_10433 = (b instanceof thi.ng.geom.vector.Vec2);
+var G__10096_10434 = ((!(G__10094_10432))?typeof a === 'number':null);
+var G__10097_10435 = ((!(G__10095_10433))?typeof b === 'number':null);
+var G__10085_10436 = self__.buf;
+var G__10086_10437 = ((G__10094_10432)?a.buf:null);
+var G__10087_10438 = ((G__10095_10433)?b.buf:null);
+var G__10088_10439 = (G__10085_10436[(0)]);
+var G__10089_10440 = (G__10085_10436[(1)]);
+var G__10090_10441 = ((G__10094_10432)?(G__10086_10437[(0)]):(cljs.core.truth_(G__10096_10434)?a:cljs.core.nth.call(null,a,(0),1.0)));
+var G__10091_10442 = ((G__10094_10432)?(G__10086_10437[(1)]):(cljs.core.truth_(G__10096_10434)?a:cljs.core.nth.call(null,a,(1),1.0)));
+var G__10092_10443 = ((G__10095_10433)?(G__10087_10438[(0)]):(cljs.core.truth_(G__10097_10435)?b:cljs.core.nth.call(null,b,(0),0.0)));
+var G__10093_10444 = ((G__10095_10433)?(G__10087_10438[(1)]):(cljs.core.truth_(G__10097_10435)?b:cljs.core.nth.call(null,b,(1),0.0)));
+(self__.buf[(0)] = ((G__10088_10439 * G__10090_10441) - G__10092_10443));
 
-(self__.buf[(1)] = ((G__14990_15370 * G__14992_15372) - G__14994_15374));
+(self__.buf[(1)] = ((G__10089_10440 * G__10091_10442) - G__10093_10444));
 
 self__._hash = null;
 
@@ -267,13 +267,9 @@ return ___$1;
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMutableMathOps$abs_BANG_$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-(self__.buf[(0)] = (function (){var G__14999 = (self__.buf[(0)]);
-return (thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1 ? thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1(G__14999) : thi.ng.math.core.abs_STAR_.call(null,G__14999));
-})());
+(self__.buf[(0)] = thi.ng.math.core.abs_STAR_.call(null,(self__.buf[(0)])));
 
-(self__.buf[(1)] = (function (){var G__15000 = (self__.buf[(1)]);
-return (thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1 ? thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1(G__15000) : thi.ng.math.core.abs_STAR_.call(null,G__15000));
-})());
+(self__.buf[(1)] = thi.ng.math.core.abs_STAR_.call(null,(self__.buf[(1)])));
 
 self__._hash = null;
 
@@ -283,22 +279,22 @@ return ___$1;
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMutableMathOps$madd_BANG_$arity$3 = (function (_,a,b){
 var self__ = this;
 var ___$1 = this;
-var G__15010_15375 = (a instanceof thi.ng.geom.vector.Vec2);
-var G__15011_15376 = (b instanceof thi.ng.geom.vector.Vec2);
-var G__15012_15377 = ((!(G__15010_15375))?typeof a === 'number':null);
-var G__15013_15378 = ((!(G__15011_15376))?typeof b === 'number':null);
-var G__15001_15379 = self__.buf;
-var G__15002_15380 = ((G__15010_15375)?a.buf:null);
-var G__15003_15381 = ((G__15011_15376)?b.buf:null);
-var G__15004_15382 = (G__15001_15379[(0)]);
-var G__15005_15383 = (G__15001_15379[(1)]);
-var G__15006_15384 = ((G__15010_15375)?(G__15002_15380[(0)]):(cljs.core.truth_(G__15012_15377)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(0),1.0)));
-var G__15007_15385 = ((G__15010_15375)?(G__15002_15380[(1)]):(cljs.core.truth_(G__15012_15377)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(1),1.0)));
-var G__15008_15386 = ((G__15011_15376)?(G__15003_15381[(0)]):(cljs.core.truth_(G__15013_15378)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(0),0.0)));
-var G__15009_15387 = ((G__15011_15376)?(G__15003_15381[(1)]):(cljs.core.truth_(G__15013_15378)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(1),0.0)));
-(self__.buf[(0)] = ((G__15004_15382 * G__15006_15384) + G__15008_15386));
+var G__10107_10445 = (a instanceof thi.ng.geom.vector.Vec2);
+var G__10108_10446 = (b instanceof thi.ng.geom.vector.Vec2);
+var G__10109_10447 = ((!(G__10107_10445))?typeof a === 'number':null);
+var G__10110_10448 = ((!(G__10108_10446))?typeof b === 'number':null);
+var G__10098_10449 = self__.buf;
+var G__10099_10450 = ((G__10107_10445)?a.buf:null);
+var G__10100_10451 = ((G__10108_10446)?b.buf:null);
+var G__10101_10452 = (G__10098_10449[(0)]);
+var G__10102_10453 = (G__10098_10449[(1)]);
+var G__10103_10454 = ((G__10107_10445)?(G__10099_10450[(0)]):(cljs.core.truth_(G__10109_10447)?a:cljs.core.nth.call(null,a,(0),1.0)));
+var G__10104_10455 = ((G__10107_10445)?(G__10099_10450[(1)]):(cljs.core.truth_(G__10109_10447)?a:cljs.core.nth.call(null,a,(1),1.0)));
+var G__10105_10456 = ((G__10108_10446)?(G__10100_10451[(0)]):(cljs.core.truth_(G__10110_10448)?b:cljs.core.nth.call(null,b,(0),0.0)));
+var G__10106_10457 = ((G__10108_10446)?(G__10100_10451[(1)]):(cljs.core.truth_(G__10110_10448)?b:cljs.core.nth.call(null,b,(1),0.0)));
+(self__.buf[(0)] = ((G__10101_10452 * G__10103_10454) + G__10105_10456));
 
-(self__.buf[(1)] = ((G__15005_15383 * G__15007_15385) + G__15009_15387));
+(self__.buf[(1)] = ((G__10102_10453 * G__10104_10455) + G__10106_10457));
 
 self__._hash = null;
 
@@ -320,25 +316,25 @@ return ___$1;
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMutableMathOps$div_BANG_$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var G__15014_15388 = self__.buf;
+var G__10111_10458 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec2)){
-var G__15015_15389 = v.buf;
-(self__.buf[(0)] = ((G__15014_15388[(0)]) / (G__15015_15389[(0)])));
+var G__10112_10459 = v.buf;
+(self__.buf[(0)] = ((G__10111_10458[(0)]) / (G__10112_10459[(0)])));
 
-(self__.buf[(1)] = ((G__15014_15388[(1)]) / (G__15015_15389[(1)])));
+(self__.buf[(1)] = ((G__10111_10458[(1)]) / (G__10112_10459[(1)])));
 
 self__._hash = null;
 } else {
 if(typeof v === 'number'){
-(self__.buf[(0)] = ((G__15014_15388[(0)]) / v));
+(self__.buf[(0)] = ((G__10111_10458[(0)]) / v));
 
-(self__.buf[(1)] = ((G__15014_15388[(1)]) / v));
+(self__.buf[(1)] = ((G__10111_10458[(1)]) / v));
 
 self__._hash = null;
 } else {
-(self__.buf[(0)] = ((G__15014_15388[(0)]) / cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(self__.buf[(0)] = ((G__10111_10458[(0)]) / cljs.core.nth.call(null,v,(0),0.0)));
 
-(self__.buf[(1)] = ((G__15014_15388[(1)]) / cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(self__.buf[(1)] = ((G__10111_10458[(1)]) / cljs.core.nth.call(null,v,(1),0.0)));
 
 self__._hash = null;
 }
@@ -350,24 +346,24 @@ return ___$1;
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMutableMathOps$div_BANG_$arity$3 = (function (_,v1,v2){
 var self__ = this;
 var ___$1 = this;
-var G__15023_15390 = typeof v1 === 'number';
-var G__15024_15391 = typeof v2 === 'number';
-if(((G__15023_15390)?G__15024_15391:false)){
+var G__10120_10460 = typeof v1 === 'number';
+var G__10121_10461 = typeof v2 === 'number';
+if(((G__10120_10460)?G__10121_10461:false)){
 (self__.buf[(0)] = ((self__.buf[(0)]) / v1));
 
 (self__.buf[(1)] = ((self__.buf[(1)]) / v2));
 } else {
-var G__15025_15392 = ((!(G__15023_15390))?(v1 instanceof thi.ng.geom.vector.Vec2):null);
-var G__15026_15393 = ((!(G__15024_15391))?(v2 instanceof thi.ng.geom.vector.Vec2):null);
-var G__15017_15394 = (cljs.core.truth_(G__15025_15392)?v1.buf:null);
-var G__15018_15395 = (cljs.core.truth_(G__15026_15393)?v2.buf:null);
-var G__15019_15396 = (cljs.core.truth_(G__15025_15392)?(G__15017_15394[(0)]):((G__15023_15390)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(0),0.0)));
-var G__15020_15397 = (cljs.core.truth_(G__15025_15392)?(G__15017_15394[(1)]):((G__15023_15390)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(1),0.0)));
-var G__15021_15398 = (cljs.core.truth_(G__15026_15393)?(G__15018_15395[(0)]):((G__15024_15391)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__15022_15399 = (cljs.core.truth_(G__15026_15393)?(G__15018_15395[(1)]):((G__15024_15391)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-(self__.buf[(0)] = (((self__.buf[(0)]) / G__15019_15396) / G__15021_15398));
+var G__10122_10462 = ((!(G__10120_10460))?(v1 instanceof thi.ng.geom.vector.Vec2):null);
+var G__10123_10463 = ((!(G__10121_10461))?(v2 instanceof thi.ng.geom.vector.Vec2):null);
+var G__10114_10464 = (cljs.core.truth_(G__10122_10462)?v1.buf:null);
+var G__10115_10465 = (cljs.core.truth_(G__10123_10463)?v2.buf:null);
+var G__10116_10466 = (cljs.core.truth_(G__10122_10462)?(G__10114_10464[(0)]):((G__10120_10460)?v1:cljs.core.nth.call(null,v1,(0),0.0)));
+var G__10117_10467 = (cljs.core.truth_(G__10122_10462)?(G__10114_10464[(1)]):((G__10120_10460)?v1:cljs.core.nth.call(null,v1,(1),0.0)));
+var G__10118_10468 = (cljs.core.truth_(G__10123_10463)?(G__10115_10465[(0)]):((G__10121_10461)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__10119_10469 = (cljs.core.truth_(G__10123_10463)?(G__10115_10465[(1)]):((G__10121_10461)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+(self__.buf[(0)] = (((self__.buf[(0)]) / G__10116_10466) / G__10118_10468));
 
-(self__.buf[(1)] = (((self__.buf[(1)]) / G__15020_15397) / G__15022_15399));
+(self__.buf[(1)] = (((self__.buf[(1)]) / G__10117_10467) / G__10119_10469));
 }
 
 self__._hash = null;
@@ -384,25 +380,25 @@ return ___$1;
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMutableMathOps$_PLUS__BANG_$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var G__15027_15400 = self__.buf;
+var G__10124_10470 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec2)){
-var G__15028_15401 = v.buf;
-(self__.buf[(0)] = ((G__15027_15400[(0)]) + (G__15028_15401[(0)])));
+var G__10125_10471 = v.buf;
+(self__.buf[(0)] = ((G__10124_10470[(0)]) + (G__10125_10471[(0)])));
 
-(self__.buf[(1)] = ((G__15027_15400[(1)]) + (G__15028_15401[(1)])));
+(self__.buf[(1)] = ((G__10124_10470[(1)]) + (G__10125_10471[(1)])));
 
 self__._hash = null;
 } else {
 if(typeof v === 'number'){
-(self__.buf[(0)] = ((G__15027_15400[(0)]) + v));
+(self__.buf[(0)] = ((G__10124_10470[(0)]) + v));
 
-(self__.buf[(1)] = ((G__15027_15400[(1)]) + v));
+(self__.buf[(1)] = ((G__10124_10470[(1)]) + v));
 
 self__._hash = null;
 } else {
-(self__.buf[(0)] = ((G__15027_15400[(0)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(self__.buf[(0)] = ((G__10124_10470[(0)]) + cljs.core.nth.call(null,v,(0),0.0)));
 
-(self__.buf[(1)] = ((G__15027_15400[(1)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(self__.buf[(1)] = ((G__10124_10470[(1)]) + cljs.core.nth.call(null,v,(1),0.0)));
 
 self__._hash = null;
 }
@@ -414,24 +410,24 @@ return ___$1;
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMutableMathOps$_PLUS__BANG_$arity$3 = (function (_,v1,v2){
 var self__ = this;
 var ___$1 = this;
-var G__15036_15402 = typeof v1 === 'number';
-var G__15037_15403 = typeof v2 === 'number';
-if(((G__15036_15402)?G__15037_15403:false)){
+var G__10133_10472 = typeof v1 === 'number';
+var G__10134_10473 = typeof v2 === 'number';
+if(((G__10133_10472)?G__10134_10473:false)){
 (self__.buf[(0)] = ((self__.buf[(0)]) + v1));
 
 (self__.buf[(1)] = ((self__.buf[(1)]) + v2));
 } else {
-var G__15038_15404 = ((!(G__15036_15402))?(v1 instanceof thi.ng.geom.vector.Vec2):null);
-var G__15039_15405 = ((!(G__15037_15403))?(v2 instanceof thi.ng.geom.vector.Vec2):null);
-var G__15030_15406 = (cljs.core.truth_(G__15038_15404)?v1.buf:null);
-var G__15031_15407 = (cljs.core.truth_(G__15039_15405)?v2.buf:null);
-var G__15032_15408 = (cljs.core.truth_(G__15038_15404)?(G__15030_15406[(0)]):((G__15036_15402)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(0),0.0)));
-var G__15033_15409 = (cljs.core.truth_(G__15038_15404)?(G__15030_15406[(1)]):((G__15036_15402)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(1),0.0)));
-var G__15034_15410 = (cljs.core.truth_(G__15039_15405)?(G__15031_15407[(0)]):((G__15037_15403)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__15035_15411 = (cljs.core.truth_(G__15039_15405)?(G__15031_15407[(1)]):((G__15037_15403)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-(self__.buf[(0)] = (((self__.buf[(0)]) + G__15032_15408) + G__15034_15410));
+var G__10135_10474 = ((!(G__10133_10472))?(v1 instanceof thi.ng.geom.vector.Vec2):null);
+var G__10136_10475 = ((!(G__10134_10473))?(v2 instanceof thi.ng.geom.vector.Vec2):null);
+var G__10127_10476 = (cljs.core.truth_(G__10135_10474)?v1.buf:null);
+var G__10128_10477 = (cljs.core.truth_(G__10136_10475)?v2.buf:null);
+var G__10129_10478 = (cljs.core.truth_(G__10135_10474)?(G__10127_10476[(0)]):((G__10133_10472)?v1:cljs.core.nth.call(null,v1,(0),0.0)));
+var G__10130_10479 = (cljs.core.truth_(G__10135_10474)?(G__10127_10476[(1)]):((G__10133_10472)?v1:cljs.core.nth.call(null,v1,(1),0.0)));
+var G__10131_10480 = (cljs.core.truth_(G__10136_10475)?(G__10128_10477[(0)]):((G__10134_10473)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__10132_10481 = (cljs.core.truth_(G__10136_10475)?(G__10128_10477[(1)]):((G__10134_10473)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+(self__.buf[(0)] = (((self__.buf[(0)]) + G__10129_10478) + G__10131_10480));
 
-(self__.buf[(1)] = (((self__.buf[(1)]) + G__15033_15409) + G__15035_15411));
+(self__.buf[(1)] = (((self__.buf[(1)]) + G__10130_10479) + G__10132_10481));
 }
 
 self__._hash = null;
@@ -442,22 +438,22 @@ return ___$1;
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMutableMathOps$addm_BANG_$arity$3 = (function (_,a,b){
 var self__ = this;
 var ___$1 = this;
-var G__15049_15412 = (a instanceof thi.ng.geom.vector.Vec2);
-var G__15050_15413 = (b instanceof thi.ng.geom.vector.Vec2);
-var G__15051_15414 = ((!(G__15049_15412))?typeof a === 'number':null);
-var G__15052_15415 = ((!(G__15050_15413))?typeof b === 'number':null);
-var G__15040_15416 = self__.buf;
-var G__15041_15417 = ((G__15049_15412)?a.buf:null);
-var G__15042_15418 = ((G__15050_15413)?b.buf:null);
-var G__15043_15419 = (G__15040_15416[(0)]);
-var G__15044_15420 = (G__15040_15416[(1)]);
-var G__15045_15421 = ((G__15049_15412)?(G__15041_15417[(0)]):(cljs.core.truth_(G__15051_15414)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(0),0.0)));
-var G__15046_15422 = ((G__15049_15412)?(G__15041_15417[(1)]):(cljs.core.truth_(G__15051_15414)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(1),0.0)));
-var G__15047_15423 = ((G__15050_15413)?(G__15042_15418[(0)]):(cljs.core.truth_(G__15052_15415)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(0),1.0)));
-var G__15048_15424 = ((G__15050_15413)?(G__15042_15418[(1)]):(cljs.core.truth_(G__15052_15415)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(1),1.0)));
-(self__.buf[(0)] = ((G__15043_15419 + G__15045_15421) * G__15047_15423));
+var G__10146_10482 = (a instanceof thi.ng.geom.vector.Vec2);
+var G__10147_10483 = (b instanceof thi.ng.geom.vector.Vec2);
+var G__10148_10484 = ((!(G__10146_10482))?typeof a === 'number':null);
+var G__10149_10485 = ((!(G__10147_10483))?typeof b === 'number':null);
+var G__10137_10486 = self__.buf;
+var G__10138_10487 = ((G__10146_10482)?a.buf:null);
+var G__10139_10488 = ((G__10147_10483)?b.buf:null);
+var G__10140_10489 = (G__10137_10486[(0)]);
+var G__10141_10490 = (G__10137_10486[(1)]);
+var G__10142_10491 = ((G__10146_10482)?(G__10138_10487[(0)]):(cljs.core.truth_(G__10148_10484)?a:cljs.core.nth.call(null,a,(0),0.0)));
+var G__10143_10492 = ((G__10146_10482)?(G__10138_10487[(1)]):(cljs.core.truth_(G__10148_10484)?a:cljs.core.nth.call(null,a,(1),0.0)));
+var G__10144_10493 = ((G__10147_10483)?(G__10139_10488[(0)]):(cljs.core.truth_(G__10149_10485)?b:cljs.core.nth.call(null,b,(0),1.0)));
+var G__10145_10494 = ((G__10147_10483)?(G__10139_10488[(1)]):(cljs.core.truth_(G__10149_10485)?b:cljs.core.nth.call(null,b,(1),1.0)));
+(self__.buf[(0)] = ((G__10140_10489 + G__10142_10491) * G__10144_10493));
 
-(self__.buf[(1)] = ((G__15044_15420 + G__15046_15422) * G__15048_15424));
+(self__.buf[(1)] = ((G__10141_10490 + G__10143_10492) * G__10145_10494));
 
 self__._hash = null;
 
@@ -482,18 +478,18 @@ thi.ng.geom.vector.Vec2.prototype.cljs$core$ILookup$_lookup$arity$2 = (function 
 var self__ = this;
 var ___$1 = this;
 if((k instanceof cljs.core.Keyword)){
-var temp__6751__auto__ = (thi.ng.geom.vector.swizzle2_fns.cljs$core$IFn$_invoke$arity$1 ? thi.ng.geom.vector.swizzle2_fns.cljs$core$IFn$_invoke$arity$1(k) : thi.ng.geom.vector.swizzle2_fns.call(null,k));
+var temp__6751__auto__ = thi.ng.geom.vector.swizzle2_fns.call(null,k);
 if(cljs.core.truth_(temp__6751__auto__)){
 var f = temp__6751__auto__;
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(___$1) : f.call(null,___$1));
+return f.call(null,___$1);
 } else {
-return thi.ng.xerror.core.key_error_BANG_(k);
+return thi.ng.xerror.core.key_error_BANG_.call(null,k);
 }
 } else {
 if(((k >= (0))) && ((k < (2)))){
 return (self__.buf[k]);
 } else {
-return thi.ng.xerror.core.key_error_BANG_(k);
+return thi.ng.xerror.core.key_error_BANG_.call(null,k);
 }
 }
 });
@@ -502,10 +498,10 @@ thi.ng.geom.vector.Vec2.prototype.cljs$core$ILookup$_lookup$arity$3 = (function 
 var self__ = this;
 var ___$1 = this;
 if((k instanceof cljs.core.Keyword)){
-var temp__6751__auto__ = (thi.ng.geom.vector.swizzle2_fns.cljs$core$IFn$_invoke$arity$1 ? thi.ng.geom.vector.swizzle2_fns.cljs$core$IFn$_invoke$arity$1(k) : thi.ng.geom.vector.swizzle2_fns.call(null,k));
+var temp__6751__auto__ = thi.ng.geom.vector.swizzle2_fns.call(null,k);
 if(cljs.core.truth_(temp__6751__auto__)){
 var f = temp__6751__auto__;
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(___$1) : f.call(null,___$1));
+return f.call(null,___$1);
 } else {
 return nf;
 }
@@ -523,12 +519,12 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$ICrossProduct$ = cljs.core.PR
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$ICrossProduct$cross$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var G__15053 = self__.buf;
+var G__10150 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec2)){
-var G__15054 = v.buf;
-return (((G__15053[(0)]) * (G__15054[(1)])) - ((G__15053[(1)]) * (G__15054[(0)])));
+var G__10151 = v.buf;
+return (((G__10150[(0)]) * (G__10151[(1)])) - ((G__10150[(1)]) * (G__10151[(0)])));
 } else {
-return (((G__15053[(0)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)) - ((G__15053[(1)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+return (((G__10150[(0)]) * cljs.core.nth.call(null,v,(1),0.0)) - ((G__10150[(1)]) * cljs.core.nth.call(null,v,(0),0.0)));
 }
 });
 
@@ -539,7 +535,7 @@ if((n >= (0))){
 if((n < (2))){
 return (self__.buf[n]);
 } else {
-return thi.ng.xerror.core.key_error_BANG_(n);
+return thi.ng.xerror.core.key_error_BANG_.call(null,n);
 }
 } else {
 return null;
@@ -563,7 +559,7 @@ return null;
 thi.ng.geom.vector.Vec2.prototype.cljs$core$IPrintWithWriter$_pr_writer$arity$3 = (function (_,writer,opts){
 var self__ = this;
 var ___$1 = this;
-return cljs.core.pr_sequential_writer(writer,cljs.core.pr_writer,"#vec2 ["," ","]",opts,cljs.core.seq(___$1));
+return cljs.core.pr_sequential_writer.call(null,writer,cljs.core.pr_writer,"#vec2 ["," ","]",opts,cljs.core.seq.call(null,___$1));
 });
 
 thi.ng.geom.vector.Vec2.prototype.cljs$core$IVector$_assoc_n$arity$3 = (function (_,n,v){
@@ -593,26 +589,26 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$IReflect$reflect$arity$2 = (f
 var self__ = this;
 var ___$1 = this;
 var b = (new Float32Array((2)));
-var G__15068 = self__.buf;
-var G__15070 = (G__15068[(0)]);
-var G__15071 = (G__15068[(1)]);
+var G__10165 = self__.buf;
+var G__10167 = (G__10165[(0)]);
+var G__10168 = (G__10165[(1)]);
 if((v instanceof thi.ng.geom.vector.Vec2)){
-var G__15069 = v.buf;
-var G__15072 = (G__15069[(0)]);
-var G__15073 = (G__15069[(1)]);
-var d = (((G__15070 * G__15072) + (G__15071 * G__15073)) * 2.0);
-(b[(0)] = ((G__15072 * d) - G__15070));
+var G__10166 = v.buf;
+var G__10169 = (G__10166[(0)]);
+var G__10170 = (G__10166[(1)]);
+var d = (((G__10167 * G__10169) + (G__10168 * G__10170)) * 2.0);
+(b[(0)] = ((G__10169 * d) - G__10167));
 
-(b[(1)] = ((G__15073 * d) - G__15071));
+(b[(1)] = ((G__10170 * d) - G__10168));
 
 return (new thi.ng.geom.vector.Vec2(b,null,self__._meta));
 } else {
-var G__15072 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0);
-var G__15073 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0);
-var d = (((G__15070 * G__15072) + (G__15071 * G__15073)) * 2.0);
-(b[(0)] = ((G__15072 * d) - G__15070));
+var G__10169 = cljs.core.nth.call(null,v,(0),0.0);
+var G__10170 = cljs.core.nth.call(null,v,(1),0.0);
+var d = (((G__10167 * G__10169) + (G__10168 * G__10170)) * 2.0);
+(b[(0)] = ((G__10169 * d) - G__10167));
 
-(b[(1)] = ((G__15073 * d) - G__15071));
+(b[(1)] = ((G__10170 * d) - G__10168));
 
 return (new thi.ng.geom.vector.Vec2(b,null,self__._meta));
 }
@@ -621,7 +617,7 @@ return (new thi.ng.geom.vector.Vec2(b,null,self__._meta));
 thi.ng.geom.vector.Vec2.prototype.cljs$core$INext$_next$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-return cljs.core.cons((self__.buf[(1)]),null);
+return cljs.core.cons.call(null,(self__.buf[(1)]),null);
 });
 
 thi.ng.geom.vector.Vec2.prototype.cljs$core$ICounted$_count$arity$1 = (function (_){
@@ -635,28 +631,27 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$IDistance$ = cljs.core.PROTOC
 thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$IDistance$dist$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var G__15074 = thi.ng.geom.core.dist_squared(___$1,v);
-return Math.sqrt(G__15074);
+return Math.sqrt(thi.ng.geom.core.dist_squared.call(null,___$1,v));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$IDistance$dist_squared$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var G__15075 = self__.buf;
-var G__15077 = (G__15075[(0)]);
-var G__15078 = (G__15075[(1)]);
+var G__10171 = self__.buf;
+var G__10173 = (G__10171[(0)]);
+var G__10174 = (G__10171[(1)]);
 if((v instanceof thi.ng.geom.vector.Vec2)){
-var G__15076 = v.buf;
-var G__15079 = (G__15076[(0)]);
-var G__15080 = (G__15076[(1)]);
-var dx = (G__15077 - G__15079);
-var dy = (G__15078 - G__15080);
+var G__10172 = v.buf;
+var G__10175 = (G__10172[(0)]);
+var G__10176 = (G__10172[(1)]);
+var dx = (G__10173 - G__10175);
+var dy = (G__10174 - G__10176);
 return ((dx * dx) + (dy * dy));
 } else {
-var G__15079 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0);
-var G__15080 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0);
-var dx = (G__15077 - G__15079);
-var dy = (G__15078 - G__15080);
+var G__10175 = cljs.core.nth.call(null,v,(0),0.0);
+var G__10176 = cljs.core.nth.call(null,v,(1),0.0);
+var dx = (G__10173 - G__10175);
+var dy = (G__10174 - G__10176);
 return ((dx * dx) + (dy * dy));
 }
 });
@@ -669,12 +664,12 @@ var ___$1 = this;
 var s = Math.sin(theta);
 var c = Math.cos(theta);
 var b = (new Float32Array((2)));
-var G__15081 = self__.buf;
-var G__15082 = (G__15081[(0)]);
-var G__15083 = (G__15081[(1)]);
-(b[(0)] = ((G__15082 * c) - (G__15083 * s)));
+var G__10177 = self__.buf;
+var G__10178 = (G__10177[(0)]);
+var G__10179 = (G__10177[(1)]);
+(b[(0)] = ((G__10178 * c) - (G__10179 * s)));
 
-(b[(1)] = ((G__15082 * s) + (G__15083 * c)));
+(b[(1)] = ((G__10178 * s) + (G__10179 * c)));
 
 return (new thi.ng.geom.vector.Vec2(b,null,self__._meta));
 });
@@ -688,7 +683,7 @@ return (self__.buf[(1)]);
 thi.ng.geom.vector.Vec2.prototype.cljs$core$IStack$_pop$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-return cljs.core.with_meta(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(self__.buf[(0)])], null),self__._meta);
+return cljs.core.with_meta.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(self__.buf[(0)])], null),self__._meta);
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IInvert$ = cljs.core.PROTOCOL_SENTINEL;
@@ -696,15 +691,13 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IInvert$ = cljs.core.PROTOCOL
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IInvert$invert$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-return thi.ng.math.core._.cljs$core$IFn$_invoke$arity$1(___$1);
+return thi.ng.math.core._.call(null,___$1);
 });
 
 thi.ng.geom.vector.Vec2.prototype.cljs$core$IReversible$_rseq$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-return (function (){var G__15084 = cljs.core.cst$kw$yx;
-return (thi.ng.geom.vector.swizzle2_fns.cljs$core$IFn$_invoke$arity$1 ? thi.ng.geom.vector.swizzle2_fns.cljs$core$IFn$_invoke$arity$1(G__15084) : thi.ng.geom.vector.swizzle2_fns.call(null,G__15084));
-})().call(null,___$1);
+return thi.ng.geom.vector.swizzle2_fns.call(null,new cljs.core.Keyword(null,"yx","yx",1696579752)).call(null,___$1);
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$ILimit$ = cljs.core.PROTOCOL_SENTINEL;
@@ -712,8 +705,8 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$ILimit$ = cljs.core.PROTOCOL_
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$ILimit$limit$arity$2 = (function (_,len){
 var self__ = this;
 var ___$1 = this;
-if((thi.ng.math.core.mag_squared(___$1) > (len * len))){
-return thi.ng.math.core.normalize.cljs$core$IFn$_invoke$arity$2(___$1,len);
+if((thi.ng.math.core.mag_squared.call(null,___$1) > (len * len))){
+return thi.ng.math.core.normalize.call(null,___$1,len);
 } else {
 return ___$1;
 }
@@ -724,26 +717,26 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$IScale$ = cljs.core.PROTOCOL_
 thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$IScale$scale$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var dest__14811__auto__ = (new Float32Array((2)));
-var G__15085_15425 = self__.buf;
+var dest__9910__auto__ = (new Float32Array((2)));
+var G__10180_10495 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec2)){
-var G__15086_15426 = v.buf;
-(dest__14811__auto__[(0)] = ((G__15085_15425[(0)]) * (G__15086_15426[(0)])));
+var G__10181_10496 = v.buf;
+(dest__9910__auto__[(0)] = ((G__10180_10495[(0)]) * (G__10181_10496[(0)])));
 
-(dest__14811__auto__[(1)] = ((G__15085_15425[(1)]) * (G__15086_15426[(1)])));
+(dest__9910__auto__[(1)] = ((G__10180_10495[(1)]) * (G__10181_10496[(1)])));
 } else {
 if(typeof v === 'number'){
-(dest__14811__auto__[(0)] = ((G__15085_15425[(0)]) * v));
+(dest__9910__auto__[(0)] = ((G__10180_10495[(0)]) * v));
 
-(dest__14811__auto__[(1)] = ((G__15085_15425[(1)]) * v));
+(dest__9910__auto__[(1)] = ((G__10180_10495[(1)]) * v));
 } else {
-(dest__14811__auto__[(0)] = ((G__15085_15425[(0)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(dest__9910__auto__[(0)] = ((G__10180_10495[(0)]) * cljs.core.nth.call(null,v,(0),0.0)));
 
-(dest__14811__auto__[(1)] = ((G__15085_15425[(1)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(dest__9910__auto__[(1)] = ((G__10180_10495[(1)]) * cljs.core.nth.call(null,v,(1),0.0)));
 }
 }
 
-return (new thi.ng.geom.vector.Vec2(dest__14811__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(dest__9910__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.cljs$core$IHash$_hash$arity$1 = (function (_){
@@ -753,7 +746,7 @@ var or__7389__auto__ = self__._hash;
 if(cljs.core.truth_(or__7389__auto__)){
 return or__7389__auto__;
 } else {
-return ___$1._hash = cljs.core.mix_collection_hash(((cljs.core.imul((((31) + cljs.core.hash((self__.buf[(0)]))) | (0)),(31)) + cljs.core.hash((self__.buf[(1)]))) | (0)),(2));
+return ___$1._hash = cljs.core.mix_collection_hash.call(null,((cljs.core.imul.call(null,(((31) + cljs.core.hash.call(null,(self__.buf[(0)]))) | (0)),(31)) + cljs.core.hash.call(null,(self__.buf[(1)]))) | (0)),(2));
 }
 });
 
@@ -762,25 +755,25 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IDeltaEquals$ = cljs.core.PRO
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IDeltaEquals$delta_EQ_$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-return thi.ng.math.core.delta_EQ_.cljs$core$IFn$_invoke$arity$3(___$1,v,thi.ng.math.core._STAR_eps_STAR_);
+return thi.ng.math.core.delta_EQ_.call(null,___$1,v,thi.ng.math.core._STAR_eps_STAR_);
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IDeltaEquals$delta_EQ_$arity$3 = (function (_,v,eps){
 var self__ = this;
 var ___$1 = this;
-if(cljs.core.sequential_QMARK_(v)){
-if(((2) === cljs.core.count(v))){
-var G__15087 = self__.buf;
+if(cljs.core.sequential_QMARK_.call(null,v)){
+if(((2) === cljs.core.count.call(null,v))){
+var G__10182 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec2)){
-var G__15088 = v.buf;
-if(cljs.core.truth_(thi.ng.math.core.delta_EQ_.cljs$core$IFn$_invoke$arity$3((G__15087[(0)]),(G__15088[(0)]),eps))){
-return thi.ng.math.core.delta_EQ_.cljs$core$IFn$_invoke$arity$3((G__15087[(1)]),(G__15088[(1)]),eps);
+var G__10183 = v.buf;
+if(cljs.core.truth_(thi.ng.math.core.delta_EQ_.call(null,(G__10182[(0)]),(G__10183[(0)]),eps))){
+return thi.ng.math.core.delta_EQ_.call(null,(G__10182[(1)]),(G__10183[(1)]),eps);
 } else {
 return null;
 }
 } else {
-if(cljs.core.truth_(thi.ng.math.core.delta_EQ_.cljs$core$IFn$_invoke$arity$3((G__15087[(0)]),cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0),eps))){
-return thi.ng.math.core.delta_EQ_.cljs$core$IFn$_invoke$arity$3((G__15087[(1)]),cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0),eps);
+if(cljs.core.truth_(thi.ng.math.core.delta_EQ_.call(null,(G__10182[(0)]),cljs.core.nth.call(null,v,(0),0.0),eps))){
+return thi.ng.math.core.delta_EQ_.call(null,(G__10182[(1)]),cljs.core.nth.call(null,v,(1),0.0),eps);
 } else {
 return null;
 }
@@ -800,7 +793,7 @@ if((o instanceof thi.ng.geom.vector.Vec2)){
 var b_SINGLEQUOTE_ = o.buf;
 return (((self__.buf[(0)]) === (b_SINGLEQUOTE_[(0)]))) && (((self__.buf[(1)]) === (b_SINGLEQUOTE_[(1)])));
 } else {
-return (cljs.core.sequential_QMARK_(o)) && (((2) === cljs.core.count(o))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((self__.buf[(0)]),cljs.core.first(o))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((self__.buf[(1)]),cljs.core.nth.cljs$core$IFn$_invoke$arity$2(o,(1))));
+return (cljs.core.sequential_QMARK_.call(null,o)) && (((2) === cljs.core.count.call(null,o))) && (cljs.core._EQ_.call(null,(self__.buf[(0)]),cljs.core.first.call(null,o))) && (cljs.core._EQ_.call(null,(self__.buf[(1)]),cljs.core.nth.call(null,o,(1))));
 }
 });
 
@@ -810,24 +803,18 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$IVectorReduce$reduce_vector$a
 var self__ = this;
 var ___$1 = this;
 var buf_SINGLEQUOTE_ = (new Float32Array(self__.buf));
-return (new thi.ng.geom.vector.Vec2((thi.ng.geom.vector.vec2_reduce_STAR_.cljs$core$IFn$_invoke$arity$3 ? thi.ng.geom.vector.vec2_reduce_STAR_.cljs$core$IFn$_invoke$arity$3(f,buf_SINGLEQUOTE_,xs) : thi.ng.geom.vector.vec2_reduce_STAR_.call(null,f,buf_SINGLEQUOTE_,xs)),null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(thi.ng.geom.vector.vec2_reduce_STAR_.call(null,f,buf_SINGLEQUOTE_,xs),null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$IVectorReduce$reduce_vector$arity$4 = (function (_,f,f2,xs){
 var self__ = this;
 var ___$1 = this;
 var buf_SINGLEQUOTE_ = (new Float32Array(self__.buf));
-(thi.ng.geom.vector.vec2_reduce_STAR_.cljs$core$IFn$_invoke$arity$3 ? thi.ng.geom.vector.vec2_reduce_STAR_.cljs$core$IFn$_invoke$arity$3(f,buf_SINGLEQUOTE_,xs) : thi.ng.geom.vector.vec2_reduce_STAR_.call(null,f,buf_SINGLEQUOTE_,xs));
+thi.ng.geom.vector.vec2_reduce_STAR_.call(null,f,buf_SINGLEQUOTE_,xs);
 
-(buf_SINGLEQUOTE_[(0)] = (function (){var G__15089 = (buf_SINGLEQUOTE_[(0)]);
-var G__15090 = (0);
-return (f2.cljs$core$IFn$_invoke$arity$2 ? f2.cljs$core$IFn$_invoke$arity$2(G__15089,G__15090) : f2.call(null,G__15089,G__15090));
-})());
+(buf_SINGLEQUOTE_[(0)] = f2.call(null,(buf_SINGLEQUOTE_[(0)]),(0)));
 
-(buf_SINGLEQUOTE_[(1)] = (function (){var G__15091 = (buf_SINGLEQUOTE_[(1)]);
-var G__15092 = (1);
-return (f2.cljs$core$IFn$_invoke$arity$2 ? f2.cljs$core$IFn$_invoke$arity$2(G__15091,G__15092) : f2.call(null,G__15091,G__15092));
-})());
+(buf_SINGLEQUOTE_[(1)] = f2.call(null,(buf_SINGLEQUOTE_[(1)]),(1)));
 
 return (new thi.ng.geom.vector.Vec2(buf_SINGLEQUOTE_,null,self__._meta));
 });
@@ -847,12 +834,12 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IDotProduct$ = cljs.core.PROT
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IDotProduct$dot$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var G__15093 = self__.buf;
+var G__10184 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec2)){
-var G__15094 = v.buf;
-return (((G__15093[(0)]) * (G__15094[(0)])) + ((G__15093[(1)]) * (G__15094[(1)])));
+var G__10185 = v.buf;
+return (((G__10184[(0)]) * (G__10185[(0)])) + ((G__10184[(1)]) * (G__10185[(1)])));
 } else {
-return (((G__15093[(0)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)) + ((G__15093[(1)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+return (((G__10184[(0)]) * cljs.core.nth.call(null,v,(0),0.0)) + ((G__10184[(1)]) * cljs.core.nth.call(null,v,(1),0.0)));
 }
 });
 
@@ -872,12 +859,9 @@ return (new thi.ng.geom.vector.Vec2(b,null,self__._meta));
 thi.ng.geom.vector.Vec2.prototype.cljs$core$IReduce$_reduce$arity$2 = (function (coll,f){
 var self__ = this;
 var coll__$1 = this;
-var acc = (function (){var G__15095 = (self__.buf[(0)]);
-var G__15096 = (self__.buf[(1)]);
-return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(G__15095,G__15096) : f.call(null,G__15095,G__15096));
-})();
-if(cljs.core.reduced_QMARK_(acc)){
-return (cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(acc) : cljs.core.deref.call(null,acc));
+var acc = f.call(null,(self__.buf[(0)]),(self__.buf[(1)]));
+if(cljs.core.reduced_QMARK_.call(null,acc)){
+return cljs.core.deref.call(null,acc);
 } else {
 return acc;
 }
@@ -886,19 +870,13 @@ return acc;
 thi.ng.geom.vector.Vec2.prototype.cljs$core$IReduce$_reduce$arity$3 = (function (coll,f,start){
 var self__ = this;
 var coll__$1 = this;
-var acc = (function (){var G__15097 = start;
-var G__15098 = (self__.buf[(0)]);
-return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(G__15097,G__15098) : f.call(null,G__15097,G__15098));
-})();
-if(cljs.core.reduced_QMARK_(acc)){
-return (cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(acc) : cljs.core.deref.call(null,acc));
+var acc = f.call(null,start,(self__.buf[(0)]));
+if(cljs.core.reduced_QMARK_.call(null,acc)){
+return cljs.core.deref.call(null,acc);
 } else {
-var acc__$1 = (function (){var G__15099 = acc;
-var G__15100 = (self__.buf[(1)]);
-return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(G__15099,G__15100) : f.call(null,G__15099,G__15100));
-})();
-if(cljs.core.reduced_QMARK_(acc__$1)){
-return (cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(acc__$1) : cljs.core.deref.call(null,acc__$1));
+var acc__$1 = f.call(null,acc,(self__.buf[(1)]));
+if(cljs.core.reduced_QMARK_.call(null,acc__$1)){
+return cljs.core.deref.call(null,acc__$1);
 } else {
 return acc__$1;
 }
@@ -910,26 +888,26 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$ITranslate$ = cljs.core.PROTO
 thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$ITranslate$translate$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var dest__14811__auto__ = (new Float32Array((2)));
-var G__15101_15427 = self__.buf;
+var dest__9910__auto__ = (new Float32Array((2)));
+var G__10186_10497 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec2)){
-var G__15102_15428 = v.buf;
-(dest__14811__auto__[(0)] = ((G__15101_15427[(0)]) + (G__15102_15428[(0)])));
+var G__10187_10498 = v.buf;
+(dest__9910__auto__[(0)] = ((G__10186_10497[(0)]) + (G__10187_10498[(0)])));
 
-(dest__14811__auto__[(1)] = ((G__15101_15427[(1)]) + (G__15102_15428[(1)])));
+(dest__9910__auto__[(1)] = ((G__10186_10497[(1)]) + (G__10187_10498[(1)])));
 } else {
 if(typeof v === 'number'){
-(dest__14811__auto__[(0)] = ((G__15101_15427[(0)]) + v));
+(dest__9910__auto__[(0)] = ((G__10186_10497[(0)]) + v));
 
-(dest__14811__auto__[(1)] = ((G__15101_15427[(1)]) + v));
+(dest__9910__auto__[(1)] = ((G__10186_10497[(1)]) + v));
 } else {
-(dest__14811__auto__[(0)] = ((G__15101_15427[(0)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(dest__9910__auto__[(0)] = ((G__10186_10497[(0)]) + cljs.core.nth.call(null,v,(0),0.0)));
 
-(dest__14811__auto__[(1)] = ((G__15101_15427[(1)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(dest__9910__auto__[(1)] = ((G__10186_10497[(1)]) + cljs.core.nth.call(null,v,(1),0.0)));
 }
 }
 
-return (new thi.ng.geom.vector.Vec2(dest__14811__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(dest__9910__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.cljs$core$ISeq$_first$arity$1 = (function (_){
@@ -941,7 +919,7 @@ return (self__.buf[(0)]);
 thi.ng.geom.vector.Vec2.prototype.cljs$core$ISeq$_rest$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-return cljs.core.cons((self__.buf[(1)]),null);
+return cljs.core.cons.call(null,(self__.buf[(1)]),null);
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$IHeading$ = cljs.core.PROTOCOL_SENTINEL;
@@ -949,10 +927,7 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$IHeading$ = cljs.core.PROTOCO
 thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$IHeading$heading$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var t = (function (){var G__15103 = (self__.buf[(1)]);
-var G__15104 = (self__.buf[(0)]);
-return Math.atan2(G__15103,G__15104);
-})();
+var t = Math.atan2((self__.buf[(1)]),(self__.buf[(0)]));
 if((t < (0))){
 return (t + thi.ng.math.core.TWO_PI);
 } else {
@@ -963,13 +938,13 @@ return t;
 thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$IHeading$heading_xy$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-return thi.ng.geom.core.heading(___$1);
+return thi.ng.geom.core.heading.call(null,___$1);
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$IHeading$angle_between$arity$2 = (function (_,a){
 var self__ = this;
 var ___$1 = this;
-var t = (thi.ng.geom.core.heading(a) - thi.ng.geom.core.heading(___$1));
+var t = (thi.ng.geom.core.heading.call(null,a) - thi.ng.geom.core.heading.call(null,___$1));
 if((t < (0))){
 return (t + thi.ng.math.core.TWO_PI);
 } else {
@@ -989,21 +964,21 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IInterpolate$mix$arity$2 = (f
 var self__ = this;
 var ___$1 = this;
 var b = (new Float32Array((2)));
-var G__15105_15429 = self__.buf;
+var G__10188_10499 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec2)){
-var G__15106_15430 = v.buf;
-(b[(0)] = (((G__15105_15429[(0)]) + (G__15106_15430[(0)])) * 0.5));
+var G__10189_10500 = v.buf;
+(b[(0)] = (((G__10188_10499[(0)]) + (G__10189_10500[(0)])) * 0.5));
 
-(b[(1)] = (((G__15105_15429[(1)]) + (G__15106_15430[(1)])) * 0.5));
+(b[(1)] = (((G__10188_10499[(1)]) + (G__10189_10500[(1)])) * 0.5));
 } else {
 if(typeof v === 'number'){
-(b[(0)] = (((G__15105_15429[(0)]) + v) * 0.5));
+(b[(0)] = (((G__10188_10499[(0)]) + v) * 0.5));
 
-(b[(1)] = (((G__15105_15429[(1)]) + v) * 0.5));
+(b[(1)] = (((G__10188_10499[(1)]) + v) * 0.5));
 } else {
-(b[(0)] = (((G__15105_15429[(0)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)) * 0.5));
+(b[(0)] = (((G__10188_10499[(0)]) + cljs.core.nth.call(null,v,(0),0.0)) * 0.5));
 
-(b[(1)] = (((G__15105_15429[(1)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)) * 0.5));
+(b[(1)] = (((G__10188_10499[(1)]) + cljs.core.nth.call(null,v,(1),0.0)) * 0.5));
 }
 }
 
@@ -1014,22 +989,22 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IInterpolate$mix$arity$3 = (f
 var self__ = this;
 var ___$1 = this;
 var b = (new Float32Array((2)));
-var G__15116_15431 = (v instanceof thi.ng.geom.vector.Vec2);
-var G__15117_15432 = (t instanceof thi.ng.geom.vector.Vec2);
-var G__15118_15433 = ((!(G__15116_15431))?typeof v === 'number':null);
-var G__15119_15434 = ((!(G__15117_15432))?typeof t === 'number':null);
-var G__15107_15435 = self__.buf;
-var G__15108_15436 = ((G__15116_15431)?v.buf:null);
-var G__15109_15437 = ((G__15117_15432)?t.buf:null);
-var G__15110_15438 = (G__15107_15435[(0)]);
-var G__15111_15439 = (G__15107_15435[(1)]);
-var G__15112_15440 = ((G__15116_15431)?(G__15108_15436[(0)]):(cljs.core.truth_(G__15118_15433)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
-var G__15113_15441 = ((G__15116_15431)?(G__15108_15436[(1)]):(cljs.core.truth_(G__15118_15433)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
-var G__15114_15442 = ((G__15117_15432)?(G__15109_15437[(0)]):(cljs.core.truth_(G__15119_15434)?t:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(t,(0),0.0)));
-var G__15115_15443 = ((G__15117_15432)?(G__15109_15437[(1)]):(cljs.core.truth_(G__15119_15434)?t:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(t,(1),0.0)));
-(b[(0)] = (((G__15112_15440 - G__15110_15438) * G__15114_15442) + G__15110_15438));
+var G__10199_10501 = (v instanceof thi.ng.geom.vector.Vec2);
+var G__10200_10502 = (t instanceof thi.ng.geom.vector.Vec2);
+var G__10201_10503 = ((!(G__10199_10501))?typeof v === 'number':null);
+var G__10202_10504 = ((!(G__10200_10502))?typeof t === 'number':null);
+var G__10190_10505 = self__.buf;
+var G__10191_10506 = ((G__10199_10501)?v.buf:null);
+var G__10192_10507 = ((G__10200_10502)?t.buf:null);
+var G__10193_10508 = (G__10190_10505[(0)]);
+var G__10194_10509 = (G__10190_10505[(1)]);
+var G__10195_10510 = ((G__10199_10501)?(G__10191_10506[(0)]):(cljs.core.truth_(G__10201_10503)?v:cljs.core.nth.call(null,v,(0),0.0)));
+var G__10196_10511 = ((G__10199_10501)?(G__10191_10506[(1)]):(cljs.core.truth_(G__10201_10503)?v:cljs.core.nth.call(null,v,(1),0.0)));
+var G__10197_10512 = ((G__10200_10502)?(G__10192_10507[(0)]):(cljs.core.truth_(G__10202_10504)?t:cljs.core.nth.call(null,t,(0),0.0)));
+var G__10198_10513 = ((G__10200_10502)?(G__10192_10507[(1)]):(cljs.core.truth_(G__10202_10504)?t:cljs.core.nth.call(null,t,(1),0.0)));
+(b[(0)] = (((G__10195_10510 - G__10193_10508) * G__10197_10512) + G__10193_10508));
 
-(b[(1)] = (((G__15113_15441 - G__15111_15439) * G__15115_15443) + G__15111_15439));
+(b[(1)] = (((G__10196_10511 - G__10194_10509) * G__10198_10513) + G__10194_10509));
 
 return (new thi.ng.geom.vector.Vec2(b,null,self__._meta));
 });
@@ -1041,26 +1016,26 @@ var b_SINGLEQUOTE_ = (new Float32Array((2)));
 var dv_QMARK_ = (d instanceof thi.ng.geom.vector.Vec2);
 var dn_QMARK_ = typeof d === 'number';
 var dv = ((dv_QMARK_)?d.buf:null);
-var dx = ((dv_QMARK_)?(dv[(0)]):((dn_QMARK_)?d:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(d,(0),0.0)));
-var dy = ((dv_QMARK_)?(dv[(1)]):((dn_QMARK_)?d:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(d,(1),0.0)));
-var G__15129_15444 = (b instanceof thi.ng.geom.vector.Vec2);
-var G__15130_15445 = (c instanceof thi.ng.geom.vector.Vec2);
-var G__15131_15446 = ((!(G__15129_15444))?typeof b === 'number':null);
-var G__15132_15447 = ((!(G__15130_15445))?typeof c === 'number':null);
-var G__15120_15448 = self__.buf;
-var G__15121_15449 = ((G__15129_15444)?b.buf:null);
-var G__15122_15450 = ((G__15130_15445)?c.buf:null);
-var G__15123_15451 = (G__15120_15448[(0)]);
-var G__15124_15452 = (G__15120_15448[(1)]);
-var G__15125_15453 = ((G__15129_15444)?(G__15121_15449[(0)]):(cljs.core.truth_(G__15131_15446)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(0),0.0)));
-var G__15126_15454 = ((G__15129_15444)?(G__15121_15449[(1)]):(cljs.core.truth_(G__15131_15446)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(1),0.0)));
-var G__15127_15455 = ((G__15130_15445)?(G__15122_15450[(0)]):(cljs.core.truth_(G__15132_15447)?c:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(c,(0),0.0)));
-var G__15128_15456 = ((G__15130_15445)?(G__15122_15450[(1)]):(cljs.core.truth_(G__15132_15447)?c:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(c,(1),0.0)));
-var x1_15457 = (((G__15125_15453 - G__15123_15451) * u) + G__15123_15451);
-var y1_15458 = (((G__15126_15454 - G__15124_15452) * u) + G__15124_15452);
-(b_SINGLEQUOTE_[(0)] = ((((((dx - G__15127_15455) * u) + G__15127_15455) - x1_15457) * v) + x1_15457));
+var dx = ((dv_QMARK_)?(dv[(0)]):((dn_QMARK_)?d:cljs.core.nth.call(null,d,(0),0.0)));
+var dy = ((dv_QMARK_)?(dv[(1)]):((dn_QMARK_)?d:cljs.core.nth.call(null,d,(1),0.0)));
+var G__10212_10514 = (b instanceof thi.ng.geom.vector.Vec2);
+var G__10213_10515 = (c instanceof thi.ng.geom.vector.Vec2);
+var G__10214_10516 = ((!(G__10212_10514))?typeof b === 'number':null);
+var G__10215_10517 = ((!(G__10213_10515))?typeof c === 'number':null);
+var G__10203_10518 = self__.buf;
+var G__10204_10519 = ((G__10212_10514)?b.buf:null);
+var G__10205_10520 = ((G__10213_10515)?c.buf:null);
+var G__10206_10521 = (G__10203_10518[(0)]);
+var G__10207_10522 = (G__10203_10518[(1)]);
+var G__10208_10523 = ((G__10212_10514)?(G__10204_10519[(0)]):(cljs.core.truth_(G__10214_10516)?b:cljs.core.nth.call(null,b,(0),0.0)));
+var G__10209_10524 = ((G__10212_10514)?(G__10204_10519[(1)]):(cljs.core.truth_(G__10214_10516)?b:cljs.core.nth.call(null,b,(1),0.0)));
+var G__10210_10525 = ((G__10213_10515)?(G__10205_10520[(0)]):(cljs.core.truth_(G__10215_10517)?c:cljs.core.nth.call(null,c,(0),0.0)));
+var G__10211_10526 = ((G__10213_10515)?(G__10205_10520[(1)]):(cljs.core.truth_(G__10215_10517)?c:cljs.core.nth.call(null,c,(1),0.0)));
+var x1_10527 = (((G__10208_10523 - G__10206_10521) * u) + G__10206_10521);
+var y1_10528 = (((G__10209_10524 - G__10207_10522) * u) + G__10207_10522);
+(b_SINGLEQUOTE_[(0)] = ((((((dx - G__10210_10525) * u) + G__10210_10525) - x1_10527) * v) + x1_10527));
 
-(b_SINGLEQUOTE_[(1)] = ((((((dy - G__15128_15456) * u) + G__15128_15456) - y1_15458) * v) + y1_15458));
+(b_SINGLEQUOTE_[(1)] = ((((((dy - G__10211_10526) * u) + G__10211_10526) - y1_10528) * v) + y1_10528));
 
 return (new thi.ng.geom.vector.Vec2(b_SINGLEQUOTE_,null,self__._meta));
 });
@@ -1069,22 +1044,22 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IInterpolate$mix_with$arity$4
 var self__ = this;
 var ___$1 = this;
 var b = (new Float32Array((2)));
-var G__15142_15459 = (v instanceof thi.ng.geom.vector.Vec2);
-var G__15143_15460 = (t instanceof thi.ng.geom.vector.Vec2);
-var G__15144_15461 = ((!(G__15142_15459))?typeof v === 'number':null);
-var G__15145_15462 = ((!(G__15143_15460))?typeof t === 'number':null);
-var G__15133_15463 = self__.buf;
-var G__15134_15464 = ((G__15142_15459)?v.buf:null);
-var G__15135_15465 = ((G__15143_15460)?t.buf:null);
-var G__15136_15466 = (G__15133_15463[(0)]);
-var G__15137_15467 = (G__15133_15463[(1)]);
-var G__15138_15468 = ((G__15142_15459)?(G__15134_15464[(0)]):(cljs.core.truth_(G__15144_15461)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
-var G__15139_15469 = ((G__15142_15459)?(G__15134_15464[(1)]):(cljs.core.truth_(G__15144_15461)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
-var G__15140_15470 = ((G__15143_15460)?(G__15135_15465[(0)]):(cljs.core.truth_(G__15145_15462)?t:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(t,(0),0.0)));
-var G__15141_15471 = ((G__15143_15460)?(G__15135_15465[(1)]):(cljs.core.truth_(G__15145_15462)?t:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(t,(1),0.0)));
-(b[(0)] = (f.cljs$core$IFn$_invoke$arity$3 ? f.cljs$core$IFn$_invoke$arity$3(G__15136_15466,G__15138_15468,G__15140_15470) : f.call(null,G__15136_15466,G__15138_15468,G__15140_15470)));
+var G__10225_10529 = (v instanceof thi.ng.geom.vector.Vec2);
+var G__10226_10530 = (t instanceof thi.ng.geom.vector.Vec2);
+var G__10227_10531 = ((!(G__10225_10529))?typeof v === 'number':null);
+var G__10228_10532 = ((!(G__10226_10530))?typeof t === 'number':null);
+var G__10216_10533 = self__.buf;
+var G__10217_10534 = ((G__10225_10529)?v.buf:null);
+var G__10218_10535 = ((G__10226_10530)?t.buf:null);
+var G__10219_10536 = (G__10216_10533[(0)]);
+var G__10220_10537 = (G__10216_10533[(1)]);
+var G__10221_10538 = ((G__10225_10529)?(G__10217_10534[(0)]):(cljs.core.truth_(G__10227_10531)?v:cljs.core.nth.call(null,v,(0),0.0)));
+var G__10222_10539 = ((G__10225_10529)?(G__10217_10534[(1)]):(cljs.core.truth_(G__10227_10531)?v:cljs.core.nth.call(null,v,(1),0.0)));
+var G__10223_10540 = ((G__10226_10530)?(G__10218_10535[(0)]):(cljs.core.truth_(G__10228_10532)?t:cljs.core.nth.call(null,t,(0),0.0)));
+var G__10224_10541 = ((G__10226_10530)?(G__10218_10535[(1)]):(cljs.core.truth_(G__10228_10532)?t:cljs.core.nth.call(null,t,(1),0.0)));
+(b[(0)] = f.call(null,G__10219_10536,G__10221_10538,G__10223_10540));
 
-(b[(1)] = (f.cljs$core$IFn$_invoke$arity$3 ? f.cljs$core$IFn$_invoke$arity$3(G__15137_15467,G__15139_15469,G__15141_15471) : f.call(null,G__15137_15467,G__15139_15469,G__15141_15471)));
+(b[(1)] = f.call(null,G__10220_10537,G__10222_10539,G__10224_10541));
 
 return (new thi.ng.geom.vector.Vec2(b,null,self__._meta));
 });
@@ -1093,21 +1068,21 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IInterpolate$step$arity$2 = (
 var self__ = this;
 var ___$1 = this;
 var b = (new Float32Array((2)));
-var G__15146_15472 = self__.buf;
+var G__10229_10542 = self__.buf;
 if((e instanceof thi.ng.geom.vector.Vec2)){
-var G__15147_15473 = e.buf;
-(b[(0)] = thi.ng.math.core.step_STAR_((G__15147_15473[(0)]),(G__15146_15472[(0)])));
+var G__10230_10543 = e.buf;
+(b[(0)] = thi.ng.math.core.step_STAR_.call(null,(G__10230_10543[(0)]),(G__10229_10542[(0)])));
 
-(b[(1)] = thi.ng.math.core.step_STAR_((G__15147_15473[(1)]),(G__15146_15472[(1)])));
+(b[(1)] = thi.ng.math.core.step_STAR_.call(null,(G__10230_10543[(1)]),(G__10229_10542[(1)])));
 } else {
 if(typeof e === 'number'){
-(b[(0)] = thi.ng.math.core.step_STAR_(e,(G__15146_15472[(0)])));
+(b[(0)] = thi.ng.math.core.step_STAR_.call(null,e,(G__10229_10542[(0)])));
 
-(b[(1)] = thi.ng.math.core.step_STAR_(e,(G__15146_15472[(1)])));
+(b[(1)] = thi.ng.math.core.step_STAR_.call(null,e,(G__10229_10542[(1)])));
 } else {
-(b[(0)] = thi.ng.math.core.step_STAR_(cljs.core.nth.cljs$core$IFn$_invoke$arity$3(e,(0),0.0),(G__15146_15472[(0)])));
+(b[(0)] = thi.ng.math.core.step_STAR_.call(null,cljs.core.nth.call(null,e,(0),0.0),(G__10229_10542[(0)])));
 
-(b[(1)] = thi.ng.math.core.step_STAR_(cljs.core.nth.cljs$core$IFn$_invoke$arity$3(e,(1),0.0),(G__15146_15472[(1)])));
+(b[(1)] = thi.ng.math.core.step_STAR_.call(null,cljs.core.nth.call(null,e,(1),0.0),(G__10229_10542[(1)])));
 }
 }
 
@@ -1118,22 +1093,22 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IInterpolate$smoothstep$arity
 var self__ = this;
 var ___$1 = this;
 var b = (new Float32Array((2)));
-var G__15157_15474 = (e1 instanceof thi.ng.geom.vector.Vec2);
-var G__15158_15475 = (e2 instanceof thi.ng.geom.vector.Vec2);
-var G__15159_15476 = ((!(G__15157_15474))?typeof e1 === 'number':null);
-var G__15160_15477 = ((!(G__15158_15475))?typeof e2 === 'number':null);
-var G__15148_15478 = self__.buf;
-var G__15149_15479 = ((G__15157_15474)?e1.buf:null);
-var G__15150_15480 = ((G__15158_15475)?e2.buf:null);
-var G__15151_15481 = (G__15148_15478[(0)]);
-var G__15152_15482 = (G__15148_15478[(1)]);
-var G__15153_15483 = ((G__15157_15474)?(G__15149_15479[(0)]):(cljs.core.truth_(G__15159_15476)?e1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(e1,(0),0.0)));
-var G__15154_15484 = ((G__15157_15474)?(G__15149_15479[(1)]):(cljs.core.truth_(G__15159_15476)?e1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(e1,(1),0.0)));
-var G__15155_15485 = ((G__15158_15475)?(G__15150_15480[(0)]):(cljs.core.truth_(G__15160_15477)?e2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(e2,(0),0.0)));
-var G__15156_15486 = ((G__15158_15475)?(G__15150_15480[(1)]):(cljs.core.truth_(G__15160_15477)?e2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(e2,(1),0.0)));
-(b[(0)] = thi.ng.math.core.smoothstep_STAR_(G__15153_15483,G__15155_15485,G__15151_15481));
+var G__10240_10544 = (e1 instanceof thi.ng.geom.vector.Vec2);
+var G__10241_10545 = (e2 instanceof thi.ng.geom.vector.Vec2);
+var G__10242_10546 = ((!(G__10240_10544))?typeof e1 === 'number':null);
+var G__10243_10547 = ((!(G__10241_10545))?typeof e2 === 'number':null);
+var G__10231_10548 = self__.buf;
+var G__10232_10549 = ((G__10240_10544)?e1.buf:null);
+var G__10233_10550 = ((G__10241_10545)?e2.buf:null);
+var G__10234_10551 = (G__10231_10548[(0)]);
+var G__10235_10552 = (G__10231_10548[(1)]);
+var G__10236_10553 = ((G__10240_10544)?(G__10232_10549[(0)]):(cljs.core.truth_(G__10242_10546)?e1:cljs.core.nth.call(null,e1,(0),0.0)));
+var G__10237_10554 = ((G__10240_10544)?(G__10232_10549[(1)]):(cljs.core.truth_(G__10242_10546)?e1:cljs.core.nth.call(null,e1,(1),0.0)));
+var G__10238_10555 = ((G__10241_10545)?(G__10233_10550[(0)]):(cljs.core.truth_(G__10243_10547)?e2:cljs.core.nth.call(null,e2,(0),0.0)));
+var G__10239_10556 = ((G__10241_10545)?(G__10233_10550[(1)]):(cljs.core.truth_(G__10243_10547)?e2:cljs.core.nth.call(null,e2,(1),0.0)));
+(b[(0)] = thi.ng.math.core.smoothstep_STAR_.call(null,G__10236_10553,G__10238_10555,G__10234_10551));
 
-(b[(1)] = thi.ng.math.core.smoothstep_STAR_(G__15153_15483,G__15156_15486,G__15152_15482));
+(b[(1)] = thi.ng.math.core.smoothstep_STAR_.call(null,G__10236_10553,G__10239_10556,G__10235_10552));
 
 return (new thi.ng.geom.vector.Vec2(b,null,self__._meta));
 });
@@ -1144,7 +1119,7 @@ var ___$1 = this;
 if(typeof k === 'number'){
 return ((k >= (0))) && ((k < (2)));
 } else {
-if(cljs.core.truth_((thi.ng.geom.vector.swizzle2_fns.cljs$core$IFn$_invoke$arity$1 ? thi.ng.geom.vector.swizzle2_fns.cljs$core$IFn$_invoke$arity$1(k) : thi.ng.geom.vector.swizzle2_fns.call(null,k)))){
+if(cljs.core.truth_(thi.ng.geom.vector.swizzle2_fns.call(null,k))){
 return true;
 } else {
 return false;
@@ -1163,23 +1138,17 @@ var b = (new Float32Array(self__.buf));
 return (new thi.ng.geom.vector.Vec2(b,null,self__._meta));
 } else {
 if((k === (2))){
-return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(___$1,v);
+return cljs.core.conj.call(null,___$1,v);
 } else {
-return thi.ng.xerror.core.key_error_BANG_(k);
+return thi.ng.xerror.core.key_error_BANG_.call(null,k);
 }
 }
 } else {
 if((k instanceof cljs.core.Keyword)){
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$z,k)){
-return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(___$1,v);
+if(cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"z","z",-789527183),k)){
+return cljs.core.conj.call(null,___$1,v);
 } else {
-return (new thi.ng.geom.vector.Vec2((function (){var G__15161 = self__.buf;
-var G__15162 = (new Float32Array(self__.buf));
-var G__15163 = new cljs.core.PersistentArrayMap(null, 2, ["x",(0),"y",(1)], null);
-var G__15164 = k;
-var G__15165 = v;
-return (thi.ng.geom.vector.swizzle_assoc_STAR_.cljs$core$IFn$_invoke$arity$5 ? thi.ng.geom.vector.swizzle_assoc_STAR_.cljs$core$IFn$_invoke$arity$5(G__15161,G__15162,G__15163,G__15164,G__15165) : thi.ng.geom.vector.swizzle_assoc_STAR_.call(null,G__15161,G__15162,G__15163,G__15164,G__15165));
-})(),null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(thi.ng.geom.vector.swizzle_assoc_STAR_.call(null,self__.buf,(new Float32Array(self__.buf)),new cljs.core.PersistentArrayMap(null, 2, ["x",(0),"y",(1)], null),k,v),null,self__._meta));
 }
 } else {
 return null;
@@ -1198,239 +1167,239 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMinMax$ = cljs.core.PROTOCOL
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMinMax$min$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var dest__14811__auto__ = (new Float32Array((2)));
-var G__15166_15487 = self__.buf;
+var dest__9910__auto__ = (new Float32Array((2)));
+var G__10244_10557 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec2)){
-var G__15167_15488 = v.buf;
-(dest__14811__auto__[(0)] = (function (){var a__14160__auto__ = (G__15166_15487[(0)]);
-var b__14161__auto__ = (G__15167_15488[(0)]);
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+var G__10245_10558 = v.buf;
+(dest__9910__auto__[(0)] = (function (){var a__9307__auto__ = (G__10244_10557[(0)]);
+var b__9308__auto__ = (G__10245_10558[(0)]);
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })());
 
-(dest__14811__auto__[(1)] = (function (){var a__14160__auto__ = (G__15166_15487[(1)]);
-var b__14161__auto__ = (G__15167_15488[(1)]);
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+(dest__9910__auto__[(1)] = (function (){var a__9307__auto__ = (G__10244_10557[(1)]);
+var b__9308__auto__ = (G__10245_10558[(1)]);
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })());
 } else {
 if(typeof v === 'number'){
-(dest__14811__auto__[(0)] = (function (){var a__14160__auto__ = (G__15166_15487[(0)]);
-var b__14161__auto__ = v;
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+(dest__9910__auto__[(0)] = (function (){var a__9307__auto__ = (G__10244_10557[(0)]);
+var b__9308__auto__ = v;
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })());
 
-(dest__14811__auto__[(1)] = (function (){var a__14160__auto__ = (G__15166_15487[(1)]);
-var b__14161__auto__ = v;
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+(dest__9910__auto__[(1)] = (function (){var a__9307__auto__ = (G__10244_10557[(1)]);
+var b__9308__auto__ = v;
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })());
 } else {
-(dest__14811__auto__[(0)] = (function (){var a__14160__auto__ = (G__15166_15487[(0)]);
-var b__14161__auto__ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0);
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+(dest__9910__auto__[(0)] = (function (){var a__9307__auto__ = (G__10244_10557[(0)]);
+var b__9308__auto__ = cljs.core.nth.call(null,v,(0),0.0);
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })());
 
-(dest__14811__auto__[(1)] = (function (){var a__14160__auto__ = (G__15166_15487[(1)]);
-var b__14161__auto__ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0);
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+(dest__9910__auto__[(1)] = (function (){var a__9307__auto__ = (G__10244_10557[(1)]);
+var b__9308__auto__ = cljs.core.nth.call(null,v,(1),0.0);
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })());
 }
 }
 
-return (new thi.ng.geom.vector.Vec2(dest__14811__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(dest__9910__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMinMax$min$arity$3 = (function (_,v,v2){
 var self__ = this;
 var ___$1 = this;
-var dest__14822__auto__ = (new Float32Array((2)));
-var G__15177_15489 = (v instanceof thi.ng.geom.vector.Vec2);
-var G__15178_15490 = (v2 instanceof thi.ng.geom.vector.Vec2);
-var G__15179_15491 = ((!(G__15177_15489))?typeof v === 'number':null);
-var G__15180_15492 = ((!(G__15178_15490))?typeof v2 === 'number':null);
-var G__15168_15493 = self__.buf;
-var G__15169_15494 = ((G__15177_15489)?v.buf:null);
-var G__15170_15495 = ((G__15178_15490)?v2.buf:null);
-var G__15171_15496 = (G__15168_15493[(0)]);
-var G__15172_15497 = (G__15168_15493[(1)]);
-var G__15173_15498 = ((G__15177_15489)?(G__15169_15494[(0)]):(cljs.core.truth_(G__15179_15491)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
-var G__15174_15499 = ((G__15177_15489)?(G__15169_15494[(1)]):(cljs.core.truth_(G__15179_15491)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
-var G__15175_15500 = ((G__15178_15490)?(G__15170_15495[(0)]):(cljs.core.truth_(G__15180_15492)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__15176_15501 = ((G__15178_15490)?(G__15170_15495[(1)]):(cljs.core.truth_(G__15180_15492)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-(dest__14822__auto__[(0)] = (function (){var a__14160__auto__ = (function (){var a__14160__auto__ = G__15171_15496;
-var b__14161__auto__ = G__15173_15498;
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+var dest__9921__auto__ = (new Float32Array((2)));
+var G__10255_10559 = (v instanceof thi.ng.geom.vector.Vec2);
+var G__10256_10560 = (v2 instanceof thi.ng.geom.vector.Vec2);
+var G__10257_10561 = ((!(G__10255_10559))?typeof v === 'number':null);
+var G__10258_10562 = ((!(G__10256_10560))?typeof v2 === 'number':null);
+var G__10246_10563 = self__.buf;
+var G__10247_10564 = ((G__10255_10559)?v.buf:null);
+var G__10248_10565 = ((G__10256_10560)?v2.buf:null);
+var G__10249_10566 = (G__10246_10563[(0)]);
+var G__10250_10567 = (G__10246_10563[(1)]);
+var G__10251_10568 = ((G__10255_10559)?(G__10247_10564[(0)]):(cljs.core.truth_(G__10257_10561)?v:cljs.core.nth.call(null,v,(0),0.0)));
+var G__10252_10569 = ((G__10255_10559)?(G__10247_10564[(1)]):(cljs.core.truth_(G__10257_10561)?v:cljs.core.nth.call(null,v,(1),0.0)));
+var G__10253_10570 = ((G__10256_10560)?(G__10248_10565[(0)]):(cljs.core.truth_(G__10258_10562)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__10254_10571 = ((G__10256_10560)?(G__10248_10565[(1)]):(cljs.core.truth_(G__10258_10562)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+(dest__9921__auto__[(0)] = (function (){var a__9307__auto__ = (function (){var a__9307__auto__ = G__10249_10566;
+var b__9308__auto__ = G__10251_10568;
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })();
-var b__14161__auto__ = G__15175_15500;
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+var b__9308__auto__ = G__10253_10570;
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })());
 
-(dest__14822__auto__[(1)] = (function (){var a__14160__auto__ = (function (){var a__14160__auto__ = G__15172_15497;
-var b__14161__auto__ = G__15174_15499;
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+(dest__9921__auto__[(1)] = (function (){var a__9307__auto__ = (function (){var a__9307__auto__ = G__10250_10567;
+var b__9308__auto__ = G__10252_10569;
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })();
-var b__14161__auto__ = G__15176_15501;
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+var b__9308__auto__ = G__10254_10571;
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })());
 
-return (new thi.ng.geom.vector.Vec2(dest__14822__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(dest__9921__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMinMax$max$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var dest__14811__auto__ = (new Float32Array((2)));
-var G__15181_15502 = self__.buf;
+var dest__9910__auto__ = (new Float32Array((2)));
+var G__10259_10572 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec2)){
-var G__15182_15503 = v.buf;
-(dest__14811__auto__[(0)] = (function (){var a__14167__auto__ = (G__15181_15502[(0)]);
-var b__14168__auto__ = (G__15182_15503[(0)]);
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+var G__10260_10573 = v.buf;
+(dest__9910__auto__[(0)] = (function (){var a__9314__auto__ = (G__10259_10572[(0)]);
+var b__9315__auto__ = (G__10260_10573[(0)]);
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })());
 
-(dest__14811__auto__[(1)] = (function (){var a__14167__auto__ = (G__15181_15502[(1)]);
-var b__14168__auto__ = (G__15182_15503[(1)]);
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+(dest__9910__auto__[(1)] = (function (){var a__9314__auto__ = (G__10259_10572[(1)]);
+var b__9315__auto__ = (G__10260_10573[(1)]);
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })());
 } else {
 if(typeof v === 'number'){
-(dest__14811__auto__[(0)] = (function (){var a__14167__auto__ = (G__15181_15502[(0)]);
-var b__14168__auto__ = v;
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+(dest__9910__auto__[(0)] = (function (){var a__9314__auto__ = (G__10259_10572[(0)]);
+var b__9315__auto__ = v;
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })());
 
-(dest__14811__auto__[(1)] = (function (){var a__14167__auto__ = (G__15181_15502[(1)]);
-var b__14168__auto__ = v;
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+(dest__9910__auto__[(1)] = (function (){var a__9314__auto__ = (G__10259_10572[(1)]);
+var b__9315__auto__ = v;
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })());
 } else {
-(dest__14811__auto__[(0)] = (function (){var a__14167__auto__ = (G__15181_15502[(0)]);
-var b__14168__auto__ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0);
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+(dest__9910__auto__[(0)] = (function (){var a__9314__auto__ = (G__10259_10572[(0)]);
+var b__9315__auto__ = cljs.core.nth.call(null,v,(0),0.0);
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })());
 
-(dest__14811__auto__[(1)] = (function (){var a__14167__auto__ = (G__15181_15502[(1)]);
-var b__14168__auto__ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0);
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+(dest__9910__auto__[(1)] = (function (){var a__9314__auto__ = (G__10259_10572[(1)]);
+var b__9315__auto__ = cljs.core.nth.call(null,v,(1),0.0);
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })());
 }
 }
 
-return (new thi.ng.geom.vector.Vec2(dest__14811__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(dest__9910__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMinMax$max$arity$3 = (function (_,v,v2){
 var self__ = this;
 var ___$1 = this;
-var dest__14822__auto__ = (new Float32Array((2)));
-var G__15192_15504 = (v instanceof thi.ng.geom.vector.Vec2);
-var G__15193_15505 = (v2 instanceof thi.ng.geom.vector.Vec2);
-var G__15194_15506 = ((!(G__15192_15504))?typeof v === 'number':null);
-var G__15195_15507 = ((!(G__15193_15505))?typeof v2 === 'number':null);
-var G__15183_15508 = self__.buf;
-var G__15184_15509 = ((G__15192_15504)?v.buf:null);
-var G__15185_15510 = ((G__15193_15505)?v2.buf:null);
-var G__15186_15511 = (G__15183_15508[(0)]);
-var G__15187_15512 = (G__15183_15508[(1)]);
-var G__15188_15513 = ((G__15192_15504)?(G__15184_15509[(0)]):(cljs.core.truth_(G__15194_15506)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
-var G__15189_15514 = ((G__15192_15504)?(G__15184_15509[(1)]):(cljs.core.truth_(G__15194_15506)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
-var G__15190_15515 = ((G__15193_15505)?(G__15185_15510[(0)]):(cljs.core.truth_(G__15195_15507)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__15191_15516 = ((G__15193_15505)?(G__15185_15510[(1)]):(cljs.core.truth_(G__15195_15507)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-(dest__14822__auto__[(0)] = (function (){var a__14167__auto__ = (function (){var a__14167__auto__ = G__15186_15511;
-var b__14168__auto__ = G__15188_15513;
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+var dest__9921__auto__ = (new Float32Array((2)));
+var G__10270_10574 = (v instanceof thi.ng.geom.vector.Vec2);
+var G__10271_10575 = (v2 instanceof thi.ng.geom.vector.Vec2);
+var G__10272_10576 = ((!(G__10270_10574))?typeof v === 'number':null);
+var G__10273_10577 = ((!(G__10271_10575))?typeof v2 === 'number':null);
+var G__10261_10578 = self__.buf;
+var G__10262_10579 = ((G__10270_10574)?v.buf:null);
+var G__10263_10580 = ((G__10271_10575)?v2.buf:null);
+var G__10264_10581 = (G__10261_10578[(0)]);
+var G__10265_10582 = (G__10261_10578[(1)]);
+var G__10266_10583 = ((G__10270_10574)?(G__10262_10579[(0)]):(cljs.core.truth_(G__10272_10576)?v:cljs.core.nth.call(null,v,(0),0.0)));
+var G__10267_10584 = ((G__10270_10574)?(G__10262_10579[(1)]):(cljs.core.truth_(G__10272_10576)?v:cljs.core.nth.call(null,v,(1),0.0)));
+var G__10268_10585 = ((G__10271_10575)?(G__10263_10580[(0)]):(cljs.core.truth_(G__10273_10577)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__10269_10586 = ((G__10271_10575)?(G__10263_10580[(1)]):(cljs.core.truth_(G__10273_10577)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+(dest__9921__auto__[(0)] = (function (){var a__9314__auto__ = (function (){var a__9314__auto__ = G__10264_10581;
+var b__9315__auto__ = G__10266_10583;
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })();
-var b__14168__auto__ = G__15190_15515;
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+var b__9315__auto__ = G__10268_10585;
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })());
 
-(dest__14822__auto__[(1)] = (function (){var a__14167__auto__ = (function (){var a__14167__auto__ = G__15187_15512;
-var b__14168__auto__ = G__15189_15514;
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+(dest__9921__auto__[(1)] = (function (){var a__9314__auto__ = (function (){var a__9314__auto__ = G__10265_10582;
+var b__9315__auto__ = G__10267_10584;
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })();
-var b__14168__auto__ = G__15191_15516;
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+var b__9315__auto__ = G__10269_10586;
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })());
 
-return (new thi.ng.geom.vector.Vec2(dest__14822__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(dest__9921__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_,m){
@@ -1462,44 +1431,40 @@ return ___$1;
 thi.ng.geom.vector.Vec2.prototype.cljs$core$ICollection$_conj$arity$2 = (function (_,x){
 var self__ = this;
 var ___$1 = this;
-return cljs.core.with_meta((function (){var G__15196 = (self__.buf[(0)]);
-var G__15197 = (self__.buf[(1)]);
-var G__15198 = x;
-return (thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$3 ? thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$3(G__15196,G__15197,G__15198) : thi.ng.geom.vector.vec3.call(null,G__15196,G__15197,G__15198));
-})(),self__._meta);
+return cljs.core.with_meta.call(null,thi.ng.geom.vector.vec3.call(null,(self__.buf[(0)]),(self__.buf[(1)]),x),self__._meta);
 });
 
 thi.ng.geom.vector.Vec2.prototype.call = (function() {
-var G__15517 = null;
-var G__15517__2 = (function (self__,k){
+var G__10587 = null;
+var G__10587__2 = (function (self__,k){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 if((k instanceof cljs.core.Keyword)){
-var temp__6751__auto__ = (thi.ng.geom.vector.swizzle2_fns.cljs$core$IFn$_invoke$arity$1 ? thi.ng.geom.vector.swizzle2_fns.cljs$core$IFn$_invoke$arity$1(k) : thi.ng.geom.vector.swizzle2_fns.call(null,k));
+var temp__6751__auto__ = thi.ng.geom.vector.swizzle2_fns.call(null,k);
 if(cljs.core.truth_(temp__6751__auto__)){
 var f = temp__6751__auto__;
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(_) : f.call(null,_));
+return f.call(null,_);
 } else {
-return thi.ng.xerror.core.key_error_BANG_(k);
+return thi.ng.xerror.core.key_error_BANG_.call(null,k);
 }
 } else {
 if(((k >= (0))) && ((k < (2)))){
 return (self__.buf[k]);
 } else {
-return thi.ng.xerror.core.key_error_BANG_(k);
+return thi.ng.xerror.core.key_error_BANG_.call(null,k);
 }
 }
 });
-var G__15517__3 = (function (self__,k,nf){
+var G__10587__3 = (function (self__,k,nf){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 if((k instanceof cljs.core.Keyword)){
-var temp__6751__auto__ = (thi.ng.geom.vector.swizzle2_fns.cljs$core$IFn$_invoke$arity$1 ? thi.ng.geom.vector.swizzle2_fns.cljs$core$IFn$_invoke$arity$1(k) : thi.ng.geom.vector.swizzle2_fns.call(null,k));
+var temp__6751__auto__ = thi.ng.geom.vector.swizzle2_fns.call(null,k);
 if(cljs.core.truth_(temp__6751__auto__)){
 var f = temp__6751__auto__;
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(_) : f.call(null,_));
+return f.call(null,_);
 } else {
 return nf;
 }
@@ -1511,43 +1476,43 @@ return nf;
 }
 }
 });
-G__15517 = function(self__,k,nf){
+G__10587 = function(self__,k,nf){
 switch(arguments.length){
 case 2:
-return G__15517__2.call(this,self__,k);
+return G__10587__2.call(this,self__,k);
 case 3:
-return G__15517__3.call(this,self__,k,nf);
+return G__10587__3.call(this,self__,k,nf);
 }
 throw(new Error('Invalid arity: ' + arguments.length));
 };
-G__15517.cljs$core$IFn$_invoke$arity$2 = G__15517__2;
-G__15517.cljs$core$IFn$_invoke$arity$3 = G__15517__3;
-return G__15517;
+G__10587.cljs$core$IFn$_invoke$arity$2 = G__10587__2;
+G__10587.cljs$core$IFn$_invoke$arity$3 = G__10587__3;
+return G__10587;
 })()
 ;
 
-thi.ng.geom.vector.Vec2.prototype.apply = (function (self__,args14946){
+thi.ng.geom.vector.Vec2.prototype.apply = (function (self__,args10045){
 var self__ = this;
 var self____$1 = this;
-return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone(args14946)));
+return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone.call(null,args10045)));
 });
 
 thi.ng.geom.vector.Vec2.prototype.cljs$core$IFn$_invoke$arity$1 = (function (k){
 var self__ = this;
 var _ = this;
 if((k instanceof cljs.core.Keyword)){
-var temp__6751__auto__ = (thi.ng.geom.vector.swizzle2_fns.cljs$core$IFn$_invoke$arity$1 ? thi.ng.geom.vector.swizzle2_fns.cljs$core$IFn$_invoke$arity$1(k) : thi.ng.geom.vector.swizzle2_fns.call(null,k));
+var temp__6751__auto__ = thi.ng.geom.vector.swizzle2_fns.call(null,k);
 if(cljs.core.truth_(temp__6751__auto__)){
 var f = temp__6751__auto__;
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(_) : f.call(null,_));
+return f.call(null,_);
 } else {
-return thi.ng.xerror.core.key_error_BANG_(k);
+return thi.ng.xerror.core.key_error_BANG_.call(null,k);
 }
 } else {
 if(((k >= (0))) && ((k < (2)))){
 return (self__.buf[k]);
 } else {
-return thi.ng.xerror.core.key_error_BANG_(k);
+return thi.ng.xerror.core.key_error_BANG_.call(null,k);
 }
 }
 });
@@ -1556,10 +1521,10 @@ thi.ng.geom.vector.Vec2.prototype.cljs$core$IFn$_invoke$arity$2 = (function (k,n
 var self__ = this;
 var _ = this;
 if((k instanceof cljs.core.Keyword)){
-var temp__6751__auto__ = (thi.ng.geom.vector.swizzle2_fns.cljs$core$IFn$_invoke$arity$1 ? thi.ng.geom.vector.swizzle2_fns.cljs$core$IFn$_invoke$arity$1(k) : thi.ng.geom.vector.swizzle2_fns.call(null,k));
+var temp__6751__auto__ = thi.ng.geom.vector.swizzle2_fns.call(null,k);
 if(cljs.core.truth_(temp__6751__auto__)){
 var f = temp__6751__auto__;
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(_) : f.call(null,_));
+return f.call(null,_);
 } else {
 return nf;
 }
@@ -1578,9 +1543,9 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$IPolar$as_polar$arity$1 = (fu
 var self__ = this;
 var ___$1 = this;
 var b = (new Float32Array((2)));
-(b[(0)] = thi.ng.math.core.mag(___$1));
+(b[(0)] = thi.ng.math.core.mag.call(null,___$1));
 
-(b[(1)] = thi.ng.geom.core.heading(___$1));
+(b[(1)] = thi.ng.geom.core.heading.call(null,___$1));
 
 return (new thi.ng.geom.vector.Vec2(b,null,self__._meta));
 });
@@ -1588,13 +1553,13 @@ return (new thi.ng.geom.vector.Vec2(b,null,self__._meta));
 thi.ng.geom.vector.Vec2.prototype.thi$ng$geom$core$IPolar$as_cartesian$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var G__15199 = self__.buf;
-var G__15200 = (G__15199[(0)]);
-var G__15201 = (G__15199[(1)]);
+var G__10274 = self__.buf;
+var G__10275 = (G__10274[(0)]);
+var G__10276 = (G__10274[(1)]);
 var b = (new Float32Array((2)));
-(b[(0)] = (G__15200 * Math.cos(G__15201)));
+(b[(0)] = (G__10275 * Math.cos(G__10276)));
 
-(b[(1)] = (G__15200 * Math.sin(G__15201)));
+(b[(1)] = (G__10275 * Math.sin(G__10276)));
 
 return (new thi.ng.geom.vector.Vec2(b,null,self__._meta));
 });
@@ -1604,16 +1569,16 @@ var self__ = this;
 var ___$1 = this;
 if((o instanceof thi.ng.geom.vector.Vec2)){
 var b_SINGLEQUOTE_ = o.buf;
-var c = cljs.core.compare((self__.buf[(0)]),(b_SINGLEQUOTE_[(0)]));
+var c = cljs.core.compare.call(null,(self__.buf[(0)]),(b_SINGLEQUOTE_[(0)]));
 if(((0) === c)){
-return cljs.core.compare((self__.buf[(1)]),(b_SINGLEQUOTE_[(1)]));
+return cljs.core.compare.call(null,(self__.buf[(1)]),(b_SINGLEQUOTE_[(1)]));
 } else {
 return c;
 }
 } else {
-var c = cljs.core.count(o);
+var c = cljs.core.count.call(null,o);
 if(((2) === c)){
-return (- cljs.core.compare(o,___$1));
+return (- cljs.core.compare.call(null,o,___$1));
 } else {
 return ((2) - c);
 }
@@ -1625,17 +1590,15 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$INormalize$ = cljs.core.PROTO
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$INormalize$normalize$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var G__15202 = self__.buf;
-var G__15203 = (G__15202[(0)]);
-var G__15204 = (G__15202[(1)]);
-var l = (function (){var G__15205 = ((G__15203 * G__15203) + (G__15204 * G__15204));
-return Math.sqrt(G__15205);
-})();
+var G__10277 = self__.buf;
+var G__10278 = (G__10277[(0)]);
+var G__10279 = (G__10277[(1)]);
+var l = Math.sqrt(((G__10278 * G__10278) + (G__10279 * G__10279)));
 if((l > (0))){
 var b = (new Float32Array((2)));
-(b[(0)] = (G__15203 / l));
+(b[(0)] = (G__10278 / l));
 
-(b[(1)] = (G__15204 / l));
+(b[(1)] = (G__10279 / l));
 
 return (new thi.ng.geom.vector.Vec2(b,null,self__._meta));
 } else {
@@ -1646,18 +1609,16 @@ return ___$1;
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$INormalize$normalize$arity$2 = (function (_,len){
 var self__ = this;
 var ___$1 = this;
-var G__15206 = self__.buf;
-var G__15207 = (G__15206[(0)]);
-var G__15208 = (G__15206[(1)]);
-var l = (function (){var G__15209 = ((G__15207 * G__15207) + (G__15208 * G__15208));
-return Math.sqrt(G__15209);
-})();
+var G__10280 = self__.buf;
+var G__10281 = (G__10280[(0)]);
+var G__10282 = (G__10280[(1)]);
+var l = Math.sqrt(((G__10281 * G__10281) + (G__10282 * G__10282)));
 if((l > (0))){
 var l__$1 = (len / l);
 var b = (new Float32Array((2)));
-(b[(0)] = (G__15207 * l__$1));
+(b[(0)] = (G__10281 * l__$1));
 
-(b[(1)] = (G__15208 * l__$1));
+(b[(1)] = (G__10282 * l__$1));
 
 return (new thi.ng.geom.vector.Vec2(b,null,self__._meta));
 } else {
@@ -1668,7 +1629,7 @@ return ___$1;
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$INormalize$normalized_QMARK_$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-return thi.ng.math.core.delta_EQ_.cljs$core$IFn$_invoke$arity$2(1.0,thi.ng.math.core.mag_squared(___$1));
+return thi.ng.math.core.delta_EQ_.call(null,1.0,thi.ng.math.core.mag_squared.call(null,___$1));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMagnitude$ = cljs.core.PROTOCOL_SENTINEL;
@@ -1676,20 +1637,19 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMagnitude$ = cljs.core.PROTO
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMagnitude$mag$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var G__15210 = self__.buf;
-var G__15211 = (G__15210[(0)]);
-var G__15212 = (G__15210[(1)]);
-var G__15213 = ((G__15211 * G__15211) + (G__15212 * G__15212));
-return Math.sqrt(G__15213);
+var G__10283 = self__.buf;
+var G__10284 = (G__10283[(0)]);
+var G__10285 = (G__10283[(1)]);
+return Math.sqrt(((G__10284 * G__10284) + (G__10285 * G__10285)));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMagnitude$mag_squared$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var G__15214 = self__.buf;
-var G__15215 = (G__15214[(0)]);
-var G__15216 = (G__15214[(1)]);
-return ((G__15215 * G__15215) + (G__15216 * G__15216));
+var G__10286 = self__.buf;
+var G__10287 = (G__10286[(0)]);
+var G__10288 = (G__10286[(1)]);
+return ((G__10287 * G__10287) + (G__10288 * G__10288));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$ = cljs.core.PROTOCOL_SENTINEL;
@@ -1697,25 +1657,25 @@ thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$ = cljs.core.PROTOCO
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$msub$arity$3 = (function (_,a,b){
 var self__ = this;
 var ___$1 = this;
-var dest__14822__auto__ = (new Float32Array((2)));
-var G__15226_15518 = (a instanceof thi.ng.geom.vector.Vec2);
-var G__15227_15519 = (b instanceof thi.ng.geom.vector.Vec2);
-var G__15228_15520 = ((!(G__15226_15518))?typeof a === 'number':null);
-var G__15229_15521 = ((!(G__15227_15519))?typeof b === 'number':null);
-var G__15217_15522 = self__.buf;
-var G__15218_15523 = ((G__15226_15518)?a.buf:null);
-var G__15219_15524 = ((G__15227_15519)?b.buf:null);
-var G__15220_15525 = (G__15217_15522[(0)]);
-var G__15221_15526 = (G__15217_15522[(1)]);
-var G__15222_15527 = ((G__15226_15518)?(G__15218_15523[(0)]):(cljs.core.truth_(G__15228_15520)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(0),1.0)));
-var G__15223_15528 = ((G__15226_15518)?(G__15218_15523[(1)]):(cljs.core.truth_(G__15228_15520)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(1),1.0)));
-var G__15224_15529 = ((G__15227_15519)?(G__15219_15524[(0)]):(cljs.core.truth_(G__15229_15521)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(0),0.0)));
-var G__15225_15530 = ((G__15227_15519)?(G__15219_15524[(1)]):(cljs.core.truth_(G__15229_15521)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(1),0.0)));
-(dest__14822__auto__[(0)] = ((G__15220_15525 * G__15222_15527) - G__15224_15529));
+var dest__9921__auto__ = (new Float32Array((2)));
+var G__10298_10588 = (a instanceof thi.ng.geom.vector.Vec2);
+var G__10299_10589 = (b instanceof thi.ng.geom.vector.Vec2);
+var G__10300_10590 = ((!(G__10298_10588))?typeof a === 'number':null);
+var G__10301_10591 = ((!(G__10299_10589))?typeof b === 'number':null);
+var G__10289_10592 = self__.buf;
+var G__10290_10593 = ((G__10298_10588)?a.buf:null);
+var G__10291_10594 = ((G__10299_10589)?b.buf:null);
+var G__10292_10595 = (G__10289_10592[(0)]);
+var G__10293_10596 = (G__10289_10592[(1)]);
+var G__10294_10597 = ((G__10298_10588)?(G__10290_10593[(0)]):(cljs.core.truth_(G__10300_10590)?a:cljs.core.nth.call(null,a,(0),1.0)));
+var G__10295_10598 = ((G__10298_10588)?(G__10290_10593[(1)]):(cljs.core.truth_(G__10300_10590)?a:cljs.core.nth.call(null,a,(1),1.0)));
+var G__10296_10599 = ((G__10299_10589)?(G__10291_10594[(0)]):(cljs.core.truth_(G__10301_10591)?b:cljs.core.nth.call(null,b,(0),0.0)));
+var G__10297_10600 = ((G__10299_10589)?(G__10291_10594[(1)]):(cljs.core.truth_(G__10301_10591)?b:cljs.core.nth.call(null,b,(1),0.0)));
+(dest__9921__auto__[(0)] = ((G__10292_10595 * G__10294_10597) - G__10296_10599));
 
-(dest__14822__auto__[(1)] = ((G__15221_15526 * G__15223_15528) - G__15225_15530));
+(dest__9921__auto__[(1)] = ((G__10293_10596 * G__10295_10598) - G__10297_10600));
 
-return (new thi.ng.geom.vector.Vec2(dest__14822__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(dest__9921__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$_STAR_$arity$1 = (function (_){
@@ -1727,238 +1687,238 @@ return ___$1;
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$_STAR_$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var dest__14811__auto__ = (new Float32Array((2)));
-var G__15230_15531 = self__.buf;
+var dest__9910__auto__ = (new Float32Array((2)));
+var G__10302_10601 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec2)){
-var G__15231_15532 = v.buf;
-(dest__14811__auto__[(0)] = ((G__15230_15531[(0)]) * (G__15231_15532[(0)])));
+var G__10303_10602 = v.buf;
+(dest__9910__auto__[(0)] = ((G__10302_10601[(0)]) * (G__10303_10602[(0)])));
 
-(dest__14811__auto__[(1)] = ((G__15230_15531[(1)]) * (G__15231_15532[(1)])));
+(dest__9910__auto__[(1)] = ((G__10302_10601[(1)]) * (G__10303_10602[(1)])));
 } else {
 if(typeof v === 'number'){
-(dest__14811__auto__[(0)] = ((G__15230_15531[(0)]) * v));
+(dest__9910__auto__[(0)] = ((G__10302_10601[(0)]) * v));
 
-(dest__14811__auto__[(1)] = ((G__15230_15531[(1)]) * v));
+(dest__9910__auto__[(1)] = ((G__10302_10601[(1)]) * v));
 } else {
-(dest__14811__auto__[(0)] = ((G__15230_15531[(0)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(dest__9910__auto__[(0)] = ((G__10302_10601[(0)]) * cljs.core.nth.call(null,v,(0),0.0)));
 
-(dest__14811__auto__[(1)] = ((G__15230_15531[(1)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(dest__9910__auto__[(1)] = ((G__10302_10601[(1)]) * cljs.core.nth.call(null,v,(1),0.0)));
 }
 }
 
-return (new thi.ng.geom.vector.Vec2(dest__14811__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(dest__9910__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$_STAR_$arity$3 = (function (_,v1,v2){
 var self__ = this;
 var ___$1 = this;
-var G__15232 = self__.buf;
-var G__15235 = (new Float32Array((2)));
-var G__15236 = (G__15232[(0)]);
-var G__15237 = (G__15232[(1)]);
-var G__15242 = typeof v1 === 'number';
-var G__15243 = typeof v2 === 'number';
-if(((G__15242)?G__15243:false)){
-(G__15235[(0)] = (G__15236 * v1));
+var G__10304 = self__.buf;
+var G__10307 = (new Float32Array((2)));
+var G__10308 = (G__10304[(0)]);
+var G__10309 = (G__10304[(1)]);
+var G__10314 = typeof v1 === 'number';
+var G__10315 = typeof v2 === 'number';
+if(((G__10314)?G__10315:false)){
+(G__10307[(0)] = (G__10308 * v1));
 
-(G__15235[(1)] = (G__15237 * v2));
+(G__10307[(1)] = (G__10309 * v2));
 } else {
-var G__15244_15533 = ((!(G__15242))?(v1 instanceof thi.ng.geom.vector.Vec2):null);
-var G__15245_15534 = ((!(G__15243))?(v2 instanceof thi.ng.geom.vector.Vec2):null);
-var G__15233_15535 = (cljs.core.truth_(G__15244_15533)?v1.buf:null);
-var G__15234_15536 = (cljs.core.truth_(G__15245_15534)?v2.buf:null);
-var G__15238_15537 = (cljs.core.truth_(G__15244_15533)?(G__15233_15535[(0)]):((G__15242)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(0),1.0)));
-var G__15239_15538 = (cljs.core.truth_(G__15244_15533)?(G__15233_15535[(1)]):((G__15242)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(1),1.0)));
-var G__15240_15539 = (cljs.core.truth_(G__15245_15534)?(G__15234_15536[(0)]):((G__15243)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),1.0)));
-var G__15241_15540 = (cljs.core.truth_(G__15245_15534)?(G__15234_15536[(1)]):((G__15243)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),1.0)));
-(G__15235[(0)] = ((G__15236 * G__15238_15537) * G__15240_15539));
+var G__10316_10603 = ((!(G__10314))?(v1 instanceof thi.ng.geom.vector.Vec2):null);
+var G__10317_10604 = ((!(G__10315))?(v2 instanceof thi.ng.geom.vector.Vec2):null);
+var G__10305_10605 = (cljs.core.truth_(G__10316_10603)?v1.buf:null);
+var G__10306_10606 = (cljs.core.truth_(G__10317_10604)?v2.buf:null);
+var G__10310_10607 = (cljs.core.truth_(G__10316_10603)?(G__10305_10605[(0)]):((G__10314)?v1:cljs.core.nth.call(null,v1,(0),1.0)));
+var G__10311_10608 = (cljs.core.truth_(G__10316_10603)?(G__10305_10605[(1)]):((G__10314)?v1:cljs.core.nth.call(null,v1,(1),1.0)));
+var G__10312_10609 = (cljs.core.truth_(G__10317_10604)?(G__10306_10606[(0)]):((G__10315)?v2:cljs.core.nth.call(null,v2,(0),1.0)));
+var G__10313_10610 = (cljs.core.truth_(G__10317_10604)?(G__10306_10606[(1)]):((G__10315)?v2:cljs.core.nth.call(null,v2,(1),1.0)));
+(G__10307[(0)] = ((G__10308 * G__10310_10607) * G__10312_10609));
 
-(G__15235[(1)] = ((G__15237 * G__15239_15538) * G__15241_15540));
+(G__10307[(1)] = ((G__10309 * G__10311_10608) * G__10313_10610));
 }
 
-return (new thi.ng.geom.vector.Vec2(G__15235,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(G__10307,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$_$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var dest__14781__auto__ = (new Float32Array((2)));
-var G__15246_15541 = self__.buf;
-(dest__14781__auto__[(0)] = (- (G__15246_15541[(0)])));
+var dest__9880__auto__ = (new Float32Array((2)));
+var G__10318_10611 = self__.buf;
+(dest__9880__auto__[(0)] = (- (G__10318_10611[(0)])));
 
-(dest__14781__auto__[(1)] = (- (G__15246_15541[(1)])));
+(dest__9880__auto__[(1)] = (- (G__10318_10611[(1)])));
 
-return (new thi.ng.geom.vector.Vec2(dest__14781__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(dest__9880__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$_$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var dest__14811__auto__ = (new Float32Array((2)));
-var G__15247_15542 = self__.buf;
+var dest__9910__auto__ = (new Float32Array((2)));
+var G__10319_10612 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec2)){
-var G__15248_15543 = v.buf;
-(dest__14811__auto__[(0)] = ((G__15247_15542[(0)]) - (G__15248_15543[(0)])));
+var G__10320_10613 = v.buf;
+(dest__9910__auto__[(0)] = ((G__10319_10612[(0)]) - (G__10320_10613[(0)])));
 
-(dest__14811__auto__[(1)] = ((G__15247_15542[(1)]) - (G__15248_15543[(1)])));
+(dest__9910__auto__[(1)] = ((G__10319_10612[(1)]) - (G__10320_10613[(1)])));
 } else {
 if(typeof v === 'number'){
-(dest__14811__auto__[(0)] = ((G__15247_15542[(0)]) - v));
+(dest__9910__auto__[(0)] = ((G__10319_10612[(0)]) - v));
 
-(dest__14811__auto__[(1)] = ((G__15247_15542[(1)]) - v));
+(dest__9910__auto__[(1)] = ((G__10319_10612[(1)]) - v));
 } else {
-(dest__14811__auto__[(0)] = ((G__15247_15542[(0)]) - cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(dest__9910__auto__[(0)] = ((G__10319_10612[(0)]) - cljs.core.nth.call(null,v,(0),0.0)));
 
-(dest__14811__auto__[(1)] = ((G__15247_15542[(1)]) - cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(dest__9910__auto__[(1)] = ((G__10319_10612[(1)]) - cljs.core.nth.call(null,v,(1),0.0)));
 }
 }
 
-return (new thi.ng.geom.vector.Vec2(dest__14811__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(dest__9910__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$_$arity$3 = (function (_,v1,v2){
 var self__ = this;
 var ___$1 = this;
-var G__15249 = self__.buf;
-var G__15252 = (new Float32Array((2)));
-var G__15253 = (G__15249[(0)]);
-var G__15254 = (G__15249[(1)]);
-var G__15259 = typeof v1 === 'number';
-var G__15260 = typeof v2 === 'number';
-if(((G__15259)?G__15260:false)){
-(G__15252[(0)] = (G__15253 - v1));
+var G__10321 = self__.buf;
+var G__10324 = (new Float32Array((2)));
+var G__10325 = (G__10321[(0)]);
+var G__10326 = (G__10321[(1)]);
+var G__10331 = typeof v1 === 'number';
+var G__10332 = typeof v2 === 'number';
+if(((G__10331)?G__10332:false)){
+(G__10324[(0)] = (G__10325 - v1));
 
-(G__15252[(1)] = (G__15254 - v2));
+(G__10324[(1)] = (G__10326 - v2));
 } else {
-var G__15261_15544 = ((!(G__15259))?(v1 instanceof thi.ng.geom.vector.Vec2):null);
-var G__15262_15545 = ((!(G__15260))?(v2 instanceof thi.ng.geom.vector.Vec2):null);
-var G__15250_15546 = (cljs.core.truth_(G__15261_15544)?v1.buf:null);
-var G__15251_15547 = (cljs.core.truth_(G__15262_15545)?v2.buf:null);
-var G__15255_15548 = (cljs.core.truth_(G__15261_15544)?(G__15250_15546[(0)]):((G__15259)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(0),0.0)));
-var G__15256_15549 = (cljs.core.truth_(G__15261_15544)?(G__15250_15546[(1)]):((G__15259)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(1),0.0)));
-var G__15257_15550 = (cljs.core.truth_(G__15262_15545)?(G__15251_15547[(0)]):((G__15260)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__15258_15551 = (cljs.core.truth_(G__15262_15545)?(G__15251_15547[(1)]):((G__15260)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-(G__15252[(0)] = ((G__15253 - G__15255_15548) - G__15257_15550));
+var G__10333_10614 = ((!(G__10331))?(v1 instanceof thi.ng.geom.vector.Vec2):null);
+var G__10334_10615 = ((!(G__10332))?(v2 instanceof thi.ng.geom.vector.Vec2):null);
+var G__10322_10616 = (cljs.core.truth_(G__10333_10614)?v1.buf:null);
+var G__10323_10617 = (cljs.core.truth_(G__10334_10615)?v2.buf:null);
+var G__10327_10618 = (cljs.core.truth_(G__10333_10614)?(G__10322_10616[(0)]):((G__10331)?v1:cljs.core.nth.call(null,v1,(0),0.0)));
+var G__10328_10619 = (cljs.core.truth_(G__10333_10614)?(G__10322_10616[(1)]):((G__10331)?v1:cljs.core.nth.call(null,v1,(1),0.0)));
+var G__10329_10620 = (cljs.core.truth_(G__10334_10615)?(G__10323_10617[(0)]):((G__10332)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__10330_10621 = (cljs.core.truth_(G__10334_10615)?(G__10323_10617[(1)]):((G__10332)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+(G__10324[(0)] = ((G__10325 - G__10327_10618) - G__10329_10620));
 
-(G__15252[(1)] = ((G__15254 - G__15256_15549) - G__15258_15551));
+(G__10324[(1)] = ((G__10326 - G__10328_10619) - G__10330_10621));
 }
 
-return (new thi.ng.geom.vector.Vec2(G__15252,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(G__10324,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$madd$arity$3 = (function (_,a,b){
 var self__ = this;
 var ___$1 = this;
-var dest__14822__auto__ = (new Float32Array((2)));
-var G__15272_15552 = (a instanceof thi.ng.geom.vector.Vec2);
-var G__15273_15553 = (b instanceof thi.ng.geom.vector.Vec2);
-var G__15274_15554 = ((!(G__15272_15552))?typeof a === 'number':null);
-var G__15275_15555 = ((!(G__15273_15553))?typeof b === 'number':null);
-var G__15263_15556 = self__.buf;
-var G__15264_15557 = ((G__15272_15552)?a.buf:null);
-var G__15265_15558 = ((G__15273_15553)?b.buf:null);
-var G__15266_15559 = (G__15263_15556[(0)]);
-var G__15267_15560 = (G__15263_15556[(1)]);
-var G__15268_15561 = ((G__15272_15552)?(G__15264_15557[(0)]):(cljs.core.truth_(G__15274_15554)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(0),1.0)));
-var G__15269_15562 = ((G__15272_15552)?(G__15264_15557[(1)]):(cljs.core.truth_(G__15274_15554)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(1),1.0)));
-var G__15270_15563 = ((G__15273_15553)?(G__15265_15558[(0)]):(cljs.core.truth_(G__15275_15555)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(0),0.0)));
-var G__15271_15564 = ((G__15273_15553)?(G__15265_15558[(1)]):(cljs.core.truth_(G__15275_15555)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(1),0.0)));
-(dest__14822__auto__[(0)] = ((G__15266_15559 * G__15268_15561) + G__15270_15563));
+var dest__9921__auto__ = (new Float32Array((2)));
+var G__10344_10622 = (a instanceof thi.ng.geom.vector.Vec2);
+var G__10345_10623 = (b instanceof thi.ng.geom.vector.Vec2);
+var G__10346_10624 = ((!(G__10344_10622))?typeof a === 'number':null);
+var G__10347_10625 = ((!(G__10345_10623))?typeof b === 'number':null);
+var G__10335_10626 = self__.buf;
+var G__10336_10627 = ((G__10344_10622)?a.buf:null);
+var G__10337_10628 = ((G__10345_10623)?b.buf:null);
+var G__10338_10629 = (G__10335_10626[(0)]);
+var G__10339_10630 = (G__10335_10626[(1)]);
+var G__10340_10631 = ((G__10344_10622)?(G__10336_10627[(0)]):(cljs.core.truth_(G__10346_10624)?a:cljs.core.nth.call(null,a,(0),1.0)));
+var G__10341_10632 = ((G__10344_10622)?(G__10336_10627[(1)]):(cljs.core.truth_(G__10346_10624)?a:cljs.core.nth.call(null,a,(1),1.0)));
+var G__10342_10633 = ((G__10345_10623)?(G__10337_10628[(0)]):(cljs.core.truth_(G__10347_10625)?b:cljs.core.nth.call(null,b,(0),0.0)));
+var G__10343_10634 = ((G__10345_10623)?(G__10337_10628[(1)]):(cljs.core.truth_(G__10347_10625)?b:cljs.core.nth.call(null,b,(1),0.0)));
+(dest__9921__auto__[(0)] = ((G__10338_10629 * G__10340_10631) + G__10342_10633));
 
-(dest__14822__auto__[(1)] = ((G__15267_15560 * G__15269_15562) + G__15271_15564));
+(dest__9921__auto__[(1)] = ((G__10339_10630 * G__10341_10632) + G__10343_10634));
 
-return (new thi.ng.geom.vector.Vec2(dest__14822__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(dest__9921__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$addm$arity$3 = (function (_,a,b){
 var self__ = this;
 var ___$1 = this;
-var dest__14822__auto__ = (new Float32Array((2)));
-var G__15285_15565 = (a instanceof thi.ng.geom.vector.Vec2);
-var G__15286_15566 = (b instanceof thi.ng.geom.vector.Vec2);
-var G__15287_15567 = ((!(G__15285_15565))?typeof a === 'number':null);
-var G__15288_15568 = ((!(G__15286_15566))?typeof b === 'number':null);
-var G__15276_15569 = self__.buf;
-var G__15277_15570 = ((G__15285_15565)?a.buf:null);
-var G__15278_15571 = ((G__15286_15566)?b.buf:null);
-var G__15279_15572 = (G__15276_15569[(0)]);
-var G__15280_15573 = (G__15276_15569[(1)]);
-var G__15281_15574 = ((G__15285_15565)?(G__15277_15570[(0)]):(cljs.core.truth_(G__15287_15567)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(0),0.0)));
-var G__15282_15575 = ((G__15285_15565)?(G__15277_15570[(1)]):(cljs.core.truth_(G__15287_15567)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(1),0.0)));
-var G__15283_15576 = ((G__15286_15566)?(G__15278_15571[(0)]):(cljs.core.truth_(G__15288_15568)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(0),1.0)));
-var G__15284_15577 = ((G__15286_15566)?(G__15278_15571[(1)]):(cljs.core.truth_(G__15288_15568)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(1),1.0)));
-(dest__14822__auto__[(0)] = ((G__15279_15572 + G__15281_15574) * G__15283_15576));
+var dest__9921__auto__ = (new Float32Array((2)));
+var G__10357_10635 = (a instanceof thi.ng.geom.vector.Vec2);
+var G__10358_10636 = (b instanceof thi.ng.geom.vector.Vec2);
+var G__10359_10637 = ((!(G__10357_10635))?typeof a === 'number':null);
+var G__10360_10638 = ((!(G__10358_10636))?typeof b === 'number':null);
+var G__10348_10639 = self__.buf;
+var G__10349_10640 = ((G__10357_10635)?a.buf:null);
+var G__10350_10641 = ((G__10358_10636)?b.buf:null);
+var G__10351_10642 = (G__10348_10639[(0)]);
+var G__10352_10643 = (G__10348_10639[(1)]);
+var G__10353_10644 = ((G__10357_10635)?(G__10349_10640[(0)]):(cljs.core.truth_(G__10359_10637)?a:cljs.core.nth.call(null,a,(0),0.0)));
+var G__10354_10645 = ((G__10357_10635)?(G__10349_10640[(1)]):(cljs.core.truth_(G__10359_10637)?a:cljs.core.nth.call(null,a,(1),0.0)));
+var G__10355_10646 = ((G__10358_10636)?(G__10350_10641[(0)]):(cljs.core.truth_(G__10360_10638)?b:cljs.core.nth.call(null,b,(0),1.0)));
+var G__10356_10647 = ((G__10358_10636)?(G__10350_10641[(1)]):(cljs.core.truth_(G__10360_10638)?b:cljs.core.nth.call(null,b,(1),1.0)));
+(dest__9921__auto__[(0)] = ((G__10351_10642 + G__10353_10644) * G__10355_10646));
 
-(dest__14822__auto__[(1)] = ((G__15280_15573 + G__15282_15575) * G__15284_15577));
+(dest__9921__auto__[(1)] = ((G__10352_10643 + G__10354_10645) * G__10356_10647));
 
-return (new thi.ng.geom.vector.Vec2(dest__14822__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(dest__9921__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$div$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var dest__14781__auto__ = (new Float32Array((2)));
-var G__15289_15578 = self__.buf;
-(dest__14781__auto__[(0)] = ((1) / (G__15289_15578[(0)])));
+var dest__9880__auto__ = (new Float32Array((2)));
+var G__10361_10648 = self__.buf;
+(dest__9880__auto__[(0)] = ((1) / (G__10361_10648[(0)])));
 
-(dest__14781__auto__[(1)] = ((1) / (G__15289_15578[(1)])));
+(dest__9880__auto__[(1)] = ((1) / (G__10361_10648[(1)])));
 
-return (new thi.ng.geom.vector.Vec2(dest__14781__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(dest__9880__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$div$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var dest__14811__auto__ = (new Float32Array((2)));
-var G__15290_15579 = self__.buf;
+var dest__9910__auto__ = (new Float32Array((2)));
+var G__10362_10649 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec2)){
-var G__15291_15580 = v.buf;
-(dest__14811__auto__[(0)] = ((G__15290_15579[(0)]) / (G__15291_15580[(0)])));
+var G__10363_10650 = v.buf;
+(dest__9910__auto__[(0)] = ((G__10362_10649[(0)]) / (G__10363_10650[(0)])));
 
-(dest__14811__auto__[(1)] = ((G__15290_15579[(1)]) / (G__15291_15580[(1)])));
+(dest__9910__auto__[(1)] = ((G__10362_10649[(1)]) / (G__10363_10650[(1)])));
 } else {
 if(typeof v === 'number'){
-(dest__14811__auto__[(0)] = ((G__15290_15579[(0)]) / v));
+(dest__9910__auto__[(0)] = ((G__10362_10649[(0)]) / v));
 
-(dest__14811__auto__[(1)] = ((G__15290_15579[(1)]) / v));
+(dest__9910__auto__[(1)] = ((G__10362_10649[(1)]) / v));
 } else {
-(dest__14811__auto__[(0)] = ((G__15290_15579[(0)]) / cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(dest__9910__auto__[(0)] = ((G__10362_10649[(0)]) / cljs.core.nth.call(null,v,(0),0.0)));
 
-(dest__14811__auto__[(1)] = ((G__15290_15579[(1)]) / cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(dest__9910__auto__[(1)] = ((G__10362_10649[(1)]) / cljs.core.nth.call(null,v,(1),0.0)));
 }
 }
 
-return (new thi.ng.geom.vector.Vec2(dest__14811__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(dest__9910__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$div$arity$3 = (function (_,v1,v2){
 var self__ = this;
 var ___$1 = this;
-var G__15292 = self__.buf;
-var G__15295 = (new Float32Array((2)));
-var G__15296 = (G__15292[(0)]);
-var G__15297 = (G__15292[(1)]);
-var G__15302 = typeof v1 === 'number';
-var G__15303 = typeof v2 === 'number';
-if(((G__15302)?G__15303:false)){
-(G__15295[(0)] = (G__15296 / v1));
+var G__10364 = self__.buf;
+var G__10367 = (new Float32Array((2)));
+var G__10368 = (G__10364[(0)]);
+var G__10369 = (G__10364[(1)]);
+var G__10374 = typeof v1 === 'number';
+var G__10375 = typeof v2 === 'number';
+if(((G__10374)?G__10375:false)){
+(G__10367[(0)] = (G__10368 / v1));
 
-(G__15295[(1)] = (G__15297 / v2));
+(G__10367[(1)] = (G__10369 / v2));
 } else {
-var G__15304_15581 = ((!(G__15302))?(v1 instanceof thi.ng.geom.vector.Vec2):null);
-var G__15305_15582 = ((!(G__15303))?(v2 instanceof thi.ng.geom.vector.Vec2):null);
-var G__15293_15583 = (cljs.core.truth_(G__15304_15581)?v1.buf:null);
-var G__15294_15584 = (cljs.core.truth_(G__15305_15582)?v2.buf:null);
-var G__15298_15585 = (cljs.core.truth_(G__15304_15581)?(G__15293_15583[(0)]):((G__15302)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(0),0.0)));
-var G__15299_15586 = (cljs.core.truth_(G__15304_15581)?(G__15293_15583[(1)]):((G__15302)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(1),0.0)));
-var G__15300_15587 = (cljs.core.truth_(G__15305_15582)?(G__15294_15584[(0)]):((G__15303)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__15301_15588 = (cljs.core.truth_(G__15305_15582)?(G__15294_15584[(1)]):((G__15303)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-(G__15295[(0)] = ((G__15296 / G__15298_15585) / G__15300_15587));
+var G__10376_10651 = ((!(G__10374))?(v1 instanceof thi.ng.geom.vector.Vec2):null);
+var G__10377_10652 = ((!(G__10375))?(v2 instanceof thi.ng.geom.vector.Vec2):null);
+var G__10365_10653 = (cljs.core.truth_(G__10376_10651)?v1.buf:null);
+var G__10366_10654 = (cljs.core.truth_(G__10377_10652)?v2.buf:null);
+var G__10370_10655 = (cljs.core.truth_(G__10376_10651)?(G__10365_10653[(0)]):((G__10374)?v1:cljs.core.nth.call(null,v1,(0),0.0)));
+var G__10371_10656 = (cljs.core.truth_(G__10376_10651)?(G__10365_10653[(1)]):((G__10374)?v1:cljs.core.nth.call(null,v1,(1),0.0)));
+var G__10372_10657 = (cljs.core.truth_(G__10377_10652)?(G__10366_10654[(0)]):((G__10375)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__10373_10658 = (cljs.core.truth_(G__10377_10652)?(G__10366_10654[(1)]):((G__10375)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+(G__10367[(0)] = ((G__10368 / G__10370_10655) / G__10372_10657));
 
-(G__15295[(1)] = ((G__15297 / G__15299_15586) / G__15301_15588));
+(G__10367[(1)] = ((G__10369 / G__10371_10656) / G__10373_10658));
 }
 
-return (new thi.ng.geom.vector.Vec2(G__15295,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(G__10367,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$_PLUS_$arity$1 = (function (_){
@@ -1970,100 +1930,96 @@ return ___$1;
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$_PLUS_$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var dest__14811__auto__ = (new Float32Array((2)));
-var G__15306_15589 = self__.buf;
+var dest__9910__auto__ = (new Float32Array((2)));
+var G__10378_10659 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec2)){
-var G__15307_15590 = v.buf;
-(dest__14811__auto__[(0)] = ((G__15306_15589[(0)]) + (G__15307_15590[(0)])));
+var G__10379_10660 = v.buf;
+(dest__9910__auto__[(0)] = ((G__10378_10659[(0)]) + (G__10379_10660[(0)])));
 
-(dest__14811__auto__[(1)] = ((G__15306_15589[(1)]) + (G__15307_15590[(1)])));
+(dest__9910__auto__[(1)] = ((G__10378_10659[(1)]) + (G__10379_10660[(1)])));
 } else {
 if(typeof v === 'number'){
-(dest__14811__auto__[(0)] = ((G__15306_15589[(0)]) + v));
+(dest__9910__auto__[(0)] = ((G__10378_10659[(0)]) + v));
 
-(dest__14811__auto__[(1)] = ((G__15306_15589[(1)]) + v));
+(dest__9910__auto__[(1)] = ((G__10378_10659[(1)]) + v));
 } else {
-(dest__14811__auto__[(0)] = ((G__15306_15589[(0)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(dest__9910__auto__[(0)] = ((G__10378_10659[(0)]) + cljs.core.nth.call(null,v,(0),0.0)));
 
-(dest__14811__auto__[(1)] = ((G__15306_15589[(1)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(dest__9910__auto__[(1)] = ((G__10378_10659[(1)]) + cljs.core.nth.call(null,v,(1),0.0)));
 }
 }
 
-return (new thi.ng.geom.vector.Vec2(dest__14811__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(dest__9910__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$_PLUS_$arity$3 = (function (_,v1,v2){
 var self__ = this;
 var ___$1 = this;
-var G__15308 = self__.buf;
-var G__15311 = (new Float32Array((2)));
-var G__15312 = (G__15308[(0)]);
-var G__15313 = (G__15308[(1)]);
-var G__15318 = typeof v1 === 'number';
-var G__15319 = typeof v2 === 'number';
-if(((G__15318)?G__15319:false)){
-(G__15311[(0)] = (G__15312 + v1));
+var G__10380 = self__.buf;
+var G__10383 = (new Float32Array((2)));
+var G__10384 = (G__10380[(0)]);
+var G__10385 = (G__10380[(1)]);
+var G__10390 = typeof v1 === 'number';
+var G__10391 = typeof v2 === 'number';
+if(((G__10390)?G__10391:false)){
+(G__10383[(0)] = (G__10384 + v1));
 
-(G__15311[(1)] = (G__15313 + v2));
+(G__10383[(1)] = (G__10385 + v2));
 } else {
-var G__15320_15591 = ((!(G__15318))?(v1 instanceof thi.ng.geom.vector.Vec2):null);
-var G__15321_15592 = ((!(G__15319))?(v2 instanceof thi.ng.geom.vector.Vec2):null);
-var G__15309_15593 = (cljs.core.truth_(G__15320_15591)?v1.buf:null);
-var G__15310_15594 = (cljs.core.truth_(G__15321_15592)?v2.buf:null);
-var G__15314_15595 = (cljs.core.truth_(G__15320_15591)?(G__15309_15593[(0)]):((G__15318)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(0),0.0)));
-var G__15315_15596 = (cljs.core.truth_(G__15320_15591)?(G__15309_15593[(1)]):((G__15318)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(1),0.0)));
-var G__15316_15597 = (cljs.core.truth_(G__15321_15592)?(G__15310_15594[(0)]):((G__15319)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__15317_15598 = (cljs.core.truth_(G__15321_15592)?(G__15310_15594[(1)]):((G__15319)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-(G__15311[(0)] = ((G__15312 + G__15314_15595) + G__15316_15597));
+var G__10392_10661 = ((!(G__10390))?(v1 instanceof thi.ng.geom.vector.Vec2):null);
+var G__10393_10662 = ((!(G__10391))?(v2 instanceof thi.ng.geom.vector.Vec2):null);
+var G__10381_10663 = (cljs.core.truth_(G__10392_10661)?v1.buf:null);
+var G__10382_10664 = (cljs.core.truth_(G__10393_10662)?v2.buf:null);
+var G__10386_10665 = (cljs.core.truth_(G__10392_10661)?(G__10381_10663[(0)]):((G__10390)?v1:cljs.core.nth.call(null,v1,(0),0.0)));
+var G__10387_10666 = (cljs.core.truth_(G__10392_10661)?(G__10381_10663[(1)]):((G__10390)?v1:cljs.core.nth.call(null,v1,(1),0.0)));
+var G__10388_10667 = (cljs.core.truth_(G__10393_10662)?(G__10382_10664[(0)]):((G__10391)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__10389_10668 = (cljs.core.truth_(G__10393_10662)?(G__10382_10664[(1)]):((G__10391)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+(G__10383[(0)] = ((G__10384 + G__10386_10665) + G__10388_10667));
 
-(G__15311[(1)] = ((G__15313 + G__15315_15596) + G__15317_15598));
+(G__10383[(1)] = ((G__10385 + G__10387_10666) + G__10389_10668));
 }
 
-return (new thi.ng.geom.vector.Vec2(G__15311,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(G__10383,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$abs$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var dest__14781__auto__ = (new Float32Array((2)));
-var G__15322_15599 = self__.buf;
-(dest__14781__auto__[(0)] = (function (){var G__15323 = (G__15322_15599[(0)]);
-return (thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1 ? thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1(G__15323) : thi.ng.math.core.abs_STAR_.call(null,G__15323));
-})());
+var dest__9880__auto__ = (new Float32Array((2)));
+var G__10394_10669 = self__.buf;
+(dest__9880__auto__[(0)] = thi.ng.math.core.abs_STAR_.call(null,(G__10394_10669[(0)])));
 
-(dest__14781__auto__[(1)] = (function (){var G__15324 = (G__15322_15599[(1)]);
-return (thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1 ? thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1(G__15324) : thi.ng.math.core.abs_STAR_.call(null,G__15324));
-})());
+(dest__9880__auto__[(1)] = thi.ng.math.core.abs_STAR_.call(null,(G__10394_10669[(1)])));
 
-return (new thi.ng.geom.vector.Vec2(dest__14781__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(dest__9880__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.prototype.thi$ng$math$core$IMathOps$subm$arity$3 = (function (_,a,b){
 var self__ = this;
 var ___$1 = this;
-var dest__14822__auto__ = (new Float32Array((2)));
-var G__15064_15600 = (a instanceof thi.ng.geom.vector.Vec2);
-var G__15065_15601 = (b instanceof thi.ng.geom.vector.Vec2);
-var G__15066_15602 = ((!(G__15064_15600))?typeof a === 'number':null);
-var G__15067_15603 = ((!(G__15065_15601))?typeof b === 'number':null);
-var G__15055_15604 = self__.buf;
-var G__15056_15605 = ((G__15064_15600)?a.buf:null);
-var G__15057_15606 = ((G__15065_15601)?b.buf:null);
-var G__15058_15607 = (G__15055_15604[(0)]);
-var G__15059_15608 = (G__15055_15604[(1)]);
-var G__15060_15609 = ((G__15064_15600)?(G__15056_15605[(0)]):(cljs.core.truth_(G__15066_15602)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(0),0.0)));
-var G__15061_15610 = ((G__15064_15600)?(G__15056_15605[(1)]):(cljs.core.truth_(G__15066_15602)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(1),0.0)));
-var G__15062_15611 = ((G__15065_15601)?(G__15057_15606[(0)]):(cljs.core.truth_(G__15067_15603)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(0),1.0)));
-var G__15063_15612 = ((G__15065_15601)?(G__15057_15606[(1)]):(cljs.core.truth_(G__15067_15603)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(1),1.0)));
-(dest__14822__auto__[(0)] = ((G__15058_15607 - G__15060_15609) * G__15062_15611));
+var dest__9921__auto__ = (new Float32Array((2)));
+var G__10161_10670 = (a instanceof thi.ng.geom.vector.Vec2);
+var G__10162_10671 = (b instanceof thi.ng.geom.vector.Vec2);
+var G__10163_10672 = ((!(G__10161_10670))?typeof a === 'number':null);
+var G__10164_10673 = ((!(G__10162_10671))?typeof b === 'number':null);
+var G__10152_10674 = self__.buf;
+var G__10153_10675 = ((G__10161_10670)?a.buf:null);
+var G__10154_10676 = ((G__10162_10671)?b.buf:null);
+var G__10155_10677 = (G__10152_10674[(0)]);
+var G__10156_10678 = (G__10152_10674[(1)]);
+var G__10157_10679 = ((G__10161_10670)?(G__10153_10675[(0)]):(cljs.core.truth_(G__10163_10672)?a:cljs.core.nth.call(null,a,(0),0.0)));
+var G__10158_10680 = ((G__10161_10670)?(G__10153_10675[(1)]):(cljs.core.truth_(G__10163_10672)?a:cljs.core.nth.call(null,a,(1),0.0)));
+var G__10159_10681 = ((G__10162_10671)?(G__10154_10676[(0)]):(cljs.core.truth_(G__10164_10673)?b:cljs.core.nth.call(null,b,(0),1.0)));
+var G__10160_10682 = ((G__10162_10671)?(G__10154_10676[(1)]):(cljs.core.truth_(G__10164_10673)?b:cljs.core.nth.call(null,b,(1),1.0)));
+(dest__9921__auto__[(0)] = ((G__10155_10677 - G__10157_10679) * G__10159_10681));
 
-(dest__14822__auto__[(1)] = ((G__15059_15608 - G__15061_15610) * G__15063_15612));
+(dest__9921__auto__[(1)] = ((G__10156_10678 - G__10158_10680) * G__10160_10682));
 
-return (new thi.ng.geom.vector.Vec2(dest__14822__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec2(dest__9921__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec2.getBasis = (function (){
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$sym$buf,cljs.core.with_meta(cljs.core.cst$sym$_hash,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$mutable,true], null)),cljs.core.cst$sym$_meta], null);
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"buf","buf",1426618187,null),cljs.core.with_meta(new cljs.core.Symbol(null,"_hash","_hash",-2130838312,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"mutable","mutable",875778266),true], null)),new cljs.core.Symbol(null,"_meta","_meta",-1716892533,null)], null);
 });
 
 thi.ng.geom.vector.Vec2.cljs$lang$type = true;
@@ -2071,7 +2027,7 @@ thi.ng.geom.vector.Vec2.cljs$lang$type = true;
 thi.ng.geom.vector.Vec2.cljs$lang$ctorStr = "thi.ng.geom.vector/Vec2";
 
 thi.ng.geom.vector.Vec2.cljs$lang$ctorPrWriter = (function (this__8041__auto__,writer__8042__auto__,opt__8043__auto__){
-return cljs.core._write(writer__8042__auto__,"thi.ng.geom.vector/Vec2");
+return cljs.core._write.call(null,writer__8042__auto__,"thi.ng.geom.vector/Vec2");
 });
 
 thi.ng.geom.vector.__GT_Vec2 = (function thi$ng$geom$vector$__GT_Vec2(buf,_hash,_meta){
@@ -2140,7 +2096,7 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$ITransform$ = cljs.core.PROTO
 thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$ITransform$transform$arity$2 = (function (_,m){
 var self__ = this;
 var ___$1 = this;
-return thi.ng.geom.core.transform_vector(m,___$1);
+return thi.ng.geom.core.transform_vector.call(null,m,___$1);
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMutableMathOps$ = cljs.core.PROTOCOL_SENTINEL;
@@ -2162,31 +2118,31 @@ return ___$1;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMutableMathOps$__BANG_$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var G__15614_16107 = self__.buf;
+var G__10684_11135 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__15615_16108 = v.buf;
-(self__.buf[(0)] = ((G__15614_16107[(0)]) - (G__15615_16108[(0)])));
+var G__10685_11136 = v.buf;
+(self__.buf[(0)] = ((G__10684_11135[(0)]) - (G__10685_11136[(0)])));
 
-(self__.buf[(1)] = ((G__15614_16107[(1)]) - (G__15615_16108[(1)])));
+(self__.buf[(1)] = ((G__10684_11135[(1)]) - (G__10685_11136[(1)])));
 
-(self__.buf[(2)] = ((G__15614_16107[(2)]) - (G__15615_16108[(2)])));
+(self__.buf[(2)] = ((G__10684_11135[(2)]) - (G__10685_11136[(2)])));
 
 self__._hash = null;
 } else {
 if(typeof v === 'number'){
-(self__.buf[(0)] = ((G__15614_16107[(0)]) - v));
+(self__.buf[(0)] = ((G__10684_11135[(0)]) - v));
 
-(self__.buf[(1)] = ((G__15614_16107[(1)]) - v));
+(self__.buf[(1)] = ((G__10684_11135[(1)]) - v));
 
-(self__.buf[(2)] = ((G__15614_16107[(2)]) - v));
+(self__.buf[(2)] = ((G__10684_11135[(2)]) - v));
 
 self__._hash = null;
 } else {
-(self__.buf[(0)] = ((G__15614_16107[(0)]) - cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(self__.buf[(0)] = ((G__10684_11135[(0)]) - cljs.core.nth.call(null,v,(0),0.0)));
 
-(self__.buf[(1)] = ((G__15614_16107[(1)]) - cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(self__.buf[(1)] = ((G__10684_11135[(1)]) - cljs.core.nth.call(null,v,(1),0.0)));
 
-(self__.buf[(2)] = ((G__15614_16107[(2)]) - cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0)));
+(self__.buf[(2)] = ((G__10684_11135[(2)]) - cljs.core.nth.call(null,v,(2),0.0)));
 
 self__._hash = null;
 }
@@ -2198,27 +2154,27 @@ return ___$1;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMutableMathOps$__BANG_$arity$3 = (function (_,v1,v2){
 var self__ = this;
 var ___$1 = this;
-var G__15628_16109 = (v1 instanceof thi.ng.geom.vector.Vec3);
-var G__15629_16110 = (v2 instanceof thi.ng.geom.vector.Vec3);
-var G__15630_16111 = ((!(G__15628_16109))?typeof v1 === 'number':null);
-var G__15631_16112 = ((!(G__15629_16110))?typeof v2 === 'number':null);
-var G__15616_16113 = self__.buf;
-var G__15617_16114 = ((G__15628_16109)?v1.buf:null);
-var G__15618_16115 = ((G__15629_16110)?v2.buf:null);
-var G__15619_16116 = (G__15616_16113[(0)]);
-var G__15620_16117 = (G__15616_16113[(1)]);
-var G__15621_16118 = (G__15616_16113[(2)]);
-var G__15622_16119 = ((G__15628_16109)?(G__15617_16114[(0)]):(cljs.core.truth_(G__15630_16111)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(0),0.0)));
-var G__15623_16120 = ((G__15628_16109)?(G__15617_16114[(1)]):(cljs.core.truth_(G__15630_16111)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(1),0.0)));
-var G__15624_16121 = ((G__15628_16109)?(G__15617_16114[(2)]):(cljs.core.truth_(G__15630_16111)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(2),0.0)));
-var G__15625_16122 = ((G__15629_16110)?(G__15618_16115[(0)]):(cljs.core.truth_(G__15631_16112)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__15626_16123 = ((G__15629_16110)?(G__15618_16115[(1)]):(cljs.core.truth_(G__15631_16112)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-var G__15627_16124 = ((G__15629_16110)?(G__15618_16115[(2)]):(cljs.core.truth_(G__15631_16112)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(2),0.0)));
-(self__.buf[(0)] = ((G__15619_16116 - G__15622_16119) - G__15625_16122));
+var G__10698_11137 = (v1 instanceof thi.ng.geom.vector.Vec3);
+var G__10699_11138 = (v2 instanceof thi.ng.geom.vector.Vec3);
+var G__10700_11139 = ((!(G__10698_11137))?typeof v1 === 'number':null);
+var G__10701_11140 = ((!(G__10699_11138))?typeof v2 === 'number':null);
+var G__10686_11141 = self__.buf;
+var G__10687_11142 = ((G__10698_11137)?v1.buf:null);
+var G__10688_11143 = ((G__10699_11138)?v2.buf:null);
+var G__10689_11144 = (G__10686_11141[(0)]);
+var G__10690_11145 = (G__10686_11141[(1)]);
+var G__10691_11146 = (G__10686_11141[(2)]);
+var G__10692_11147 = ((G__10698_11137)?(G__10687_11142[(0)]):(cljs.core.truth_(G__10700_11139)?v1:cljs.core.nth.call(null,v1,(0),0.0)));
+var G__10693_11148 = ((G__10698_11137)?(G__10687_11142[(1)]):(cljs.core.truth_(G__10700_11139)?v1:cljs.core.nth.call(null,v1,(1),0.0)));
+var G__10694_11149 = ((G__10698_11137)?(G__10687_11142[(2)]):(cljs.core.truth_(G__10700_11139)?v1:cljs.core.nth.call(null,v1,(2),0.0)));
+var G__10695_11150 = ((G__10699_11138)?(G__10688_11143[(0)]):(cljs.core.truth_(G__10701_11140)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__10696_11151 = ((G__10699_11138)?(G__10688_11143[(1)]):(cljs.core.truth_(G__10701_11140)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+var G__10697_11152 = ((G__10699_11138)?(G__10688_11143[(2)]):(cljs.core.truth_(G__10701_11140)?v2:cljs.core.nth.call(null,v2,(2),0.0)));
+(self__.buf[(0)] = ((G__10689_11144 - G__10692_11147) - G__10695_11150));
 
-(self__.buf[(1)] = ((G__15620_16117 - G__15623_16120) - G__15626_16123));
+(self__.buf[(1)] = ((G__10690_11145 - G__10693_11148) - G__10696_11151));
 
-(self__.buf[(2)] = ((G__15621_16118 - G__15624_16121) - G__15627_16124));
+(self__.buf[(2)] = ((G__10691_11146 - G__10694_11149) - G__10697_11152));
 
 self__._hash = null;
 
@@ -2248,31 +2204,31 @@ return ___$1;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMutableMathOps$_STAR__BANG_$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var G__15632_16125 = self__.buf;
+var G__10702_11153 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__15633_16126 = v.buf;
-(self__.buf[(0)] = ((G__15632_16125[(0)]) * (G__15633_16126[(0)])));
+var G__10703_11154 = v.buf;
+(self__.buf[(0)] = ((G__10702_11153[(0)]) * (G__10703_11154[(0)])));
 
-(self__.buf[(1)] = ((G__15632_16125[(1)]) * (G__15633_16126[(1)])));
+(self__.buf[(1)] = ((G__10702_11153[(1)]) * (G__10703_11154[(1)])));
 
-(self__.buf[(2)] = ((G__15632_16125[(2)]) * (G__15633_16126[(2)])));
+(self__.buf[(2)] = ((G__10702_11153[(2)]) * (G__10703_11154[(2)])));
 
 self__._hash = null;
 } else {
 if(typeof v === 'number'){
-(self__.buf[(0)] = ((G__15632_16125[(0)]) * v));
+(self__.buf[(0)] = ((G__10702_11153[(0)]) * v));
 
-(self__.buf[(1)] = ((G__15632_16125[(1)]) * v));
+(self__.buf[(1)] = ((G__10702_11153[(1)]) * v));
 
-(self__.buf[(2)] = ((G__15632_16125[(2)]) * v));
+(self__.buf[(2)] = ((G__10702_11153[(2)]) * v));
 
 self__._hash = null;
 } else {
-(self__.buf[(0)] = ((G__15632_16125[(0)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(self__.buf[(0)] = ((G__10702_11153[(0)]) * cljs.core.nth.call(null,v,(0),0.0)));
 
-(self__.buf[(1)] = ((G__15632_16125[(1)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(self__.buf[(1)] = ((G__10702_11153[(1)]) * cljs.core.nth.call(null,v,(1),0.0)));
 
-(self__.buf[(2)] = ((G__15632_16125[(2)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0)));
+(self__.buf[(2)] = ((G__10702_11153[(2)]) * cljs.core.nth.call(null,v,(2),0.0)));
 
 self__._hash = null;
 }
@@ -2284,27 +2240,27 @@ return ___$1;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMutableMathOps$_STAR__BANG_$arity$3 = (function (_,v1,v2){
 var self__ = this;
 var ___$1 = this;
-var G__15646_16127 = (v1 instanceof thi.ng.geom.vector.Vec3);
-var G__15647_16128 = (v2 instanceof thi.ng.geom.vector.Vec3);
-var G__15648_16129 = ((!(G__15646_16127))?typeof v1 === 'number':null);
-var G__15649_16130 = ((!(G__15647_16128))?typeof v2 === 'number':null);
-var G__15634_16131 = self__.buf;
-var G__15635_16132 = ((G__15646_16127)?v1.buf:null);
-var G__15636_16133 = ((G__15647_16128)?v2.buf:null);
-var G__15637_16134 = (G__15634_16131[(0)]);
-var G__15638_16135 = (G__15634_16131[(1)]);
-var G__15639_16136 = (G__15634_16131[(2)]);
-var G__15640_16137 = ((G__15646_16127)?(G__15635_16132[(0)]):(cljs.core.truth_(G__15648_16129)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(0),0.0)));
-var G__15641_16138 = ((G__15646_16127)?(G__15635_16132[(1)]):(cljs.core.truth_(G__15648_16129)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(1),0.0)));
-var G__15642_16139 = ((G__15646_16127)?(G__15635_16132[(2)]):(cljs.core.truth_(G__15648_16129)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(2),0.0)));
-var G__15643_16140 = ((G__15647_16128)?(G__15636_16133[(0)]):(cljs.core.truth_(G__15649_16130)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__15644_16141 = ((G__15647_16128)?(G__15636_16133[(1)]):(cljs.core.truth_(G__15649_16130)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-var G__15645_16142 = ((G__15647_16128)?(G__15636_16133[(2)]):(cljs.core.truth_(G__15649_16130)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(2),0.0)));
-(self__.buf[(0)] = ((G__15637_16134 * G__15640_16137) * G__15643_16140));
+var G__10716_11155 = (v1 instanceof thi.ng.geom.vector.Vec3);
+var G__10717_11156 = (v2 instanceof thi.ng.geom.vector.Vec3);
+var G__10718_11157 = ((!(G__10716_11155))?typeof v1 === 'number':null);
+var G__10719_11158 = ((!(G__10717_11156))?typeof v2 === 'number':null);
+var G__10704_11159 = self__.buf;
+var G__10705_11160 = ((G__10716_11155)?v1.buf:null);
+var G__10706_11161 = ((G__10717_11156)?v2.buf:null);
+var G__10707_11162 = (G__10704_11159[(0)]);
+var G__10708_11163 = (G__10704_11159[(1)]);
+var G__10709_11164 = (G__10704_11159[(2)]);
+var G__10710_11165 = ((G__10716_11155)?(G__10705_11160[(0)]):(cljs.core.truth_(G__10718_11157)?v1:cljs.core.nth.call(null,v1,(0),0.0)));
+var G__10711_11166 = ((G__10716_11155)?(G__10705_11160[(1)]):(cljs.core.truth_(G__10718_11157)?v1:cljs.core.nth.call(null,v1,(1),0.0)));
+var G__10712_11167 = ((G__10716_11155)?(G__10705_11160[(2)]):(cljs.core.truth_(G__10718_11157)?v1:cljs.core.nth.call(null,v1,(2),0.0)));
+var G__10713_11168 = ((G__10717_11156)?(G__10706_11161[(0)]):(cljs.core.truth_(G__10719_11158)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__10714_11169 = ((G__10717_11156)?(G__10706_11161[(1)]):(cljs.core.truth_(G__10719_11158)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+var G__10715_11170 = ((G__10717_11156)?(G__10706_11161[(2)]):(cljs.core.truth_(G__10719_11158)?v2:cljs.core.nth.call(null,v2,(2),0.0)));
+(self__.buf[(0)] = ((G__10707_11162 * G__10710_11165) * G__10713_11168));
 
-(self__.buf[(1)] = ((G__15638_16135 * G__15641_16138) * G__15644_16141));
+(self__.buf[(1)] = ((G__10708_11163 * G__10711_11166) * G__10714_11169));
 
-(self__.buf[(2)] = ((G__15639_16136 * G__15642_16139) * G__15645_16142));
+(self__.buf[(2)] = ((G__10709_11164 * G__10712_11167) * G__10715_11170));
 
 self__._hash = null;
 
@@ -2328,27 +2284,27 @@ return ___$1;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMutableMathOps$subm_BANG_$arity$3 = (function (_,a,b){
 var self__ = this;
 var ___$1 = this;
-var G__15662_16143 = (a instanceof thi.ng.geom.vector.Vec3);
-var G__15663_16144 = (b instanceof thi.ng.geom.vector.Vec3);
-var G__15664_16145 = ((!(G__15662_16143))?typeof a === 'number':null);
-var G__15665_16146 = ((!(G__15663_16144))?typeof b === 'number':null);
-var G__15650_16147 = self__.buf;
-var G__15651_16148 = ((G__15662_16143)?a.buf:null);
-var G__15652_16149 = ((G__15663_16144)?b.buf:null);
-var G__15653_16150 = (G__15650_16147[(0)]);
-var G__15654_16151 = (G__15650_16147[(1)]);
-var G__15655_16152 = (G__15650_16147[(2)]);
-var G__15656_16153 = ((G__15662_16143)?(G__15651_16148[(0)]):(cljs.core.truth_(G__15664_16145)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(0),0.0)));
-var G__15657_16154 = ((G__15662_16143)?(G__15651_16148[(1)]):(cljs.core.truth_(G__15664_16145)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(1),0.0)));
-var G__15658_16155 = ((G__15662_16143)?(G__15651_16148[(2)]):(cljs.core.truth_(G__15664_16145)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(2),0.0)));
-var G__15659_16156 = ((G__15663_16144)?(G__15652_16149[(0)]):(cljs.core.truth_(G__15665_16146)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(0),1.0)));
-var G__15660_16157 = ((G__15663_16144)?(G__15652_16149[(1)]):(cljs.core.truth_(G__15665_16146)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(1),1.0)));
-var G__15661_16158 = ((G__15663_16144)?(G__15652_16149[(2)]):(cljs.core.truth_(G__15665_16146)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(2),1.0)));
-(self__.buf[(0)] = ((G__15653_16150 - G__15656_16153) * G__15659_16156));
+var G__10732_11171 = (a instanceof thi.ng.geom.vector.Vec3);
+var G__10733_11172 = (b instanceof thi.ng.geom.vector.Vec3);
+var G__10734_11173 = ((!(G__10732_11171))?typeof a === 'number':null);
+var G__10735_11174 = ((!(G__10733_11172))?typeof b === 'number':null);
+var G__10720_11175 = self__.buf;
+var G__10721_11176 = ((G__10732_11171)?a.buf:null);
+var G__10722_11177 = ((G__10733_11172)?b.buf:null);
+var G__10723_11178 = (G__10720_11175[(0)]);
+var G__10724_11179 = (G__10720_11175[(1)]);
+var G__10725_11180 = (G__10720_11175[(2)]);
+var G__10726_11181 = ((G__10732_11171)?(G__10721_11176[(0)]):(cljs.core.truth_(G__10734_11173)?a:cljs.core.nth.call(null,a,(0),0.0)));
+var G__10727_11182 = ((G__10732_11171)?(G__10721_11176[(1)]):(cljs.core.truth_(G__10734_11173)?a:cljs.core.nth.call(null,a,(1),0.0)));
+var G__10728_11183 = ((G__10732_11171)?(G__10721_11176[(2)]):(cljs.core.truth_(G__10734_11173)?a:cljs.core.nth.call(null,a,(2),0.0)));
+var G__10729_11184 = ((G__10733_11172)?(G__10722_11177[(0)]):(cljs.core.truth_(G__10735_11174)?b:cljs.core.nth.call(null,b,(0),1.0)));
+var G__10730_11185 = ((G__10733_11172)?(G__10722_11177[(1)]):(cljs.core.truth_(G__10735_11174)?b:cljs.core.nth.call(null,b,(1),1.0)));
+var G__10731_11186 = ((G__10733_11172)?(G__10722_11177[(2)]):(cljs.core.truth_(G__10735_11174)?b:cljs.core.nth.call(null,b,(2),1.0)));
+(self__.buf[(0)] = ((G__10723_11178 - G__10726_11181) * G__10729_11184));
 
-(self__.buf[(1)] = ((G__15654_16151 - G__15657_16154) * G__15660_16157));
+(self__.buf[(1)] = ((G__10724_11179 - G__10727_11182) * G__10730_11185));
 
-(self__.buf[(2)] = ((G__15655_16152 - G__15658_16155) * G__15661_16158));
+(self__.buf[(2)] = ((G__10725_11180 - G__10728_11183) * G__10731_11186));
 
 self__._hash = null;
 
@@ -2358,27 +2314,27 @@ return ___$1;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMutableMathOps$msub_BANG_$arity$3 = (function (_,a,b){
 var self__ = this;
 var ___$1 = this;
-var G__15678_16159 = (a instanceof thi.ng.geom.vector.Vec3);
-var G__15679_16160 = (b instanceof thi.ng.geom.vector.Vec3);
-var G__15680_16161 = ((!(G__15678_16159))?typeof a === 'number':null);
-var G__15681_16162 = ((!(G__15679_16160))?typeof b === 'number':null);
-var G__15666_16163 = self__.buf;
-var G__15667_16164 = ((G__15678_16159)?a.buf:null);
-var G__15668_16165 = ((G__15679_16160)?b.buf:null);
-var G__15669_16166 = (G__15666_16163[(0)]);
-var G__15670_16167 = (G__15666_16163[(1)]);
-var G__15671_16168 = (G__15666_16163[(2)]);
-var G__15672_16169 = ((G__15678_16159)?(G__15667_16164[(0)]):(cljs.core.truth_(G__15680_16161)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(0),1.0)));
-var G__15673_16170 = ((G__15678_16159)?(G__15667_16164[(1)]):(cljs.core.truth_(G__15680_16161)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(1),1.0)));
-var G__15674_16171 = ((G__15678_16159)?(G__15667_16164[(2)]):(cljs.core.truth_(G__15680_16161)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(2),1.0)));
-var G__15675_16172 = ((G__15679_16160)?(G__15668_16165[(0)]):(cljs.core.truth_(G__15681_16162)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(0),0.0)));
-var G__15676_16173 = ((G__15679_16160)?(G__15668_16165[(1)]):(cljs.core.truth_(G__15681_16162)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(1),0.0)));
-var G__15677_16174 = ((G__15679_16160)?(G__15668_16165[(2)]):(cljs.core.truth_(G__15681_16162)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(2),0.0)));
-(self__.buf[(0)] = ((G__15669_16166 * G__15672_16169) - G__15675_16172));
+var G__10748_11187 = (a instanceof thi.ng.geom.vector.Vec3);
+var G__10749_11188 = (b instanceof thi.ng.geom.vector.Vec3);
+var G__10750_11189 = ((!(G__10748_11187))?typeof a === 'number':null);
+var G__10751_11190 = ((!(G__10749_11188))?typeof b === 'number':null);
+var G__10736_11191 = self__.buf;
+var G__10737_11192 = ((G__10748_11187)?a.buf:null);
+var G__10738_11193 = ((G__10749_11188)?b.buf:null);
+var G__10739_11194 = (G__10736_11191[(0)]);
+var G__10740_11195 = (G__10736_11191[(1)]);
+var G__10741_11196 = (G__10736_11191[(2)]);
+var G__10742_11197 = ((G__10748_11187)?(G__10737_11192[(0)]):(cljs.core.truth_(G__10750_11189)?a:cljs.core.nth.call(null,a,(0),1.0)));
+var G__10743_11198 = ((G__10748_11187)?(G__10737_11192[(1)]):(cljs.core.truth_(G__10750_11189)?a:cljs.core.nth.call(null,a,(1),1.0)));
+var G__10744_11199 = ((G__10748_11187)?(G__10737_11192[(2)]):(cljs.core.truth_(G__10750_11189)?a:cljs.core.nth.call(null,a,(2),1.0)));
+var G__10745_11200 = ((G__10749_11188)?(G__10738_11193[(0)]):(cljs.core.truth_(G__10751_11190)?b:cljs.core.nth.call(null,b,(0),0.0)));
+var G__10746_11201 = ((G__10749_11188)?(G__10738_11193[(1)]):(cljs.core.truth_(G__10751_11190)?b:cljs.core.nth.call(null,b,(1),0.0)));
+var G__10747_11202 = ((G__10749_11188)?(G__10738_11193[(2)]):(cljs.core.truth_(G__10751_11190)?b:cljs.core.nth.call(null,b,(2),0.0)));
+(self__.buf[(0)] = ((G__10739_11194 * G__10742_11197) - G__10745_11200));
 
-(self__.buf[(1)] = ((G__15670_16167 * G__15673_16170) - G__15676_16173));
+(self__.buf[(1)] = ((G__10740_11195 * G__10743_11198) - G__10746_11201));
 
-(self__.buf[(2)] = ((G__15671_16168 * G__15674_16171) - G__15677_16174));
+(self__.buf[(2)] = ((G__10741_11196 * G__10744_11199) - G__10747_11202));
 
 self__._hash = null;
 
@@ -2388,17 +2344,11 @@ return ___$1;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMutableMathOps$abs_BANG_$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-(self__.buf[(0)] = (function (){var G__15682 = (self__.buf[(0)]);
-return (thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1 ? thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1(G__15682) : thi.ng.math.core.abs_STAR_.call(null,G__15682));
-})());
+(self__.buf[(0)] = thi.ng.math.core.abs_STAR_.call(null,(self__.buf[(0)])));
 
-(self__.buf[(1)] = (function (){var G__15683 = (self__.buf[(1)]);
-return (thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1 ? thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1(G__15683) : thi.ng.math.core.abs_STAR_.call(null,G__15683));
-})());
+(self__.buf[(1)] = thi.ng.math.core.abs_STAR_.call(null,(self__.buf[(1)])));
 
-(self__.buf[(2)] = (function (){var G__15684 = (self__.buf[(2)]);
-return (thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1 ? thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1(G__15684) : thi.ng.math.core.abs_STAR_.call(null,G__15684));
-})());
+(self__.buf[(2)] = thi.ng.math.core.abs_STAR_.call(null,(self__.buf[(2)])));
 
 self__._hash = null;
 
@@ -2408,27 +2358,27 @@ return ___$1;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMutableMathOps$madd_BANG_$arity$3 = (function (_,a,b){
 var self__ = this;
 var ___$1 = this;
-var G__15697_16175 = (a instanceof thi.ng.geom.vector.Vec3);
-var G__15698_16176 = (b instanceof thi.ng.geom.vector.Vec3);
-var G__15699_16177 = ((!(G__15697_16175))?typeof a === 'number':null);
-var G__15700_16178 = ((!(G__15698_16176))?typeof b === 'number':null);
-var G__15685_16179 = self__.buf;
-var G__15686_16180 = ((G__15697_16175)?a.buf:null);
-var G__15687_16181 = ((G__15698_16176)?b.buf:null);
-var G__15688_16182 = (G__15685_16179[(0)]);
-var G__15689_16183 = (G__15685_16179[(1)]);
-var G__15690_16184 = (G__15685_16179[(2)]);
-var G__15691_16185 = ((G__15697_16175)?(G__15686_16180[(0)]):(cljs.core.truth_(G__15699_16177)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(0),1.0)));
-var G__15692_16186 = ((G__15697_16175)?(G__15686_16180[(1)]):(cljs.core.truth_(G__15699_16177)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(1),1.0)));
-var G__15693_16187 = ((G__15697_16175)?(G__15686_16180[(2)]):(cljs.core.truth_(G__15699_16177)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(2),1.0)));
-var G__15694_16188 = ((G__15698_16176)?(G__15687_16181[(0)]):(cljs.core.truth_(G__15700_16178)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(0),0.0)));
-var G__15695_16189 = ((G__15698_16176)?(G__15687_16181[(1)]):(cljs.core.truth_(G__15700_16178)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(1),0.0)));
-var G__15696_16190 = ((G__15698_16176)?(G__15687_16181[(2)]):(cljs.core.truth_(G__15700_16178)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(2),0.0)));
-(self__.buf[(0)] = ((G__15688_16182 * G__15691_16185) + G__15694_16188));
+var G__10764_11203 = (a instanceof thi.ng.geom.vector.Vec3);
+var G__10765_11204 = (b instanceof thi.ng.geom.vector.Vec3);
+var G__10766_11205 = ((!(G__10764_11203))?typeof a === 'number':null);
+var G__10767_11206 = ((!(G__10765_11204))?typeof b === 'number':null);
+var G__10752_11207 = self__.buf;
+var G__10753_11208 = ((G__10764_11203)?a.buf:null);
+var G__10754_11209 = ((G__10765_11204)?b.buf:null);
+var G__10755_11210 = (G__10752_11207[(0)]);
+var G__10756_11211 = (G__10752_11207[(1)]);
+var G__10757_11212 = (G__10752_11207[(2)]);
+var G__10758_11213 = ((G__10764_11203)?(G__10753_11208[(0)]):(cljs.core.truth_(G__10766_11205)?a:cljs.core.nth.call(null,a,(0),1.0)));
+var G__10759_11214 = ((G__10764_11203)?(G__10753_11208[(1)]):(cljs.core.truth_(G__10766_11205)?a:cljs.core.nth.call(null,a,(1),1.0)));
+var G__10760_11215 = ((G__10764_11203)?(G__10753_11208[(2)]):(cljs.core.truth_(G__10766_11205)?a:cljs.core.nth.call(null,a,(2),1.0)));
+var G__10761_11216 = ((G__10765_11204)?(G__10754_11209[(0)]):(cljs.core.truth_(G__10767_11206)?b:cljs.core.nth.call(null,b,(0),0.0)));
+var G__10762_11217 = ((G__10765_11204)?(G__10754_11209[(1)]):(cljs.core.truth_(G__10767_11206)?b:cljs.core.nth.call(null,b,(1),0.0)));
+var G__10763_11218 = ((G__10765_11204)?(G__10754_11209[(2)]):(cljs.core.truth_(G__10767_11206)?b:cljs.core.nth.call(null,b,(2),0.0)));
+(self__.buf[(0)] = ((G__10755_11210 * G__10758_11213) + G__10761_11216));
 
-(self__.buf[(1)] = ((G__15689_16183 * G__15692_16186) + G__15695_16189));
+(self__.buf[(1)] = ((G__10756_11211 * G__10759_11214) + G__10762_11217));
 
-(self__.buf[(2)] = ((G__15690_16184 * G__15693_16187) + G__15696_16190));
+(self__.buf[(2)] = ((G__10757_11212 * G__10760_11215) + G__10763_11218));
 
 self__._hash = null;
 
@@ -2452,31 +2402,31 @@ return ___$1;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMutableMathOps$div_BANG_$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var G__15701_16191 = self__.buf;
+var G__10768_11219 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__15702_16192 = v.buf;
-(self__.buf[(0)] = ((G__15701_16191[(0)]) / (G__15702_16192[(0)])));
+var G__10769_11220 = v.buf;
+(self__.buf[(0)] = ((G__10768_11219[(0)]) / (G__10769_11220[(0)])));
 
-(self__.buf[(1)] = ((G__15701_16191[(1)]) / (G__15702_16192[(1)])));
+(self__.buf[(1)] = ((G__10768_11219[(1)]) / (G__10769_11220[(1)])));
 
-(self__.buf[(2)] = ((G__15701_16191[(2)]) / (G__15702_16192[(2)])));
+(self__.buf[(2)] = ((G__10768_11219[(2)]) / (G__10769_11220[(2)])));
 
 self__._hash = null;
 } else {
 if(typeof v === 'number'){
-(self__.buf[(0)] = ((G__15701_16191[(0)]) / v));
+(self__.buf[(0)] = ((G__10768_11219[(0)]) / v));
 
-(self__.buf[(1)] = ((G__15701_16191[(1)]) / v));
+(self__.buf[(1)] = ((G__10768_11219[(1)]) / v));
 
-(self__.buf[(2)] = ((G__15701_16191[(2)]) / v));
+(self__.buf[(2)] = ((G__10768_11219[(2)]) / v));
 
 self__._hash = null;
 } else {
-(self__.buf[(0)] = ((G__15701_16191[(0)]) / cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(self__.buf[(0)] = ((G__10768_11219[(0)]) / cljs.core.nth.call(null,v,(0),0.0)));
 
-(self__.buf[(1)] = ((G__15701_16191[(1)]) / cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(self__.buf[(1)] = ((G__10768_11219[(1)]) / cljs.core.nth.call(null,v,(1),0.0)));
 
-(self__.buf[(2)] = ((G__15701_16191[(2)]) / cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0)));
+(self__.buf[(2)] = ((G__10768_11219[(2)]) / cljs.core.nth.call(null,v,(2),0.0)));
 
 self__._hash = null;
 }
@@ -2488,27 +2438,27 @@ return ___$1;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMutableMathOps$div_BANG_$arity$3 = (function (_,v1,v2){
 var self__ = this;
 var ___$1 = this;
-var G__15715_16193 = (v1 instanceof thi.ng.geom.vector.Vec3);
-var G__15716_16194 = (v2 instanceof thi.ng.geom.vector.Vec3);
-var G__15717_16195 = ((!(G__15715_16193))?typeof v1 === 'number':null);
-var G__15718_16196 = ((!(G__15716_16194))?typeof v2 === 'number':null);
-var G__15703_16197 = self__.buf;
-var G__15704_16198 = ((G__15715_16193)?v1.buf:null);
-var G__15705_16199 = ((G__15716_16194)?v2.buf:null);
-var G__15706_16200 = (G__15703_16197[(0)]);
-var G__15707_16201 = (G__15703_16197[(1)]);
-var G__15708_16202 = (G__15703_16197[(2)]);
-var G__15709_16203 = ((G__15715_16193)?(G__15704_16198[(0)]):(cljs.core.truth_(G__15717_16195)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(0),0.0)));
-var G__15710_16204 = ((G__15715_16193)?(G__15704_16198[(1)]):(cljs.core.truth_(G__15717_16195)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(1),0.0)));
-var G__15711_16205 = ((G__15715_16193)?(G__15704_16198[(2)]):(cljs.core.truth_(G__15717_16195)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(2),0.0)));
-var G__15712_16206 = ((G__15716_16194)?(G__15705_16199[(0)]):(cljs.core.truth_(G__15718_16196)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__15713_16207 = ((G__15716_16194)?(G__15705_16199[(1)]):(cljs.core.truth_(G__15718_16196)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-var G__15714_16208 = ((G__15716_16194)?(G__15705_16199[(2)]):(cljs.core.truth_(G__15718_16196)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(2),0.0)));
-(self__.buf[(0)] = ((G__15706_16200 / G__15709_16203) / G__15712_16206));
+var G__10782_11221 = (v1 instanceof thi.ng.geom.vector.Vec3);
+var G__10783_11222 = (v2 instanceof thi.ng.geom.vector.Vec3);
+var G__10784_11223 = ((!(G__10782_11221))?typeof v1 === 'number':null);
+var G__10785_11224 = ((!(G__10783_11222))?typeof v2 === 'number':null);
+var G__10770_11225 = self__.buf;
+var G__10771_11226 = ((G__10782_11221)?v1.buf:null);
+var G__10772_11227 = ((G__10783_11222)?v2.buf:null);
+var G__10773_11228 = (G__10770_11225[(0)]);
+var G__10774_11229 = (G__10770_11225[(1)]);
+var G__10775_11230 = (G__10770_11225[(2)]);
+var G__10776_11231 = ((G__10782_11221)?(G__10771_11226[(0)]):(cljs.core.truth_(G__10784_11223)?v1:cljs.core.nth.call(null,v1,(0),0.0)));
+var G__10777_11232 = ((G__10782_11221)?(G__10771_11226[(1)]):(cljs.core.truth_(G__10784_11223)?v1:cljs.core.nth.call(null,v1,(1),0.0)));
+var G__10778_11233 = ((G__10782_11221)?(G__10771_11226[(2)]):(cljs.core.truth_(G__10784_11223)?v1:cljs.core.nth.call(null,v1,(2),0.0)));
+var G__10779_11234 = ((G__10783_11222)?(G__10772_11227[(0)]):(cljs.core.truth_(G__10785_11224)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__10780_11235 = ((G__10783_11222)?(G__10772_11227[(1)]):(cljs.core.truth_(G__10785_11224)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+var G__10781_11236 = ((G__10783_11222)?(G__10772_11227[(2)]):(cljs.core.truth_(G__10785_11224)?v2:cljs.core.nth.call(null,v2,(2),0.0)));
+(self__.buf[(0)] = ((G__10773_11228 / G__10776_11231) / G__10779_11234));
 
-(self__.buf[(1)] = ((G__15707_16201 / G__15710_16204) / G__15713_16207));
+(self__.buf[(1)] = ((G__10774_11229 / G__10777_11232) / G__10780_11235));
 
-(self__.buf[(2)] = ((G__15708_16202 / G__15711_16205) / G__15714_16208));
+(self__.buf[(2)] = ((G__10775_11230 / G__10778_11233) / G__10781_11236));
 
 self__._hash = null;
 
@@ -2538,31 +2488,31 @@ return ___$1;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMutableMathOps$_PLUS__BANG_$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var G__15719_16209 = self__.buf;
+var G__10786_11237 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__15720_16210 = v.buf;
-(self__.buf[(0)] = ((G__15719_16209[(0)]) + (G__15720_16210[(0)])));
+var G__10787_11238 = v.buf;
+(self__.buf[(0)] = ((G__10786_11237[(0)]) + (G__10787_11238[(0)])));
 
-(self__.buf[(1)] = ((G__15719_16209[(1)]) + (G__15720_16210[(1)])));
+(self__.buf[(1)] = ((G__10786_11237[(1)]) + (G__10787_11238[(1)])));
 
-(self__.buf[(2)] = ((G__15719_16209[(2)]) + (G__15720_16210[(2)])));
+(self__.buf[(2)] = ((G__10786_11237[(2)]) + (G__10787_11238[(2)])));
 
 self__._hash = null;
 } else {
 if(typeof v === 'number'){
-(self__.buf[(0)] = ((G__15719_16209[(0)]) + v));
+(self__.buf[(0)] = ((G__10786_11237[(0)]) + v));
 
-(self__.buf[(1)] = ((G__15719_16209[(1)]) + v));
+(self__.buf[(1)] = ((G__10786_11237[(1)]) + v));
 
-(self__.buf[(2)] = ((G__15719_16209[(2)]) + v));
+(self__.buf[(2)] = ((G__10786_11237[(2)]) + v));
 
 self__._hash = null;
 } else {
-(self__.buf[(0)] = ((G__15719_16209[(0)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(self__.buf[(0)] = ((G__10786_11237[(0)]) + cljs.core.nth.call(null,v,(0),0.0)));
 
-(self__.buf[(1)] = ((G__15719_16209[(1)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(self__.buf[(1)] = ((G__10786_11237[(1)]) + cljs.core.nth.call(null,v,(1),0.0)));
 
-(self__.buf[(2)] = ((G__15719_16209[(2)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0)));
+(self__.buf[(2)] = ((G__10786_11237[(2)]) + cljs.core.nth.call(null,v,(2),0.0)));
 
 self__._hash = null;
 }
@@ -2574,27 +2524,27 @@ return ___$1;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMutableMathOps$_PLUS__BANG_$arity$3 = (function (_,v1,v2){
 var self__ = this;
 var ___$1 = this;
-var G__15733_16211 = (v1 instanceof thi.ng.geom.vector.Vec3);
-var G__15734_16212 = (v2 instanceof thi.ng.geom.vector.Vec3);
-var G__15735_16213 = ((!(G__15733_16211))?typeof v1 === 'number':null);
-var G__15736_16214 = ((!(G__15734_16212))?typeof v2 === 'number':null);
-var G__15721_16215 = self__.buf;
-var G__15722_16216 = ((G__15733_16211)?v1.buf:null);
-var G__15723_16217 = ((G__15734_16212)?v2.buf:null);
-var G__15724_16218 = (G__15721_16215[(0)]);
-var G__15725_16219 = (G__15721_16215[(1)]);
-var G__15726_16220 = (G__15721_16215[(2)]);
-var G__15727_16221 = ((G__15733_16211)?(G__15722_16216[(0)]):(cljs.core.truth_(G__15735_16213)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(0),0.0)));
-var G__15728_16222 = ((G__15733_16211)?(G__15722_16216[(1)]):(cljs.core.truth_(G__15735_16213)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(1),0.0)));
-var G__15729_16223 = ((G__15733_16211)?(G__15722_16216[(2)]):(cljs.core.truth_(G__15735_16213)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(2),0.0)));
-var G__15730_16224 = ((G__15734_16212)?(G__15723_16217[(0)]):(cljs.core.truth_(G__15736_16214)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__15731_16225 = ((G__15734_16212)?(G__15723_16217[(1)]):(cljs.core.truth_(G__15736_16214)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-var G__15732_16226 = ((G__15734_16212)?(G__15723_16217[(2)]):(cljs.core.truth_(G__15736_16214)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(2),0.0)));
-(self__.buf[(0)] = ((G__15724_16218 + G__15727_16221) + G__15730_16224));
+var G__10800_11239 = (v1 instanceof thi.ng.geom.vector.Vec3);
+var G__10801_11240 = (v2 instanceof thi.ng.geom.vector.Vec3);
+var G__10802_11241 = ((!(G__10800_11239))?typeof v1 === 'number':null);
+var G__10803_11242 = ((!(G__10801_11240))?typeof v2 === 'number':null);
+var G__10788_11243 = self__.buf;
+var G__10789_11244 = ((G__10800_11239)?v1.buf:null);
+var G__10790_11245 = ((G__10801_11240)?v2.buf:null);
+var G__10791_11246 = (G__10788_11243[(0)]);
+var G__10792_11247 = (G__10788_11243[(1)]);
+var G__10793_11248 = (G__10788_11243[(2)]);
+var G__10794_11249 = ((G__10800_11239)?(G__10789_11244[(0)]):(cljs.core.truth_(G__10802_11241)?v1:cljs.core.nth.call(null,v1,(0),0.0)));
+var G__10795_11250 = ((G__10800_11239)?(G__10789_11244[(1)]):(cljs.core.truth_(G__10802_11241)?v1:cljs.core.nth.call(null,v1,(1),0.0)));
+var G__10796_11251 = ((G__10800_11239)?(G__10789_11244[(2)]):(cljs.core.truth_(G__10802_11241)?v1:cljs.core.nth.call(null,v1,(2),0.0)));
+var G__10797_11252 = ((G__10801_11240)?(G__10790_11245[(0)]):(cljs.core.truth_(G__10803_11242)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__10798_11253 = ((G__10801_11240)?(G__10790_11245[(1)]):(cljs.core.truth_(G__10803_11242)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+var G__10799_11254 = ((G__10801_11240)?(G__10790_11245[(2)]):(cljs.core.truth_(G__10803_11242)?v2:cljs.core.nth.call(null,v2,(2),0.0)));
+(self__.buf[(0)] = ((G__10791_11246 + G__10794_11249) + G__10797_11252));
 
-(self__.buf[(1)] = ((G__15725_16219 + G__15728_16222) + G__15731_16225));
+(self__.buf[(1)] = ((G__10792_11247 + G__10795_11250) + G__10798_11253));
 
-(self__.buf[(2)] = ((G__15726_16220 + G__15729_16223) + G__15732_16226));
+(self__.buf[(2)] = ((G__10793_11248 + G__10796_11251) + G__10799_11254));
 
 self__._hash = null;
 
@@ -2618,27 +2568,27 @@ return ___$1;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMutableMathOps$addm_BANG_$arity$3 = (function (_,a,b){
 var self__ = this;
 var ___$1 = this;
-var G__15749_16227 = (a instanceof thi.ng.geom.vector.Vec3);
-var G__15750_16228 = (b instanceof thi.ng.geom.vector.Vec3);
-var G__15751_16229 = ((!(G__15749_16227))?typeof a === 'number':null);
-var G__15752_16230 = ((!(G__15750_16228))?typeof b === 'number':null);
-var G__15737_16231 = self__.buf;
-var G__15738_16232 = ((G__15749_16227)?a.buf:null);
-var G__15739_16233 = ((G__15750_16228)?b.buf:null);
-var G__15740_16234 = (G__15737_16231[(0)]);
-var G__15741_16235 = (G__15737_16231[(1)]);
-var G__15742_16236 = (G__15737_16231[(2)]);
-var G__15743_16237 = ((G__15749_16227)?(G__15738_16232[(0)]):(cljs.core.truth_(G__15751_16229)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(0),0.0)));
-var G__15744_16238 = ((G__15749_16227)?(G__15738_16232[(1)]):(cljs.core.truth_(G__15751_16229)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(1),0.0)));
-var G__15745_16239 = ((G__15749_16227)?(G__15738_16232[(2)]):(cljs.core.truth_(G__15751_16229)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(2),0.0)));
-var G__15746_16240 = ((G__15750_16228)?(G__15739_16233[(0)]):(cljs.core.truth_(G__15752_16230)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(0),1.0)));
-var G__15747_16241 = ((G__15750_16228)?(G__15739_16233[(1)]):(cljs.core.truth_(G__15752_16230)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(1),1.0)));
-var G__15748_16242 = ((G__15750_16228)?(G__15739_16233[(2)]):(cljs.core.truth_(G__15752_16230)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(2),1.0)));
-(self__.buf[(0)] = ((G__15740_16234 + G__15743_16237) * G__15746_16240));
+var G__10816_11255 = (a instanceof thi.ng.geom.vector.Vec3);
+var G__10817_11256 = (b instanceof thi.ng.geom.vector.Vec3);
+var G__10818_11257 = ((!(G__10816_11255))?typeof a === 'number':null);
+var G__10819_11258 = ((!(G__10817_11256))?typeof b === 'number':null);
+var G__10804_11259 = self__.buf;
+var G__10805_11260 = ((G__10816_11255)?a.buf:null);
+var G__10806_11261 = ((G__10817_11256)?b.buf:null);
+var G__10807_11262 = (G__10804_11259[(0)]);
+var G__10808_11263 = (G__10804_11259[(1)]);
+var G__10809_11264 = (G__10804_11259[(2)]);
+var G__10810_11265 = ((G__10816_11255)?(G__10805_11260[(0)]):(cljs.core.truth_(G__10818_11257)?a:cljs.core.nth.call(null,a,(0),0.0)));
+var G__10811_11266 = ((G__10816_11255)?(G__10805_11260[(1)]):(cljs.core.truth_(G__10818_11257)?a:cljs.core.nth.call(null,a,(1),0.0)));
+var G__10812_11267 = ((G__10816_11255)?(G__10805_11260[(2)]):(cljs.core.truth_(G__10818_11257)?a:cljs.core.nth.call(null,a,(2),0.0)));
+var G__10813_11268 = ((G__10817_11256)?(G__10806_11261[(0)]):(cljs.core.truth_(G__10819_11258)?b:cljs.core.nth.call(null,b,(0),1.0)));
+var G__10814_11269 = ((G__10817_11256)?(G__10806_11261[(1)]):(cljs.core.truth_(G__10819_11258)?b:cljs.core.nth.call(null,b,(1),1.0)));
+var G__10815_11270 = ((G__10817_11256)?(G__10806_11261[(2)]):(cljs.core.truth_(G__10819_11258)?b:cljs.core.nth.call(null,b,(2),1.0)));
+(self__.buf[(0)] = ((G__10807_11262 + G__10810_11265) * G__10813_11268));
 
-(self__.buf[(1)] = ((G__15741_16235 + G__15744_16238) * G__15747_16241));
+(self__.buf[(1)] = ((G__10808_11263 + G__10811_11266) * G__10814_11269));
 
-(self__.buf[(2)] = ((G__15742_16236 + G__15745_16239) * G__15748_16242));
+(self__.buf[(2)] = ((G__10809_11264 + G__10812_11267) * G__10815_11270));
 
 self__._hash = null;
 
@@ -2663,18 +2613,18 @@ thi.ng.geom.vector.Vec3.prototype.cljs$core$ILookup$_lookup$arity$2 = (function 
 var self__ = this;
 var ___$1 = this;
 if((k instanceof cljs.core.Keyword)){
-var temp__6751__auto__ = (thi.ng.geom.vector.swizzle3_fns.cljs$core$IFn$_invoke$arity$1 ? thi.ng.geom.vector.swizzle3_fns.cljs$core$IFn$_invoke$arity$1(k) : thi.ng.geom.vector.swizzle3_fns.call(null,k));
+var temp__6751__auto__ = thi.ng.geom.vector.swizzle3_fns.call(null,k);
 if(cljs.core.truth_(temp__6751__auto__)){
 var f = temp__6751__auto__;
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(___$1) : f.call(null,___$1));
+return f.call(null,___$1);
 } else {
-return thi.ng.xerror.core.key_error_BANG_(k);
+return thi.ng.xerror.core.key_error_BANG_.call(null,k);
 }
 } else {
 if(((k >= (0))) && ((k <= (2)))){
 return (self__.buf[k]);
 } else {
-return thi.ng.xerror.core.key_error_BANG_(k);
+return thi.ng.xerror.core.key_error_BANG_.call(null,k);
 }
 }
 });
@@ -2683,18 +2633,18 @@ thi.ng.geom.vector.Vec3.prototype.cljs$core$ILookup$_lookup$arity$3 = (function 
 var self__ = this;
 var ___$1 = this;
 if((k instanceof cljs.core.Keyword)){
-var temp__6751__auto__ = (thi.ng.geom.vector.swizzle3_fns.cljs$core$IFn$_invoke$arity$1 ? thi.ng.geom.vector.swizzle3_fns.cljs$core$IFn$_invoke$arity$1(k) : thi.ng.geom.vector.swizzle3_fns.call(null,k));
+var temp__6751__auto__ = thi.ng.geom.vector.swizzle3_fns.call(null,k);
 if(cljs.core.truth_(temp__6751__auto__)){
 var f = temp__6751__auto__;
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(___$1) : f.call(null,___$1));
+return f.call(null,___$1);
 } else {
-return thi.ng.xerror.core.key_error_BANG_(k);
+return thi.ng.xerror.core.key_error_BANG_.call(null,k);
 }
 } else {
 if(((k >= (0))) && ((k <= (2)))){
 return (self__.buf[k]);
 } else {
-return thi.ng.xerror.core.key_error_BANG_(k);
+return thi.ng.xerror.core.key_error_BANG_.call(null,k);
 }
 }
 });
@@ -2705,29 +2655,29 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$ICrossProduct$cross$arity$2 =
 var self__ = this;
 var ___$1 = this;
 var b = (new Float32Array((3)));
-var G__15753_16243 = self__.buf;
-var G__15755_16244 = (G__15753_16243[(0)]);
-var G__15756_16245 = (G__15753_16243[(1)]);
-var G__15757_16246 = (G__15753_16243[(2)]);
+var G__10820_11271 = self__.buf;
+var G__10822_11272 = (G__10820_11271[(0)]);
+var G__10823_11273 = (G__10820_11271[(1)]);
+var G__10824_11274 = (G__10820_11271[(2)]);
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__15754_16247 = v.buf;
-var G__15758_16248 = (G__15754_16247[(0)]);
-var G__15759_16249 = (G__15754_16247[(1)]);
-var G__15760_16250 = (G__15754_16247[(2)]);
-(b[(0)] = ((G__15756_16245 * G__15760_16250) - (G__15759_16249 * G__15757_16246)));
+var G__10821_11275 = v.buf;
+var G__10825_11276 = (G__10821_11275[(0)]);
+var G__10826_11277 = (G__10821_11275[(1)]);
+var G__10827_11278 = (G__10821_11275[(2)]);
+(b[(0)] = ((G__10823_11273 * G__10827_11278) - (G__10826_11277 * G__10824_11274)));
 
-(b[(1)] = ((G__15757_16246 * G__15758_16248) - (G__15760_16250 * G__15755_16244)));
+(b[(1)] = ((G__10824_11274 * G__10825_11276) - (G__10827_11278 * G__10822_11272)));
 
-(b[(2)] = ((G__15755_16244 * G__15759_16249) - (G__15758_16248 * G__15756_16245)));
+(b[(2)] = ((G__10822_11272 * G__10826_11277) - (G__10825_11276 * G__10823_11273)));
 } else {
-var G__15758_16251 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0);
-var G__15759_16252 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0);
-var G__15760_16253 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0);
-(b[(0)] = ((G__15756_16245 * G__15760_16253) - (G__15759_16252 * G__15757_16246)));
+var G__10825_11279 = cljs.core.nth.call(null,v,(0),0.0);
+var G__10826_11280 = cljs.core.nth.call(null,v,(1),0.0);
+var G__10827_11281 = cljs.core.nth.call(null,v,(2),0.0);
+(b[(0)] = ((G__10823_11273 * G__10827_11281) - (G__10826_11280 * G__10824_11274)));
 
-(b[(1)] = ((G__15757_16246 * G__15758_16251) - (G__15760_16253 * G__15755_16244)));
+(b[(1)] = ((G__10824_11274 * G__10825_11279) - (G__10827_11281 * G__10822_11272)));
 
-(b[(2)] = ((G__15755_16244 * G__15759_16252) - (G__15758_16251 * G__15756_16245)));
+(b[(2)] = ((G__10822_11272 * G__10826_11280) - (G__10825_11279 * G__10823_11273)));
 }
 
 return (new thi.ng.geom.vector.Vec3(b,null,self__._meta));
@@ -2740,7 +2690,7 @@ if((n >= (0))){
 if((n < (3))){
 return (self__.buf[n]);
 } else {
-return thi.ng.xerror.core.key_error_BANG_(n);
+return thi.ng.xerror.core.key_error_BANG_.call(null,n);
 }
 } else {
 return null;
@@ -2764,7 +2714,7 @@ return null;
 thi.ng.geom.vector.Vec3.prototype.cljs$core$IPrintWithWriter$_pr_writer$arity$3 = (function (_,writer,opts){
 var self__ = this;
 var ___$1 = this;
-return cljs.core.pr_sequential_writer(writer,cljs.core.pr_writer,"#vec3 ["," ","]",opts,cljs.core.seq(___$1));
+return cljs.core.pr_sequential_writer.call(null,writer,cljs.core.pr_writer,"#vec3 ["," ","]",opts,cljs.core.seq.call(null,___$1));
 });
 
 thi.ng.geom.vector.Vec3.prototype.cljs$core$IVector$_assoc_n$arity$3 = (function (_,n,v){
@@ -2794,33 +2744,33 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IReflect$reflect$arity$2 = (f
 var self__ = this;
 var ___$1 = this;
 var b = (new Float32Array((3)));
-var G__15777 = self__.buf;
-var G__15779 = (G__15777[(0)]);
-var G__15780 = (G__15777[(1)]);
-var G__15781 = (G__15777[(2)]);
+var G__10844 = self__.buf;
+var G__10846 = (G__10844[(0)]);
+var G__10847 = (G__10844[(1)]);
+var G__10848 = (G__10844[(2)]);
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__15778 = v.buf;
-var G__15782 = (G__15778[(0)]);
-var G__15783 = (G__15778[(1)]);
-var G__15784 = (G__15778[(2)]);
-var d = ((((G__15779 * G__15782) + (G__15780 * G__15783)) + (G__15781 * G__15784)) * 2.0);
-(b[(0)] = ((G__15782 * d) - G__15779));
+var G__10845 = v.buf;
+var G__10849 = (G__10845[(0)]);
+var G__10850 = (G__10845[(1)]);
+var G__10851 = (G__10845[(2)]);
+var d = ((((G__10846 * G__10849) + (G__10847 * G__10850)) + (G__10848 * G__10851)) * 2.0);
+(b[(0)] = ((G__10849 * d) - G__10846));
 
-(b[(1)] = ((G__15783 * d) - G__15780));
+(b[(1)] = ((G__10850 * d) - G__10847));
 
-(b[(2)] = ((G__15784 * d) - G__15781));
+(b[(2)] = ((G__10851 * d) - G__10848));
 
 return (new thi.ng.geom.vector.Vec3(b,null,self__._meta));
 } else {
-var G__15782 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0);
-var G__15783 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0);
-var G__15784 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0);
-var d = ((((G__15779 * G__15782) + (G__15780 * G__15783)) + (G__15781 * G__15784)) * 2.0);
-(b[(0)] = ((G__15782 * d) - G__15779));
+var G__10849 = cljs.core.nth.call(null,v,(0),0.0);
+var G__10850 = cljs.core.nth.call(null,v,(1),0.0);
+var G__10851 = cljs.core.nth.call(null,v,(2),0.0);
+var d = ((((G__10846 * G__10849) + (G__10847 * G__10850)) + (G__10848 * G__10851)) * 2.0);
+(b[(0)] = ((G__10849 * d) - G__10846));
 
-(b[(1)] = ((G__15783 * d) - G__15780));
+(b[(1)] = ((G__10850 * d) - G__10847));
 
-(b[(2)] = ((G__15784 * d) - G__15781));
+(b[(2)] = ((G__10851 * d) - G__10848));
 
 return (new thi.ng.geom.vector.Vec3(b,null,self__._meta));
 }
@@ -2829,7 +2779,7 @@ return (new thi.ng.geom.vector.Vec3(b,null,self__._meta));
 thi.ng.geom.vector.Vec3.prototype.cljs$core$INext$_next$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-return cljs.core.cons((self__.buf[(1)]),cljs.core.cons((self__.buf[(2)]),null));
+return cljs.core.cons.call(null,(self__.buf[(1)]),cljs.core.cons.call(null,(self__.buf[(2)]),null));
 });
 
 thi.ng.geom.vector.Vec3.prototype.cljs$core$ICounted$_count$arity$1 = (function (_){
@@ -2843,33 +2793,32 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IDistance$ = cljs.core.PROTOC
 thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IDistance$dist$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var G__15785 = thi.ng.geom.core.dist_squared(___$1,v);
-return Math.sqrt(G__15785);
+return Math.sqrt(thi.ng.geom.core.dist_squared.call(null,___$1,v));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IDistance$dist_squared$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var G__15786 = self__.buf;
-var G__15788 = (G__15786[(0)]);
-var G__15789 = (G__15786[(1)]);
-var G__15790 = (G__15786[(2)]);
+var G__10852 = self__.buf;
+var G__10854 = (G__10852[(0)]);
+var G__10855 = (G__10852[(1)]);
+var G__10856 = (G__10852[(2)]);
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__15787 = v.buf;
-var G__15791 = (G__15787[(0)]);
-var G__15792 = (G__15787[(1)]);
-var G__15793 = (G__15787[(2)]);
-var dx = (G__15788 - G__15791);
-var dy = (G__15789 - G__15792);
-var dz = (G__15790 - G__15793);
+var G__10853 = v.buf;
+var G__10857 = (G__10853[(0)]);
+var G__10858 = (G__10853[(1)]);
+var G__10859 = (G__10853[(2)]);
+var dx = (G__10854 - G__10857);
+var dy = (G__10855 - G__10858);
+var dz = (G__10856 - G__10859);
 return (((dx * dx) + (dy * dy)) + (dz * dz));
 } else {
-var G__15791 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0);
-var G__15792 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0);
-var G__15793 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0);
-var dx = (G__15788 - G__15791);
-var dy = (G__15789 - G__15792);
-var dz = (G__15790 - G__15793);
+var G__10857 = cljs.core.nth.call(null,v,(0),0.0);
+var G__10858 = cljs.core.nth.call(null,v,(1),0.0);
+var G__10859 = cljs.core.nth.call(null,v,(2),0.0);
+var dx = (G__10854 - G__10857);
+var dy = (G__10855 - G__10858);
+var dz = (G__10856 - G__10859);
 return (((dx * dx) + (dy * dy)) + (dz * dz));
 }
 });
@@ -2879,7 +2828,7 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IRotate$ = cljs.core.PROTOCOL
 thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IRotate$rotate$arity$2 = (function (_,theta){
 var self__ = this;
 var ___$1 = this;
-return thi.ng.geom.core.rotate_z(___$1,theta);
+return thi.ng.geom.core.rotate_z.call(null,___$1,theta);
 });
 
 thi.ng.geom.vector.Vec3.prototype.cljs$core$IStack$_peek$arity$1 = (function (_){
@@ -2904,15 +2853,13 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IInvert$ = cljs.core.PROTOCOL
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IInvert$invert$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-return thi.ng.math.core._.cljs$core$IFn$_invoke$arity$1(___$1);
+return thi.ng.math.core._.call(null,___$1);
 });
 
 thi.ng.geom.vector.Vec3.prototype.cljs$core$IReversible$_rseq$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-return (function (){var G__15794 = cljs.core.cst$kw$zyx;
-return (thi.ng.geom.vector.swizzle3_fns.cljs$core$IFn$_invoke$arity$1 ? thi.ng.geom.vector.swizzle3_fns.cljs$core$IFn$_invoke$arity$1(G__15794) : thi.ng.geom.vector.swizzle3_fns.call(null,G__15794));
-})().call(null,___$1);
+return thi.ng.geom.vector.swizzle3_fns.call(null,new cljs.core.Keyword(null,"zyx","zyx",1752527951)).call(null,___$1);
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$ILimit$ = cljs.core.PROTOCOL_SENTINEL;
@@ -2920,8 +2867,8 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$ILimit$ = cljs.core.PROTOCOL_
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$ILimit$limit$arity$2 = (function (_,len){
 var self__ = this;
 var ___$1 = this;
-if((thi.ng.math.core.mag_squared(___$1) > (len * len))){
-return thi.ng.math.core.normalize.cljs$core$IFn$_invoke$arity$2(___$1,len);
+if((thi.ng.math.core.mag_squared.call(null,___$1) > (len * len))){
+return thi.ng.math.core.normalize.call(null,___$1,len);
 } else {
 return ___$1;
 }
@@ -2932,32 +2879,32 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IScale$ = cljs.core.PROTOCOL_
 thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IScale$scale$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var dest__14916__auto__ = (new Float32Array((3)));
-var G__15795_16254 = self__.buf;
+var dest__10015__auto__ = (new Float32Array((3)));
+var G__10860_11282 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__15796_16255 = v.buf;
-(dest__14916__auto__[(0)] = ((G__15795_16254[(0)]) * (G__15796_16255[(0)])));
+var G__10861_11283 = v.buf;
+(dest__10015__auto__[(0)] = ((G__10860_11282[(0)]) * (G__10861_11283[(0)])));
 
-(dest__14916__auto__[(1)] = ((G__15795_16254[(1)]) * (G__15796_16255[(1)])));
+(dest__10015__auto__[(1)] = ((G__10860_11282[(1)]) * (G__10861_11283[(1)])));
 
-(dest__14916__auto__[(2)] = ((G__15795_16254[(2)]) * (G__15796_16255[(2)])));
+(dest__10015__auto__[(2)] = ((G__10860_11282[(2)]) * (G__10861_11283[(2)])));
 } else {
 if(typeof v === 'number'){
-(dest__14916__auto__[(0)] = ((G__15795_16254[(0)]) * v));
+(dest__10015__auto__[(0)] = ((G__10860_11282[(0)]) * v));
 
-(dest__14916__auto__[(1)] = ((G__15795_16254[(1)]) * v));
+(dest__10015__auto__[(1)] = ((G__10860_11282[(1)]) * v));
 
-(dest__14916__auto__[(2)] = ((G__15795_16254[(2)]) * v));
+(dest__10015__auto__[(2)] = ((G__10860_11282[(2)]) * v));
 } else {
-(dest__14916__auto__[(0)] = ((G__15795_16254[(0)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(dest__10015__auto__[(0)] = ((G__10860_11282[(0)]) * cljs.core.nth.call(null,v,(0),0.0)));
 
-(dest__14916__auto__[(1)] = ((G__15795_16254[(1)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(dest__10015__auto__[(1)] = ((G__10860_11282[(1)]) * cljs.core.nth.call(null,v,(1),0.0)));
 
-(dest__14916__auto__[(2)] = ((G__15795_16254[(2)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0)));
+(dest__10015__auto__[(2)] = ((G__10860_11282[(2)]) * cljs.core.nth.call(null,v,(2),0.0)));
 }
 }
 
-return (new thi.ng.geom.vector.Vec3(dest__14916__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10015__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.cljs$core$IHash$_hash$arity$1 = (function (_){
@@ -2967,7 +2914,7 @@ var or__7389__auto__ = self__._hash;
 if(cljs.core.truth_(or__7389__auto__)){
 return or__7389__auto__;
 } else {
-return ___$1._hash = cljs.core.mix_collection_hash(((cljs.core.imul(((cljs.core.imul((((31) + cljs.core.hash((self__.buf[(0)]))) | (0)),(31)) + cljs.core.hash((self__.buf[(1)]))) | (0)),(31)) + cljs.core.hash((self__.buf[(2)]))) | (0)),(3));
+return ___$1._hash = cljs.core.mix_collection_hash.call(null,((cljs.core.imul.call(null,((cljs.core.imul.call(null,(((31) + cljs.core.hash.call(null,(self__.buf[(0)]))) | (0)),(31)) + cljs.core.hash.call(null,(self__.buf[(1)]))) | (0)),(31)) + cljs.core.hash.call(null,(self__.buf[(2)]))) | (0)),(3));
 }
 });
 
@@ -2976,20 +2923,20 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IDeltaEquals$ = cljs.core.PRO
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IDeltaEquals$delta_EQ_$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-return thi.ng.math.core.delta_EQ_.cljs$core$IFn$_invoke$arity$3(___$1,v,thi.ng.math.core._STAR_eps_STAR_);
+return thi.ng.math.core.delta_EQ_.call(null,___$1,v,thi.ng.math.core._STAR_eps_STAR_);
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IDeltaEquals$delta_EQ_$arity$3 = (function (_,v,eps){
 var self__ = this;
 var ___$1 = this;
-if(cljs.core.sequential_QMARK_(v)){
-if(((3) === cljs.core.count(v))){
-var G__15797 = self__.buf;
+if(cljs.core.sequential_QMARK_.call(null,v)){
+if(((3) === cljs.core.count.call(null,v))){
+var G__10862 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__15798 = v.buf;
-if(cljs.core.truth_(thi.ng.math.core.delta_EQ_.cljs$core$IFn$_invoke$arity$3((G__15797[(0)]),(G__15798[(0)]),eps))){
-if(cljs.core.truth_(thi.ng.math.core.delta_EQ_.cljs$core$IFn$_invoke$arity$3((G__15797[(1)]),(G__15798[(1)]),eps))){
-return thi.ng.math.core.delta_EQ_.cljs$core$IFn$_invoke$arity$3((G__15797[(2)]),(G__15798[(2)]),eps);
+var G__10863 = v.buf;
+if(cljs.core.truth_(thi.ng.math.core.delta_EQ_.call(null,(G__10862[(0)]),(G__10863[(0)]),eps))){
+if(cljs.core.truth_(thi.ng.math.core.delta_EQ_.call(null,(G__10862[(1)]),(G__10863[(1)]),eps))){
+return thi.ng.math.core.delta_EQ_.call(null,(G__10862[(2)]),(G__10863[(2)]),eps);
 } else {
 return null;
 }
@@ -2997,9 +2944,9 @@ return null;
 return null;
 }
 } else {
-if(cljs.core.truth_(thi.ng.math.core.delta_EQ_.cljs$core$IFn$_invoke$arity$3((G__15797[(0)]),cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0),eps))){
-if(cljs.core.truth_(thi.ng.math.core.delta_EQ_.cljs$core$IFn$_invoke$arity$3((G__15797[(1)]),cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0),eps))){
-return thi.ng.math.core.delta_EQ_.cljs$core$IFn$_invoke$arity$3((G__15797[(2)]),cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0),eps);
+if(cljs.core.truth_(thi.ng.math.core.delta_EQ_.call(null,(G__10862[(0)]),cljs.core.nth.call(null,v,(0),0.0),eps))){
+if(cljs.core.truth_(thi.ng.math.core.delta_EQ_.call(null,(G__10862[(1)]),cljs.core.nth.call(null,v,(1),0.0),eps))){
+return thi.ng.math.core.delta_EQ_.call(null,(G__10862[(2)]),cljs.core.nth.call(null,v,(2),0.0),eps);
 } else {
 return null;
 }
@@ -3022,7 +2969,7 @@ if((o instanceof thi.ng.geom.vector.Vec3)){
 var b_SINGLEQUOTE_ = o.buf;
 return (((self__.buf[(0)]) === (b_SINGLEQUOTE_[(0)]))) && (((self__.buf[(1)]) === (b_SINGLEQUOTE_[(1)]))) && (((self__.buf[(2)]) === (b_SINGLEQUOTE_[(2)])));
 } else {
-return (cljs.core.sequential_QMARK_(o)) && (((3) === cljs.core.count(o))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((self__.buf[(0)]),cljs.core.first(o))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((self__.buf[(1)]),cljs.core.nth.cljs$core$IFn$_invoke$arity$2(o,(1)))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((self__.buf[(2)]),cljs.core.nth.cljs$core$IFn$_invoke$arity$2(o,(2))));
+return (cljs.core.sequential_QMARK_.call(null,o)) && (((3) === cljs.core.count.call(null,o))) && (cljs.core._EQ_.call(null,(self__.buf[(0)]),cljs.core.first.call(null,o))) && (cljs.core._EQ_.call(null,(self__.buf[(1)]),cljs.core.nth.call(null,o,(1)))) && (cljs.core._EQ_.call(null,(self__.buf[(2)]),cljs.core.nth.call(null,o,(2))));
 }
 });
 
@@ -3032,29 +2979,20 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IVectorReduce$reduce_vector$a
 var self__ = this;
 var ___$1 = this;
 var buf_SINGLEQUOTE_ = (new Float32Array(self__.buf));
-return (new thi.ng.geom.vector.Vec3((thi.ng.geom.vector.vec3_reduce_STAR_.cljs$core$IFn$_invoke$arity$3 ? thi.ng.geom.vector.vec3_reduce_STAR_.cljs$core$IFn$_invoke$arity$3(f,buf_SINGLEQUOTE_,xs) : thi.ng.geom.vector.vec3_reduce_STAR_.call(null,f,buf_SINGLEQUOTE_,xs)),null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(thi.ng.geom.vector.vec3_reduce_STAR_.call(null,f,buf_SINGLEQUOTE_,xs),null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IVectorReduce$reduce_vector$arity$4 = (function (_,f,f2,xs){
 var self__ = this;
 var ___$1 = this;
 var buf_SINGLEQUOTE_ = (new Float32Array(self__.buf));
-(thi.ng.geom.vector.vec3_reduce_STAR_.cljs$core$IFn$_invoke$arity$3 ? thi.ng.geom.vector.vec3_reduce_STAR_.cljs$core$IFn$_invoke$arity$3(f,buf_SINGLEQUOTE_,xs) : thi.ng.geom.vector.vec3_reduce_STAR_.call(null,f,buf_SINGLEQUOTE_,xs));
+thi.ng.geom.vector.vec3_reduce_STAR_.call(null,f,buf_SINGLEQUOTE_,xs);
 
-(buf_SINGLEQUOTE_[(0)] = (function (){var G__15799 = (buf_SINGLEQUOTE_[(0)]);
-var G__15800 = (0);
-return (f2.cljs$core$IFn$_invoke$arity$2 ? f2.cljs$core$IFn$_invoke$arity$2(G__15799,G__15800) : f2.call(null,G__15799,G__15800));
-})());
+(buf_SINGLEQUOTE_[(0)] = f2.call(null,(buf_SINGLEQUOTE_[(0)]),(0)));
 
-(buf_SINGLEQUOTE_[(1)] = (function (){var G__15801 = (buf_SINGLEQUOTE_[(1)]);
-var G__15802 = (1);
-return (f2.cljs$core$IFn$_invoke$arity$2 ? f2.cljs$core$IFn$_invoke$arity$2(G__15801,G__15802) : f2.call(null,G__15801,G__15802));
-})());
+(buf_SINGLEQUOTE_[(1)] = f2.call(null,(buf_SINGLEQUOTE_[(1)]),(1)));
 
-(buf_SINGLEQUOTE_[(2)] = (function (){var G__15803 = (buf_SINGLEQUOTE_[(2)]);
-var G__15804 = (2);
-return (f2.cljs$core$IFn$_invoke$arity$2 ? f2.cljs$core$IFn$_invoke$arity$2(G__15803,G__15804) : f2.call(null,G__15803,G__15804));
-})());
+(buf_SINGLEQUOTE_[(2)] = f2.call(null,(buf_SINGLEQUOTE_[(2)]),(2)));
 
 return (new thi.ng.geom.vector.Vec3(buf_SINGLEQUOTE_,null,self__._meta));
 });
@@ -3074,31 +3012,25 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IDotProduct$ = cljs.core.PROT
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IDotProduct$dot$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var G__15805 = self__.buf;
+var G__10864 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__15806 = v.buf;
-return ((((G__15805[(0)]) * (G__15806[(0)])) + ((G__15805[(1)]) * (G__15806[(1)]))) + ((G__15805[(2)]) * (G__15806[(2)])));
+var G__10865 = v.buf;
+return ((((G__10864[(0)]) * (G__10865[(0)])) + ((G__10864[(1)]) * (G__10865[(1)]))) + ((G__10864[(2)]) * (G__10865[(2)])));
 } else {
-return ((((G__15805[(0)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)) + ((G__15805[(1)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0))) + ((G__15805[(2)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0)));
+return ((((G__10864[(0)]) * cljs.core.nth.call(null,v,(0),0.0)) + ((G__10864[(1)]) * cljs.core.nth.call(null,v,(1),0.0))) + ((G__10864[(2)]) * cljs.core.nth.call(null,v,(2),0.0)));
 }
 });
 
 thi.ng.geom.vector.Vec3.prototype.cljs$core$IReduce$_reduce$arity$2 = (function (coll,f){
 var self__ = this;
 var coll__$1 = this;
-var acc = (function (){var G__15807 = (self__.buf[(0)]);
-var G__15808 = (self__.buf[(1)]);
-return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(G__15807,G__15808) : f.call(null,G__15807,G__15808));
-})();
-if(cljs.core.reduced_QMARK_(acc)){
-return (cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(acc) : cljs.core.deref.call(null,acc));
+var acc = f.call(null,(self__.buf[(0)]),(self__.buf[(1)]));
+if(cljs.core.reduced_QMARK_.call(null,acc)){
+return cljs.core.deref.call(null,acc);
 } else {
-var acc__$1 = (function (){var G__15809 = acc;
-var G__15810 = (self__.buf[(2)]);
-return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(G__15809,G__15810) : f.call(null,G__15809,G__15810));
-})();
-if(cljs.core.reduced_QMARK_(acc__$1)){
-return (cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(acc__$1) : cljs.core.deref.call(null,acc__$1));
+var acc__$1 = f.call(null,acc,(self__.buf[(2)]));
+if(cljs.core.reduced_QMARK_.call(null,acc__$1)){
+return cljs.core.deref.call(null,acc__$1);
 } else {
 return acc__$1;
 }
@@ -3108,26 +3040,17 @@ return acc__$1;
 thi.ng.geom.vector.Vec3.prototype.cljs$core$IReduce$_reduce$arity$3 = (function (coll,f,start){
 var self__ = this;
 var coll__$1 = this;
-var acc = (function (){var G__15811 = start;
-var G__15812 = (self__.buf[(0)]);
-return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(G__15811,G__15812) : f.call(null,G__15811,G__15812));
-})();
-if(cljs.core.reduced_QMARK_(acc)){
-return (cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(acc) : cljs.core.deref.call(null,acc));
+var acc = f.call(null,start,(self__.buf[(0)]));
+if(cljs.core.reduced_QMARK_.call(null,acc)){
+return cljs.core.deref.call(null,acc);
 } else {
-var acc__$1 = (function (){var G__15813 = acc;
-var G__15814 = (self__.buf[(1)]);
-return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(G__15813,G__15814) : f.call(null,G__15813,G__15814));
-})();
-if(cljs.core.reduced_QMARK_(acc__$1)){
-return (cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(acc__$1) : cljs.core.deref.call(null,acc__$1));
+var acc__$1 = f.call(null,acc,(self__.buf[(1)]));
+if(cljs.core.reduced_QMARK_.call(null,acc__$1)){
+return cljs.core.deref.call(null,acc__$1);
 } else {
-var acc__$2 = (function (){var G__15815 = acc__$1;
-var G__15816 = (self__.buf[(2)]);
-return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(G__15815,G__15816) : f.call(null,G__15815,G__15816));
-})();
-if(cljs.core.reduced_QMARK_(acc__$2)){
-return (cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(acc__$2) : cljs.core.deref.call(null,acc__$2));
+var acc__$2 = f.call(null,acc__$1,(self__.buf[(2)]));
+if(cljs.core.reduced_QMARK_.call(null,acc__$2)){
+return cljs.core.deref.call(null,acc__$2);
 } else {
 return acc__$2;
 }
@@ -3140,32 +3063,32 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$ITranslate$ = cljs.core.PROTO
 thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$ITranslate$translate$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var dest__14916__auto__ = (new Float32Array((3)));
-var G__15817_16256 = self__.buf;
+var dest__10015__auto__ = (new Float32Array((3)));
+var G__10866_11284 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__15818_16257 = v.buf;
-(dest__14916__auto__[(0)] = ((G__15817_16256[(0)]) + (G__15818_16257[(0)])));
+var G__10867_11285 = v.buf;
+(dest__10015__auto__[(0)] = ((G__10866_11284[(0)]) + (G__10867_11285[(0)])));
 
-(dest__14916__auto__[(1)] = ((G__15817_16256[(1)]) + (G__15818_16257[(1)])));
+(dest__10015__auto__[(1)] = ((G__10866_11284[(1)]) + (G__10867_11285[(1)])));
 
-(dest__14916__auto__[(2)] = ((G__15817_16256[(2)]) + (G__15818_16257[(2)])));
+(dest__10015__auto__[(2)] = ((G__10866_11284[(2)]) + (G__10867_11285[(2)])));
 } else {
 if(typeof v === 'number'){
-(dest__14916__auto__[(0)] = ((G__15817_16256[(0)]) + v));
+(dest__10015__auto__[(0)] = ((G__10866_11284[(0)]) + v));
 
-(dest__14916__auto__[(1)] = ((G__15817_16256[(1)]) + v));
+(dest__10015__auto__[(1)] = ((G__10866_11284[(1)]) + v));
 
-(dest__14916__auto__[(2)] = ((G__15817_16256[(2)]) + v));
+(dest__10015__auto__[(2)] = ((G__10866_11284[(2)]) + v));
 } else {
-(dest__14916__auto__[(0)] = ((G__15817_16256[(0)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(dest__10015__auto__[(0)] = ((G__10866_11284[(0)]) + cljs.core.nth.call(null,v,(0),0.0)));
 
-(dest__14916__auto__[(1)] = ((G__15817_16256[(1)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(dest__10015__auto__[(1)] = ((G__10866_11284[(1)]) + cljs.core.nth.call(null,v,(1),0.0)));
 
-(dest__14916__auto__[(2)] = ((G__15817_16256[(2)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0)));
+(dest__10015__auto__[(2)] = ((G__10866_11284[(2)]) + cljs.core.nth.call(null,v,(2),0.0)));
 }
 }
 
-return (new thi.ng.geom.vector.Vec3(dest__14916__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10015__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.cljs$core$ISeq$_first$arity$1 = (function (_){
@@ -3177,7 +3100,7 @@ return (self__.buf[(0)]);
 thi.ng.geom.vector.Vec3.prototype.cljs$core$ISeq$_rest$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-return cljs.core.cons((self__.buf[(1)]),cljs.core.cons((self__.buf[(2)]),null));
+return cljs.core.cons.call(null,(self__.buf[(1)]),cljs.core.cons.call(null,(self__.buf[(2)]),null));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IHeading$ = cljs.core.PROTOCOL_SENTINEL;
@@ -3185,16 +3108,13 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IHeading$ = cljs.core.PROTOCO
 thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IHeading$heading$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-return thi.ng.geom.core.heading_xy(___$1);
+return thi.ng.geom.core.heading_xy.call(null,___$1);
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IHeading$heading_xy$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var t = (function (){var G__15819 = (self__.buf[(1)]);
-var G__15820 = (self__.buf[(0)]);
-return Math.atan2(G__15819,G__15820);
-})();
+var t = Math.atan2((self__.buf[(1)]),(self__.buf[(0)]));
 if((t < (0))){
 return (t + thi.ng.math.core.TWO_PI);
 } else {
@@ -3205,10 +3125,7 @@ return t;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IHeading$heading_xz$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var t = (function (){var G__15821 = (self__.buf[(2)]);
-var G__15822 = (self__.buf[(0)]);
-return Math.atan2(G__15821,G__15822);
-})();
+var t = Math.atan2((self__.buf[(2)]),(self__.buf[(0)]));
 if((t < (0))){
 return (t + thi.ng.math.core.TWO_PI);
 } else {
@@ -3219,10 +3136,7 @@ return t;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IHeading$heading_yz$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var t = (function (){var G__15823 = (self__.buf[(2)]);
-var G__15824 = (self__.buf[(1)]);
-return Math.atan2(G__15823,G__15824);
-})();
+var t = Math.atan2((self__.buf[(2)]),(self__.buf[(1)]));
 if((t < (0))){
 return (t + thi.ng.math.core.TWO_PI);
 } else {
@@ -3233,9 +3147,8 @@ return t;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IHeading$angle_between$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var v__$1 = (((v instanceof thi.ng.geom.vector.Vec3))?v:(thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$1 ? thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$1(v) : thi.ng.geom.vector.vec3.call(null,v)));
-var G__15825 = thi.ng.math.core.dot.cljs$core$IFn$_invoke$arity$2(thi.ng.math.core.normalize.cljs$core$IFn$_invoke$arity$1(___$1),thi.ng.math.core.normalize.cljs$core$IFn$_invoke$arity$1(v__$1));
-return Math.acos(G__15825);
+var v__$1 = (((v instanceof thi.ng.geom.vector.Vec3))?v:thi.ng.geom.vector.vec3.call(null,v));
+return Math.acos(thi.ng.math.core.dot.call(null,thi.ng.math.core.normalize.call(null,___$1),thi.ng.math.core.normalize.call(null,v__$1)));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IHeading$slope_xy$arity$1 = (function (_){
@@ -3262,27 +3175,27 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IInterpolate$mix$arity$2 = (f
 var self__ = this;
 var ___$1 = this;
 var b = (new Float32Array((3)));
-var G__15826_16258 = self__.buf;
+var G__10868_11286 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__15827_16259 = v.buf;
-(b[(0)] = (((G__15826_16258[(0)]) + (G__15827_16259[(0)])) * 0.5));
+var G__10869_11287 = v.buf;
+(b[(0)] = (((G__10868_11286[(0)]) + (G__10869_11287[(0)])) * 0.5));
 
-(b[(1)] = (((G__15826_16258[(1)]) + (G__15827_16259[(1)])) * 0.5));
+(b[(1)] = (((G__10868_11286[(1)]) + (G__10869_11287[(1)])) * 0.5));
 
-(b[(2)] = (((G__15826_16258[(2)]) + (G__15827_16259[(2)])) * 0.5));
+(b[(2)] = (((G__10868_11286[(2)]) + (G__10869_11287[(2)])) * 0.5));
 } else {
 if(typeof v === 'number'){
-(b[(0)] = (((G__15826_16258[(0)]) + v) * 0.5));
+(b[(0)] = (((G__10868_11286[(0)]) + v) * 0.5));
 
-(b[(1)] = (((G__15826_16258[(1)]) + v) * 0.5));
+(b[(1)] = (((G__10868_11286[(1)]) + v) * 0.5));
 
-(b[(2)] = (((G__15826_16258[(2)]) + v) * 0.5));
+(b[(2)] = (((G__10868_11286[(2)]) + v) * 0.5));
 } else {
-(b[(0)] = (((G__15826_16258[(0)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)) * 0.5));
+(b[(0)] = (((G__10868_11286[(0)]) + cljs.core.nth.call(null,v,(0),0.0)) * 0.5));
 
-(b[(1)] = (((G__15826_16258[(1)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)) * 0.5));
+(b[(1)] = (((G__10868_11286[(1)]) + cljs.core.nth.call(null,v,(1),0.0)) * 0.5));
 
-(b[(2)] = (((G__15826_16258[(2)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0)) * 0.5));
+(b[(2)] = (((G__10868_11286[(2)]) + cljs.core.nth.call(null,v,(2),0.0)) * 0.5));
 }
 }
 
@@ -3293,27 +3206,27 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IInterpolate$mix$arity$3 = (f
 var self__ = this;
 var ___$1 = this;
 var b = (new Float32Array((3)));
-var G__15840_16260 = (v instanceof thi.ng.geom.vector.Vec3);
-var G__15841_16261 = (t instanceof thi.ng.geom.vector.Vec3);
-var G__15842_16262 = ((!(G__15840_16260))?typeof v === 'number':null);
-var G__15843_16263 = ((!(G__15841_16261))?typeof t === 'number':null);
-var G__15828_16264 = self__.buf;
-var G__15829_16265 = ((G__15840_16260)?v.buf:null);
-var G__15830_16266 = ((G__15841_16261)?t.buf:null);
-var G__15831_16267 = (G__15828_16264[(0)]);
-var G__15832_16268 = (G__15828_16264[(1)]);
-var G__15833_16269 = (G__15828_16264[(2)]);
-var G__15834_16270 = ((G__15840_16260)?(G__15829_16265[(0)]):(cljs.core.truth_(G__15842_16262)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
-var G__15835_16271 = ((G__15840_16260)?(G__15829_16265[(1)]):(cljs.core.truth_(G__15842_16262)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
-var G__15836_16272 = ((G__15840_16260)?(G__15829_16265[(2)]):(cljs.core.truth_(G__15842_16262)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0)));
-var G__15837_16273 = ((G__15841_16261)?(G__15830_16266[(0)]):(cljs.core.truth_(G__15843_16263)?t:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(t,(0),0.0)));
-var G__15838_16274 = ((G__15841_16261)?(G__15830_16266[(1)]):(cljs.core.truth_(G__15843_16263)?t:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(t,(1),0.0)));
-var G__15839_16275 = ((G__15841_16261)?(G__15830_16266[(2)]):(cljs.core.truth_(G__15843_16263)?t:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(t,(2),0.0)));
-(b[(0)] = (((G__15834_16270 - G__15831_16267) * G__15837_16273) + G__15831_16267));
+var G__10882_11288 = (v instanceof thi.ng.geom.vector.Vec3);
+var G__10883_11289 = (t instanceof thi.ng.geom.vector.Vec3);
+var G__10884_11290 = ((!(G__10882_11288))?typeof v === 'number':null);
+var G__10885_11291 = ((!(G__10883_11289))?typeof t === 'number':null);
+var G__10870_11292 = self__.buf;
+var G__10871_11293 = ((G__10882_11288)?v.buf:null);
+var G__10872_11294 = ((G__10883_11289)?t.buf:null);
+var G__10873_11295 = (G__10870_11292[(0)]);
+var G__10874_11296 = (G__10870_11292[(1)]);
+var G__10875_11297 = (G__10870_11292[(2)]);
+var G__10876_11298 = ((G__10882_11288)?(G__10871_11293[(0)]):(cljs.core.truth_(G__10884_11290)?v:cljs.core.nth.call(null,v,(0),0.0)));
+var G__10877_11299 = ((G__10882_11288)?(G__10871_11293[(1)]):(cljs.core.truth_(G__10884_11290)?v:cljs.core.nth.call(null,v,(1),0.0)));
+var G__10878_11300 = ((G__10882_11288)?(G__10871_11293[(2)]):(cljs.core.truth_(G__10884_11290)?v:cljs.core.nth.call(null,v,(2),0.0)));
+var G__10879_11301 = ((G__10883_11289)?(G__10872_11294[(0)]):(cljs.core.truth_(G__10885_11291)?t:cljs.core.nth.call(null,t,(0),0.0)));
+var G__10880_11302 = ((G__10883_11289)?(G__10872_11294[(1)]):(cljs.core.truth_(G__10885_11291)?t:cljs.core.nth.call(null,t,(1),0.0)));
+var G__10881_11303 = ((G__10883_11289)?(G__10872_11294[(2)]):(cljs.core.truth_(G__10885_11291)?t:cljs.core.nth.call(null,t,(2),0.0)));
+(b[(0)] = (((G__10876_11298 - G__10873_11295) * G__10879_11301) + G__10873_11295));
 
-(b[(1)] = (((G__15835_16271 - G__15832_16268) * G__15838_16274) + G__15832_16268));
+(b[(1)] = (((G__10877_11299 - G__10874_11296) * G__10880_11302) + G__10874_11296));
 
-(b[(2)] = (((G__15836_16272 - G__15833_16269) * G__15839_16275) + G__15833_16269));
+(b[(2)] = (((G__10878_11300 - G__10875_11297) * G__10881_11303) + G__10875_11297));
 
 return (new thi.ng.geom.vector.Vec3(b,null,self__._meta));
 });
@@ -3325,33 +3238,33 @@ var b_SINGLEQUOTE_ = (new Float32Array((3)));
 var dv_QMARK_ = (d instanceof thi.ng.geom.vector.Vec3);
 var dn_QMARK_ = typeof d === 'number';
 var dv = ((dv_QMARK_)?d.buf:null);
-var dx = ((dv_QMARK_)?(dv[(0)]):((dn_QMARK_)?d:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(d,(0),0.0)));
-var dy = ((dv_QMARK_)?(dv[(1)]):((dn_QMARK_)?d:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(d,(1),0.0)));
-var dz = ((dv_QMARK_)?(dv[(2)]):((dn_QMARK_)?d:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(d,(2),0.0)));
-var G__15856_16276 = (b instanceof thi.ng.geom.vector.Vec3);
-var G__15857_16277 = (c instanceof thi.ng.geom.vector.Vec3);
-var G__15858_16278 = ((!(G__15856_16276))?typeof b === 'number':null);
-var G__15859_16279 = ((!(G__15857_16277))?typeof c === 'number':null);
-var G__15844_16280 = self__.buf;
-var G__15845_16281 = ((G__15856_16276)?b.buf:null);
-var G__15846_16282 = ((G__15857_16277)?c.buf:null);
-var G__15847_16283 = (G__15844_16280[(0)]);
-var G__15848_16284 = (G__15844_16280[(1)]);
-var G__15849_16285 = (G__15844_16280[(2)]);
-var G__15850_16286 = ((G__15856_16276)?(G__15845_16281[(0)]):(cljs.core.truth_(G__15858_16278)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(0),0.0)));
-var G__15851_16287 = ((G__15856_16276)?(G__15845_16281[(1)]):(cljs.core.truth_(G__15858_16278)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(1),0.0)));
-var G__15852_16288 = ((G__15856_16276)?(G__15845_16281[(2)]):(cljs.core.truth_(G__15858_16278)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(2),0.0)));
-var G__15853_16289 = ((G__15857_16277)?(G__15846_16282[(0)]):(cljs.core.truth_(G__15859_16279)?c:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(c,(0),0.0)));
-var G__15854_16290 = ((G__15857_16277)?(G__15846_16282[(1)]):(cljs.core.truth_(G__15859_16279)?c:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(c,(1),0.0)));
-var G__15855_16291 = ((G__15857_16277)?(G__15846_16282[(2)]):(cljs.core.truth_(G__15859_16279)?c:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(c,(2),0.0)));
-var x1_16292 = (((G__15850_16286 - G__15847_16283) * u) + G__15847_16283);
-var y1_16293 = (((G__15851_16287 - G__15848_16284) * u) + G__15848_16284);
-var z1_16294 = (((G__15852_16288 - G__15849_16285) * u) + G__15849_16285);
-(b_SINGLEQUOTE_[(0)] = ((((((dx - G__15853_16289) * u) + G__15853_16289) - x1_16292) * v) + x1_16292));
+var dx = ((dv_QMARK_)?(dv[(0)]):((dn_QMARK_)?d:cljs.core.nth.call(null,d,(0),0.0)));
+var dy = ((dv_QMARK_)?(dv[(1)]):((dn_QMARK_)?d:cljs.core.nth.call(null,d,(1),0.0)));
+var dz = ((dv_QMARK_)?(dv[(2)]):((dn_QMARK_)?d:cljs.core.nth.call(null,d,(2),0.0)));
+var G__10898_11304 = (b instanceof thi.ng.geom.vector.Vec3);
+var G__10899_11305 = (c instanceof thi.ng.geom.vector.Vec3);
+var G__10900_11306 = ((!(G__10898_11304))?typeof b === 'number':null);
+var G__10901_11307 = ((!(G__10899_11305))?typeof c === 'number':null);
+var G__10886_11308 = self__.buf;
+var G__10887_11309 = ((G__10898_11304)?b.buf:null);
+var G__10888_11310 = ((G__10899_11305)?c.buf:null);
+var G__10889_11311 = (G__10886_11308[(0)]);
+var G__10890_11312 = (G__10886_11308[(1)]);
+var G__10891_11313 = (G__10886_11308[(2)]);
+var G__10892_11314 = ((G__10898_11304)?(G__10887_11309[(0)]):(cljs.core.truth_(G__10900_11306)?b:cljs.core.nth.call(null,b,(0),0.0)));
+var G__10893_11315 = ((G__10898_11304)?(G__10887_11309[(1)]):(cljs.core.truth_(G__10900_11306)?b:cljs.core.nth.call(null,b,(1),0.0)));
+var G__10894_11316 = ((G__10898_11304)?(G__10887_11309[(2)]):(cljs.core.truth_(G__10900_11306)?b:cljs.core.nth.call(null,b,(2),0.0)));
+var G__10895_11317 = ((G__10899_11305)?(G__10888_11310[(0)]):(cljs.core.truth_(G__10901_11307)?c:cljs.core.nth.call(null,c,(0),0.0)));
+var G__10896_11318 = ((G__10899_11305)?(G__10888_11310[(1)]):(cljs.core.truth_(G__10901_11307)?c:cljs.core.nth.call(null,c,(1),0.0)));
+var G__10897_11319 = ((G__10899_11305)?(G__10888_11310[(2)]):(cljs.core.truth_(G__10901_11307)?c:cljs.core.nth.call(null,c,(2),0.0)));
+var x1_11320 = (((G__10892_11314 - G__10889_11311) * u) + G__10889_11311);
+var y1_11321 = (((G__10893_11315 - G__10890_11312) * u) + G__10890_11312);
+var z1_11322 = (((G__10894_11316 - G__10891_11313) * u) + G__10891_11313);
+(b_SINGLEQUOTE_[(0)] = ((((((dx - G__10895_11317) * u) + G__10895_11317) - x1_11320) * v) + x1_11320));
 
-(b_SINGLEQUOTE_[(1)] = ((((((dy - G__15854_16290) * u) + G__15854_16290) - y1_16293) * v) + y1_16293));
+(b_SINGLEQUOTE_[(1)] = ((((((dy - G__10896_11318) * u) + G__10896_11318) - y1_11321) * v) + y1_11321));
 
-(b_SINGLEQUOTE_[(2)] = ((((((dz - G__15855_16291) * u) + G__15855_16291) - z1_16294) * v) + z1_16294));
+(b_SINGLEQUOTE_[(2)] = ((((((dz - G__10897_11319) * u) + G__10897_11319) - z1_11322) * v) + z1_11322));
 
 return (new thi.ng.geom.vector.Vec3(b_SINGLEQUOTE_,null,self__._meta));
 });
@@ -3360,27 +3273,27 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IInterpolate$mix_with$arity$4
 var self__ = this;
 var ___$1 = this;
 var b = (new Float32Array((3)));
-var G__15872_16295 = (v instanceof thi.ng.geom.vector.Vec3);
-var G__15873_16296 = (t instanceof thi.ng.geom.vector.Vec3);
-var G__15874_16297 = ((!(G__15872_16295))?typeof v === 'number':null);
-var G__15875_16298 = ((!(G__15873_16296))?typeof t === 'number':null);
-var G__15860_16299 = self__.buf;
-var G__15861_16300 = ((G__15872_16295)?v.buf:null);
-var G__15862_16301 = ((G__15873_16296)?t.buf:null);
-var G__15863_16302 = (G__15860_16299[(0)]);
-var G__15864_16303 = (G__15860_16299[(1)]);
-var G__15865_16304 = (G__15860_16299[(2)]);
-var G__15866_16305 = ((G__15872_16295)?(G__15861_16300[(0)]):(cljs.core.truth_(G__15874_16297)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
-var G__15867_16306 = ((G__15872_16295)?(G__15861_16300[(1)]):(cljs.core.truth_(G__15874_16297)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
-var G__15868_16307 = ((G__15872_16295)?(G__15861_16300[(2)]):(cljs.core.truth_(G__15874_16297)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0)));
-var G__15869_16308 = ((G__15873_16296)?(G__15862_16301[(0)]):(cljs.core.truth_(G__15875_16298)?t:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(t,(0),0.0)));
-var G__15870_16309 = ((G__15873_16296)?(G__15862_16301[(1)]):(cljs.core.truth_(G__15875_16298)?t:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(t,(1),0.0)));
-var G__15871_16310 = ((G__15873_16296)?(G__15862_16301[(2)]):(cljs.core.truth_(G__15875_16298)?t:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(t,(2),0.0)));
-(b[(0)] = (f.cljs$core$IFn$_invoke$arity$3 ? f.cljs$core$IFn$_invoke$arity$3(G__15863_16302,G__15866_16305,G__15869_16308) : f.call(null,G__15863_16302,G__15866_16305,G__15869_16308)));
+var G__10914_11323 = (v instanceof thi.ng.geom.vector.Vec3);
+var G__10915_11324 = (t instanceof thi.ng.geom.vector.Vec3);
+var G__10916_11325 = ((!(G__10914_11323))?typeof v === 'number':null);
+var G__10917_11326 = ((!(G__10915_11324))?typeof t === 'number':null);
+var G__10902_11327 = self__.buf;
+var G__10903_11328 = ((G__10914_11323)?v.buf:null);
+var G__10904_11329 = ((G__10915_11324)?t.buf:null);
+var G__10905_11330 = (G__10902_11327[(0)]);
+var G__10906_11331 = (G__10902_11327[(1)]);
+var G__10907_11332 = (G__10902_11327[(2)]);
+var G__10908_11333 = ((G__10914_11323)?(G__10903_11328[(0)]):(cljs.core.truth_(G__10916_11325)?v:cljs.core.nth.call(null,v,(0),0.0)));
+var G__10909_11334 = ((G__10914_11323)?(G__10903_11328[(1)]):(cljs.core.truth_(G__10916_11325)?v:cljs.core.nth.call(null,v,(1),0.0)));
+var G__10910_11335 = ((G__10914_11323)?(G__10903_11328[(2)]):(cljs.core.truth_(G__10916_11325)?v:cljs.core.nth.call(null,v,(2),0.0)));
+var G__10911_11336 = ((G__10915_11324)?(G__10904_11329[(0)]):(cljs.core.truth_(G__10917_11326)?t:cljs.core.nth.call(null,t,(0),0.0)));
+var G__10912_11337 = ((G__10915_11324)?(G__10904_11329[(1)]):(cljs.core.truth_(G__10917_11326)?t:cljs.core.nth.call(null,t,(1),0.0)));
+var G__10913_11338 = ((G__10915_11324)?(G__10904_11329[(2)]):(cljs.core.truth_(G__10917_11326)?t:cljs.core.nth.call(null,t,(2),0.0)));
+(b[(0)] = f.call(null,G__10905_11330,G__10908_11333,G__10911_11336));
 
-(b[(1)] = (f.cljs$core$IFn$_invoke$arity$3 ? f.cljs$core$IFn$_invoke$arity$3(G__15864_16303,G__15867_16306,G__15870_16309) : f.call(null,G__15864_16303,G__15867_16306,G__15870_16309)));
+(b[(1)] = f.call(null,G__10906_11331,G__10909_11334,G__10912_11337));
 
-(b[(2)] = (f.cljs$core$IFn$_invoke$arity$3 ? f.cljs$core$IFn$_invoke$arity$3(G__15865_16304,G__15868_16307,G__15871_16310) : f.call(null,G__15865_16304,G__15868_16307,G__15871_16310)));
+(b[(2)] = f.call(null,G__10907_11332,G__10910_11335,G__10913_11338));
 
 return (new thi.ng.geom.vector.Vec2(b,null,self__._meta));
 });
@@ -3389,27 +3302,27 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IInterpolate$step$arity$2 = (
 var self__ = this;
 var ___$1 = this;
 var b = (new Float32Array((3)));
-var G__15876_16311 = self__.buf;
+var G__10918_11339 = self__.buf;
 if((e instanceof thi.ng.geom.vector.Vec3)){
-var G__15877_16312 = e.buf;
-(b[(0)] = thi.ng.math.core.step_STAR_((G__15877_16312[(0)]),(G__15876_16311[(0)])));
+var G__10919_11340 = e.buf;
+(b[(0)] = thi.ng.math.core.step_STAR_.call(null,(G__10919_11340[(0)]),(G__10918_11339[(0)])));
 
-(b[(1)] = thi.ng.math.core.step_STAR_((G__15877_16312[(1)]),(G__15876_16311[(1)])));
+(b[(1)] = thi.ng.math.core.step_STAR_.call(null,(G__10919_11340[(1)]),(G__10918_11339[(1)])));
 
-(b[(2)] = thi.ng.math.core.step_STAR_((G__15877_16312[(2)]),(G__15876_16311[(2)])));
+(b[(2)] = thi.ng.math.core.step_STAR_.call(null,(G__10919_11340[(2)]),(G__10918_11339[(2)])));
 } else {
 if(typeof e === 'number'){
-(b[(0)] = thi.ng.math.core.step_STAR_(e,(G__15876_16311[(0)])));
+(b[(0)] = thi.ng.math.core.step_STAR_.call(null,e,(G__10918_11339[(0)])));
 
-(b[(1)] = thi.ng.math.core.step_STAR_(e,(G__15876_16311[(1)])));
+(b[(1)] = thi.ng.math.core.step_STAR_.call(null,e,(G__10918_11339[(1)])));
 
-(b[(2)] = thi.ng.math.core.step_STAR_(e,(G__15876_16311[(2)])));
+(b[(2)] = thi.ng.math.core.step_STAR_.call(null,e,(G__10918_11339[(2)])));
 } else {
-(b[(0)] = thi.ng.math.core.step_STAR_(cljs.core.nth.cljs$core$IFn$_invoke$arity$3(e,(0),0.0),(G__15876_16311[(0)])));
+(b[(0)] = thi.ng.math.core.step_STAR_.call(null,cljs.core.nth.call(null,e,(0),0.0),(G__10918_11339[(0)])));
 
-(b[(1)] = thi.ng.math.core.step_STAR_(cljs.core.nth.cljs$core$IFn$_invoke$arity$3(e,(1),0.0),(G__15876_16311[(1)])));
+(b[(1)] = thi.ng.math.core.step_STAR_.call(null,cljs.core.nth.call(null,e,(1),0.0),(G__10918_11339[(1)])));
 
-(b[(2)] = thi.ng.math.core.step_STAR_(cljs.core.nth.cljs$core$IFn$_invoke$arity$3(e,(2),0.0),(G__15876_16311[(2)])));
+(b[(2)] = thi.ng.math.core.step_STAR_.call(null,cljs.core.nth.call(null,e,(2),0.0),(G__10918_11339[(2)])));
 }
 }
 
@@ -3420,27 +3333,27 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IInterpolate$smoothstep$arity
 var self__ = this;
 var ___$1 = this;
 var b = (new Float32Array((3)));
-var G__15890_16313 = (e1 instanceof thi.ng.geom.vector.Vec3);
-var G__15891_16314 = (e2 instanceof thi.ng.geom.vector.Vec3);
-var G__15892_16315 = ((!(G__15890_16313))?typeof e1 === 'number':null);
-var G__15893_16316 = ((!(G__15891_16314))?typeof e2 === 'number':null);
-var G__15878_16317 = self__.buf;
-var G__15879_16318 = ((G__15890_16313)?e1.buf:null);
-var G__15880_16319 = ((G__15891_16314)?e2.buf:null);
-var G__15881_16320 = (G__15878_16317[(0)]);
-var G__15882_16321 = (G__15878_16317[(1)]);
-var G__15883_16322 = (G__15878_16317[(2)]);
-var G__15884_16323 = ((G__15890_16313)?(G__15879_16318[(0)]):(cljs.core.truth_(G__15892_16315)?e1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(e1,(0),0.0)));
-var G__15885_16324 = ((G__15890_16313)?(G__15879_16318[(1)]):(cljs.core.truth_(G__15892_16315)?e1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(e1,(1),0.0)));
-var G__15886_16325 = ((G__15890_16313)?(G__15879_16318[(2)]):(cljs.core.truth_(G__15892_16315)?e1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(e1,(2),0.0)));
-var G__15887_16326 = ((G__15891_16314)?(G__15880_16319[(0)]):(cljs.core.truth_(G__15893_16316)?e2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(e2,(0),0.0)));
-var G__15888_16327 = ((G__15891_16314)?(G__15880_16319[(1)]):(cljs.core.truth_(G__15893_16316)?e2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(e2,(1),0.0)));
-var G__15889_16328 = ((G__15891_16314)?(G__15880_16319[(2)]):(cljs.core.truth_(G__15893_16316)?e2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(e2,(2),0.0)));
-(b[(0)] = thi.ng.math.core.smoothstep_STAR_(G__15884_16323,G__15887_16326,G__15881_16320));
+var G__10932_11341 = (e1 instanceof thi.ng.geom.vector.Vec3);
+var G__10933_11342 = (e2 instanceof thi.ng.geom.vector.Vec3);
+var G__10934_11343 = ((!(G__10932_11341))?typeof e1 === 'number':null);
+var G__10935_11344 = ((!(G__10933_11342))?typeof e2 === 'number':null);
+var G__10920_11345 = self__.buf;
+var G__10921_11346 = ((G__10932_11341)?e1.buf:null);
+var G__10922_11347 = ((G__10933_11342)?e2.buf:null);
+var G__10923_11348 = (G__10920_11345[(0)]);
+var G__10924_11349 = (G__10920_11345[(1)]);
+var G__10925_11350 = (G__10920_11345[(2)]);
+var G__10926_11351 = ((G__10932_11341)?(G__10921_11346[(0)]):(cljs.core.truth_(G__10934_11343)?e1:cljs.core.nth.call(null,e1,(0),0.0)));
+var G__10927_11352 = ((G__10932_11341)?(G__10921_11346[(1)]):(cljs.core.truth_(G__10934_11343)?e1:cljs.core.nth.call(null,e1,(1),0.0)));
+var G__10928_11353 = ((G__10932_11341)?(G__10921_11346[(2)]):(cljs.core.truth_(G__10934_11343)?e1:cljs.core.nth.call(null,e1,(2),0.0)));
+var G__10929_11354 = ((G__10933_11342)?(G__10922_11347[(0)]):(cljs.core.truth_(G__10935_11344)?e2:cljs.core.nth.call(null,e2,(0),0.0)));
+var G__10930_11355 = ((G__10933_11342)?(G__10922_11347[(1)]):(cljs.core.truth_(G__10935_11344)?e2:cljs.core.nth.call(null,e2,(1),0.0)));
+var G__10931_11356 = ((G__10933_11342)?(G__10922_11347[(2)]):(cljs.core.truth_(G__10935_11344)?e2:cljs.core.nth.call(null,e2,(2),0.0)));
+(b[(0)] = thi.ng.math.core.smoothstep_STAR_.call(null,G__10926_11351,G__10929_11354,G__10923_11348));
 
-(b[(1)] = thi.ng.math.core.smoothstep_STAR_(G__15885_16324,G__15888_16327,G__15882_16321));
+(b[(1)] = thi.ng.math.core.smoothstep_STAR_.call(null,G__10927_11352,G__10930_11355,G__10924_11349));
 
-(b[(2)] = thi.ng.math.core.smoothstep_STAR_(G__15886_16325,G__15889_16328,G__15883_16322));
+(b[(2)] = thi.ng.math.core.smoothstep_STAR_.call(null,G__10928_11353,G__10931_11356,G__10925_11350));
 
 return (new thi.ng.geom.vector.Vec2(b,null,self__._meta));
 });
@@ -3451,7 +3364,7 @@ var ___$1 = this;
 if(typeof k === 'number'){
 return ((k >= (0))) && ((k <= (2)));
 } else {
-if(cljs.core.truth_((thi.ng.geom.vector.swizzle3_fns.cljs$core$IFn$_invoke$arity$1 ? thi.ng.geom.vector.swizzle3_fns.cljs$core$IFn$_invoke$arity$1(k) : thi.ng.geom.vector.swizzle3_fns.call(null,k)))){
+if(cljs.core.truth_(thi.ng.geom.vector.swizzle3_fns.call(null,k))){
 return true;
 } else {
 return false;
@@ -3470,23 +3383,17 @@ var b = (new Float32Array(self__.buf));
 return (new thi.ng.geom.vector.Vec3(b,null,self__._meta));
 } else {
 if((k === (3))){
-return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(___$1,v);
+return cljs.core.conj.call(null,___$1,v);
 } else {
-return thi.ng.xerror.core.key_error_BANG_(k);
+return thi.ng.xerror.core.key_error_BANG_.call(null,k);
 }
 }
 } else {
 if((k instanceof cljs.core.Keyword)){
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$w,k)){
-return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(___$1,v);
+if(cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"w","w",354169001),k)){
+return cljs.core.conj.call(null,___$1,v);
 } else {
-return (new thi.ng.geom.vector.Vec3((function (){var G__15894 = self__.buf;
-var G__15895 = (new Float32Array(self__.buf));
-var G__15896 = new cljs.core.PersistentArrayMap(null, 3, ["x",(0),"y",(1),"z",(2)], null);
-var G__15897 = k;
-var G__15898 = v;
-return (thi.ng.geom.vector.swizzle_assoc_STAR_.cljs$core$IFn$_invoke$arity$5 ? thi.ng.geom.vector.swizzle_assoc_STAR_.cljs$core$IFn$_invoke$arity$5(G__15894,G__15895,G__15896,G__15897,G__15898) : thi.ng.geom.vector.swizzle_assoc_STAR_.call(null,G__15894,G__15895,G__15896,G__15897,G__15898));
-})(),null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(thi.ng.geom.vector.swizzle_assoc_STAR_.call(null,self__.buf,(new Float32Array(self__.buf)),new cljs.core.PersistentArrayMap(null, 3, ["x",(0),"y",(1),"z",(2)], null),k,v),null,self__._meta));
 }
 } else {
 return null;
@@ -3505,331 +3412,331 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMinMax$ = cljs.core.PROTOCOL
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMinMax$min$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var dest__14916__auto__ = (new Float32Array((3)));
-var G__15899_16329 = self__.buf;
+var dest__10015__auto__ = (new Float32Array((3)));
+var G__10936_11357 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__15900_16330 = v.buf;
-(dest__14916__auto__[(0)] = (function (){var a__14160__auto__ = (G__15899_16329[(0)]);
-var b__14161__auto__ = (G__15900_16330[(0)]);
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+var G__10937_11358 = v.buf;
+(dest__10015__auto__[(0)] = (function (){var a__9307__auto__ = (G__10936_11357[(0)]);
+var b__9308__auto__ = (G__10937_11358[(0)]);
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })());
 
-(dest__14916__auto__[(1)] = (function (){var a__14160__auto__ = (G__15899_16329[(1)]);
-var b__14161__auto__ = (G__15900_16330[(1)]);
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+(dest__10015__auto__[(1)] = (function (){var a__9307__auto__ = (G__10936_11357[(1)]);
+var b__9308__auto__ = (G__10937_11358[(1)]);
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })());
 
-(dest__14916__auto__[(2)] = (function (){var a__14160__auto__ = (G__15899_16329[(2)]);
-var b__14161__auto__ = (G__15900_16330[(2)]);
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+(dest__10015__auto__[(2)] = (function (){var a__9307__auto__ = (G__10936_11357[(2)]);
+var b__9308__auto__ = (G__10937_11358[(2)]);
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })());
 } else {
 if(typeof v === 'number'){
-(dest__14916__auto__[(0)] = (function (){var a__14160__auto__ = (G__15899_16329[(0)]);
-var b__14161__auto__ = v;
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+(dest__10015__auto__[(0)] = (function (){var a__9307__auto__ = (G__10936_11357[(0)]);
+var b__9308__auto__ = v;
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })());
 
-(dest__14916__auto__[(1)] = (function (){var a__14160__auto__ = (G__15899_16329[(1)]);
-var b__14161__auto__ = v;
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+(dest__10015__auto__[(1)] = (function (){var a__9307__auto__ = (G__10936_11357[(1)]);
+var b__9308__auto__ = v;
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })());
 
-(dest__14916__auto__[(2)] = (function (){var a__14160__auto__ = (G__15899_16329[(2)]);
-var b__14161__auto__ = v;
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+(dest__10015__auto__[(2)] = (function (){var a__9307__auto__ = (G__10936_11357[(2)]);
+var b__9308__auto__ = v;
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })());
 } else {
-(dest__14916__auto__[(0)] = (function (){var a__14160__auto__ = (G__15899_16329[(0)]);
-var b__14161__auto__ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0);
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+(dest__10015__auto__[(0)] = (function (){var a__9307__auto__ = (G__10936_11357[(0)]);
+var b__9308__auto__ = cljs.core.nth.call(null,v,(0),0.0);
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
-}
-})());
-
-(dest__14916__auto__[(1)] = (function (){var a__14160__auto__ = (G__15899_16329[(1)]);
-var b__14161__auto__ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0);
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
-} else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })());
 
-(dest__14916__auto__[(2)] = (function (){var a__14160__auto__ = (G__15899_16329[(2)]);
-var b__14161__auto__ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0);
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+(dest__10015__auto__[(1)] = (function (){var a__9307__auto__ = (G__10936_11357[(1)]);
+var b__9308__auto__ = cljs.core.nth.call(null,v,(1),0.0);
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
+}
+})());
+
+(dest__10015__auto__[(2)] = (function (){var a__9307__auto__ = (G__10936_11357[(2)]);
+var b__9308__auto__ = cljs.core.nth.call(null,v,(2),0.0);
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
+} else {
+return b__9308__auto__;
 }
 })());
 }
 }
 
-return (new thi.ng.geom.vector.Vec3(dest__14916__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10015__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMinMax$min$arity$3 = (function (_,v,v2){
 var self__ = this;
 var ___$1 = this;
-var dest__14927__auto__ = (new Float32Array((3)));
-var G__15913_16331 = (v instanceof thi.ng.geom.vector.Vec3);
-var G__15914_16332 = (v2 instanceof thi.ng.geom.vector.Vec3);
-var G__15915_16333 = ((!(G__15913_16331))?typeof v === 'number':null);
-var G__15916_16334 = ((!(G__15914_16332))?typeof v2 === 'number':null);
-var G__15901_16335 = self__.buf;
-var G__15902_16336 = ((G__15913_16331)?v.buf:null);
-var G__15903_16337 = ((G__15914_16332)?v2.buf:null);
-var G__15904_16338 = (G__15901_16335[(0)]);
-var G__15905_16339 = (G__15901_16335[(1)]);
-var G__15906_16340 = (G__15901_16335[(2)]);
-var G__15907_16341 = ((G__15913_16331)?(G__15902_16336[(0)]):(cljs.core.truth_(G__15915_16333)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
-var G__15908_16342 = ((G__15913_16331)?(G__15902_16336[(1)]):(cljs.core.truth_(G__15915_16333)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
-var G__15909_16343 = ((G__15913_16331)?(G__15902_16336[(2)]):(cljs.core.truth_(G__15915_16333)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0)));
-var G__15910_16344 = ((G__15914_16332)?(G__15903_16337[(0)]):(cljs.core.truth_(G__15916_16334)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__15911_16345 = ((G__15914_16332)?(G__15903_16337[(1)]):(cljs.core.truth_(G__15916_16334)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-var G__15912_16346 = ((G__15914_16332)?(G__15903_16337[(2)]):(cljs.core.truth_(G__15916_16334)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(2),0.0)));
-(dest__14927__auto__[(0)] = (function (){var a__14160__auto__ = (function (){var a__14160__auto__ = G__15904_16338;
-var b__14161__auto__ = G__15907_16341;
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+var dest__10026__auto__ = (new Float32Array((3)));
+var G__10950_11359 = (v instanceof thi.ng.geom.vector.Vec3);
+var G__10951_11360 = (v2 instanceof thi.ng.geom.vector.Vec3);
+var G__10952_11361 = ((!(G__10950_11359))?typeof v === 'number':null);
+var G__10953_11362 = ((!(G__10951_11360))?typeof v2 === 'number':null);
+var G__10938_11363 = self__.buf;
+var G__10939_11364 = ((G__10950_11359)?v.buf:null);
+var G__10940_11365 = ((G__10951_11360)?v2.buf:null);
+var G__10941_11366 = (G__10938_11363[(0)]);
+var G__10942_11367 = (G__10938_11363[(1)]);
+var G__10943_11368 = (G__10938_11363[(2)]);
+var G__10944_11369 = ((G__10950_11359)?(G__10939_11364[(0)]):(cljs.core.truth_(G__10952_11361)?v:cljs.core.nth.call(null,v,(0),0.0)));
+var G__10945_11370 = ((G__10950_11359)?(G__10939_11364[(1)]):(cljs.core.truth_(G__10952_11361)?v:cljs.core.nth.call(null,v,(1),0.0)));
+var G__10946_11371 = ((G__10950_11359)?(G__10939_11364[(2)]):(cljs.core.truth_(G__10952_11361)?v:cljs.core.nth.call(null,v,(2),0.0)));
+var G__10947_11372 = ((G__10951_11360)?(G__10940_11365[(0)]):(cljs.core.truth_(G__10953_11362)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__10948_11373 = ((G__10951_11360)?(G__10940_11365[(1)]):(cljs.core.truth_(G__10953_11362)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+var G__10949_11374 = ((G__10951_11360)?(G__10940_11365[(2)]):(cljs.core.truth_(G__10953_11362)?v2:cljs.core.nth.call(null,v2,(2),0.0)));
+(dest__10026__auto__[(0)] = (function (){var a__9307__auto__ = (function (){var a__9307__auto__ = G__10941_11366;
+var b__9308__auto__ = G__10944_11369;
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })();
-var b__14161__auto__ = G__15910_16344;
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+var b__9308__auto__ = G__10947_11372;
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })());
 
-(dest__14927__auto__[(1)] = (function (){var a__14160__auto__ = (function (){var a__14160__auto__ = G__15905_16339;
-var b__14161__auto__ = G__15908_16342;
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+(dest__10026__auto__[(1)] = (function (){var a__9307__auto__ = (function (){var a__9307__auto__ = G__10942_11367;
+var b__9308__auto__ = G__10945_11370;
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })();
-var b__14161__auto__ = G__15911_16345;
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+var b__9308__auto__ = G__10948_11373;
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })());
 
-(dest__14927__auto__[(2)] = (function (){var a__14160__auto__ = (function (){var a__14160__auto__ = G__15906_16340;
-var b__14161__auto__ = G__15909_16343;
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+(dest__10026__auto__[(2)] = (function (){var a__9307__auto__ = (function (){var a__9307__auto__ = G__10943_11368;
+var b__9308__auto__ = G__10946_11371;
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })();
-var b__14161__auto__ = G__15912_16346;
-if((a__14160__auto__ <= b__14161__auto__)){
-return a__14160__auto__;
+var b__9308__auto__ = G__10949_11374;
+if((a__9307__auto__ <= b__9308__auto__)){
+return a__9307__auto__;
 } else {
-return b__14161__auto__;
+return b__9308__auto__;
 }
 })());
 
-return (new thi.ng.geom.vector.Vec3(dest__14927__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10026__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMinMax$max$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var dest__14916__auto__ = (new Float32Array((3)));
-var G__15917_16347 = self__.buf;
+var dest__10015__auto__ = (new Float32Array((3)));
+var G__10954_11375 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__15918_16348 = v.buf;
-(dest__14916__auto__[(0)] = (function (){var a__14167__auto__ = (G__15917_16347[(0)]);
-var b__14168__auto__ = (G__15918_16348[(0)]);
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+var G__10955_11376 = v.buf;
+(dest__10015__auto__[(0)] = (function (){var a__9314__auto__ = (G__10954_11375[(0)]);
+var b__9315__auto__ = (G__10955_11376[(0)]);
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })());
 
-(dest__14916__auto__[(1)] = (function (){var a__14167__auto__ = (G__15917_16347[(1)]);
-var b__14168__auto__ = (G__15918_16348[(1)]);
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+(dest__10015__auto__[(1)] = (function (){var a__9314__auto__ = (G__10954_11375[(1)]);
+var b__9315__auto__ = (G__10955_11376[(1)]);
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })());
 
-(dest__14916__auto__[(2)] = (function (){var a__14167__auto__ = (G__15917_16347[(2)]);
-var b__14168__auto__ = (G__15918_16348[(2)]);
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+(dest__10015__auto__[(2)] = (function (){var a__9314__auto__ = (G__10954_11375[(2)]);
+var b__9315__auto__ = (G__10955_11376[(2)]);
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })());
 } else {
 if(typeof v === 'number'){
-(dest__14916__auto__[(0)] = (function (){var a__14167__auto__ = (G__15917_16347[(0)]);
-var b__14168__auto__ = v;
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+(dest__10015__auto__[(0)] = (function (){var a__9314__auto__ = (G__10954_11375[(0)]);
+var b__9315__auto__ = v;
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })());
 
-(dest__14916__auto__[(1)] = (function (){var a__14167__auto__ = (G__15917_16347[(1)]);
-var b__14168__auto__ = v;
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+(dest__10015__auto__[(1)] = (function (){var a__9314__auto__ = (G__10954_11375[(1)]);
+var b__9315__auto__ = v;
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })());
 
-(dest__14916__auto__[(2)] = (function (){var a__14167__auto__ = (G__15917_16347[(2)]);
-var b__14168__auto__ = v;
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+(dest__10015__auto__[(2)] = (function (){var a__9314__auto__ = (G__10954_11375[(2)]);
+var b__9315__auto__ = v;
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })());
 } else {
-(dest__14916__auto__[(0)] = (function (){var a__14167__auto__ = (G__15917_16347[(0)]);
-var b__14168__auto__ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0);
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+(dest__10015__auto__[(0)] = (function (){var a__9314__auto__ = (G__10954_11375[(0)]);
+var b__9315__auto__ = cljs.core.nth.call(null,v,(0),0.0);
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
-}
-})());
-
-(dest__14916__auto__[(1)] = (function (){var a__14167__auto__ = (G__15917_16347[(1)]);
-var b__14168__auto__ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0);
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
-} else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })());
 
-(dest__14916__auto__[(2)] = (function (){var a__14167__auto__ = (G__15917_16347[(2)]);
-var b__14168__auto__ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0);
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+(dest__10015__auto__[(1)] = (function (){var a__9314__auto__ = (G__10954_11375[(1)]);
+var b__9315__auto__ = cljs.core.nth.call(null,v,(1),0.0);
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
+}
+})());
+
+(dest__10015__auto__[(2)] = (function (){var a__9314__auto__ = (G__10954_11375[(2)]);
+var b__9315__auto__ = cljs.core.nth.call(null,v,(2),0.0);
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
+} else {
+return b__9315__auto__;
 }
 })());
 }
 }
 
-return (new thi.ng.geom.vector.Vec3(dest__14916__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10015__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMinMax$max$arity$3 = (function (_,v,v2){
 var self__ = this;
 var ___$1 = this;
-var dest__14927__auto__ = (new Float32Array((3)));
-var G__15931_16349 = (v instanceof thi.ng.geom.vector.Vec3);
-var G__15932_16350 = (v2 instanceof thi.ng.geom.vector.Vec3);
-var G__15933_16351 = ((!(G__15931_16349))?typeof v === 'number':null);
-var G__15934_16352 = ((!(G__15932_16350))?typeof v2 === 'number':null);
-var G__15919_16353 = self__.buf;
-var G__15920_16354 = ((G__15931_16349)?v.buf:null);
-var G__15921_16355 = ((G__15932_16350)?v2.buf:null);
-var G__15922_16356 = (G__15919_16353[(0)]);
-var G__15923_16357 = (G__15919_16353[(1)]);
-var G__15924_16358 = (G__15919_16353[(2)]);
-var G__15925_16359 = ((G__15931_16349)?(G__15920_16354[(0)]):(cljs.core.truth_(G__15933_16351)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
-var G__15926_16360 = ((G__15931_16349)?(G__15920_16354[(1)]):(cljs.core.truth_(G__15933_16351)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
-var G__15927_16361 = ((G__15931_16349)?(G__15920_16354[(2)]):(cljs.core.truth_(G__15933_16351)?v:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0)));
-var G__15928_16362 = ((G__15932_16350)?(G__15921_16355[(0)]):(cljs.core.truth_(G__15934_16352)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__15929_16363 = ((G__15932_16350)?(G__15921_16355[(1)]):(cljs.core.truth_(G__15934_16352)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-var G__15930_16364 = ((G__15932_16350)?(G__15921_16355[(2)]):(cljs.core.truth_(G__15934_16352)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(2),0.0)));
-(dest__14927__auto__[(0)] = (function (){var a__14167__auto__ = (function (){var a__14167__auto__ = G__15922_16356;
-var b__14168__auto__ = G__15925_16359;
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+var dest__10026__auto__ = (new Float32Array((3)));
+var G__10968_11377 = (v instanceof thi.ng.geom.vector.Vec3);
+var G__10969_11378 = (v2 instanceof thi.ng.geom.vector.Vec3);
+var G__10970_11379 = ((!(G__10968_11377))?typeof v === 'number':null);
+var G__10971_11380 = ((!(G__10969_11378))?typeof v2 === 'number':null);
+var G__10956_11381 = self__.buf;
+var G__10957_11382 = ((G__10968_11377)?v.buf:null);
+var G__10958_11383 = ((G__10969_11378)?v2.buf:null);
+var G__10959_11384 = (G__10956_11381[(0)]);
+var G__10960_11385 = (G__10956_11381[(1)]);
+var G__10961_11386 = (G__10956_11381[(2)]);
+var G__10962_11387 = ((G__10968_11377)?(G__10957_11382[(0)]):(cljs.core.truth_(G__10970_11379)?v:cljs.core.nth.call(null,v,(0),0.0)));
+var G__10963_11388 = ((G__10968_11377)?(G__10957_11382[(1)]):(cljs.core.truth_(G__10970_11379)?v:cljs.core.nth.call(null,v,(1),0.0)));
+var G__10964_11389 = ((G__10968_11377)?(G__10957_11382[(2)]):(cljs.core.truth_(G__10970_11379)?v:cljs.core.nth.call(null,v,(2),0.0)));
+var G__10965_11390 = ((G__10969_11378)?(G__10958_11383[(0)]):(cljs.core.truth_(G__10971_11380)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__10966_11391 = ((G__10969_11378)?(G__10958_11383[(1)]):(cljs.core.truth_(G__10971_11380)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+var G__10967_11392 = ((G__10969_11378)?(G__10958_11383[(2)]):(cljs.core.truth_(G__10971_11380)?v2:cljs.core.nth.call(null,v2,(2),0.0)));
+(dest__10026__auto__[(0)] = (function (){var a__9314__auto__ = (function (){var a__9314__auto__ = G__10959_11384;
+var b__9315__auto__ = G__10962_11387;
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })();
-var b__14168__auto__ = G__15928_16362;
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+var b__9315__auto__ = G__10965_11390;
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })());
 
-(dest__14927__auto__[(1)] = (function (){var a__14167__auto__ = (function (){var a__14167__auto__ = G__15923_16357;
-var b__14168__auto__ = G__15926_16360;
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+(dest__10026__auto__[(1)] = (function (){var a__9314__auto__ = (function (){var a__9314__auto__ = G__10960_11385;
+var b__9315__auto__ = G__10963_11388;
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })();
-var b__14168__auto__ = G__15929_16363;
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+var b__9315__auto__ = G__10966_11391;
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })());
 
-(dest__14927__auto__[(2)] = (function (){var a__14167__auto__ = (function (){var a__14167__auto__ = G__15924_16358;
-var b__14168__auto__ = G__15927_16361;
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+(dest__10026__auto__[(2)] = (function (){var a__9314__auto__ = (function (){var a__9314__auto__ = G__10961_11386;
+var b__9315__auto__ = G__10964_11389;
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })();
-var b__14168__auto__ = G__15930_16364;
-if((a__14167__auto__ >= b__14168__auto__)){
-return a__14167__auto__;
+var b__9315__auto__ = G__10967_11392;
+if((a__9314__auto__ >= b__9315__auto__)){
+return a__9314__auto__;
 } else {
-return b__14168__auto__;
+return b__9315__auto__;
 }
 })());
 
-return (new thi.ng.geom.vector.Vec3(dest__14927__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10026__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IRotate3D$ = cljs.core.PROTOCOL_SENTINEL;
@@ -3840,15 +3747,15 @@ var ___$1 = this;
 var s = Math.sin(theta);
 var c = Math.cos(theta);
 var b = (new Float32Array((3)));
-var G__15935 = self__.buf;
-var G__15936 = (G__15935[(0)]);
-var G__15937 = (G__15935[(1)]);
-var G__15938 = (G__15935[(2)]);
-(b[(0)] = G__15936);
+var G__10972 = self__.buf;
+var G__10973 = (G__10972[(0)]);
+var G__10974 = (G__10972[(1)]);
+var G__10975 = (G__10972[(2)]);
+(b[(0)] = G__10973);
 
-(b[(1)] = ((G__15937 * c) - (G__15938 * s)));
+(b[(1)] = ((G__10974 * c) - (G__10975 * s)));
 
-(b[(2)] = ((G__15937 * s) + (G__15938 * c)));
+(b[(2)] = ((G__10974 * s) + (G__10975 * c)));
 
 return (new thi.ng.geom.vector.Vec3(b,null,self__._meta));
 });
@@ -3859,15 +3766,15 @@ var ___$1 = this;
 var s = Math.sin(theta);
 var c = Math.cos(theta);
 var b = (new Float32Array((3)));
-var G__15939 = self__.buf;
-var G__15940 = (G__15939[(0)]);
-var G__15941 = (G__15939[(1)]);
-var G__15942 = (G__15939[(2)]);
-(b[(0)] = ((G__15940 * c) + (G__15942 * s)));
+var G__10976 = self__.buf;
+var G__10977 = (G__10976[(0)]);
+var G__10978 = (G__10976[(1)]);
+var G__10979 = (G__10976[(2)]);
+(b[(0)] = ((G__10977 * c) + (G__10979 * s)));
 
-(b[(1)] = G__15941);
+(b[(1)] = G__10978);
 
-(b[(2)] = ((G__15942 * c) - (G__15940 * s)));
+(b[(2)] = ((G__10979 * c) - (G__10977 * s)));
 
 return (new thi.ng.geom.vector.Vec3(b,null,self__._meta));
 });
@@ -3878,15 +3785,15 @@ var ___$1 = this;
 var s = Math.sin(theta);
 var c = Math.cos(theta);
 var b = (new Float32Array((3)));
-var G__15943 = self__.buf;
-var G__15944 = (G__15943[(0)]);
-var G__15945 = (G__15943[(1)]);
-var G__15946 = (G__15943[(2)]);
-(b[(0)] = ((G__15944 * c) - (G__15945 * s)));
+var G__10980 = self__.buf;
+var G__10981 = (G__10980[(0)]);
+var G__10982 = (G__10980[(1)]);
+var G__10983 = (G__10980[(2)]);
+(b[(0)] = ((G__10981 * c) - (G__10982 * s)));
 
-(b[(1)] = ((G__15944 * s) + (G__15945 * c)));
+(b[(1)] = ((G__10981 * s) + (G__10982 * c)));
 
-(b[(2)] = G__15946);
+(b[(2)] = G__10983);
 
 return (new thi.ng.geom.vector.Vec3(b,null,self__._meta));
 });
@@ -3894,63 +3801,63 @@ return (new thi.ng.geom.vector.Vec3(b,null,self__._meta));
 thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IRotate3D$rotate_around_axis$arity$3 = (function (_,v,theta){
 var self__ = this;
 var ___$1 = this;
-var G__15947 = self__.buf;
-var G__15949 = (G__15947[(0)]);
-var G__15950 = (G__15947[(1)]);
-var G__15951 = (G__15947[(2)]);
+var G__10984 = self__.buf;
+var G__10986 = (G__10984[(0)]);
+var G__10987 = (G__10984[(1)]);
+var G__10988 = (G__10984[(2)]);
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__15948 = v.buf;
-var G__15952 = (G__15948[(0)]);
-var G__15953 = (G__15948[(1)]);
-var G__15954 = (G__15948[(2)]);
-var ux_SINGLEQUOTE_ = (G__15952 * G__15949);
-var uy_SINGLEQUOTE_ = (G__15952 * G__15950);
-var uz_SINGLEQUOTE_ = (G__15952 * G__15951);
-var vx_SINGLEQUOTE_ = (G__15953 * G__15949);
-var vy_SINGLEQUOTE_ = (G__15953 * G__15950);
-var vz_SINGLEQUOTE_ = (G__15953 * G__15951);
-var wx_SINGLEQUOTE_ = (G__15954 * G__15949);
-var wy_SINGLEQUOTE_ = (G__15954 * G__15950);
-var wz_SINGLEQUOTE_ = (G__15954 * G__15951);
-var vx2 = (G__15952 * G__15952);
-var vy2 = (G__15953 * G__15953);
-var vz2 = (G__15954 * G__15954);
+var G__10985 = v.buf;
+var G__10989 = (G__10985[(0)]);
+var G__10990 = (G__10985[(1)]);
+var G__10991 = (G__10985[(2)]);
+var ux_SINGLEQUOTE_ = (G__10989 * G__10986);
+var uy_SINGLEQUOTE_ = (G__10989 * G__10987);
+var uz_SINGLEQUOTE_ = (G__10989 * G__10988);
+var vx_SINGLEQUOTE_ = (G__10990 * G__10986);
+var vy_SINGLEQUOTE_ = (G__10990 * G__10987);
+var vz_SINGLEQUOTE_ = (G__10990 * G__10988);
+var wx_SINGLEQUOTE_ = (G__10991 * G__10986);
+var wy_SINGLEQUOTE_ = (G__10991 * G__10987);
+var wz_SINGLEQUOTE_ = (G__10991 * G__10988);
+var vx2 = (G__10989 * G__10989);
+var vy2 = (G__10990 * G__10990);
+var vz2 = (G__10991 * G__10991);
 var s = Math.sin(theta);
 var c = Math.cos(theta);
 var uvw = ((ux_SINGLEQUOTE_ + vy_SINGLEQUOTE_) + wz_SINGLEQUOTE_);
 var b = (new Float32Array((3)));
-(b[(0)] = (((uvw * G__15952) + ((((vy2 + vz2) * G__15949) - ((vy_SINGLEQUOTE_ + wz_SINGLEQUOTE_) * G__15952)) * c)) + ((vz_SINGLEQUOTE_ - wy_SINGLEQUOTE_) * s)));
+(b[(0)] = (((uvw * G__10989) + ((((vy2 + vz2) * G__10986) - ((vy_SINGLEQUOTE_ + wz_SINGLEQUOTE_) * G__10989)) * c)) + ((vz_SINGLEQUOTE_ - wy_SINGLEQUOTE_) * s)));
 
-(b[(1)] = (((uvw * G__15953) + ((((vx2 + vz2) * G__15950) - ((ux_SINGLEQUOTE_ + wz_SINGLEQUOTE_) * G__15953)) * c)) + ((wx_SINGLEQUOTE_ - uz_SINGLEQUOTE_) * s)));
+(b[(1)] = (((uvw * G__10990) + ((((vx2 + vz2) * G__10987) - ((ux_SINGLEQUOTE_ + wz_SINGLEQUOTE_) * G__10990)) * c)) + ((wx_SINGLEQUOTE_ - uz_SINGLEQUOTE_) * s)));
 
-(b[(2)] = (((uvw * G__15954) + ((((vx2 + vy2) * G__15951) - ((ux_SINGLEQUOTE_ + vy_SINGLEQUOTE_) * G__15954)) * c)) + ((uy_SINGLEQUOTE_ - vx_SINGLEQUOTE_) * s)));
+(b[(2)] = (((uvw * G__10991) + ((((vx2 + vy2) * G__10988) - ((ux_SINGLEQUOTE_ + vy_SINGLEQUOTE_) * G__10991)) * c)) + ((uy_SINGLEQUOTE_ - vx_SINGLEQUOTE_) * s)));
 
 return (new thi.ng.geom.vector.Vec3(b,null,self__._meta));
 } else {
-var G__15952 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0);
-var G__15953 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0);
-var G__15954 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0);
-var ux_SINGLEQUOTE_ = (G__15952 * G__15949);
-var uy_SINGLEQUOTE_ = (G__15952 * G__15950);
-var uz_SINGLEQUOTE_ = (G__15952 * G__15951);
-var vx_SINGLEQUOTE_ = (G__15953 * G__15949);
-var vy_SINGLEQUOTE_ = (G__15953 * G__15950);
-var vz_SINGLEQUOTE_ = (G__15953 * G__15951);
-var wx_SINGLEQUOTE_ = (G__15954 * G__15949);
-var wy_SINGLEQUOTE_ = (G__15954 * G__15950);
-var wz_SINGLEQUOTE_ = (G__15954 * G__15951);
-var vx2 = (G__15952 * G__15952);
-var vy2 = (G__15953 * G__15953);
-var vz2 = (G__15954 * G__15954);
+var G__10989 = cljs.core.nth.call(null,v,(0),0.0);
+var G__10990 = cljs.core.nth.call(null,v,(1),0.0);
+var G__10991 = cljs.core.nth.call(null,v,(2),0.0);
+var ux_SINGLEQUOTE_ = (G__10989 * G__10986);
+var uy_SINGLEQUOTE_ = (G__10989 * G__10987);
+var uz_SINGLEQUOTE_ = (G__10989 * G__10988);
+var vx_SINGLEQUOTE_ = (G__10990 * G__10986);
+var vy_SINGLEQUOTE_ = (G__10990 * G__10987);
+var vz_SINGLEQUOTE_ = (G__10990 * G__10988);
+var wx_SINGLEQUOTE_ = (G__10991 * G__10986);
+var wy_SINGLEQUOTE_ = (G__10991 * G__10987);
+var wz_SINGLEQUOTE_ = (G__10991 * G__10988);
+var vx2 = (G__10989 * G__10989);
+var vy2 = (G__10990 * G__10990);
+var vz2 = (G__10991 * G__10991);
 var s = Math.sin(theta);
 var c = Math.cos(theta);
 var uvw = ((ux_SINGLEQUOTE_ + vy_SINGLEQUOTE_) + wz_SINGLEQUOTE_);
 var b = (new Float32Array((3)));
-(b[(0)] = (((uvw * G__15952) + ((((vy2 + vz2) * G__15949) - ((vy_SINGLEQUOTE_ + wz_SINGLEQUOTE_) * G__15952)) * c)) + ((vz_SINGLEQUOTE_ - wy_SINGLEQUOTE_) * s)));
+(b[(0)] = (((uvw * G__10989) + ((((vy2 + vz2) * G__10986) - ((vy_SINGLEQUOTE_ + wz_SINGLEQUOTE_) * G__10989)) * c)) + ((vz_SINGLEQUOTE_ - wy_SINGLEQUOTE_) * s)));
 
-(b[(1)] = (((uvw * G__15953) + ((((vx2 + vz2) * G__15950) - ((ux_SINGLEQUOTE_ + wz_SINGLEQUOTE_) * G__15953)) * c)) + ((wx_SINGLEQUOTE_ - uz_SINGLEQUOTE_) * s)));
+(b[(1)] = (((uvw * G__10990) + ((((vx2 + vz2) * G__10987) - ((ux_SINGLEQUOTE_ + wz_SINGLEQUOTE_) * G__10990)) * c)) + ((wx_SINGLEQUOTE_ - uz_SINGLEQUOTE_) * s)));
 
-(b[(2)] = (((uvw * G__15954) + ((((vx2 + vy2) * G__15951) - ((ux_SINGLEQUOTE_ + vy_SINGLEQUOTE_) * G__15954)) * c)) + ((uy_SINGLEQUOTE_ - vx_SINGLEQUOTE_) * s)));
+(b[(2)] = (((uvw * G__10991) + ((((vx2 + vy2) * G__10988) - ((ux_SINGLEQUOTE_ + vy_SINGLEQUOTE_) * G__10991)) * c)) + ((uy_SINGLEQUOTE_ - vx_SINGLEQUOTE_) * s)));
 
 return (new thi.ng.geom.vector.Vec3(b,null,self__._meta));
 }
@@ -3987,40 +3894,40 @@ return ___$1;
 thi.ng.geom.vector.Vec3.prototype.cljs$core$ICollection$_conj$arity$2 = (function (_,x){
 var self__ = this;
 var ___$1 = this;
-return cljs.core.with_meta(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [(self__.buf[(0)]),(self__.buf[(1)]),(self__.buf[(2)]),x], null),self__._meta);
+return cljs.core.with_meta.call(null,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [(self__.buf[(0)]),(self__.buf[(1)]),(self__.buf[(2)]),x], null),self__._meta);
 });
 
 thi.ng.geom.vector.Vec3.prototype.call = (function() {
-var G__16365 = null;
-var G__16365__2 = (function (self__,k){
+var G__11393 = null;
+var G__11393__2 = (function (self__,k){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 if((k instanceof cljs.core.Keyword)){
-var temp__6751__auto__ = (thi.ng.geom.vector.swizzle3_fns.cljs$core$IFn$_invoke$arity$1 ? thi.ng.geom.vector.swizzle3_fns.cljs$core$IFn$_invoke$arity$1(k) : thi.ng.geom.vector.swizzle3_fns.call(null,k));
+var temp__6751__auto__ = thi.ng.geom.vector.swizzle3_fns.call(null,k);
 if(cljs.core.truth_(temp__6751__auto__)){
 var f = temp__6751__auto__;
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(_) : f.call(null,_));
+return f.call(null,_);
 } else {
-return thi.ng.xerror.core.key_error_BANG_(k);
+return thi.ng.xerror.core.key_error_BANG_.call(null,k);
 }
 } else {
 if(((k >= (0))) && ((k <= (2)))){
 return (self__.buf[k]);
 } else {
-return thi.ng.xerror.core.key_error_BANG_(k);
+return thi.ng.xerror.core.key_error_BANG_.call(null,k);
 }
 }
 });
-var G__16365__3 = (function (self__,k,nf){
+var G__11393__3 = (function (self__,k,nf){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 if((k instanceof cljs.core.Keyword)){
-var temp__6751__auto__ = (thi.ng.geom.vector.swizzle3_fns.cljs$core$IFn$_invoke$arity$1 ? thi.ng.geom.vector.swizzle3_fns.cljs$core$IFn$_invoke$arity$1(k) : thi.ng.geom.vector.swizzle3_fns.call(null,k));
+var temp__6751__auto__ = thi.ng.geom.vector.swizzle3_fns.call(null,k);
 if(cljs.core.truth_(temp__6751__auto__)){
 var f = temp__6751__auto__;
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(_) : f.call(null,_));
+return f.call(null,_);
 } else {
 return nf;
 }
@@ -4032,43 +3939,43 @@ return nf;
 }
 }
 });
-G__16365 = function(self__,k,nf){
+G__11393 = function(self__,k,nf){
 switch(arguments.length){
 case 2:
-return G__16365__2.call(this,self__,k);
+return G__11393__2.call(this,self__,k);
 case 3:
-return G__16365__3.call(this,self__,k,nf);
+return G__11393__3.call(this,self__,k,nf);
 }
 throw(new Error('Invalid arity: ' + arguments.length));
 };
-G__16365.cljs$core$IFn$_invoke$arity$2 = G__16365__2;
-G__16365.cljs$core$IFn$_invoke$arity$3 = G__16365__3;
-return G__16365;
+G__11393.cljs$core$IFn$_invoke$arity$2 = G__11393__2;
+G__11393.cljs$core$IFn$_invoke$arity$3 = G__11393__3;
+return G__11393;
 })()
 ;
 
-thi.ng.geom.vector.Vec3.prototype.apply = (function (self__,args15613){
+thi.ng.geom.vector.Vec3.prototype.apply = (function (self__,args10683){
 var self__ = this;
 var self____$1 = this;
-return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone(args15613)));
+return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone.call(null,args10683)));
 });
 
 thi.ng.geom.vector.Vec3.prototype.cljs$core$IFn$_invoke$arity$1 = (function (k){
 var self__ = this;
 var _ = this;
 if((k instanceof cljs.core.Keyword)){
-var temp__6751__auto__ = (thi.ng.geom.vector.swizzle3_fns.cljs$core$IFn$_invoke$arity$1 ? thi.ng.geom.vector.swizzle3_fns.cljs$core$IFn$_invoke$arity$1(k) : thi.ng.geom.vector.swizzle3_fns.call(null,k));
+var temp__6751__auto__ = thi.ng.geom.vector.swizzle3_fns.call(null,k);
 if(cljs.core.truth_(temp__6751__auto__)){
 var f = temp__6751__auto__;
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(_) : f.call(null,_));
+return f.call(null,_);
 } else {
-return thi.ng.xerror.core.key_error_BANG_(k);
+return thi.ng.xerror.core.key_error_BANG_.call(null,k);
 }
 } else {
 if(((k >= (0))) && ((k <= (2)))){
 return (self__.buf[k]);
 } else {
-return thi.ng.xerror.core.key_error_BANG_(k);
+return thi.ng.xerror.core.key_error_BANG_.call(null,k);
 }
 }
 });
@@ -4077,10 +3984,10 @@ thi.ng.geom.vector.Vec3.prototype.cljs$core$IFn$_invoke$arity$2 = (function (k,n
 var self__ = this;
 var _ = this;
 if((k instanceof cljs.core.Keyword)){
-var temp__6751__auto__ = (thi.ng.geom.vector.swizzle3_fns.cljs$core$IFn$_invoke$arity$1 ? thi.ng.geom.vector.swizzle3_fns.cljs$core$IFn$_invoke$arity$1(k) : thi.ng.geom.vector.swizzle3_fns.call(null,k));
+var temp__6751__auto__ = thi.ng.geom.vector.swizzle3_fns.call(null,k);
 if(cljs.core.truth_(temp__6751__auto__)){
 var f = temp__6751__auto__;
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(_) : f.call(null,_));
+return f.call(null,_);
 } else {
 return nf;
 }
@@ -4098,18 +4005,13 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IPolar$ = cljs.core.PROTOCOL_
 thi.ng.geom.vector.Vec3.prototype.thi$ng$geom$core$IPolar$as_polar$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var r = thi.ng.math.core.mag(___$1);
+var r = thi.ng.math.core.mag.call(null,___$1);
 var b = (new Float32Array((3)));
 (b[(0)] = r);
 
-(b[(1)] = (function (){var G__15955 = ((self__.buf[(2)]) / r);
-return Math.asin(G__15955);
-})());
+(b[(1)] = Math.asin(((self__.buf[(2)]) / r)));
 
-(b[(2)] = (function (){var G__15956 = (self__.buf[(1)]);
-var G__15957 = (self__.buf[(0)]);
-return Math.atan2(G__15956,G__15957);
-})());
+(b[(2)] = Math.atan2((self__.buf[(1)]),(self__.buf[(0)])));
 
 return (new thi.ng.geom.vector.Vec3(b,null,self__._meta));
 });
@@ -4137,11 +4039,11 @@ var self__ = this;
 var ___$1 = this;
 if((o instanceof thi.ng.geom.vector.Vec3)){
 var b_SINGLEQUOTE_ = o.buf;
-var c = cljs.core.compare((self__.buf[(0)]),(b_SINGLEQUOTE_[(0)]));
+var c = cljs.core.compare.call(null,(self__.buf[(0)]),(b_SINGLEQUOTE_[(0)]));
 if(((0) === c)){
-var c__$1 = cljs.core.compare((self__.buf[(1)]),(b_SINGLEQUOTE_[(1)]));
+var c__$1 = cljs.core.compare.call(null,(self__.buf[(1)]),(b_SINGLEQUOTE_[(1)]));
 if(((0) === c__$1)){
-return cljs.core.compare((self__.buf[(2)]),(b_SINGLEQUOTE_[(2)]));
+return cljs.core.compare.call(null,(self__.buf[(2)]),(b_SINGLEQUOTE_[(2)]));
 } else {
 return c__$1;
 }
@@ -4149,9 +4051,9 @@ return c__$1;
 return c;
 }
 } else {
-var c = cljs.core.count(o);
+var c = cljs.core.count.call(null,o);
 if(((3) === c)){
-return (- cljs.core.compare(o,___$1));
+return (- cljs.core.compare.call(null,o,___$1));
 } else {
 return ((3) - c);
 }
@@ -4163,20 +4065,18 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$INormalize$ = cljs.core.PROTO
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$INormalize$normalize$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var G__15958 = self__.buf;
-var G__15959 = (G__15958[(0)]);
-var G__15960 = (G__15958[(1)]);
-var G__15961 = (G__15958[(2)]);
-var l = (function (){var G__15962 = (((G__15959 * G__15959) + (G__15960 * G__15960)) + (G__15961 * G__15961));
-return Math.sqrt(G__15962);
-})();
+var G__10992 = self__.buf;
+var G__10993 = (G__10992[(0)]);
+var G__10994 = (G__10992[(1)]);
+var G__10995 = (G__10992[(2)]);
+var l = Math.sqrt((((G__10993 * G__10993) + (G__10994 * G__10994)) + (G__10995 * G__10995)));
 if((l > (0))){
 var b = (new Float32Array((3)));
-(b[(0)] = (G__15959 / l));
+(b[(0)] = (G__10993 / l));
 
-(b[(1)] = (G__15960 / l));
+(b[(1)] = (G__10994 / l));
 
-(b[(2)] = (G__15961 / l));
+(b[(2)] = (G__10995 / l));
 
 return (new thi.ng.geom.vector.Vec3(b,null,self__._meta));
 } else {
@@ -4187,21 +4087,19 @@ return ___$1;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$INormalize$normalize$arity$2 = (function (_,len){
 var self__ = this;
 var ___$1 = this;
-var G__15963 = self__.buf;
-var G__15964 = (G__15963[(0)]);
-var G__15965 = (G__15963[(1)]);
-var G__15966 = (G__15963[(2)]);
-var l = (function (){var G__15967 = (((G__15964 * G__15964) + (G__15965 * G__15965)) + (G__15966 * G__15966));
-return Math.sqrt(G__15967);
-})();
+var G__10996 = self__.buf;
+var G__10997 = (G__10996[(0)]);
+var G__10998 = (G__10996[(1)]);
+var G__10999 = (G__10996[(2)]);
+var l = Math.sqrt((((G__10997 * G__10997) + (G__10998 * G__10998)) + (G__10999 * G__10999)));
 if((l > (0))){
 var l__$1 = (len / l);
 var b = (new Float32Array((3)));
-(b[(0)] = (G__15964 * l__$1));
+(b[(0)] = (G__10997 * l__$1));
 
-(b[(1)] = (G__15965 * l__$1));
+(b[(1)] = (G__10998 * l__$1));
 
-(b[(2)] = (G__15966 * l__$1));
+(b[(2)] = (G__10999 * l__$1));
 
 return (new thi.ng.geom.vector.Vec3(b,null,self__._meta));
 } else {
@@ -4212,7 +4110,7 @@ return ___$1;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$INormalize$normalized_QMARK_$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-return thi.ng.math.core.delta_EQ_.cljs$core$IFn$_invoke$arity$2(1.0,thi.ng.math.core.mag_squared(___$1));
+return thi.ng.math.core.delta_EQ_.call(null,1.0,thi.ng.math.core.mag_squared.call(null,___$1));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMagnitude$ = cljs.core.PROTOCOL_SENTINEL;
@@ -4220,22 +4118,21 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMagnitude$ = cljs.core.PROTO
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMagnitude$mag$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var G__15968 = self__.buf;
-var G__15969 = (G__15968[(0)]);
-var G__15970 = (G__15968[(1)]);
-var G__15971 = (G__15968[(2)]);
-var G__15972 = (((G__15969 * G__15969) + (G__15970 * G__15970)) + (G__15971 * G__15971));
-return Math.sqrt(G__15972);
+var G__11000 = self__.buf;
+var G__11001 = (G__11000[(0)]);
+var G__11002 = (G__11000[(1)]);
+var G__11003 = (G__11000[(2)]);
+return Math.sqrt((((G__11001 * G__11001) + (G__11002 * G__11002)) + (G__11003 * G__11003)));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMagnitude$mag_squared$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var G__15973 = self__.buf;
-var G__15974 = (G__15973[(0)]);
-var G__15975 = (G__15973[(1)]);
-var G__15976 = (G__15973[(2)]);
-return (((G__15974 * G__15974) + (G__15975 * G__15975)) + (G__15976 * G__15976));
+var G__11004 = self__.buf;
+var G__11005 = (G__11004[(0)]);
+var G__11006 = (G__11004[(1)]);
+var G__11007 = (G__11004[(2)]);
+return (((G__11005 * G__11005) + (G__11006 * G__11006)) + (G__11007 * G__11007));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$ = cljs.core.PROTOCOL_SENTINEL;
@@ -4243,30 +4140,30 @@ thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$ = cljs.core.PROTOCO
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$msub$arity$3 = (function (_,a,b){
 var self__ = this;
 var ___$1 = this;
-var dest__14927__auto__ = (new Float32Array((3)));
-var G__15989_16366 = (a instanceof thi.ng.geom.vector.Vec3);
-var G__15990_16367 = (b instanceof thi.ng.geom.vector.Vec3);
-var G__15991_16368 = ((!(G__15989_16366))?typeof a === 'number':null);
-var G__15992_16369 = ((!(G__15990_16367))?typeof b === 'number':null);
-var G__15977_16370 = self__.buf;
-var G__15978_16371 = ((G__15989_16366)?a.buf:null);
-var G__15979_16372 = ((G__15990_16367)?b.buf:null);
-var G__15980_16373 = (G__15977_16370[(0)]);
-var G__15981_16374 = (G__15977_16370[(1)]);
-var G__15982_16375 = (G__15977_16370[(2)]);
-var G__15983_16376 = ((G__15989_16366)?(G__15978_16371[(0)]):(cljs.core.truth_(G__15991_16368)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(0),1.0)));
-var G__15984_16377 = ((G__15989_16366)?(G__15978_16371[(1)]):(cljs.core.truth_(G__15991_16368)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(1),1.0)));
-var G__15985_16378 = ((G__15989_16366)?(G__15978_16371[(2)]):(cljs.core.truth_(G__15991_16368)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(2),1.0)));
-var G__15986_16379 = ((G__15990_16367)?(G__15979_16372[(0)]):(cljs.core.truth_(G__15992_16369)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(0),0.0)));
-var G__15987_16380 = ((G__15990_16367)?(G__15979_16372[(1)]):(cljs.core.truth_(G__15992_16369)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(1),0.0)));
-var G__15988_16381 = ((G__15990_16367)?(G__15979_16372[(2)]):(cljs.core.truth_(G__15992_16369)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(2),0.0)));
-(dest__14927__auto__[(0)] = ((G__15980_16373 * G__15983_16376) - G__15986_16379));
+var dest__10026__auto__ = (new Float32Array((3)));
+var G__11020_11394 = (a instanceof thi.ng.geom.vector.Vec3);
+var G__11021_11395 = (b instanceof thi.ng.geom.vector.Vec3);
+var G__11022_11396 = ((!(G__11020_11394))?typeof a === 'number':null);
+var G__11023_11397 = ((!(G__11021_11395))?typeof b === 'number':null);
+var G__11008_11398 = self__.buf;
+var G__11009_11399 = ((G__11020_11394)?a.buf:null);
+var G__11010_11400 = ((G__11021_11395)?b.buf:null);
+var G__11011_11401 = (G__11008_11398[(0)]);
+var G__11012_11402 = (G__11008_11398[(1)]);
+var G__11013_11403 = (G__11008_11398[(2)]);
+var G__11014_11404 = ((G__11020_11394)?(G__11009_11399[(0)]):(cljs.core.truth_(G__11022_11396)?a:cljs.core.nth.call(null,a,(0),1.0)));
+var G__11015_11405 = ((G__11020_11394)?(G__11009_11399[(1)]):(cljs.core.truth_(G__11022_11396)?a:cljs.core.nth.call(null,a,(1),1.0)));
+var G__11016_11406 = ((G__11020_11394)?(G__11009_11399[(2)]):(cljs.core.truth_(G__11022_11396)?a:cljs.core.nth.call(null,a,(2),1.0)));
+var G__11017_11407 = ((G__11021_11395)?(G__11010_11400[(0)]):(cljs.core.truth_(G__11023_11397)?b:cljs.core.nth.call(null,b,(0),0.0)));
+var G__11018_11408 = ((G__11021_11395)?(G__11010_11400[(1)]):(cljs.core.truth_(G__11023_11397)?b:cljs.core.nth.call(null,b,(1),0.0)));
+var G__11019_11409 = ((G__11021_11395)?(G__11010_11400[(2)]):(cljs.core.truth_(G__11023_11397)?b:cljs.core.nth.call(null,b,(2),0.0)));
+(dest__10026__auto__[(0)] = ((G__11011_11401 * G__11014_11404) - G__11017_11407));
 
-(dest__14927__auto__[(1)] = ((G__15981_16374 * G__15984_16377) - G__15987_16380));
+(dest__10026__auto__[(1)] = ((G__11012_11402 * G__11015_11405) - G__11018_11408));
 
-(dest__14927__auto__[(2)] = ((G__15982_16375 * G__15985_16378) - G__15988_16381));
+(dest__10026__auto__[(2)] = ((G__11013_11403 * G__11016_11406) - G__11019_11409));
 
-return (new thi.ng.geom.vector.Vec3(dest__14927__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10026__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$_STAR_$arity$1 = (function (_){
@@ -4278,309 +4175,309 @@ return ___$1;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$_STAR_$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var dest__14916__auto__ = (new Float32Array((3)));
-var G__15993_16382 = self__.buf;
+var dest__10015__auto__ = (new Float32Array((3)));
+var G__11024_11410 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__15994_16383 = v.buf;
-(dest__14916__auto__[(0)] = ((G__15993_16382[(0)]) * (G__15994_16383[(0)])));
+var G__11025_11411 = v.buf;
+(dest__10015__auto__[(0)] = ((G__11024_11410[(0)]) * (G__11025_11411[(0)])));
 
-(dest__14916__auto__[(1)] = ((G__15993_16382[(1)]) * (G__15994_16383[(1)])));
+(dest__10015__auto__[(1)] = ((G__11024_11410[(1)]) * (G__11025_11411[(1)])));
 
-(dest__14916__auto__[(2)] = ((G__15993_16382[(2)]) * (G__15994_16383[(2)])));
+(dest__10015__auto__[(2)] = ((G__11024_11410[(2)]) * (G__11025_11411[(2)])));
 } else {
 if(typeof v === 'number'){
-(dest__14916__auto__[(0)] = ((G__15993_16382[(0)]) * v));
+(dest__10015__auto__[(0)] = ((G__11024_11410[(0)]) * v));
 
-(dest__14916__auto__[(1)] = ((G__15993_16382[(1)]) * v));
+(dest__10015__auto__[(1)] = ((G__11024_11410[(1)]) * v));
 
-(dest__14916__auto__[(2)] = ((G__15993_16382[(2)]) * v));
+(dest__10015__auto__[(2)] = ((G__11024_11410[(2)]) * v));
 } else {
-(dest__14916__auto__[(0)] = ((G__15993_16382[(0)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(dest__10015__auto__[(0)] = ((G__11024_11410[(0)]) * cljs.core.nth.call(null,v,(0),0.0)));
 
-(dest__14916__auto__[(1)] = ((G__15993_16382[(1)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(dest__10015__auto__[(1)] = ((G__11024_11410[(1)]) * cljs.core.nth.call(null,v,(1),0.0)));
 
-(dest__14916__auto__[(2)] = ((G__15993_16382[(2)]) * cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0)));
+(dest__10015__auto__[(2)] = ((G__11024_11410[(2)]) * cljs.core.nth.call(null,v,(2),0.0)));
 }
 }
 
-return (new thi.ng.geom.vector.Vec3(dest__14916__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10015__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$_STAR_$arity$3 = (function (_,v1,v2){
 var self__ = this;
 var ___$1 = this;
-var dest__14927__auto__ = (new Float32Array((3)));
-var G__16007_16384 = (v1 instanceof thi.ng.geom.vector.Vec3);
-var G__16008_16385 = (v2 instanceof thi.ng.geom.vector.Vec3);
-var G__16009_16386 = ((!(G__16007_16384))?typeof v1 === 'number':null);
-var G__16010_16387 = ((!(G__16008_16385))?typeof v2 === 'number':null);
-var G__15995_16388 = self__.buf;
-var G__15996_16389 = ((G__16007_16384)?v1.buf:null);
-var G__15997_16390 = ((G__16008_16385)?v2.buf:null);
-var G__15998_16391 = (G__15995_16388[(0)]);
-var G__15999_16392 = (G__15995_16388[(1)]);
-var G__16000_16393 = (G__15995_16388[(2)]);
-var G__16001_16394 = ((G__16007_16384)?(G__15996_16389[(0)]):(cljs.core.truth_(G__16009_16386)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(0),0.0)));
-var G__16002_16395 = ((G__16007_16384)?(G__15996_16389[(1)]):(cljs.core.truth_(G__16009_16386)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(1),0.0)));
-var G__16003_16396 = ((G__16007_16384)?(G__15996_16389[(2)]):(cljs.core.truth_(G__16009_16386)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(2),0.0)));
-var G__16004_16397 = ((G__16008_16385)?(G__15997_16390[(0)]):(cljs.core.truth_(G__16010_16387)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__16005_16398 = ((G__16008_16385)?(G__15997_16390[(1)]):(cljs.core.truth_(G__16010_16387)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-var G__16006_16399 = ((G__16008_16385)?(G__15997_16390[(2)]):(cljs.core.truth_(G__16010_16387)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(2),0.0)));
-(dest__14927__auto__[(0)] = ((G__15998_16391 * G__16001_16394) * G__16004_16397));
+var dest__10026__auto__ = (new Float32Array((3)));
+var G__11038_11412 = (v1 instanceof thi.ng.geom.vector.Vec3);
+var G__11039_11413 = (v2 instanceof thi.ng.geom.vector.Vec3);
+var G__11040_11414 = ((!(G__11038_11412))?typeof v1 === 'number':null);
+var G__11041_11415 = ((!(G__11039_11413))?typeof v2 === 'number':null);
+var G__11026_11416 = self__.buf;
+var G__11027_11417 = ((G__11038_11412)?v1.buf:null);
+var G__11028_11418 = ((G__11039_11413)?v2.buf:null);
+var G__11029_11419 = (G__11026_11416[(0)]);
+var G__11030_11420 = (G__11026_11416[(1)]);
+var G__11031_11421 = (G__11026_11416[(2)]);
+var G__11032_11422 = ((G__11038_11412)?(G__11027_11417[(0)]):(cljs.core.truth_(G__11040_11414)?v1:cljs.core.nth.call(null,v1,(0),0.0)));
+var G__11033_11423 = ((G__11038_11412)?(G__11027_11417[(1)]):(cljs.core.truth_(G__11040_11414)?v1:cljs.core.nth.call(null,v1,(1),0.0)));
+var G__11034_11424 = ((G__11038_11412)?(G__11027_11417[(2)]):(cljs.core.truth_(G__11040_11414)?v1:cljs.core.nth.call(null,v1,(2),0.0)));
+var G__11035_11425 = ((G__11039_11413)?(G__11028_11418[(0)]):(cljs.core.truth_(G__11041_11415)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__11036_11426 = ((G__11039_11413)?(G__11028_11418[(1)]):(cljs.core.truth_(G__11041_11415)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+var G__11037_11427 = ((G__11039_11413)?(G__11028_11418[(2)]):(cljs.core.truth_(G__11041_11415)?v2:cljs.core.nth.call(null,v2,(2),0.0)));
+(dest__10026__auto__[(0)] = ((G__11029_11419 * G__11032_11422) * G__11035_11425));
 
-(dest__14927__auto__[(1)] = ((G__15999_16392 * G__16002_16395) * G__16005_16398));
+(dest__10026__auto__[(1)] = ((G__11030_11420 * G__11033_11423) * G__11036_11426));
 
-(dest__14927__auto__[(2)] = ((G__16000_16393 * G__16003_16396) * G__16006_16399));
+(dest__10026__auto__[(2)] = ((G__11031_11421 * G__11034_11424) * G__11037_11427));
 
-return (new thi.ng.geom.vector.Vec3(dest__14927__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10026__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$_STAR_$arity$4 = (function (_,x,y,z){
 var self__ = this;
 var ___$1 = this;
-var G__16011 = self__.buf;
-var dest__14905__auto__ = (new Float32Array((3)));
-(dest__14905__auto__[(0)] = ((G__16011[(0)]) * x));
+var G__11042 = self__.buf;
+var dest__10004__auto__ = (new Float32Array((3)));
+(dest__10004__auto__[(0)] = ((G__11042[(0)]) * x));
 
-(dest__14905__auto__[(1)] = ((G__16011[(1)]) * y));
+(dest__10004__auto__[(1)] = ((G__11042[(1)]) * y));
 
-(dest__14905__auto__[(2)] = ((G__16011[(2)]) * z));
+(dest__10004__auto__[(2)] = ((G__11042[(2)]) * z));
 
-return (new thi.ng.geom.vector.Vec3(dest__14905__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10004__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$_$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var dest__14899__auto__ = (new Float32Array((3)));
-var G__16012_16400 = self__.buf;
-(dest__14899__auto__[(0)] = (- (G__16012_16400[(0)])));
+var dest__9998__auto__ = (new Float32Array((3)));
+var G__11043_11428 = self__.buf;
+(dest__9998__auto__[(0)] = (- (G__11043_11428[(0)])));
 
-(dest__14899__auto__[(1)] = (- (G__16012_16400[(1)])));
+(dest__9998__auto__[(1)] = (- (G__11043_11428[(1)])));
 
-(dest__14899__auto__[(2)] = (- (G__16012_16400[(2)])));
+(dest__9998__auto__[(2)] = (- (G__11043_11428[(2)])));
 
-return (new thi.ng.geom.vector.Vec3(dest__14899__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__9998__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$_$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var dest__14916__auto__ = (new Float32Array((3)));
-var G__16013_16401 = self__.buf;
+var dest__10015__auto__ = (new Float32Array((3)));
+var G__11044_11429 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__16014_16402 = v.buf;
-(dest__14916__auto__[(0)] = ((G__16013_16401[(0)]) - (G__16014_16402[(0)])));
+var G__11045_11430 = v.buf;
+(dest__10015__auto__[(0)] = ((G__11044_11429[(0)]) - (G__11045_11430[(0)])));
 
-(dest__14916__auto__[(1)] = ((G__16013_16401[(1)]) - (G__16014_16402[(1)])));
+(dest__10015__auto__[(1)] = ((G__11044_11429[(1)]) - (G__11045_11430[(1)])));
 
-(dest__14916__auto__[(2)] = ((G__16013_16401[(2)]) - (G__16014_16402[(2)])));
+(dest__10015__auto__[(2)] = ((G__11044_11429[(2)]) - (G__11045_11430[(2)])));
 } else {
 if(typeof v === 'number'){
-(dest__14916__auto__[(0)] = ((G__16013_16401[(0)]) - v));
+(dest__10015__auto__[(0)] = ((G__11044_11429[(0)]) - v));
 
-(dest__14916__auto__[(1)] = ((G__16013_16401[(1)]) - v));
+(dest__10015__auto__[(1)] = ((G__11044_11429[(1)]) - v));
 
-(dest__14916__auto__[(2)] = ((G__16013_16401[(2)]) - v));
+(dest__10015__auto__[(2)] = ((G__11044_11429[(2)]) - v));
 } else {
-(dest__14916__auto__[(0)] = ((G__16013_16401[(0)]) - cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(dest__10015__auto__[(0)] = ((G__11044_11429[(0)]) - cljs.core.nth.call(null,v,(0),0.0)));
 
-(dest__14916__auto__[(1)] = ((G__16013_16401[(1)]) - cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(dest__10015__auto__[(1)] = ((G__11044_11429[(1)]) - cljs.core.nth.call(null,v,(1),0.0)));
 
-(dest__14916__auto__[(2)] = ((G__16013_16401[(2)]) - cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0)));
+(dest__10015__auto__[(2)] = ((G__11044_11429[(2)]) - cljs.core.nth.call(null,v,(2),0.0)));
 }
 }
 
-return (new thi.ng.geom.vector.Vec3(dest__14916__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10015__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$_$arity$3 = (function (_,v1,v2){
 var self__ = this;
 var ___$1 = this;
-var dest__14927__auto__ = (new Float32Array((3)));
-var G__16027_16403 = (v1 instanceof thi.ng.geom.vector.Vec3);
-var G__16028_16404 = (v2 instanceof thi.ng.geom.vector.Vec3);
-var G__16029_16405 = ((!(G__16027_16403))?typeof v1 === 'number':null);
-var G__16030_16406 = ((!(G__16028_16404))?typeof v2 === 'number':null);
-var G__16015_16407 = self__.buf;
-var G__16016_16408 = ((G__16027_16403)?v1.buf:null);
-var G__16017_16409 = ((G__16028_16404)?v2.buf:null);
-var G__16018_16410 = (G__16015_16407[(0)]);
-var G__16019_16411 = (G__16015_16407[(1)]);
-var G__16020_16412 = (G__16015_16407[(2)]);
-var G__16021_16413 = ((G__16027_16403)?(G__16016_16408[(0)]):(cljs.core.truth_(G__16029_16405)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(0),0.0)));
-var G__16022_16414 = ((G__16027_16403)?(G__16016_16408[(1)]):(cljs.core.truth_(G__16029_16405)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(1),0.0)));
-var G__16023_16415 = ((G__16027_16403)?(G__16016_16408[(2)]):(cljs.core.truth_(G__16029_16405)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(2),0.0)));
-var G__16024_16416 = ((G__16028_16404)?(G__16017_16409[(0)]):(cljs.core.truth_(G__16030_16406)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__16025_16417 = ((G__16028_16404)?(G__16017_16409[(1)]):(cljs.core.truth_(G__16030_16406)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-var G__16026_16418 = ((G__16028_16404)?(G__16017_16409[(2)]):(cljs.core.truth_(G__16030_16406)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(2),0.0)));
-(dest__14927__auto__[(0)] = ((G__16018_16410 - G__16021_16413) - G__16024_16416));
+var dest__10026__auto__ = (new Float32Array((3)));
+var G__11058_11431 = (v1 instanceof thi.ng.geom.vector.Vec3);
+var G__11059_11432 = (v2 instanceof thi.ng.geom.vector.Vec3);
+var G__11060_11433 = ((!(G__11058_11431))?typeof v1 === 'number':null);
+var G__11061_11434 = ((!(G__11059_11432))?typeof v2 === 'number':null);
+var G__11046_11435 = self__.buf;
+var G__11047_11436 = ((G__11058_11431)?v1.buf:null);
+var G__11048_11437 = ((G__11059_11432)?v2.buf:null);
+var G__11049_11438 = (G__11046_11435[(0)]);
+var G__11050_11439 = (G__11046_11435[(1)]);
+var G__11051_11440 = (G__11046_11435[(2)]);
+var G__11052_11441 = ((G__11058_11431)?(G__11047_11436[(0)]):(cljs.core.truth_(G__11060_11433)?v1:cljs.core.nth.call(null,v1,(0),0.0)));
+var G__11053_11442 = ((G__11058_11431)?(G__11047_11436[(1)]):(cljs.core.truth_(G__11060_11433)?v1:cljs.core.nth.call(null,v1,(1),0.0)));
+var G__11054_11443 = ((G__11058_11431)?(G__11047_11436[(2)]):(cljs.core.truth_(G__11060_11433)?v1:cljs.core.nth.call(null,v1,(2),0.0)));
+var G__11055_11444 = ((G__11059_11432)?(G__11048_11437[(0)]):(cljs.core.truth_(G__11061_11434)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__11056_11445 = ((G__11059_11432)?(G__11048_11437[(1)]):(cljs.core.truth_(G__11061_11434)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+var G__11057_11446 = ((G__11059_11432)?(G__11048_11437[(2)]):(cljs.core.truth_(G__11061_11434)?v2:cljs.core.nth.call(null,v2,(2),0.0)));
+(dest__10026__auto__[(0)] = ((G__11049_11438 - G__11052_11441) - G__11055_11444));
 
-(dest__14927__auto__[(1)] = ((G__16019_16411 - G__16022_16414) - G__16025_16417));
+(dest__10026__auto__[(1)] = ((G__11050_11439 - G__11053_11442) - G__11056_11445));
 
-(dest__14927__auto__[(2)] = ((G__16020_16412 - G__16023_16415) - G__16026_16418));
+(dest__10026__auto__[(2)] = ((G__11051_11440 - G__11054_11443) - G__11057_11446));
 
-return (new thi.ng.geom.vector.Vec3(dest__14927__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10026__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$_$arity$4 = (function (_,x,y,z){
 var self__ = this;
 var ___$1 = this;
-var G__16031 = self__.buf;
-var dest__14905__auto__ = (new Float32Array((3)));
-(dest__14905__auto__[(0)] = ((G__16031[(0)]) - x));
+var G__11062 = self__.buf;
+var dest__10004__auto__ = (new Float32Array((3)));
+(dest__10004__auto__[(0)] = ((G__11062[(0)]) - x));
 
-(dest__14905__auto__[(1)] = ((G__16031[(1)]) - y));
+(dest__10004__auto__[(1)] = ((G__11062[(1)]) - y));
 
-(dest__14905__auto__[(2)] = ((G__16031[(2)]) - z));
+(dest__10004__auto__[(2)] = ((G__11062[(2)]) - z));
 
-return (new thi.ng.geom.vector.Vec3(dest__14905__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10004__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$madd$arity$3 = (function (_,a,b){
 var self__ = this;
 var ___$1 = this;
-var dest__14927__auto__ = (new Float32Array((3)));
-var G__16044_16419 = (a instanceof thi.ng.geom.vector.Vec3);
-var G__16045_16420 = (b instanceof thi.ng.geom.vector.Vec3);
-var G__16046_16421 = ((!(G__16044_16419))?typeof a === 'number':null);
-var G__16047_16422 = ((!(G__16045_16420))?typeof b === 'number':null);
-var G__16032_16423 = self__.buf;
-var G__16033_16424 = ((G__16044_16419)?a.buf:null);
-var G__16034_16425 = ((G__16045_16420)?b.buf:null);
-var G__16035_16426 = (G__16032_16423[(0)]);
-var G__16036_16427 = (G__16032_16423[(1)]);
-var G__16037_16428 = (G__16032_16423[(2)]);
-var G__16038_16429 = ((G__16044_16419)?(G__16033_16424[(0)]):(cljs.core.truth_(G__16046_16421)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(0),1.0)));
-var G__16039_16430 = ((G__16044_16419)?(G__16033_16424[(1)]):(cljs.core.truth_(G__16046_16421)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(1),1.0)));
-var G__16040_16431 = ((G__16044_16419)?(G__16033_16424[(2)]):(cljs.core.truth_(G__16046_16421)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(2),1.0)));
-var G__16041_16432 = ((G__16045_16420)?(G__16034_16425[(0)]):(cljs.core.truth_(G__16047_16422)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(0),0.0)));
-var G__16042_16433 = ((G__16045_16420)?(G__16034_16425[(1)]):(cljs.core.truth_(G__16047_16422)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(1),0.0)));
-var G__16043_16434 = ((G__16045_16420)?(G__16034_16425[(2)]):(cljs.core.truth_(G__16047_16422)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(2),0.0)));
-(dest__14927__auto__[(0)] = ((G__16035_16426 * G__16038_16429) + G__16041_16432));
+var dest__10026__auto__ = (new Float32Array((3)));
+var G__11075_11447 = (a instanceof thi.ng.geom.vector.Vec3);
+var G__11076_11448 = (b instanceof thi.ng.geom.vector.Vec3);
+var G__11077_11449 = ((!(G__11075_11447))?typeof a === 'number':null);
+var G__11078_11450 = ((!(G__11076_11448))?typeof b === 'number':null);
+var G__11063_11451 = self__.buf;
+var G__11064_11452 = ((G__11075_11447)?a.buf:null);
+var G__11065_11453 = ((G__11076_11448)?b.buf:null);
+var G__11066_11454 = (G__11063_11451[(0)]);
+var G__11067_11455 = (G__11063_11451[(1)]);
+var G__11068_11456 = (G__11063_11451[(2)]);
+var G__11069_11457 = ((G__11075_11447)?(G__11064_11452[(0)]):(cljs.core.truth_(G__11077_11449)?a:cljs.core.nth.call(null,a,(0),1.0)));
+var G__11070_11458 = ((G__11075_11447)?(G__11064_11452[(1)]):(cljs.core.truth_(G__11077_11449)?a:cljs.core.nth.call(null,a,(1),1.0)));
+var G__11071_11459 = ((G__11075_11447)?(G__11064_11452[(2)]):(cljs.core.truth_(G__11077_11449)?a:cljs.core.nth.call(null,a,(2),1.0)));
+var G__11072_11460 = ((G__11076_11448)?(G__11065_11453[(0)]):(cljs.core.truth_(G__11078_11450)?b:cljs.core.nth.call(null,b,(0),0.0)));
+var G__11073_11461 = ((G__11076_11448)?(G__11065_11453[(1)]):(cljs.core.truth_(G__11078_11450)?b:cljs.core.nth.call(null,b,(1),0.0)));
+var G__11074_11462 = ((G__11076_11448)?(G__11065_11453[(2)]):(cljs.core.truth_(G__11078_11450)?b:cljs.core.nth.call(null,b,(2),0.0)));
+(dest__10026__auto__[(0)] = ((G__11066_11454 * G__11069_11457) + G__11072_11460));
 
-(dest__14927__auto__[(1)] = ((G__16036_16427 * G__16039_16430) + G__16042_16433));
+(dest__10026__auto__[(1)] = ((G__11067_11455 * G__11070_11458) + G__11073_11461));
 
-(dest__14927__auto__[(2)] = ((G__16037_16428 * G__16040_16431) + G__16043_16434));
+(dest__10026__auto__[(2)] = ((G__11068_11456 * G__11071_11459) + G__11074_11462));
 
-return (new thi.ng.geom.vector.Vec3(dest__14927__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10026__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$addm$arity$3 = (function (_,a,b){
 var self__ = this;
 var ___$1 = this;
-var dest__14927__auto__ = (new Float32Array((3)));
-var G__16060_16435 = (a instanceof thi.ng.geom.vector.Vec3);
-var G__16061_16436 = (b instanceof thi.ng.geom.vector.Vec3);
-var G__16062_16437 = ((!(G__16060_16435))?typeof a === 'number':null);
-var G__16063_16438 = ((!(G__16061_16436))?typeof b === 'number':null);
-var G__16048_16439 = self__.buf;
-var G__16049_16440 = ((G__16060_16435)?a.buf:null);
-var G__16050_16441 = ((G__16061_16436)?b.buf:null);
-var G__16051_16442 = (G__16048_16439[(0)]);
-var G__16052_16443 = (G__16048_16439[(1)]);
-var G__16053_16444 = (G__16048_16439[(2)]);
-var G__16054_16445 = ((G__16060_16435)?(G__16049_16440[(0)]):(cljs.core.truth_(G__16062_16437)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(0),0.0)));
-var G__16055_16446 = ((G__16060_16435)?(G__16049_16440[(1)]):(cljs.core.truth_(G__16062_16437)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(1),0.0)));
-var G__16056_16447 = ((G__16060_16435)?(G__16049_16440[(2)]):(cljs.core.truth_(G__16062_16437)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(2),0.0)));
-var G__16057_16448 = ((G__16061_16436)?(G__16050_16441[(0)]):(cljs.core.truth_(G__16063_16438)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(0),1.0)));
-var G__16058_16449 = ((G__16061_16436)?(G__16050_16441[(1)]):(cljs.core.truth_(G__16063_16438)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(1),1.0)));
-var G__16059_16450 = ((G__16061_16436)?(G__16050_16441[(2)]):(cljs.core.truth_(G__16063_16438)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(2),1.0)));
-(dest__14927__auto__[(0)] = ((G__16051_16442 + G__16054_16445) * G__16057_16448));
+var dest__10026__auto__ = (new Float32Array((3)));
+var G__11091_11463 = (a instanceof thi.ng.geom.vector.Vec3);
+var G__11092_11464 = (b instanceof thi.ng.geom.vector.Vec3);
+var G__11093_11465 = ((!(G__11091_11463))?typeof a === 'number':null);
+var G__11094_11466 = ((!(G__11092_11464))?typeof b === 'number':null);
+var G__11079_11467 = self__.buf;
+var G__11080_11468 = ((G__11091_11463)?a.buf:null);
+var G__11081_11469 = ((G__11092_11464)?b.buf:null);
+var G__11082_11470 = (G__11079_11467[(0)]);
+var G__11083_11471 = (G__11079_11467[(1)]);
+var G__11084_11472 = (G__11079_11467[(2)]);
+var G__11085_11473 = ((G__11091_11463)?(G__11080_11468[(0)]):(cljs.core.truth_(G__11093_11465)?a:cljs.core.nth.call(null,a,(0),0.0)));
+var G__11086_11474 = ((G__11091_11463)?(G__11080_11468[(1)]):(cljs.core.truth_(G__11093_11465)?a:cljs.core.nth.call(null,a,(1),0.0)));
+var G__11087_11475 = ((G__11091_11463)?(G__11080_11468[(2)]):(cljs.core.truth_(G__11093_11465)?a:cljs.core.nth.call(null,a,(2),0.0)));
+var G__11088_11476 = ((G__11092_11464)?(G__11081_11469[(0)]):(cljs.core.truth_(G__11094_11466)?b:cljs.core.nth.call(null,b,(0),1.0)));
+var G__11089_11477 = ((G__11092_11464)?(G__11081_11469[(1)]):(cljs.core.truth_(G__11094_11466)?b:cljs.core.nth.call(null,b,(1),1.0)));
+var G__11090_11478 = ((G__11092_11464)?(G__11081_11469[(2)]):(cljs.core.truth_(G__11094_11466)?b:cljs.core.nth.call(null,b,(2),1.0)));
+(dest__10026__auto__[(0)] = ((G__11082_11470 + G__11085_11473) * G__11088_11476));
 
-(dest__14927__auto__[(1)] = ((G__16052_16443 + G__16055_16446) * G__16058_16449));
+(dest__10026__auto__[(1)] = ((G__11083_11471 + G__11086_11474) * G__11089_11477));
 
-(dest__14927__auto__[(2)] = ((G__16053_16444 + G__16056_16447) * G__16059_16450));
+(dest__10026__auto__[(2)] = ((G__11084_11472 + G__11087_11475) * G__11090_11478));
 
-return (new thi.ng.geom.vector.Vec3(dest__14927__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10026__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$div$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var dest__14899__auto__ = (new Float32Array((3)));
-var G__16064_16451 = self__.buf;
-(dest__14899__auto__[(0)] = ((1) / (G__16064_16451[(0)])));
+var dest__9998__auto__ = (new Float32Array((3)));
+var G__11095_11479 = self__.buf;
+(dest__9998__auto__[(0)] = ((1) / (G__11095_11479[(0)])));
 
-(dest__14899__auto__[(1)] = ((1) / (G__16064_16451[(1)])));
+(dest__9998__auto__[(1)] = ((1) / (G__11095_11479[(1)])));
 
-(dest__14899__auto__[(2)] = ((1) / (G__16064_16451[(2)])));
+(dest__9998__auto__[(2)] = ((1) / (G__11095_11479[(2)])));
 
-return (new thi.ng.geom.vector.Vec3(dest__14899__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__9998__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$div$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var dest__14916__auto__ = (new Float32Array((3)));
-var G__16065_16452 = self__.buf;
+var dest__10015__auto__ = (new Float32Array((3)));
+var G__11096_11480 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__16066_16453 = v.buf;
-(dest__14916__auto__[(0)] = ((G__16065_16452[(0)]) / (G__16066_16453[(0)])));
+var G__11097_11481 = v.buf;
+(dest__10015__auto__[(0)] = ((G__11096_11480[(0)]) / (G__11097_11481[(0)])));
 
-(dest__14916__auto__[(1)] = ((G__16065_16452[(1)]) / (G__16066_16453[(1)])));
+(dest__10015__auto__[(1)] = ((G__11096_11480[(1)]) / (G__11097_11481[(1)])));
 
-(dest__14916__auto__[(2)] = ((G__16065_16452[(2)]) / (G__16066_16453[(2)])));
+(dest__10015__auto__[(2)] = ((G__11096_11480[(2)]) / (G__11097_11481[(2)])));
 } else {
 if(typeof v === 'number'){
-(dest__14916__auto__[(0)] = ((G__16065_16452[(0)]) / v));
+(dest__10015__auto__[(0)] = ((G__11096_11480[(0)]) / v));
 
-(dest__14916__auto__[(1)] = ((G__16065_16452[(1)]) / v));
+(dest__10015__auto__[(1)] = ((G__11096_11480[(1)]) / v));
 
-(dest__14916__auto__[(2)] = ((G__16065_16452[(2)]) / v));
+(dest__10015__auto__[(2)] = ((G__11096_11480[(2)]) / v));
 } else {
-(dest__14916__auto__[(0)] = ((G__16065_16452[(0)]) / cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(dest__10015__auto__[(0)] = ((G__11096_11480[(0)]) / cljs.core.nth.call(null,v,(0),0.0)));
 
-(dest__14916__auto__[(1)] = ((G__16065_16452[(1)]) / cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(dest__10015__auto__[(1)] = ((G__11096_11480[(1)]) / cljs.core.nth.call(null,v,(1),0.0)));
 
-(dest__14916__auto__[(2)] = ((G__16065_16452[(2)]) / cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0)));
+(dest__10015__auto__[(2)] = ((G__11096_11480[(2)]) / cljs.core.nth.call(null,v,(2),0.0)));
 }
 }
 
-return (new thi.ng.geom.vector.Vec3(dest__14916__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10015__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$div$arity$3 = (function (_,v1,v2){
 var self__ = this;
 var ___$1 = this;
-var dest__14927__auto__ = (new Float32Array((3)));
-var G__16079_16454 = (v1 instanceof thi.ng.geom.vector.Vec3);
-var G__16080_16455 = (v2 instanceof thi.ng.geom.vector.Vec3);
-var G__16081_16456 = ((!(G__16079_16454))?typeof v1 === 'number':null);
-var G__16082_16457 = ((!(G__16080_16455))?typeof v2 === 'number':null);
-var G__16067_16458 = self__.buf;
-var G__16068_16459 = ((G__16079_16454)?v1.buf:null);
-var G__16069_16460 = ((G__16080_16455)?v2.buf:null);
-var G__16070_16461 = (G__16067_16458[(0)]);
-var G__16071_16462 = (G__16067_16458[(1)]);
-var G__16072_16463 = (G__16067_16458[(2)]);
-var G__16073_16464 = ((G__16079_16454)?(G__16068_16459[(0)]):(cljs.core.truth_(G__16081_16456)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(0),0.0)));
-var G__16074_16465 = ((G__16079_16454)?(G__16068_16459[(1)]):(cljs.core.truth_(G__16081_16456)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(1),0.0)));
-var G__16075_16466 = ((G__16079_16454)?(G__16068_16459[(2)]):(cljs.core.truth_(G__16081_16456)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(2),0.0)));
-var G__16076_16467 = ((G__16080_16455)?(G__16069_16460[(0)]):(cljs.core.truth_(G__16082_16457)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__16077_16468 = ((G__16080_16455)?(G__16069_16460[(1)]):(cljs.core.truth_(G__16082_16457)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-var G__16078_16469 = ((G__16080_16455)?(G__16069_16460[(2)]):(cljs.core.truth_(G__16082_16457)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(2),0.0)));
-(dest__14927__auto__[(0)] = ((G__16070_16461 / G__16073_16464) / G__16076_16467));
+var dest__10026__auto__ = (new Float32Array((3)));
+var G__11110_11482 = (v1 instanceof thi.ng.geom.vector.Vec3);
+var G__11111_11483 = (v2 instanceof thi.ng.geom.vector.Vec3);
+var G__11112_11484 = ((!(G__11110_11482))?typeof v1 === 'number':null);
+var G__11113_11485 = ((!(G__11111_11483))?typeof v2 === 'number':null);
+var G__11098_11486 = self__.buf;
+var G__11099_11487 = ((G__11110_11482)?v1.buf:null);
+var G__11100_11488 = ((G__11111_11483)?v2.buf:null);
+var G__11101_11489 = (G__11098_11486[(0)]);
+var G__11102_11490 = (G__11098_11486[(1)]);
+var G__11103_11491 = (G__11098_11486[(2)]);
+var G__11104_11492 = ((G__11110_11482)?(G__11099_11487[(0)]):(cljs.core.truth_(G__11112_11484)?v1:cljs.core.nth.call(null,v1,(0),0.0)));
+var G__11105_11493 = ((G__11110_11482)?(G__11099_11487[(1)]):(cljs.core.truth_(G__11112_11484)?v1:cljs.core.nth.call(null,v1,(1),0.0)));
+var G__11106_11494 = ((G__11110_11482)?(G__11099_11487[(2)]):(cljs.core.truth_(G__11112_11484)?v1:cljs.core.nth.call(null,v1,(2),0.0)));
+var G__11107_11495 = ((G__11111_11483)?(G__11100_11488[(0)]):(cljs.core.truth_(G__11113_11485)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__11108_11496 = ((G__11111_11483)?(G__11100_11488[(1)]):(cljs.core.truth_(G__11113_11485)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+var G__11109_11497 = ((G__11111_11483)?(G__11100_11488[(2)]):(cljs.core.truth_(G__11113_11485)?v2:cljs.core.nth.call(null,v2,(2),0.0)));
+(dest__10026__auto__[(0)] = ((G__11101_11489 / G__11104_11492) / G__11107_11495));
 
-(dest__14927__auto__[(1)] = ((G__16071_16462 / G__16074_16465) / G__16077_16468));
+(dest__10026__auto__[(1)] = ((G__11102_11490 / G__11105_11493) / G__11108_11496));
 
-(dest__14927__auto__[(2)] = ((G__16072_16463 / G__16075_16466) / G__16078_16469));
+(dest__10026__auto__[(2)] = ((G__11103_11491 / G__11106_11494) / G__11109_11497));
 
-return (new thi.ng.geom.vector.Vec3(dest__14927__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10026__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$div$arity$4 = (function (_,x,y,z){
 var self__ = this;
 var ___$1 = this;
-var G__16083 = self__.buf;
-var dest__14905__auto__ = (new Float32Array((3)));
-(dest__14905__auto__[(0)] = ((G__16083[(0)]) / x));
+var G__11114 = self__.buf;
+var dest__10004__auto__ = (new Float32Array((3)));
+(dest__10004__auto__[(0)] = ((G__11114[(0)]) / x));
 
-(dest__14905__auto__[(1)] = ((G__16083[(1)]) / y));
+(dest__10004__auto__[(1)] = ((G__11114[(1)]) / y));
 
-(dest__14905__auto__[(2)] = ((G__16083[(2)]) / z));
+(dest__10004__auto__[(2)] = ((G__11114[(2)]) / z));
 
-return (new thi.ng.geom.vector.Vec3(dest__14905__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10004__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$_PLUS_$arity$1 = (function (_){
@@ -4592,128 +4489,122 @@ return ___$1;
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$_PLUS_$arity$2 = (function (_,v){
 var self__ = this;
 var ___$1 = this;
-var dest__14916__auto__ = (new Float32Array((3)));
-var G__16084_16470 = self__.buf;
+var dest__10015__auto__ = (new Float32Array((3)));
+var G__11115_11498 = self__.buf;
 if((v instanceof thi.ng.geom.vector.Vec3)){
-var G__16085_16471 = v.buf;
-(dest__14916__auto__[(0)] = ((G__16084_16470[(0)]) + (G__16085_16471[(0)])));
+var G__11116_11499 = v.buf;
+(dest__10015__auto__[(0)] = ((G__11115_11498[(0)]) + (G__11116_11499[(0)])));
 
-(dest__14916__auto__[(1)] = ((G__16084_16470[(1)]) + (G__16085_16471[(1)])));
+(dest__10015__auto__[(1)] = ((G__11115_11498[(1)]) + (G__11116_11499[(1)])));
 
-(dest__14916__auto__[(2)] = ((G__16084_16470[(2)]) + (G__16085_16471[(2)])));
+(dest__10015__auto__[(2)] = ((G__11115_11498[(2)]) + (G__11116_11499[(2)])));
 } else {
 if(typeof v === 'number'){
-(dest__14916__auto__[(0)] = ((G__16084_16470[(0)]) + v));
+(dest__10015__auto__[(0)] = ((G__11115_11498[(0)]) + v));
 
-(dest__14916__auto__[(1)] = ((G__16084_16470[(1)]) + v));
+(dest__10015__auto__[(1)] = ((G__11115_11498[(1)]) + v));
 
-(dest__14916__auto__[(2)] = ((G__16084_16470[(2)]) + v));
+(dest__10015__auto__[(2)] = ((G__11115_11498[(2)]) + v));
 } else {
-(dest__14916__auto__[(0)] = ((G__16084_16470[(0)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0)));
+(dest__10015__auto__[(0)] = ((G__11115_11498[(0)]) + cljs.core.nth.call(null,v,(0),0.0)));
 
-(dest__14916__auto__[(1)] = ((G__16084_16470[(1)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0)));
+(dest__10015__auto__[(1)] = ((G__11115_11498[(1)]) + cljs.core.nth.call(null,v,(1),0.0)));
 
-(dest__14916__auto__[(2)] = ((G__16084_16470[(2)]) + cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0)));
+(dest__10015__auto__[(2)] = ((G__11115_11498[(2)]) + cljs.core.nth.call(null,v,(2),0.0)));
 }
 }
 
-return (new thi.ng.geom.vector.Vec3(dest__14916__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10015__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$_PLUS_$arity$3 = (function (_,v1,v2){
 var self__ = this;
 var ___$1 = this;
-var dest__14927__auto__ = (new Float32Array((3)));
-var G__16098_16472 = (v1 instanceof thi.ng.geom.vector.Vec3);
-var G__16099_16473 = (v2 instanceof thi.ng.geom.vector.Vec3);
-var G__16100_16474 = ((!(G__16098_16472))?typeof v1 === 'number':null);
-var G__16101_16475 = ((!(G__16099_16473))?typeof v2 === 'number':null);
-var G__16086_16476 = self__.buf;
-var G__16087_16477 = ((G__16098_16472)?v1.buf:null);
-var G__16088_16478 = ((G__16099_16473)?v2.buf:null);
-var G__16089_16479 = (G__16086_16476[(0)]);
-var G__16090_16480 = (G__16086_16476[(1)]);
-var G__16091_16481 = (G__16086_16476[(2)]);
-var G__16092_16482 = ((G__16098_16472)?(G__16087_16477[(0)]):(cljs.core.truth_(G__16100_16474)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(0),0.0)));
-var G__16093_16483 = ((G__16098_16472)?(G__16087_16477[(1)]):(cljs.core.truth_(G__16100_16474)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(1),0.0)));
-var G__16094_16484 = ((G__16098_16472)?(G__16087_16477[(2)]):(cljs.core.truth_(G__16100_16474)?v1:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v1,(2),0.0)));
-var G__16095_16485 = ((G__16099_16473)?(G__16088_16478[(0)]):(cljs.core.truth_(G__16101_16475)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(0),0.0)));
-var G__16096_16486 = ((G__16099_16473)?(G__16088_16478[(1)]):(cljs.core.truth_(G__16101_16475)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(1),0.0)));
-var G__16097_16487 = ((G__16099_16473)?(G__16088_16478[(2)]):(cljs.core.truth_(G__16101_16475)?v2:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v2,(2),0.0)));
-(dest__14927__auto__[(0)] = ((G__16089_16479 + G__16092_16482) + G__16095_16485));
+var dest__10026__auto__ = (new Float32Array((3)));
+var G__11129_11500 = (v1 instanceof thi.ng.geom.vector.Vec3);
+var G__11130_11501 = (v2 instanceof thi.ng.geom.vector.Vec3);
+var G__11131_11502 = ((!(G__11129_11500))?typeof v1 === 'number':null);
+var G__11132_11503 = ((!(G__11130_11501))?typeof v2 === 'number':null);
+var G__11117_11504 = self__.buf;
+var G__11118_11505 = ((G__11129_11500)?v1.buf:null);
+var G__11119_11506 = ((G__11130_11501)?v2.buf:null);
+var G__11120_11507 = (G__11117_11504[(0)]);
+var G__11121_11508 = (G__11117_11504[(1)]);
+var G__11122_11509 = (G__11117_11504[(2)]);
+var G__11123_11510 = ((G__11129_11500)?(G__11118_11505[(0)]):(cljs.core.truth_(G__11131_11502)?v1:cljs.core.nth.call(null,v1,(0),0.0)));
+var G__11124_11511 = ((G__11129_11500)?(G__11118_11505[(1)]):(cljs.core.truth_(G__11131_11502)?v1:cljs.core.nth.call(null,v1,(1),0.0)));
+var G__11125_11512 = ((G__11129_11500)?(G__11118_11505[(2)]):(cljs.core.truth_(G__11131_11502)?v1:cljs.core.nth.call(null,v1,(2),0.0)));
+var G__11126_11513 = ((G__11130_11501)?(G__11119_11506[(0)]):(cljs.core.truth_(G__11132_11503)?v2:cljs.core.nth.call(null,v2,(0),0.0)));
+var G__11127_11514 = ((G__11130_11501)?(G__11119_11506[(1)]):(cljs.core.truth_(G__11132_11503)?v2:cljs.core.nth.call(null,v2,(1),0.0)));
+var G__11128_11515 = ((G__11130_11501)?(G__11119_11506[(2)]):(cljs.core.truth_(G__11132_11503)?v2:cljs.core.nth.call(null,v2,(2),0.0)));
+(dest__10026__auto__[(0)] = ((G__11120_11507 + G__11123_11510) + G__11126_11513));
 
-(dest__14927__auto__[(1)] = ((G__16090_16480 + G__16093_16483) + G__16096_16486));
+(dest__10026__auto__[(1)] = ((G__11121_11508 + G__11124_11511) + G__11127_11514));
 
-(dest__14927__auto__[(2)] = ((G__16091_16481 + G__16094_16484) + G__16097_16487));
+(dest__10026__auto__[(2)] = ((G__11122_11509 + G__11125_11512) + G__11128_11515));
 
-return (new thi.ng.geom.vector.Vec3(dest__14927__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10026__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$_PLUS_$arity$4 = (function (_,x,y,z){
 var self__ = this;
 var ___$1 = this;
-var G__16102 = self__.buf;
-var dest__14905__auto__ = (new Float32Array((3)));
-(dest__14905__auto__[(0)] = ((G__16102[(0)]) + x));
+var G__11133 = self__.buf;
+var dest__10004__auto__ = (new Float32Array((3)));
+(dest__10004__auto__[(0)] = ((G__11133[(0)]) + x));
 
-(dest__14905__auto__[(1)] = ((G__16102[(1)]) + y));
+(dest__10004__auto__[(1)] = ((G__11133[(1)]) + y));
 
-(dest__14905__auto__[(2)] = ((G__16102[(2)]) + z));
+(dest__10004__auto__[(2)] = ((G__11133[(2)]) + z));
 
-return (new thi.ng.geom.vector.Vec3(dest__14905__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10004__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$abs$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var dest__14899__auto__ = (new Float32Array((3)));
-var G__16103_16488 = self__.buf;
-(dest__14899__auto__[(0)] = (function (){var G__16104 = (G__16103_16488[(0)]);
-return (thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1 ? thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1(G__16104) : thi.ng.math.core.abs_STAR_.call(null,G__16104));
-})());
+var dest__9998__auto__ = (new Float32Array((3)));
+var G__11134_11516 = self__.buf;
+(dest__9998__auto__[(0)] = thi.ng.math.core.abs_STAR_.call(null,(G__11134_11516[(0)])));
 
-(dest__14899__auto__[(1)] = (function (){var G__16105 = (G__16103_16488[(1)]);
-return (thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1 ? thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1(G__16105) : thi.ng.math.core.abs_STAR_.call(null,G__16105));
-})());
+(dest__9998__auto__[(1)] = thi.ng.math.core.abs_STAR_.call(null,(G__11134_11516[(1)])));
 
-(dest__14899__auto__[(2)] = (function (){var G__16106 = (G__16103_16488[(2)]);
-return (thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1 ? thi.ng.math.core.abs_STAR_.cljs$core$IFn$_invoke$arity$1(G__16106) : thi.ng.math.core.abs_STAR_.call(null,G__16106));
-})());
+(dest__9998__auto__[(2)] = thi.ng.math.core.abs_STAR_.call(null,(G__11134_11516[(2)])));
 
-return (new thi.ng.geom.vector.Vec3(dest__14899__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__9998__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.prototype.thi$ng$math$core$IMathOps$subm$arity$3 = (function (_,a,b){
 var self__ = this;
 var ___$1 = this;
-var dest__14927__auto__ = (new Float32Array((3)));
-var G__15773_16489 = (a instanceof thi.ng.geom.vector.Vec3);
-var G__15774_16490 = (b instanceof thi.ng.geom.vector.Vec3);
-var G__15775_16491 = ((!(G__15773_16489))?typeof a === 'number':null);
-var G__15776_16492 = ((!(G__15774_16490))?typeof b === 'number':null);
-var G__15761_16493 = self__.buf;
-var G__15762_16494 = ((G__15773_16489)?a.buf:null);
-var G__15763_16495 = ((G__15774_16490)?b.buf:null);
-var G__15764_16496 = (G__15761_16493[(0)]);
-var G__15765_16497 = (G__15761_16493[(1)]);
-var G__15766_16498 = (G__15761_16493[(2)]);
-var G__15767_16499 = ((G__15773_16489)?(G__15762_16494[(0)]):(cljs.core.truth_(G__15775_16491)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(0),0.0)));
-var G__15768_16500 = ((G__15773_16489)?(G__15762_16494[(1)]):(cljs.core.truth_(G__15775_16491)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(1),0.0)));
-var G__15769_16501 = ((G__15773_16489)?(G__15762_16494[(2)]):(cljs.core.truth_(G__15775_16491)?a:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(a,(2),0.0)));
-var G__15770_16502 = ((G__15774_16490)?(G__15763_16495[(0)]):(cljs.core.truth_(G__15776_16492)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(0),1.0)));
-var G__15771_16503 = ((G__15774_16490)?(G__15763_16495[(1)]):(cljs.core.truth_(G__15776_16492)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(1),1.0)));
-var G__15772_16504 = ((G__15774_16490)?(G__15763_16495[(2)]):(cljs.core.truth_(G__15776_16492)?b:cljs.core.nth.cljs$core$IFn$_invoke$arity$3(b,(2),1.0)));
-(dest__14927__auto__[(0)] = ((G__15764_16496 - G__15767_16499) * G__15770_16502));
+var dest__10026__auto__ = (new Float32Array((3)));
+var G__10840_11517 = (a instanceof thi.ng.geom.vector.Vec3);
+var G__10841_11518 = (b instanceof thi.ng.geom.vector.Vec3);
+var G__10842_11519 = ((!(G__10840_11517))?typeof a === 'number':null);
+var G__10843_11520 = ((!(G__10841_11518))?typeof b === 'number':null);
+var G__10828_11521 = self__.buf;
+var G__10829_11522 = ((G__10840_11517)?a.buf:null);
+var G__10830_11523 = ((G__10841_11518)?b.buf:null);
+var G__10831_11524 = (G__10828_11521[(0)]);
+var G__10832_11525 = (G__10828_11521[(1)]);
+var G__10833_11526 = (G__10828_11521[(2)]);
+var G__10834_11527 = ((G__10840_11517)?(G__10829_11522[(0)]):(cljs.core.truth_(G__10842_11519)?a:cljs.core.nth.call(null,a,(0),0.0)));
+var G__10835_11528 = ((G__10840_11517)?(G__10829_11522[(1)]):(cljs.core.truth_(G__10842_11519)?a:cljs.core.nth.call(null,a,(1),0.0)));
+var G__10836_11529 = ((G__10840_11517)?(G__10829_11522[(2)]):(cljs.core.truth_(G__10842_11519)?a:cljs.core.nth.call(null,a,(2),0.0)));
+var G__10837_11530 = ((G__10841_11518)?(G__10830_11523[(0)]):(cljs.core.truth_(G__10843_11520)?b:cljs.core.nth.call(null,b,(0),1.0)));
+var G__10838_11531 = ((G__10841_11518)?(G__10830_11523[(1)]):(cljs.core.truth_(G__10843_11520)?b:cljs.core.nth.call(null,b,(1),1.0)));
+var G__10839_11532 = ((G__10841_11518)?(G__10830_11523[(2)]):(cljs.core.truth_(G__10843_11520)?b:cljs.core.nth.call(null,b,(2),1.0)));
+(dest__10026__auto__[(0)] = ((G__10831_11524 - G__10834_11527) * G__10837_11530));
 
-(dest__14927__auto__[(1)] = ((G__15765_16497 - G__15768_16500) * G__15771_16503));
+(dest__10026__auto__[(1)] = ((G__10832_11525 - G__10835_11528) * G__10838_11531));
 
-(dest__14927__auto__[(2)] = ((G__15766_16498 - G__15769_16501) * G__15772_16504));
+(dest__10026__auto__[(2)] = ((G__10833_11526 - G__10836_11529) * G__10839_11532));
 
-return (new thi.ng.geom.vector.Vec3(dest__14927__auto__,null,self__._meta));
+return (new thi.ng.geom.vector.Vec3(dest__10026__auto__,null,self__._meta));
 });
 
 thi.ng.geom.vector.Vec3.getBasis = (function (){
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$sym$buf,cljs.core.with_meta(cljs.core.cst$sym$_hash,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$mutable,true], null)),cljs.core.cst$sym$_meta], null);
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"buf","buf",1426618187,null),cljs.core.with_meta(new cljs.core.Symbol(null,"_hash","_hash",-2130838312,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"mutable","mutable",875778266),true], null)),new cljs.core.Symbol(null,"_meta","_meta",-1716892533,null)], null);
 });
 
 thi.ng.geom.vector.Vec3.cljs$lang$type = true;
@@ -4721,412 +4612,411 @@ thi.ng.geom.vector.Vec3.cljs$lang$type = true;
 thi.ng.geom.vector.Vec3.cljs$lang$ctorStr = "thi.ng.geom.vector/Vec3";
 
 thi.ng.geom.vector.Vec3.cljs$lang$ctorPrWriter = (function (this__8041__auto__,writer__8042__auto__,opt__8043__auto__){
-return cljs.core._write(writer__8042__auto__,"thi.ng.geom.vector/Vec3");
+return cljs.core._write.call(null,writer__8042__auto__,"thi.ng.geom.vector/Vec3");
 });
 
 thi.ng.geom.vector.__GT_Vec3 = (function thi$ng$geom$vector$__GT_Vec3(buf,_hash,_meta){
 return (new thi.ng.geom.vector.Vec3(buf,_hash,_meta));
 });
 
-thi.ng.geom.vector.x = (function thi$ng$geom$vector$x(G__16507){
-var G__16505 = (((G__16507 instanceof thi.ng.geom.vector.Vec2))?G__16507.buf:G__16507.buf);
-return (G__16505[(0)]);
+thi.ng.geom.vector.x = (function thi$ng$geom$vector$x(G__11535){
+var G__11533 = (((G__11535 instanceof thi.ng.geom.vector.Vec2))?G__11535.buf:G__11535.buf);
+return (G__11533[(0)]);
 });
-thi.ng.geom.vector.xx = (function thi$ng$geom$vector$xx(G__16510){
-var G__16508 = (((G__16510 instanceof thi.ng.geom.vector.Vec2))?G__16510.buf:G__16510.buf);
-var G__16509 = (new Float32Array(2));
-(G__16509[(0)] = (G__16508[(0)]));
+thi.ng.geom.vector.xx = (function thi$ng$geom$vector$xx(G__11538){
+var G__11536 = (((G__11538 instanceof thi.ng.geom.vector.Vec2))?G__11538.buf:G__11538.buf);
+var G__11537 = (new Float32Array(2));
+(G__11537[(0)] = (G__11536[(0)]));
 
-(G__16509[(1)] = (G__16508[(0)]));
+(G__11537[(1)] = (G__11536[(0)]));
 
-return (new thi.ng.geom.vector.Vec2(G__16509,null,cljs.core.meta(G__16510)));
+return (new thi.ng.geom.vector.Vec2(G__11537,null,cljs.core.meta.call(null,G__11538)));
 });
-thi.ng.geom.vector.xxx = (function thi$ng$geom$vector$xxx(G__16513){
-var G__16511 = (((G__16513 instanceof thi.ng.geom.vector.Vec2))?G__16513.buf:G__16513.buf);
-var G__16512 = (new Float32Array(3));
-(G__16512[(0)] = (G__16511[(0)]));
+thi.ng.geom.vector.xxx = (function thi$ng$geom$vector$xxx(G__11541){
+var G__11539 = (((G__11541 instanceof thi.ng.geom.vector.Vec2))?G__11541.buf:G__11541.buf);
+var G__11540 = (new Float32Array(3));
+(G__11540[(0)] = (G__11539[(0)]));
 
-(G__16512[(1)] = (G__16511[(0)]));
+(G__11540[(1)] = (G__11539[(0)]));
 
-(G__16512[(2)] = (G__16511[(0)]));
+(G__11540[(2)] = (G__11539[(0)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16512,null,cljs.core.meta(G__16513)));
+return (new thi.ng.geom.vector.Vec3(G__11540,null,cljs.core.meta.call(null,G__11541)));
 });
-thi.ng.geom.vector.xxy = (function thi$ng$geom$vector$xxy(G__16516){
-var G__16514 = (((G__16516 instanceof thi.ng.geom.vector.Vec2))?G__16516.buf:G__16516.buf);
-var G__16515 = (new Float32Array(3));
-(G__16515[(0)] = (G__16514[(0)]));
+thi.ng.geom.vector.xxy = (function thi$ng$geom$vector$xxy(G__11544){
+var G__11542 = (((G__11544 instanceof thi.ng.geom.vector.Vec2))?G__11544.buf:G__11544.buf);
+var G__11543 = (new Float32Array(3));
+(G__11543[(0)] = (G__11542[(0)]));
 
-(G__16515[(1)] = (G__16514[(0)]));
+(G__11543[(1)] = (G__11542[(0)]));
 
-(G__16515[(2)] = (G__16514[(1)]));
+(G__11543[(2)] = (G__11542[(1)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16515,null,cljs.core.meta(G__16516)));
+return (new thi.ng.geom.vector.Vec3(G__11543,null,cljs.core.meta.call(null,G__11544)));
 });
-thi.ng.geom.vector.xxz = (function thi$ng$geom$vector$xxz(G__16519){
-var G__16517 = (((G__16519 instanceof thi.ng.geom.vector.Vec2))?G__16519.buf:G__16519.buf);
-var G__16518 = (new Float32Array(3));
-(G__16518[(0)] = (G__16517[(0)]));
+thi.ng.geom.vector.xxz = (function thi$ng$geom$vector$xxz(G__11547){
+var G__11545 = (((G__11547 instanceof thi.ng.geom.vector.Vec2))?G__11547.buf:G__11547.buf);
+var G__11546 = (new Float32Array(3));
+(G__11546[(0)] = (G__11545[(0)]));
 
-(G__16518[(1)] = (G__16517[(0)]));
+(G__11546[(1)] = (G__11545[(0)]));
 
-(G__16518[(2)] = (G__16517[(2)]));
+(G__11546[(2)] = (G__11545[(2)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16518,null,cljs.core.meta(G__16519)));
+return (new thi.ng.geom.vector.Vec3(G__11546,null,cljs.core.meta.call(null,G__11547)));
 });
-thi.ng.geom.vector.xy = (function thi$ng$geom$vector$xy(G__16522){
-var G__16520 = (((G__16522 instanceof thi.ng.geom.vector.Vec2))?G__16522.buf:G__16522.buf);
-var G__16521 = (new Float32Array(2));
-(G__16521[(0)] = (G__16520[(0)]));
+thi.ng.geom.vector.xy = (function thi$ng$geom$vector$xy(G__11550){
+var G__11548 = (((G__11550 instanceof thi.ng.geom.vector.Vec2))?G__11550.buf:G__11550.buf);
+var G__11549 = (new Float32Array(2));
+(G__11549[(0)] = (G__11548[(0)]));
 
-(G__16521[(1)] = (G__16520[(1)]));
+(G__11549[(1)] = (G__11548[(1)]));
 
-return (new thi.ng.geom.vector.Vec2(G__16521,null,cljs.core.meta(G__16522)));
+return (new thi.ng.geom.vector.Vec2(G__11549,null,cljs.core.meta.call(null,G__11550)));
 });
-thi.ng.geom.vector.xyx = (function thi$ng$geom$vector$xyx(G__16525){
-var G__16523 = (((G__16525 instanceof thi.ng.geom.vector.Vec2))?G__16525.buf:G__16525.buf);
-var G__16524 = (new Float32Array(3));
-(G__16524[(0)] = (G__16523[(0)]));
+thi.ng.geom.vector.xyx = (function thi$ng$geom$vector$xyx(G__11553){
+var G__11551 = (((G__11553 instanceof thi.ng.geom.vector.Vec2))?G__11553.buf:G__11553.buf);
+var G__11552 = (new Float32Array(3));
+(G__11552[(0)] = (G__11551[(0)]));
 
-(G__16524[(1)] = (G__16523[(1)]));
+(G__11552[(1)] = (G__11551[(1)]));
 
-(G__16524[(2)] = (G__16523[(0)]));
+(G__11552[(2)] = (G__11551[(0)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16524,null,cljs.core.meta(G__16525)));
+return (new thi.ng.geom.vector.Vec3(G__11552,null,cljs.core.meta.call(null,G__11553)));
 });
-thi.ng.geom.vector.xyy = (function thi$ng$geom$vector$xyy(G__16528){
-var G__16526 = (((G__16528 instanceof thi.ng.geom.vector.Vec2))?G__16528.buf:G__16528.buf);
-var G__16527 = (new Float32Array(3));
-(G__16527[(0)] = (G__16526[(0)]));
+thi.ng.geom.vector.xyy = (function thi$ng$geom$vector$xyy(G__11556){
+var G__11554 = (((G__11556 instanceof thi.ng.geom.vector.Vec2))?G__11556.buf:G__11556.buf);
+var G__11555 = (new Float32Array(3));
+(G__11555[(0)] = (G__11554[(0)]));
 
-(G__16527[(1)] = (G__16526[(1)]));
+(G__11555[(1)] = (G__11554[(1)]));
 
-(G__16527[(2)] = (G__16526[(1)]));
+(G__11555[(2)] = (G__11554[(1)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16527,null,cljs.core.meta(G__16528)));
+return (new thi.ng.geom.vector.Vec3(G__11555,null,cljs.core.meta.call(null,G__11556)));
 });
-thi.ng.geom.vector.xyz = (function thi$ng$geom$vector$xyz(G__16531){
-var G__16529 = (((G__16531 instanceof thi.ng.geom.vector.Vec2))?G__16531.buf:G__16531.buf);
-var G__16530 = (new Float32Array(3));
-(G__16530[(0)] = (G__16529[(0)]));
+thi.ng.geom.vector.xyz = (function thi$ng$geom$vector$xyz(G__11559){
+var G__11557 = (((G__11559 instanceof thi.ng.geom.vector.Vec2))?G__11559.buf:G__11559.buf);
+var G__11558 = (new Float32Array(3));
+(G__11558[(0)] = (G__11557[(0)]));
 
-(G__16530[(1)] = (G__16529[(1)]));
+(G__11558[(1)] = (G__11557[(1)]));
 
-(G__16530[(2)] = (G__16529[(2)]));
+(G__11558[(2)] = (G__11557[(2)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16530,null,cljs.core.meta(G__16531)));
+return (new thi.ng.geom.vector.Vec3(G__11558,null,cljs.core.meta.call(null,G__11559)));
 });
-thi.ng.geom.vector.xz = (function thi$ng$geom$vector$xz(G__16534){
-var G__16532 = (((G__16534 instanceof thi.ng.geom.vector.Vec2))?G__16534.buf:G__16534.buf);
-var G__16533 = (new Float32Array(2));
-(G__16533[(0)] = (G__16532[(0)]));
+thi.ng.geom.vector.xz = (function thi$ng$geom$vector$xz(G__11562){
+var G__11560 = (((G__11562 instanceof thi.ng.geom.vector.Vec2))?G__11562.buf:G__11562.buf);
+var G__11561 = (new Float32Array(2));
+(G__11561[(0)] = (G__11560[(0)]));
 
-(G__16533[(1)] = (G__16532[(2)]));
+(G__11561[(1)] = (G__11560[(2)]));
 
-return (new thi.ng.geom.vector.Vec2(G__16533,null,cljs.core.meta(G__16534)));
+return (new thi.ng.geom.vector.Vec2(G__11561,null,cljs.core.meta.call(null,G__11562)));
 });
-thi.ng.geom.vector.xzx = (function thi$ng$geom$vector$xzx(G__16537){
-var G__16535 = (((G__16537 instanceof thi.ng.geom.vector.Vec2))?G__16537.buf:G__16537.buf);
-var G__16536 = (new Float32Array(3));
-(G__16536[(0)] = (G__16535[(0)]));
+thi.ng.geom.vector.xzx = (function thi$ng$geom$vector$xzx(G__11565){
+var G__11563 = (((G__11565 instanceof thi.ng.geom.vector.Vec2))?G__11565.buf:G__11565.buf);
+var G__11564 = (new Float32Array(3));
+(G__11564[(0)] = (G__11563[(0)]));
 
-(G__16536[(1)] = (G__16535[(2)]));
+(G__11564[(1)] = (G__11563[(2)]));
 
-(G__16536[(2)] = (G__16535[(0)]));
+(G__11564[(2)] = (G__11563[(0)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16536,null,cljs.core.meta(G__16537)));
+return (new thi.ng.geom.vector.Vec3(G__11564,null,cljs.core.meta.call(null,G__11565)));
 });
-thi.ng.geom.vector.xzy = (function thi$ng$geom$vector$xzy(G__16540){
-var G__16538 = (((G__16540 instanceof thi.ng.geom.vector.Vec2))?G__16540.buf:G__16540.buf);
-var G__16539 = (new Float32Array(3));
-(G__16539[(0)] = (G__16538[(0)]));
+thi.ng.geom.vector.xzy = (function thi$ng$geom$vector$xzy(G__11568){
+var G__11566 = (((G__11568 instanceof thi.ng.geom.vector.Vec2))?G__11568.buf:G__11568.buf);
+var G__11567 = (new Float32Array(3));
+(G__11567[(0)] = (G__11566[(0)]));
 
-(G__16539[(1)] = (G__16538[(2)]));
+(G__11567[(1)] = (G__11566[(2)]));
 
-(G__16539[(2)] = (G__16538[(1)]));
+(G__11567[(2)] = (G__11566[(1)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16539,null,cljs.core.meta(G__16540)));
+return (new thi.ng.geom.vector.Vec3(G__11567,null,cljs.core.meta.call(null,G__11568)));
 });
-thi.ng.geom.vector.xzz = (function thi$ng$geom$vector$xzz(G__16543){
-var G__16541 = (((G__16543 instanceof thi.ng.geom.vector.Vec2))?G__16543.buf:G__16543.buf);
-var G__16542 = (new Float32Array(3));
-(G__16542[(0)] = (G__16541[(0)]));
+thi.ng.geom.vector.xzz = (function thi$ng$geom$vector$xzz(G__11571){
+var G__11569 = (((G__11571 instanceof thi.ng.geom.vector.Vec2))?G__11571.buf:G__11571.buf);
+var G__11570 = (new Float32Array(3));
+(G__11570[(0)] = (G__11569[(0)]));
 
-(G__16542[(1)] = (G__16541[(2)]));
+(G__11570[(1)] = (G__11569[(2)]));
 
-(G__16542[(2)] = (G__16541[(2)]));
+(G__11570[(2)] = (G__11569[(2)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16542,null,cljs.core.meta(G__16543)));
+return (new thi.ng.geom.vector.Vec3(G__11570,null,cljs.core.meta.call(null,G__11571)));
 });
-thi.ng.geom.vector.y = (function thi$ng$geom$vector$y(G__16546){
-var G__16544 = (((G__16546 instanceof thi.ng.geom.vector.Vec2))?G__16546.buf:G__16546.buf);
-return (G__16544[(1)]);
+thi.ng.geom.vector.y = (function thi$ng$geom$vector$y(G__11574){
+var G__11572 = (((G__11574 instanceof thi.ng.geom.vector.Vec2))?G__11574.buf:G__11574.buf);
+return (G__11572[(1)]);
 });
-thi.ng.geom.vector.yx = (function thi$ng$geom$vector$yx(G__16549){
-var G__16547 = (((G__16549 instanceof thi.ng.geom.vector.Vec2))?G__16549.buf:G__16549.buf);
-var G__16548 = (new Float32Array(2));
-(G__16548[(0)] = (G__16547[(1)]));
+thi.ng.geom.vector.yx = (function thi$ng$geom$vector$yx(G__11577){
+var G__11575 = (((G__11577 instanceof thi.ng.geom.vector.Vec2))?G__11577.buf:G__11577.buf);
+var G__11576 = (new Float32Array(2));
+(G__11576[(0)] = (G__11575[(1)]));
 
-(G__16548[(1)] = (G__16547[(0)]));
+(G__11576[(1)] = (G__11575[(0)]));
 
-return (new thi.ng.geom.vector.Vec2(G__16548,null,cljs.core.meta(G__16549)));
+return (new thi.ng.geom.vector.Vec2(G__11576,null,cljs.core.meta.call(null,G__11577)));
 });
-thi.ng.geom.vector.yxx = (function thi$ng$geom$vector$yxx(G__16552){
-var G__16550 = (((G__16552 instanceof thi.ng.geom.vector.Vec2))?G__16552.buf:G__16552.buf);
-var G__16551 = (new Float32Array(3));
-(G__16551[(0)] = (G__16550[(1)]));
+thi.ng.geom.vector.yxx = (function thi$ng$geom$vector$yxx(G__11580){
+var G__11578 = (((G__11580 instanceof thi.ng.geom.vector.Vec2))?G__11580.buf:G__11580.buf);
+var G__11579 = (new Float32Array(3));
+(G__11579[(0)] = (G__11578[(1)]));
 
-(G__16551[(1)] = (G__16550[(0)]));
+(G__11579[(1)] = (G__11578[(0)]));
 
-(G__16551[(2)] = (G__16550[(0)]));
+(G__11579[(2)] = (G__11578[(0)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16551,null,cljs.core.meta(G__16552)));
+return (new thi.ng.geom.vector.Vec3(G__11579,null,cljs.core.meta.call(null,G__11580)));
 });
-thi.ng.geom.vector.yxy = (function thi$ng$geom$vector$yxy(G__16555){
-var G__16553 = (((G__16555 instanceof thi.ng.geom.vector.Vec2))?G__16555.buf:G__16555.buf);
-var G__16554 = (new Float32Array(3));
-(G__16554[(0)] = (G__16553[(1)]));
+thi.ng.geom.vector.yxy = (function thi$ng$geom$vector$yxy(G__11583){
+var G__11581 = (((G__11583 instanceof thi.ng.geom.vector.Vec2))?G__11583.buf:G__11583.buf);
+var G__11582 = (new Float32Array(3));
+(G__11582[(0)] = (G__11581[(1)]));
 
-(G__16554[(1)] = (G__16553[(0)]));
+(G__11582[(1)] = (G__11581[(0)]));
 
-(G__16554[(2)] = (G__16553[(1)]));
+(G__11582[(2)] = (G__11581[(1)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16554,null,cljs.core.meta(G__16555)));
+return (new thi.ng.geom.vector.Vec3(G__11582,null,cljs.core.meta.call(null,G__11583)));
 });
-thi.ng.geom.vector.yxz = (function thi$ng$geom$vector$yxz(G__16558){
-var G__16556 = (((G__16558 instanceof thi.ng.geom.vector.Vec2))?G__16558.buf:G__16558.buf);
-var G__16557 = (new Float32Array(3));
-(G__16557[(0)] = (G__16556[(1)]));
+thi.ng.geom.vector.yxz = (function thi$ng$geom$vector$yxz(G__11586){
+var G__11584 = (((G__11586 instanceof thi.ng.geom.vector.Vec2))?G__11586.buf:G__11586.buf);
+var G__11585 = (new Float32Array(3));
+(G__11585[(0)] = (G__11584[(1)]));
 
-(G__16557[(1)] = (G__16556[(0)]));
+(G__11585[(1)] = (G__11584[(0)]));
 
-(G__16557[(2)] = (G__16556[(2)]));
+(G__11585[(2)] = (G__11584[(2)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16557,null,cljs.core.meta(G__16558)));
+return (new thi.ng.geom.vector.Vec3(G__11585,null,cljs.core.meta.call(null,G__11586)));
 });
-thi.ng.geom.vector.yy = (function thi$ng$geom$vector$yy(G__16561){
-var G__16559 = (((G__16561 instanceof thi.ng.geom.vector.Vec2))?G__16561.buf:G__16561.buf);
-var G__16560 = (new Float32Array(2));
-(G__16560[(0)] = (G__16559[(1)]));
+thi.ng.geom.vector.yy = (function thi$ng$geom$vector$yy(G__11589){
+var G__11587 = (((G__11589 instanceof thi.ng.geom.vector.Vec2))?G__11589.buf:G__11589.buf);
+var G__11588 = (new Float32Array(2));
+(G__11588[(0)] = (G__11587[(1)]));
 
-(G__16560[(1)] = (G__16559[(1)]));
+(G__11588[(1)] = (G__11587[(1)]));
 
-return (new thi.ng.geom.vector.Vec2(G__16560,null,cljs.core.meta(G__16561)));
+return (new thi.ng.geom.vector.Vec2(G__11588,null,cljs.core.meta.call(null,G__11589)));
 });
-thi.ng.geom.vector.yyx = (function thi$ng$geom$vector$yyx(G__16564){
-var G__16562 = (((G__16564 instanceof thi.ng.geom.vector.Vec2))?G__16564.buf:G__16564.buf);
-var G__16563 = (new Float32Array(3));
-(G__16563[(0)] = (G__16562[(1)]));
+thi.ng.geom.vector.yyx = (function thi$ng$geom$vector$yyx(G__11592){
+var G__11590 = (((G__11592 instanceof thi.ng.geom.vector.Vec2))?G__11592.buf:G__11592.buf);
+var G__11591 = (new Float32Array(3));
+(G__11591[(0)] = (G__11590[(1)]));
 
-(G__16563[(1)] = (G__16562[(1)]));
+(G__11591[(1)] = (G__11590[(1)]));
 
-(G__16563[(2)] = (G__16562[(0)]));
+(G__11591[(2)] = (G__11590[(0)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16563,null,cljs.core.meta(G__16564)));
+return (new thi.ng.geom.vector.Vec3(G__11591,null,cljs.core.meta.call(null,G__11592)));
 });
-thi.ng.geom.vector.yyy = (function thi$ng$geom$vector$yyy(G__16567){
-var G__16565 = (((G__16567 instanceof thi.ng.geom.vector.Vec2))?G__16567.buf:G__16567.buf);
-var G__16566 = (new Float32Array(3));
-(G__16566[(0)] = (G__16565[(1)]));
+thi.ng.geom.vector.yyy = (function thi$ng$geom$vector$yyy(G__11595){
+var G__11593 = (((G__11595 instanceof thi.ng.geom.vector.Vec2))?G__11595.buf:G__11595.buf);
+var G__11594 = (new Float32Array(3));
+(G__11594[(0)] = (G__11593[(1)]));
 
-(G__16566[(1)] = (G__16565[(1)]));
+(G__11594[(1)] = (G__11593[(1)]));
 
-(G__16566[(2)] = (G__16565[(1)]));
+(G__11594[(2)] = (G__11593[(1)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16566,null,cljs.core.meta(G__16567)));
+return (new thi.ng.geom.vector.Vec3(G__11594,null,cljs.core.meta.call(null,G__11595)));
 });
-thi.ng.geom.vector.yyz = (function thi$ng$geom$vector$yyz(G__16570){
-var G__16568 = (((G__16570 instanceof thi.ng.geom.vector.Vec2))?G__16570.buf:G__16570.buf);
-var G__16569 = (new Float32Array(3));
-(G__16569[(0)] = (G__16568[(1)]));
+thi.ng.geom.vector.yyz = (function thi$ng$geom$vector$yyz(G__11598){
+var G__11596 = (((G__11598 instanceof thi.ng.geom.vector.Vec2))?G__11598.buf:G__11598.buf);
+var G__11597 = (new Float32Array(3));
+(G__11597[(0)] = (G__11596[(1)]));
 
-(G__16569[(1)] = (G__16568[(1)]));
+(G__11597[(1)] = (G__11596[(1)]));
 
-(G__16569[(2)] = (G__16568[(2)]));
+(G__11597[(2)] = (G__11596[(2)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16569,null,cljs.core.meta(G__16570)));
+return (new thi.ng.geom.vector.Vec3(G__11597,null,cljs.core.meta.call(null,G__11598)));
 });
-thi.ng.geom.vector.yz = (function thi$ng$geom$vector$yz(G__16573){
-var G__16571 = (((G__16573 instanceof thi.ng.geom.vector.Vec2))?G__16573.buf:G__16573.buf);
-var G__16572 = (new Float32Array(2));
-(G__16572[(0)] = (G__16571[(1)]));
+thi.ng.geom.vector.yz = (function thi$ng$geom$vector$yz(G__11601){
+var G__11599 = (((G__11601 instanceof thi.ng.geom.vector.Vec2))?G__11601.buf:G__11601.buf);
+var G__11600 = (new Float32Array(2));
+(G__11600[(0)] = (G__11599[(1)]));
 
-(G__16572[(1)] = (G__16571[(2)]));
+(G__11600[(1)] = (G__11599[(2)]));
 
-return (new thi.ng.geom.vector.Vec2(G__16572,null,cljs.core.meta(G__16573)));
+return (new thi.ng.geom.vector.Vec2(G__11600,null,cljs.core.meta.call(null,G__11601)));
 });
-thi.ng.geom.vector.yzx = (function thi$ng$geom$vector$yzx(G__16576){
-var G__16574 = (((G__16576 instanceof thi.ng.geom.vector.Vec2))?G__16576.buf:G__16576.buf);
-var G__16575 = (new Float32Array(3));
-(G__16575[(0)] = (G__16574[(1)]));
+thi.ng.geom.vector.yzx = (function thi$ng$geom$vector$yzx(G__11604){
+var G__11602 = (((G__11604 instanceof thi.ng.geom.vector.Vec2))?G__11604.buf:G__11604.buf);
+var G__11603 = (new Float32Array(3));
+(G__11603[(0)] = (G__11602[(1)]));
 
-(G__16575[(1)] = (G__16574[(2)]));
+(G__11603[(1)] = (G__11602[(2)]));
 
-(G__16575[(2)] = (G__16574[(0)]));
+(G__11603[(2)] = (G__11602[(0)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16575,null,cljs.core.meta(G__16576)));
+return (new thi.ng.geom.vector.Vec3(G__11603,null,cljs.core.meta.call(null,G__11604)));
 });
-thi.ng.geom.vector.yzy = (function thi$ng$geom$vector$yzy(G__16579){
-var G__16577 = (((G__16579 instanceof thi.ng.geom.vector.Vec2))?G__16579.buf:G__16579.buf);
-var G__16578 = (new Float32Array(3));
-(G__16578[(0)] = (G__16577[(1)]));
+thi.ng.geom.vector.yzy = (function thi$ng$geom$vector$yzy(G__11607){
+var G__11605 = (((G__11607 instanceof thi.ng.geom.vector.Vec2))?G__11607.buf:G__11607.buf);
+var G__11606 = (new Float32Array(3));
+(G__11606[(0)] = (G__11605[(1)]));
 
-(G__16578[(1)] = (G__16577[(2)]));
+(G__11606[(1)] = (G__11605[(2)]));
 
-(G__16578[(2)] = (G__16577[(1)]));
+(G__11606[(2)] = (G__11605[(1)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16578,null,cljs.core.meta(G__16579)));
+return (new thi.ng.geom.vector.Vec3(G__11606,null,cljs.core.meta.call(null,G__11607)));
 });
-thi.ng.geom.vector.yzz = (function thi$ng$geom$vector$yzz(G__16582){
-var G__16580 = (((G__16582 instanceof thi.ng.geom.vector.Vec2))?G__16582.buf:G__16582.buf);
-var G__16581 = (new Float32Array(3));
-(G__16581[(0)] = (G__16580[(1)]));
+thi.ng.geom.vector.yzz = (function thi$ng$geom$vector$yzz(G__11610){
+var G__11608 = (((G__11610 instanceof thi.ng.geom.vector.Vec2))?G__11610.buf:G__11610.buf);
+var G__11609 = (new Float32Array(3));
+(G__11609[(0)] = (G__11608[(1)]));
 
-(G__16581[(1)] = (G__16580[(2)]));
+(G__11609[(1)] = (G__11608[(2)]));
 
-(G__16581[(2)] = (G__16580[(2)]));
+(G__11609[(2)] = (G__11608[(2)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16581,null,cljs.core.meta(G__16582)));
+return (new thi.ng.geom.vector.Vec3(G__11609,null,cljs.core.meta.call(null,G__11610)));
 });
-thi.ng.geom.vector.z = (function thi$ng$geom$vector$z(G__16585){
-var G__16583 = (((G__16585 instanceof thi.ng.geom.vector.Vec2))?G__16585.buf:G__16585.buf);
-return (G__16583[(2)]);
+thi.ng.geom.vector.z = (function thi$ng$geom$vector$z(G__11613){
+var G__11611 = (((G__11613 instanceof thi.ng.geom.vector.Vec2))?G__11613.buf:G__11613.buf);
+return (G__11611[(2)]);
 });
-thi.ng.geom.vector.zx = (function thi$ng$geom$vector$zx(G__16588){
-var G__16586 = (((G__16588 instanceof thi.ng.geom.vector.Vec2))?G__16588.buf:G__16588.buf);
-var G__16587 = (new Float32Array(2));
-(G__16587[(0)] = (G__16586[(2)]));
+thi.ng.geom.vector.zx = (function thi$ng$geom$vector$zx(G__11616){
+var G__11614 = (((G__11616 instanceof thi.ng.geom.vector.Vec2))?G__11616.buf:G__11616.buf);
+var G__11615 = (new Float32Array(2));
+(G__11615[(0)] = (G__11614[(2)]));
 
-(G__16587[(1)] = (G__16586[(0)]));
+(G__11615[(1)] = (G__11614[(0)]));
 
-return (new thi.ng.geom.vector.Vec2(G__16587,null,cljs.core.meta(G__16588)));
+return (new thi.ng.geom.vector.Vec2(G__11615,null,cljs.core.meta.call(null,G__11616)));
 });
-thi.ng.geom.vector.zxx = (function thi$ng$geom$vector$zxx(G__16591){
-var G__16589 = (((G__16591 instanceof thi.ng.geom.vector.Vec2))?G__16591.buf:G__16591.buf);
-var G__16590 = (new Float32Array(3));
-(G__16590[(0)] = (G__16589[(2)]));
+thi.ng.geom.vector.zxx = (function thi$ng$geom$vector$zxx(G__11619){
+var G__11617 = (((G__11619 instanceof thi.ng.geom.vector.Vec2))?G__11619.buf:G__11619.buf);
+var G__11618 = (new Float32Array(3));
+(G__11618[(0)] = (G__11617[(2)]));
 
-(G__16590[(1)] = (G__16589[(0)]));
+(G__11618[(1)] = (G__11617[(0)]));
 
-(G__16590[(2)] = (G__16589[(0)]));
+(G__11618[(2)] = (G__11617[(0)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16590,null,cljs.core.meta(G__16591)));
+return (new thi.ng.geom.vector.Vec3(G__11618,null,cljs.core.meta.call(null,G__11619)));
 });
-thi.ng.geom.vector.zxy = (function thi$ng$geom$vector$zxy(G__16594){
-var G__16592 = (((G__16594 instanceof thi.ng.geom.vector.Vec2))?G__16594.buf:G__16594.buf);
-var G__16593 = (new Float32Array(3));
-(G__16593[(0)] = (G__16592[(2)]));
+thi.ng.geom.vector.zxy = (function thi$ng$geom$vector$zxy(G__11622){
+var G__11620 = (((G__11622 instanceof thi.ng.geom.vector.Vec2))?G__11622.buf:G__11622.buf);
+var G__11621 = (new Float32Array(3));
+(G__11621[(0)] = (G__11620[(2)]));
 
-(G__16593[(1)] = (G__16592[(0)]));
+(G__11621[(1)] = (G__11620[(0)]));
 
-(G__16593[(2)] = (G__16592[(1)]));
+(G__11621[(2)] = (G__11620[(1)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16593,null,cljs.core.meta(G__16594)));
+return (new thi.ng.geom.vector.Vec3(G__11621,null,cljs.core.meta.call(null,G__11622)));
 });
-thi.ng.geom.vector.zxz = (function thi$ng$geom$vector$zxz(G__16597){
-var G__16595 = (((G__16597 instanceof thi.ng.geom.vector.Vec2))?G__16597.buf:G__16597.buf);
-var G__16596 = (new Float32Array(3));
-(G__16596[(0)] = (G__16595[(2)]));
+thi.ng.geom.vector.zxz = (function thi$ng$geom$vector$zxz(G__11625){
+var G__11623 = (((G__11625 instanceof thi.ng.geom.vector.Vec2))?G__11625.buf:G__11625.buf);
+var G__11624 = (new Float32Array(3));
+(G__11624[(0)] = (G__11623[(2)]));
 
-(G__16596[(1)] = (G__16595[(0)]));
+(G__11624[(1)] = (G__11623[(0)]));
 
-(G__16596[(2)] = (G__16595[(2)]));
+(G__11624[(2)] = (G__11623[(2)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16596,null,cljs.core.meta(G__16597)));
+return (new thi.ng.geom.vector.Vec3(G__11624,null,cljs.core.meta.call(null,G__11625)));
 });
-thi.ng.geom.vector.zy = (function thi$ng$geom$vector$zy(G__16600){
-var G__16598 = (((G__16600 instanceof thi.ng.geom.vector.Vec2))?G__16600.buf:G__16600.buf);
-var G__16599 = (new Float32Array(2));
-(G__16599[(0)] = (G__16598[(2)]));
+thi.ng.geom.vector.zy = (function thi$ng$geom$vector$zy(G__11628){
+var G__11626 = (((G__11628 instanceof thi.ng.geom.vector.Vec2))?G__11628.buf:G__11628.buf);
+var G__11627 = (new Float32Array(2));
+(G__11627[(0)] = (G__11626[(2)]));
 
-(G__16599[(1)] = (G__16598[(1)]));
+(G__11627[(1)] = (G__11626[(1)]));
 
-return (new thi.ng.geom.vector.Vec2(G__16599,null,cljs.core.meta(G__16600)));
+return (new thi.ng.geom.vector.Vec2(G__11627,null,cljs.core.meta.call(null,G__11628)));
 });
-thi.ng.geom.vector.zyx = (function thi$ng$geom$vector$zyx(G__16603){
-var G__16601 = (((G__16603 instanceof thi.ng.geom.vector.Vec2))?G__16603.buf:G__16603.buf);
-var G__16602 = (new Float32Array(3));
-(G__16602[(0)] = (G__16601[(2)]));
+thi.ng.geom.vector.zyx = (function thi$ng$geom$vector$zyx(G__11631){
+var G__11629 = (((G__11631 instanceof thi.ng.geom.vector.Vec2))?G__11631.buf:G__11631.buf);
+var G__11630 = (new Float32Array(3));
+(G__11630[(0)] = (G__11629[(2)]));
 
-(G__16602[(1)] = (G__16601[(1)]));
+(G__11630[(1)] = (G__11629[(1)]));
 
-(G__16602[(2)] = (G__16601[(0)]));
+(G__11630[(2)] = (G__11629[(0)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16602,null,cljs.core.meta(G__16603)));
+return (new thi.ng.geom.vector.Vec3(G__11630,null,cljs.core.meta.call(null,G__11631)));
 });
-thi.ng.geom.vector.zyy = (function thi$ng$geom$vector$zyy(G__16606){
-var G__16604 = (((G__16606 instanceof thi.ng.geom.vector.Vec2))?G__16606.buf:G__16606.buf);
-var G__16605 = (new Float32Array(3));
-(G__16605[(0)] = (G__16604[(2)]));
+thi.ng.geom.vector.zyy = (function thi$ng$geom$vector$zyy(G__11634){
+var G__11632 = (((G__11634 instanceof thi.ng.geom.vector.Vec2))?G__11634.buf:G__11634.buf);
+var G__11633 = (new Float32Array(3));
+(G__11633[(0)] = (G__11632[(2)]));
 
-(G__16605[(1)] = (G__16604[(1)]));
+(G__11633[(1)] = (G__11632[(1)]));
 
-(G__16605[(2)] = (G__16604[(1)]));
+(G__11633[(2)] = (G__11632[(1)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16605,null,cljs.core.meta(G__16606)));
+return (new thi.ng.geom.vector.Vec3(G__11633,null,cljs.core.meta.call(null,G__11634)));
 });
-thi.ng.geom.vector.zyz = (function thi$ng$geom$vector$zyz(G__16609){
-var G__16607 = (((G__16609 instanceof thi.ng.geom.vector.Vec2))?G__16609.buf:G__16609.buf);
-var G__16608 = (new Float32Array(3));
-(G__16608[(0)] = (G__16607[(2)]));
+thi.ng.geom.vector.zyz = (function thi$ng$geom$vector$zyz(G__11637){
+var G__11635 = (((G__11637 instanceof thi.ng.geom.vector.Vec2))?G__11637.buf:G__11637.buf);
+var G__11636 = (new Float32Array(3));
+(G__11636[(0)] = (G__11635[(2)]));
 
-(G__16608[(1)] = (G__16607[(1)]));
+(G__11636[(1)] = (G__11635[(1)]));
 
-(G__16608[(2)] = (G__16607[(2)]));
+(G__11636[(2)] = (G__11635[(2)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16608,null,cljs.core.meta(G__16609)));
+return (new thi.ng.geom.vector.Vec3(G__11636,null,cljs.core.meta.call(null,G__11637)));
 });
-thi.ng.geom.vector.zz = (function thi$ng$geom$vector$zz(G__16612){
-var G__16610 = (((G__16612 instanceof thi.ng.geom.vector.Vec2))?G__16612.buf:G__16612.buf);
-var G__16611 = (new Float32Array(2));
-(G__16611[(0)] = (G__16610[(2)]));
+thi.ng.geom.vector.zz = (function thi$ng$geom$vector$zz(G__11640){
+var G__11638 = (((G__11640 instanceof thi.ng.geom.vector.Vec2))?G__11640.buf:G__11640.buf);
+var G__11639 = (new Float32Array(2));
+(G__11639[(0)] = (G__11638[(2)]));
 
-(G__16611[(1)] = (G__16610[(2)]));
+(G__11639[(1)] = (G__11638[(2)]));
 
-return (new thi.ng.geom.vector.Vec2(G__16611,null,cljs.core.meta(G__16612)));
+return (new thi.ng.geom.vector.Vec2(G__11639,null,cljs.core.meta.call(null,G__11640)));
 });
-thi.ng.geom.vector.zzx = (function thi$ng$geom$vector$zzx(G__16615){
-var G__16613 = (((G__16615 instanceof thi.ng.geom.vector.Vec2))?G__16615.buf:G__16615.buf);
-var G__16614 = (new Float32Array(3));
-(G__16614[(0)] = (G__16613[(2)]));
+thi.ng.geom.vector.zzx = (function thi$ng$geom$vector$zzx(G__11643){
+var G__11641 = (((G__11643 instanceof thi.ng.geom.vector.Vec2))?G__11643.buf:G__11643.buf);
+var G__11642 = (new Float32Array(3));
+(G__11642[(0)] = (G__11641[(2)]));
 
-(G__16614[(1)] = (G__16613[(2)]));
+(G__11642[(1)] = (G__11641[(2)]));
 
-(G__16614[(2)] = (G__16613[(0)]));
+(G__11642[(2)] = (G__11641[(0)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16614,null,cljs.core.meta(G__16615)));
+return (new thi.ng.geom.vector.Vec3(G__11642,null,cljs.core.meta.call(null,G__11643)));
 });
-thi.ng.geom.vector.zzy = (function thi$ng$geom$vector$zzy(G__16618){
-var G__16616 = (((G__16618 instanceof thi.ng.geom.vector.Vec2))?G__16618.buf:G__16618.buf);
-var G__16617 = (new Float32Array(3));
-(G__16617[(0)] = (G__16616[(2)]));
+thi.ng.geom.vector.zzy = (function thi$ng$geom$vector$zzy(G__11646){
+var G__11644 = (((G__11646 instanceof thi.ng.geom.vector.Vec2))?G__11646.buf:G__11646.buf);
+var G__11645 = (new Float32Array(3));
+(G__11645[(0)] = (G__11644[(2)]));
 
-(G__16617[(1)] = (G__16616[(2)]));
+(G__11645[(1)] = (G__11644[(2)]));
 
-(G__16617[(2)] = (G__16616[(1)]));
+(G__11645[(2)] = (G__11644[(1)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16617,null,cljs.core.meta(G__16618)));
+return (new thi.ng.geom.vector.Vec3(G__11645,null,cljs.core.meta.call(null,G__11646)));
 });
-thi.ng.geom.vector.zzz = (function thi$ng$geom$vector$zzz(G__16621){
-var G__16619 = (((G__16621 instanceof thi.ng.geom.vector.Vec2))?G__16621.buf:G__16621.buf);
-var G__16620 = (new Float32Array(3));
-(G__16620[(0)] = (G__16619[(2)]));
+thi.ng.geom.vector.zzz = (function thi$ng$geom$vector$zzz(G__11649){
+var G__11647 = (((G__11649 instanceof thi.ng.geom.vector.Vec2))?G__11649.buf:G__11649.buf);
+var G__11648 = (new Float32Array(3));
+(G__11648[(0)] = (G__11647[(2)]));
 
-(G__16620[(1)] = (G__16619[(2)]));
+(G__11648[(1)] = (G__11647[(2)]));
 
-(G__16620[(2)] = (G__16619[(2)]));
+(G__11648[(2)] = (G__11647[(2)]));
 
-return (new thi.ng.geom.vector.Vec3(G__16620,null,cljs.core.meta(G__16621)));
+return (new thi.ng.geom.vector.Vec3(G__11648,null,cljs.core.meta.call(null,G__11649)));
 });
-thi.ng.geom.vector.swizzle2_fns = new cljs.core.PersistentArrayMap(null, 6, [cljs.core.cst$kw$x,thi.ng.geom.vector.x,cljs.core.cst$kw$xx,thi.ng.geom.vector.xx,cljs.core.cst$kw$xy,thi.ng.geom.vector.xy,cljs.core.cst$kw$y,thi.ng.geom.vector.y,cljs.core.cst$kw$yx,thi.ng.geom.vector.yx,cljs.core.cst$kw$yy,thi.ng.geom.vector.yy], null);
-thi.ng.geom.vector.swizzle3_fns = cljs.core.PersistentHashMap.fromArrays([cljs.core.cst$kw$y,cljs.core.cst$kw$xzx,cljs.core.cst$kw$xyz,cljs.core.cst$kw$zzy,cljs.core.cst$kw$yx,cljs.core.cst$kw$xy,cljs.core.cst$kw$yyz,cljs.core.cst$kw$zxy,cljs.core.cst$kw$xzy,cljs.core.cst$kw$zxz,cljs.core.cst$kw$zx,cljs.core.cst$kw$xx,cljs.core.cst$kw$xxx,cljs.core.cst$kw$zy,cljs.core.cst$kw$zzx,cljs.core.cst$kw$zyx,cljs.core.cst$kw$yzx,cljs.core.cst$kw$z,cljs.core.cst$kw$yyx,cljs.core.cst$kw$xz,cljs.core.cst$kw$zyz,cljs.core.cst$kw$yy,cljs.core.cst$kw$xxz,cljs.core.cst$kw$yzy,cljs.core.cst$kw$yz,cljs.core.cst$kw$yxx,cljs.core.cst$kw$xyy,cljs.core.cst$kw$xxy,cljs.core.cst$kw$zz,cljs.core.cst$kw$zzz,cljs.core.cst$kw$x,cljs.core.cst$kw$xzz,cljs.core.cst$kw$yxz,cljs.core.cst$kw$zxx,cljs.core.cst$kw$yzz,cljs.core.cst$kw$xyx,cljs.core.cst$kw$yxy,cljs.core.cst$kw$yyy,cljs.core.cst$kw$zyy],[thi.ng.geom.vector.y,thi.ng.geom.vector.xzx,thi.ng.geom.vector.xyz,thi.ng.geom.vector.zzy,thi.ng.geom.vector.yx,thi.ng.geom.vector.xy,thi.ng.geom.vector.yyz,thi.ng.geom.vector.zxy,thi.ng.geom.vector.xzy,thi.ng.geom.vector.zxz,thi.ng.geom.vector.zx,thi.ng.geom.vector.xx,thi.ng.geom.vector.xxx,thi.ng.geom.vector.zy,thi.ng.geom.vector.zzx,thi.ng.geom.vector.zyx,thi.ng.geom.vector.yzx,thi.ng.geom.vector.z,thi.ng.geom.vector.yyx,thi.ng.geom.vector.xz,thi.ng.geom.vector.zyz,thi.ng.geom.vector.yy,thi.ng.geom.vector.xxz,thi.ng.geom.vector.yzy,thi.ng.geom.vector.yz,thi.ng.geom.vector.yxx,thi.ng.geom.vector.xyy,thi.ng.geom.vector.xxy,thi.ng.geom.vector.zz,thi.ng.geom.vector.zzz,thi.ng.geom.vector.x,thi.ng.geom.vector.xzz,thi.ng.geom.vector.yxz,thi.ng.geom.vector.zxx,thi.ng.geom.vector.yzz,thi.ng.geom.vector.xyx,thi.ng.geom.vector.yxy,thi.ng.geom.vector.yyy,thi.ng.geom.vector.zyy]);
+thi.ng.geom.vector.swizzle2_fns = new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"x","x",2099068185),thi.ng.geom.vector.x,new cljs.core.Keyword(null,"xx","xx",-1542203733),thi.ng.geom.vector.xx,new cljs.core.Keyword(null,"xy","xy",-696978232),thi.ng.geom.vector.xy,new cljs.core.Keyword(null,"y","y",-1757859776),thi.ng.geom.vector.y,new cljs.core.Keyword(null,"yx","yx",1696579752),thi.ng.geom.vector.yx,new cljs.core.Keyword(null,"yy","yy",-1432012814),thi.ng.geom.vector.yy], null);
+thi.ng.geom.vector.swizzle3_fns = cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"y","y",-1757859776),new cljs.core.Keyword(null,"xzx","xzx",-1000197983),new cljs.core.Keyword(null,"xyz","xyz",-1605570015),new cljs.core.Keyword(null,"zzy","zzy",-874287326),new cljs.core.Keyword(null,"yx","yx",1696579752),new cljs.core.Keyword(null,"xy","xy",-696978232),new cljs.core.Keyword(null,"yyz","yyz",1133968296),new cljs.core.Keyword(null,"zxy","zxy",-1258840183),new cljs.core.Keyword(null,"xzy","xzy",1043177385),new cljs.core.Keyword(null,"zxz","zxz",1026042602),new cljs.core.Keyword(null,"zx","zx",-933582998),new cljs.core.Keyword(null,"xx","xx",-1542203733),new cljs.core.Keyword(null,"xxx","xxx",-1019301908),new cljs.core.Keyword(null,"zy","zy",-1975963090),new cljs.core.Keyword(null,"zzx","zzx",20750383),new cljs.core.Keyword(null,"zyx","zyx",1752527951),new cljs.core.Keyword(null,"yzx","yzx",-1496223025),new cljs.core.Keyword(null,"z","z",-789527183),new cljs.core.Keyword(null,"yyx","yyx",-1318218191),new cljs.core.Keyword(null,"xz","xz",426487154),new cljs.core.Keyword(null,"zyz","zyz",-1838068142),new cljs.core.Keyword(null,"yy","yy",-1432012814),new cljs.core.Keyword(null,"xxz","xxz",129827699),new cljs.core.Keyword(null,"yzy","yzy",-179510251),new cljs.core.Keyword(null,"yz","yz",679015029),new cljs.core.Keyword(null,"yxx","yxx",-332290091),new cljs.core.Keyword(null,"xyy","xyy",996073014),new cljs.core.Keyword(null,"xxy","xxy",-650102026),new cljs.core.Keyword(null,"zz","zz",122901783),new cljs.core.Keyword(null,"zzz","zzz",-77420552),new cljs.core.Keyword(null,"x","x",2099068185),new cljs.core.Keyword(null,"xzz","xzz",-643126693),new cljs.core.Keyword(null,"yxz","yxz",1786796508),new cljs.core.Keyword(null,"zxx","zxx",-61980804),new cljs.core.Keyword(null,"yzz","yzz",-1034441732),new cljs.core.Keyword(null,"xyx","xyx",1899467293),new cljs.core.Keyword(null,"yxy","yxy",1369901661),new cljs.core.Keyword(null,"yyy","yyy",780595422),new cljs.core.Keyword(null,"zyy","zyy",1946268991)],[thi.ng.geom.vector.y,thi.ng.geom.vector.xzx,thi.ng.geom.vector.xyz,thi.ng.geom.vector.zzy,thi.ng.geom.vector.yx,thi.ng.geom.vector.xy,thi.ng.geom.vector.yyz,thi.ng.geom.vector.zxy,thi.ng.geom.vector.xzy,thi.ng.geom.vector.zxz,thi.ng.geom.vector.zx,thi.ng.geom.vector.xx,thi.ng.geom.vector.xxx,thi.ng.geom.vector.zy,thi.ng.geom.vector.zzx,thi.ng.geom.vector.zyx,thi.ng.geom.vector.yzx,thi.ng.geom.vector.z,thi.ng.geom.vector.yyx,thi.ng.geom.vector.xz,thi.ng.geom.vector.zyz,thi.ng.geom.vector.yy,thi.ng.geom.vector.xxz,thi.ng.geom.vector.yzy,thi.ng.geom.vector.yz,thi.ng.geom.vector.yxx,thi.ng.geom.vector.xyy,thi.ng.geom.vector.xxy,thi.ng.geom.vector.zz,thi.ng.geom.vector.zzz,thi.ng.geom.vector.x,thi.ng.geom.vector.xzz,thi.ng.geom.vector.yxz,thi.ng.geom.vector.zxx,thi.ng.geom.vector.yzz,thi.ng.geom.vector.xyx,thi.ng.geom.vector.yxy,thi.ng.geom.vector.yyy,thi.ng.geom.vector.zyy]);
 thi.ng.geom.vector.swizzle_assoc_STAR_ = (function thi$ng$geom$vector$swizzle_assoc_STAR_(src,dest,keymap,k,v){
-var n = cljs.core.name(k);
-var c = cljs.core.count(n);
+var n = cljs.core.name.call(null,k);
+var c = cljs.core.count.call(null,n);
 var temp__6751__auto__ = (function (){var and__7377__auto__ = ((1) === c);
 if(and__7377__auto__){
-var G__16626 = cljs.core.first(n);
-return (keymap.cljs$core$IFn$_invoke$arity$1 ? keymap.cljs$core$IFn$_invoke$arity$1(G__16626) : keymap.call(null,G__16626));
+return keymap.call(null,cljs.core.first.call(null,n));
 } else {
 return and__7377__auto__;
 }
@@ -5137,25 +5027,23 @@ var idx = temp__6751__auto__;
 
 return dest;
 } else {
-if(((c <= cljs.core.count(keymap))) && (((c === cljs.core.count(v))) && ((cljs.core.count(v) === cljs.core.count(cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentHashSet.EMPTY,n)))))){
+if(((c <= cljs.core.count.call(null,keymap))) && (((c === cljs.core.count.call(null,v))) && ((cljs.core.count.call(null,v) === cljs.core.count.call(null,cljs.core.into.call(null,cljs.core.PersistentHashSet.EMPTY,n)))))){
 var i = (0);
 var n__$1 = n;
 while(true){
 if(cljs.core.truth_(n__$1)){
-var temp__6751__auto____$1 = (function (){var G__16627 = cljs.core.first(n__$1);
-return (keymap.cljs$core$IFn$_invoke$arity$1 ? keymap.cljs$core$IFn$_invoke$arity$1(G__16627) : keymap.call(null,G__16627));
-})();
+var temp__6751__auto____$1 = keymap.call(null,cljs.core.first.call(null,n__$1));
 if(cljs.core.truth_(temp__6751__auto____$1)){
 var idx = temp__6751__auto____$1;
-(dest[(idx | (0))] = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i)));
+(dest[(idx | (0))] = v.call(null,i));
 
-var G__16628 = (i + (1));
-var G__16629 = cljs.core.next(n__$1);
-i = G__16628;
-n__$1 = G__16629;
+var G__11650 = (i + (1));
+var G__11651 = cljs.core.next.call(null,n__$1);
+i = G__11650;
+n__$1 = G__11651;
 continue;
 } else {
-return thi.ng.xerror.core.key_error_BANG_(k);
+return thi.ng.xerror.core.key_error_BANG_.call(null,k);
 }
 } else {
 return dest;
@@ -5163,107 +5051,92 @@ return dest;
 break;
 }
 } else {
-return thi.ng.xerror.core.key_error_BANG_(k);
+return thi.ng.xerror.core.key_error_BANG_.call(null,k);
 }
 }
 });
 thi.ng.geom.vector.vec2_reduce_STAR_ = (function thi$ng$geom$vector$vec2_reduce_STAR_(op,acc,xs){
-return cljs.core.transduce.cljs$core$IFn$_invoke$arity$4(cljs.core.map.cljs$core$IFn$_invoke$arity$1((function (x){
+return cljs.core.transduce.call(null,cljs.core.map.call(null,(function (x){
 return x.buf;
 })),(function() {
-var G__16638 = null;
-var G__16638__1 = (function (a){
+var G__11652 = null;
+var G__11652__1 = (function (a){
 return a;
 });
-var G__16638__2 = (function (a,b){
-(a[(0)] = (function (){var G__16634 = (a[(0)]);
-var G__16635 = (b[(0)]);
-return (op.cljs$core$IFn$_invoke$arity$2 ? op.cljs$core$IFn$_invoke$arity$2(G__16634,G__16635) : op.call(null,G__16634,G__16635));
-})());
+var G__11652__2 = (function (a,b){
+(a[(0)] = op.call(null,(a[(0)]),(b[(0)])));
 
-(a[(1)] = (function (){var G__16636 = (a[(1)]);
-var G__16637 = (b[(1)]);
-return (op.cljs$core$IFn$_invoke$arity$2 ? op.cljs$core$IFn$_invoke$arity$2(G__16636,G__16637) : op.call(null,G__16636,G__16637));
-})());
+(a[(1)] = op.call(null,(a[(1)]),(b[(1)])));
 
 return a;
 });
-G__16638 = function(a,b){
+G__11652 = function(a,b){
 switch(arguments.length){
 case 1:
-return G__16638__1.call(this,a);
+return G__11652__1.call(this,a);
 case 2:
-return G__16638__2.call(this,a,b);
+return G__11652__2.call(this,a,b);
 }
 throw(new Error('Invalid arity: ' + arguments.length));
 };
-G__16638.cljs$core$IFn$_invoke$arity$1 = G__16638__1;
-G__16638.cljs$core$IFn$_invoke$arity$2 = G__16638__2;
-return G__16638;
+G__11652.cljs$core$IFn$_invoke$arity$1 = G__11652__1;
+G__11652.cljs$core$IFn$_invoke$arity$2 = G__11652__2;
+return G__11652;
 })()
 ,acc,xs);
 });
 thi.ng.geom.vector.vec3_reduce_STAR_ = (function thi$ng$geom$vector$vec3_reduce_STAR_(op,acc,xs){
-return cljs.core.transduce.cljs$core$IFn$_invoke$arity$4(cljs.core.map.cljs$core$IFn$_invoke$arity$1((function (x){
+return cljs.core.transduce.call(null,cljs.core.map.call(null,(function (x){
 return x.buf;
 })),(function() {
-var G__16651 = null;
-var G__16651__1 = (function (a){
+var G__11653 = null;
+var G__11653__1 = (function (a){
 return a;
 });
-var G__16651__2 = (function (a,b){
-(a[(0)] = (function (){var G__16645 = (a[(0)]);
-var G__16646 = (b[(0)]);
-return (op.cljs$core$IFn$_invoke$arity$2 ? op.cljs$core$IFn$_invoke$arity$2(G__16645,G__16646) : op.call(null,G__16645,G__16646));
-})());
+var G__11653__2 = (function (a,b){
+(a[(0)] = op.call(null,(a[(0)]),(b[(0)])));
 
-(a[(1)] = (function (){var G__16647 = (a[(1)]);
-var G__16648 = (b[(1)]);
-return (op.cljs$core$IFn$_invoke$arity$2 ? op.cljs$core$IFn$_invoke$arity$2(G__16647,G__16648) : op.call(null,G__16647,G__16648));
-})());
+(a[(1)] = op.call(null,(a[(1)]),(b[(1)])));
 
-(a[(2)] = (function (){var G__16649 = (a[(2)]);
-var G__16650 = (b[(2)]);
-return (op.cljs$core$IFn$_invoke$arity$2 ? op.cljs$core$IFn$_invoke$arity$2(G__16649,G__16650) : op.call(null,G__16649,G__16650));
-})());
+(a[(2)] = op.call(null,(a[(2)]),(b[(2)])));
 
 return a;
 });
-G__16651 = function(a,b){
+G__11653 = function(a,b){
 switch(arguments.length){
 case 1:
-return G__16651__1.call(this,a);
+return G__11653__1.call(this,a);
 case 2:
-return G__16651__2.call(this,a,b);
+return G__11653__2.call(this,a,b);
 }
 throw(new Error('Invalid arity: ' + arguments.length));
 };
-G__16651.cljs$core$IFn$_invoke$arity$1 = G__16651__1;
-G__16651.cljs$core$IFn$_invoke$arity$2 = G__16651__2;
-return G__16651;
+G__11653.cljs$core$IFn$_invoke$arity$1 = G__11653__1;
+G__11653.cljs$core$IFn$_invoke$arity$2 = G__11653__2;
+return G__11653;
 })()
 ,acc,xs);
 });
 thi.ng.geom.vector.V2 = (new thi.ng.geom.vector.Vec2((new Float32Array((2))),null,null));
 thi.ng.geom.vector.V3 = (new thi.ng.geom.vector.Vec3((new Float32Array((3))),null,null));
 thi.ng.geom.vector.vec2 = (function thi$ng$geom$vector$vec2(var_args){
-var args16652 = [];
-var len__8605__auto___16655 = arguments.length;
-var i__8606__auto___16656 = (0);
+var args11654 = [];
+var len__8605__auto___11657 = arguments.length;
+var i__8606__auto___11658 = (0);
 while(true){
-if((i__8606__auto___16656 < len__8605__auto___16655)){
-args16652.push((arguments[i__8606__auto___16656]));
+if((i__8606__auto___11658 < len__8605__auto___11657)){
+args11654.push((arguments[i__8606__auto___11658]));
 
-var G__16657 = (i__8606__auto___16656 + (1));
-i__8606__auto___16656 = G__16657;
+var G__11659 = (i__8606__auto___11658 + (1));
+i__8606__auto___11658 = G__11659;
 continue;
 } else {
 }
 break;
 }
 
-var G__16654 = args16652.length;
-switch (G__16654) {
+var G__11656 = args11654.length;
+switch (G__11656) {
 case 0:
 return thi.ng.geom.vector.vec2.cljs$core$IFn$_invoke$arity$0();
 
@@ -5277,7 +5150,7 @@ return thi.ng.geom.vector.vec2.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(a
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args16652.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args11654.length)].join('')));
 
 }
 });
@@ -5291,15 +5164,15 @@ if((v instanceof thi.ng.geom.vector.Vec2)){
 return v;
 } else {
 if(typeof v === 'number'){
-return thi.ng.geom.vector.vec2.cljs$core$IFn$_invoke$arity$2(v,v);
+return thi.ng.geom.vector.vec2.call(null,v,v);
 } else {
-if(cljs.core.sequential_QMARK_(v)){
-return thi.ng.geom.vector.vec2.cljs$core$IFn$_invoke$arity$2(cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0),cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0));
+if(cljs.core.sequential_QMARK_.call(null,v)){
+return thi.ng.geom.vector.vec2.call(null,cljs.core.nth.call(null,v,(0),0.0),cljs.core.nth.call(null,v,(1),0.0));
 } else {
-if(cljs.core.map_QMARK_(v)){
-return thi.ng.geom.vector.vec2.cljs$core$IFn$_invoke$arity$2(cljs.core.get.cljs$core$IFn$_invoke$arity$3(v,cljs.core.cst$kw$x,(0)),cljs.core.get.cljs$core$IFn$_invoke$arity$3(v,cljs.core.cst$kw$y,(0)));
+if(cljs.core.map_QMARK_.call(null,v)){
+return thi.ng.geom.vector.vec2.call(null,cljs.core.get.call(null,v,new cljs.core.Keyword(null,"x","x",2099068185),(0)),cljs.core.get.call(null,v,new cljs.core.Keyword(null,"y","y",-1757859776),(0)));
 } else {
-return thi.ng.xerror.core.type_error_BANG_("Vec2",v);
+return thi.ng.xerror.core.type_error_BANG_.call(null,"Vec2",v);
 
 }
 }
@@ -5319,23 +5192,23 @@ return (new thi.ng.geom.vector.Vec2(b,null,null));
 thi.ng.geom.vector.vec2.cljs$lang$maxFixedArity = 2;
 
 thi.ng.geom.vector.vec3 = (function thi$ng$geom$vector$vec3(var_args){
-var args16659 = [];
-var len__8605__auto___16662 = arguments.length;
-var i__8606__auto___16663 = (0);
+var args11661 = [];
+var len__8605__auto___11664 = arguments.length;
+var i__8606__auto___11665 = (0);
 while(true){
-if((i__8606__auto___16663 < len__8605__auto___16662)){
-args16659.push((arguments[i__8606__auto___16663]));
+if((i__8606__auto___11665 < len__8605__auto___11664)){
+args11661.push((arguments[i__8606__auto___11665]));
 
-var G__16664 = (i__8606__auto___16663 + (1));
-i__8606__auto___16663 = G__16664;
+var G__11666 = (i__8606__auto___11665 + (1));
+i__8606__auto___11665 = G__11666;
 continue;
 } else {
 }
 break;
 }
 
-var G__16661 = args16659.length;
-switch (G__16661) {
+var G__11663 = args11661.length;
+switch (G__11663) {
 case 0:
 return thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$0();
 
@@ -5353,7 +5226,7 @@ return thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(a
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args16659.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args11661.length)].join('')));
 
 }
 });
@@ -5367,15 +5240,15 @@ if((v instanceof thi.ng.geom.vector.Vec3)){
 return v;
 } else {
 if(typeof v === 'number'){
-return thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$3(v,v,v);
+return thi.ng.geom.vector.vec3.call(null,v,v,v);
 } else {
-if(cljs.core.sequential_QMARK_(v)){
-return thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$3(cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0),cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0),cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0));
+if(cljs.core.sequential_QMARK_.call(null,v)){
+return thi.ng.geom.vector.vec3.call(null,cljs.core.nth.call(null,v,(0),0.0),cljs.core.nth.call(null,v,(1),0.0),cljs.core.nth.call(null,v,(2),0.0));
 } else {
-if(cljs.core.map_QMARK_(v)){
-return thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$3(cljs.core.get.cljs$core$IFn$_invoke$arity$3(v,cljs.core.cst$kw$x,0.0),cljs.core.get.cljs$core$IFn$_invoke$arity$3(v,cljs.core.cst$kw$y,0.0),cljs.core.get.cljs$core$IFn$_invoke$arity$3(v,cljs.core.cst$kw$z,0.0));
+if(cljs.core.map_QMARK_.call(null,v)){
+return thi.ng.geom.vector.vec3.call(null,cljs.core.get.call(null,v,new cljs.core.Keyword(null,"x","x",2099068185),0.0),cljs.core.get.call(null,v,new cljs.core.Keyword(null,"y","y",-1757859776),0.0),cljs.core.get.call(null,v,new cljs.core.Keyword(null,"z","z",-789527183),0.0));
 } else {
-return thi.ng.xerror.core.type_error_BANG_("Vec3",v);
+return thi.ng.xerror.core.type_error_BANG_.call(null,"Vec3",v);
 
 }
 }
@@ -5384,16 +5257,16 @@ return thi.ng.xerror.core.type_error_BANG_("Vec3",v);
 });
 
 thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$2 = (function (v,z){
-if(cljs.core.sequential_QMARK_(v)){
-return thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$3(cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0),cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0),z);
+if(cljs.core.sequential_QMARK_.call(null,v)){
+return thi.ng.geom.vector.vec3.call(null,cljs.core.nth.call(null,v,(0),0.0),cljs.core.nth.call(null,v,(1),0.0),z);
 } else {
-if(cljs.core.map_QMARK_(v)){
-return thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$3(cljs.core.get.cljs$core$IFn$_invoke$arity$3(v,cljs.core.cst$kw$x,0.0),cljs.core.get.cljs$core$IFn$_invoke$arity$3(v,cljs.core.cst$kw$y,0.0),z);
+if(cljs.core.map_QMARK_.call(null,v)){
+return thi.ng.geom.vector.vec3.call(null,cljs.core.get.call(null,v,new cljs.core.Keyword(null,"x","x",2099068185),0.0),cljs.core.get.call(null,v,new cljs.core.Keyword(null,"y","y",-1757859776),0.0),z);
 } else {
 if(typeof v === 'number'){
-return thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$3(v,z,(0));
+return thi.ng.geom.vector.vec3.call(null,v,z,(0));
 } else {
-return thi.ng.xerror.core.type_error_BANG_("Vec3",v);
+return thi.ng.xerror.core.type_error_BANG_.call(null,"Vec3",v);
 
 }
 }
@@ -5414,23 +5287,23 @@ return (new thi.ng.geom.vector.Vec3(b,null,null));
 thi.ng.geom.vector.vec3.cljs$lang$maxFixedArity = 3;
 
 thi.ng.geom.vector.vec2_with_meta = (function thi$ng$geom$vector$vec2_with_meta(var_args){
-var args16666 = [];
-var len__8605__auto___16669 = arguments.length;
-var i__8606__auto___16670 = (0);
+var args11668 = [];
+var len__8605__auto___11671 = arguments.length;
+var i__8606__auto___11672 = (0);
 while(true){
-if((i__8606__auto___16670 < len__8605__auto___16669)){
-args16666.push((arguments[i__8606__auto___16670]));
+if((i__8606__auto___11672 < len__8605__auto___11671)){
+args11668.push((arguments[i__8606__auto___11672]));
 
-var G__16671 = (i__8606__auto___16670 + (1));
-i__8606__auto___16670 = G__16671;
+var G__11673 = (i__8606__auto___11672 + (1));
+i__8606__auto___11672 = G__11673;
 continue;
 } else {
 }
 break;
 }
 
-var G__16668 = args16666.length;
-switch (G__16668) {
+var G__11670 = args11668.length;
+switch (G__11670) {
 case 2:
 return thi.ng.geom.vector.vec2_with_meta.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -5440,25 +5313,25 @@ return thi.ng.geom.vector.vec2_with_meta.cljs$core$IFn$_invoke$arity$3((argument
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args16666.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args11668.length)].join('')));
 
 }
 });
 
 thi.ng.geom.vector.vec2_with_meta.cljs$core$IFn$_invoke$arity$2 = (function (v,meta){
 if((v instanceof thi.ng.geom.vector.Vec2)){
-return cljs.core.with_meta(v,meta);
+return cljs.core.with_meta.call(null,v,meta);
 } else {
 if(typeof v === 'number'){
-return thi.ng.geom.vector.vec2_with_meta.cljs$core$IFn$_invoke$arity$3(v,v,meta);
+return thi.ng.geom.vector.vec2_with_meta.call(null,v,v,meta);
 } else {
-if(cljs.core.sequential_QMARK_(v)){
-return thi.ng.geom.vector.vec2_with_meta.cljs$core$IFn$_invoke$arity$3(cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0),cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0),meta);
+if(cljs.core.sequential_QMARK_.call(null,v)){
+return thi.ng.geom.vector.vec2_with_meta.call(null,cljs.core.nth.call(null,v,(0),0.0),cljs.core.nth.call(null,v,(1),0.0),meta);
 } else {
-if(cljs.core.map_QMARK_(v)){
-return thi.ng.geom.vector.vec2_with_meta.cljs$core$IFn$_invoke$arity$3(cljs.core.get.cljs$core$IFn$_invoke$arity$3(v,cljs.core.cst$kw$x,0.0),cljs.core.get.cljs$core$IFn$_invoke$arity$3(v,cljs.core.cst$kw$y,0.0),meta);
+if(cljs.core.map_QMARK_.call(null,v)){
+return thi.ng.geom.vector.vec2_with_meta.call(null,cljs.core.get.call(null,v,new cljs.core.Keyword(null,"x","x",2099068185),0.0),cljs.core.get.call(null,v,new cljs.core.Keyword(null,"y","y",-1757859776),0.0),meta);
 } else {
-return thi.ng.xerror.core.type_error_BANG_("Vec2",v);
+return thi.ng.xerror.core.type_error_BANG_.call(null,"Vec2",v);
 
 }
 }
@@ -5478,23 +5351,23 @@ return (new thi.ng.geom.vector.Vec2(b,null,meta));
 thi.ng.geom.vector.vec2_with_meta.cljs$lang$maxFixedArity = 3;
 
 thi.ng.geom.vector.vec3_with_meta = (function thi$ng$geom$vector$vec3_with_meta(var_args){
-var args16673 = [];
-var len__8605__auto___16676 = arguments.length;
-var i__8606__auto___16677 = (0);
+var args11675 = [];
+var len__8605__auto___11678 = arguments.length;
+var i__8606__auto___11679 = (0);
 while(true){
-if((i__8606__auto___16677 < len__8605__auto___16676)){
-args16673.push((arguments[i__8606__auto___16677]));
+if((i__8606__auto___11679 < len__8605__auto___11678)){
+args11675.push((arguments[i__8606__auto___11679]));
 
-var G__16678 = (i__8606__auto___16677 + (1));
-i__8606__auto___16677 = G__16678;
+var G__11680 = (i__8606__auto___11679 + (1));
+i__8606__auto___11679 = G__11680;
 continue;
 } else {
 }
 break;
 }
 
-var G__16675 = args16673.length;
-switch (G__16675) {
+var G__11677 = args11675.length;
+switch (G__11677) {
 case 2:
 return thi.ng.geom.vector.vec3_with_meta.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -5504,25 +5377,25 @@ return thi.ng.geom.vector.vec3_with_meta.cljs$core$IFn$_invoke$arity$4((argument
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args16673.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args11675.length)].join('')));
 
 }
 });
 
 thi.ng.geom.vector.vec3_with_meta.cljs$core$IFn$_invoke$arity$2 = (function (v,meta){
 if((v instanceof thi.ng.geom.vector.Vec3)){
-return cljs.core.with_meta(v,meta);
+return cljs.core.with_meta.call(null,v,meta);
 } else {
 if(typeof v === 'number'){
-return thi.ng.geom.vector.vec3_with_meta.cljs$core$IFn$_invoke$arity$4(v,v,v,meta);
+return thi.ng.geom.vector.vec3_with_meta.call(null,v,v,v,meta);
 } else {
-if(cljs.core.sequential_QMARK_(v)){
-return thi.ng.geom.vector.vec3_with_meta.cljs$core$IFn$_invoke$arity$4(cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(0),0.0),cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(1),0.0),cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v,(2),0.0),meta);
+if(cljs.core.sequential_QMARK_.call(null,v)){
+return thi.ng.geom.vector.vec3_with_meta.call(null,cljs.core.nth.call(null,v,(0),0.0),cljs.core.nth.call(null,v,(1),0.0),cljs.core.nth.call(null,v,(2),0.0),meta);
 } else {
-if(cljs.core.map_QMARK_(v)){
-return thi.ng.geom.vector.vec3_with_meta.cljs$core$IFn$_invoke$arity$4(cljs.core.get.cljs$core$IFn$_invoke$arity$3(v,cljs.core.cst$kw$x,0.0),cljs.core.get.cljs$core$IFn$_invoke$arity$3(v,cljs.core.cst$kw$y,0.0),cljs.core.get.cljs$core$IFn$_invoke$arity$3(v,cljs.core.cst$kw$z,0.0),meta);
+if(cljs.core.map_QMARK_.call(null,v)){
+return thi.ng.geom.vector.vec3_with_meta.call(null,cljs.core.get.call(null,v,new cljs.core.Keyword(null,"x","x",2099068185),0.0),cljs.core.get.call(null,v,new cljs.core.Keyword(null,"y","y",-1757859776),0.0),cljs.core.get.call(null,v,new cljs.core.Keyword(null,"z","z",-789527183),0.0),meta);
 } else {
-return thi.ng.xerror.core.type_error_BANG_("Vec3",v);
+return thi.ng.xerror.core.type_error_BANG_.call(null,"Vec3",v);
 
 }
 }
@@ -5549,33 +5422,33 @@ return (x instanceof thi.ng.geom.vector.Vec2);
 thi.ng.geom.vector.vec3_QMARK_ = (function thi$ng$geom$vector$vec3_QMARK_(x){
 return (x instanceof thi.ng.geom.vector.Vec3);
 });
-thi.ng.geom.vector.V2X = thi.ng.geom.vector.vec2.cljs$core$IFn$_invoke$arity$2((1),(0));
-thi.ng.geom.vector.V2Y = thi.ng.geom.vector.vec2.cljs$core$IFn$_invoke$arity$2((0),(1));
-thi.ng.geom.vector.V3X = thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$3((1),(0),(0));
-thi.ng.geom.vector.V3Y = thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$3((0),(1),(0));
-thi.ng.geom.vector.V3Z = thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$3((0),(0),(1));
-thi.ng.geom.vector.V2INF_ = thi.ng.geom.vector.vec2.cljs$core$IFn$_invoke$arity$1(thi.ng.math.core.INF_);
-thi.ng.geom.vector.V2INF_PLUS_ = thi.ng.geom.vector.vec2.cljs$core$IFn$_invoke$arity$1(thi.ng.math.core.INF_PLUS_);
-thi.ng.geom.vector.V3INF_ = thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$1(thi.ng.math.core.INF_);
-thi.ng.geom.vector.V3INF_PLUS_ = thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$1(thi.ng.math.core.INF_PLUS_);
+thi.ng.geom.vector.V2X = thi.ng.geom.vector.vec2.call(null,(1),(0));
+thi.ng.geom.vector.V2Y = thi.ng.geom.vector.vec2.call(null,(0),(1));
+thi.ng.geom.vector.V3X = thi.ng.geom.vector.vec3.call(null,(1),(0),(0));
+thi.ng.geom.vector.V3Y = thi.ng.geom.vector.vec3.call(null,(0),(1),(0));
+thi.ng.geom.vector.V3Z = thi.ng.geom.vector.vec3.call(null,(0),(0),(1));
+thi.ng.geom.vector.V2INF_ = thi.ng.geom.vector.vec2.call(null,thi.ng.math.core.INF_);
+thi.ng.geom.vector.V2INF_PLUS_ = thi.ng.geom.vector.vec2.call(null,thi.ng.math.core.INF_PLUS_);
+thi.ng.geom.vector.V3INF_ = thi.ng.geom.vector.vec3.call(null,thi.ng.math.core.INF_);
+thi.ng.geom.vector.V3INF_PLUS_ = thi.ng.geom.vector.vec3.call(null,thi.ng.math.core.INF_PLUS_);
 thi.ng.geom.vector.randvec2 = (function thi$ng$geom$vector$randvec2(var_args){
-var args16680 = [];
-var len__8605__auto___16683 = arguments.length;
-var i__8606__auto___16684 = (0);
+var args11682 = [];
+var len__8605__auto___11685 = arguments.length;
+var i__8606__auto___11686 = (0);
 while(true){
-if((i__8606__auto___16684 < len__8605__auto___16683)){
-args16680.push((arguments[i__8606__auto___16684]));
+if((i__8606__auto___11686 < len__8605__auto___11685)){
+args11682.push((arguments[i__8606__auto___11686]));
 
-var G__16685 = (i__8606__auto___16684 + (1));
-i__8606__auto___16684 = G__16685;
+var G__11687 = (i__8606__auto___11686 + (1));
+i__8606__auto___11686 = G__11687;
 continue;
 } else {
 }
 break;
 }
 
-var G__16682 = args16680.length;
-switch (G__16682) {
+var G__11684 = args11682.length;
+switch (G__11684) {
 case 0:
 return thi.ng.geom.vector.randvec2.cljs$core$IFn$_invoke$arity$0();
 
@@ -5585,39 +5458,39 @@ return thi.ng.geom.vector.randvec2.cljs$core$IFn$_invoke$arity$1((arguments[(0)]
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args16680.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args11682.length)].join('')));
 
 }
 });
 
 thi.ng.geom.vector.randvec2.cljs$core$IFn$_invoke$arity$0 = (function (){
-return thi.ng.math.core.normalize.cljs$core$IFn$_invoke$arity$1(thi.ng.geom.vector.vec2.cljs$core$IFn$_invoke$arity$2(thi.ng.math.core.randnorm(),thi.ng.math.core.randnorm()));
+return thi.ng.math.core.normalize.call(null,thi.ng.geom.vector.vec2.call(null,thi.ng.math.core.randnorm.call(null),thi.ng.math.core.randnorm.call(null)));
 });
 
 thi.ng.geom.vector.randvec2.cljs$core$IFn$_invoke$arity$1 = (function (n){
-return thi.ng.math.core.normalize.cljs$core$IFn$_invoke$arity$2(thi.ng.geom.vector.vec2.cljs$core$IFn$_invoke$arity$2(thi.ng.math.core.randnorm(),thi.ng.math.core.randnorm()),n);
+return thi.ng.math.core.normalize.call(null,thi.ng.geom.vector.vec2.call(null,thi.ng.math.core.randnorm.call(null),thi.ng.math.core.randnorm.call(null)),n);
 });
 
 thi.ng.geom.vector.randvec2.cljs$lang$maxFixedArity = 1;
 
 thi.ng.geom.vector.randvec3 = (function thi$ng$geom$vector$randvec3(var_args){
-var args16687 = [];
-var len__8605__auto___16690 = arguments.length;
-var i__8606__auto___16691 = (0);
+var args11689 = [];
+var len__8605__auto___11692 = arguments.length;
+var i__8606__auto___11693 = (0);
 while(true){
-if((i__8606__auto___16691 < len__8605__auto___16690)){
-args16687.push((arguments[i__8606__auto___16691]));
+if((i__8606__auto___11693 < len__8605__auto___11692)){
+args11689.push((arguments[i__8606__auto___11693]));
 
-var G__16692 = (i__8606__auto___16691 + (1));
-i__8606__auto___16691 = G__16692;
+var G__11694 = (i__8606__auto___11693 + (1));
+i__8606__auto___11693 = G__11694;
 continue;
 } else {
 }
 break;
 }
 
-var G__16689 = args16687.length;
-switch (G__16689) {
+var G__11691 = args11689.length;
+switch (G__11691) {
 case 0:
 return thi.ng.geom.vector.randvec3.cljs$core$IFn$_invoke$arity$0();
 
@@ -5627,18 +5500,20 @@ return thi.ng.geom.vector.randvec3.cljs$core$IFn$_invoke$arity$1((arguments[(0)]
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args16687.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args11689.length)].join('')));
 
 }
 });
 
 thi.ng.geom.vector.randvec3.cljs$core$IFn$_invoke$arity$0 = (function (){
-return thi.ng.math.core.normalize.cljs$core$IFn$_invoke$arity$1(thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$3(thi.ng.math.core.randnorm(),thi.ng.math.core.randnorm(),thi.ng.math.core.randnorm()));
+return thi.ng.math.core.normalize.call(null,thi.ng.geom.vector.vec3.call(null,thi.ng.math.core.randnorm.call(null),thi.ng.math.core.randnorm.call(null),thi.ng.math.core.randnorm.call(null)));
 });
 
 thi.ng.geom.vector.randvec3.cljs$core$IFn$_invoke$arity$1 = (function (n){
-return thi.ng.math.core.normalize.cljs$core$IFn$_invoke$arity$2(thi.ng.geom.vector.vec3.cljs$core$IFn$_invoke$arity$3(thi.ng.math.core.randnorm(),thi.ng.math.core.randnorm(),thi.ng.math.core.randnorm()),n);
+return thi.ng.math.core.normalize.call(null,thi.ng.geom.vector.vec3.call(null,thi.ng.math.core.randnorm.call(null),thi.ng.math.core.randnorm.call(null),thi.ng.math.core.randnorm.call(null)),n);
 });
 
 thi.ng.geom.vector.randvec3.cljs$lang$maxFixedArity = 1;
 
+
+//# sourceMappingURL=vector.js.map

@@ -1,8 +1,10 @@
-// Compiled by ClojureScript 1.9.293 {:static-fns true, :optimize-constants true}
+// Compiled by ClojureScript 1.9.293 {}
 goog.provide('adzerk.boot_reload.init714');
 goog.require('cljs.core');
 goog.require('adzerk.boot_reload.client');
 goog.require('my_mazes.core');
-adzerk.boot_reload.client.connect.cljs$core$IFn$_invoke$arity$variadic("ws://localhost:45367",cljs.core.array_seq([new cljs.core.PersistentArrayMap(null, 3, [cljs.core.cst$kw$ws_DASH_host,null,cljs.core.cst$kw$asset_DASH_host,null,cljs.core.cst$kw$on_DASH_jsload,(function (){
-return my_mazes.core.main();
-})], null)], 0));
+adzerk.boot_reload.client.connect.call(null,"ws://localhost:40067",new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"ws-host","ws-host",587956291),null,new cljs.core.Keyword(null,"asset-host","asset-host",-899289050),null,new cljs.core.Keyword(null,"on-jsload","on-jsload",-395756602),(function (){
+return my_mazes.core.main.call(null);
+})], null));
+
+//# sourceMappingURL=init714.js.map

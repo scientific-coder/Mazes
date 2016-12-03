@@ -51,6 +51,10 @@
          (filter (fn[[id-t b-t]] (and (not= id-t id) (m/delta= b-t b))))
          (map first)
          first)))
+;; TODO add :border-angles
+;; or normal vectors (https://github.com/thi-ng/geom/blob/develop/src/utils/utils.org)(defn ortho-normal 
+;;(if (> (abs dx) eps) (.atan js/Math (/ dy dx)) 
+;; 
 
 (defn scene->graph[polys]
   (let [cells (map-indexed #(hash-map :id %1  :borders %2) polys)
@@ -60,6 +64,15 @@
     (reduce-kv #(assoc %1 %2 (assoc %3 :neighbors (map (partial matching-seg t %2) (partition 2 1 (:borders %3)))))
                {} indexed)))
 
+;; TODO make-bias w h a-ref -> bias x y -> f (cos (- a-ref angle))
+
+;; pick-random-non-nil
+;; in : f neighbors-id-or-nil angles
+;; seq des coeffs (f angle) ou nil si neighbor-id est nil
+;; remove les nils des deux seqs
+;; rescale des coefs ->> #(let [min-b (apply min %)](map (partial (flip2 -) min-b) %)
+;; #(let[scale (apply + %)](map (partial * ( 1. scale)) %))
+;; (nth xs-non-nil (first (keep-indexed ))(reductions + ))
 (defn pick-random-non-nil[bias xs]
   (when (seq (keep identity xs))
     (let [bias-s (bias (count xs))
@@ -87,6 +100,10 @@
 (defn make-horizontal-bias[[[x-min y-min][x-max y-max]]]
   (let[w (- x-max x-min)](alternate-bias (fn [[x y]] (/ x w)))))
 
+(defn make-vertical-bias[[[x-min y-min][x-max y-max]]]
+  (let[h (- y-max y-min)](alternate-bias (fn [[x y]] (/ y h)))))
+
+
 (defn make-T-bias [[[x-min y-min][x-max y-max]]]
   (let[y-T (+ y-min (/ (- y-max y-min) 4))
        x-d (/ (- x-max x-min) 8)
@@ -96,7 +113,7 @@
                         0.1
                         0.9)))))
 
-(defn remove-walls [indexed-cells id-start bias-f]
+(defn remove-walls [id-start bias-f indexed-cells]
   (loop[visited #{}
         [to-visit connections] [[id-start] #{}]]
     (if (empty? to-visit)
@@ -157,88 +174,95 @@
             (rest vs)))))
 
 (enable-console-print!)
-;; (def w 1024)
-;; (def h 1024)
-;; (def paint! (partial draw-scene! (dom/by-id "maze") w h))
-;; (def test-scene (square-grid 3 3 32))
-;; (def scene-bb (bounding-box test-scene))
-;; (def start-time (.getTime (js/Date.)))
-;; (def test-graph (scene->graph test-scene))
-;; (println (- (.getTime (js/Date.)) start-time))
-;; ;; TODO have random-biased take id or cell instead of x y and then n
-;; ;; at construction, can create a map id -> barycenter
-;; ;; and id -> normal vector angles list
-;; (def test-rw (remove-walls test-graph 0 (make-T-bias scene-bb)))
-;; (def test-maze (maze->polylines (vals test-graph) test-rw))
-;;(println test-maze)
 (defonce app-state (r/atom {}))
-
-(defn do-paint![]
-  (let[{:keys [rows cols size]} @app-state
-       scene (square-grid cols rows size)
-       pen-width 6
-       scene-bb (bounding-box scene)
-       [[x-min y-min][x-max y-max]] scene-bb
-       graph (scene->graph scene)
-       r-w (remove-walls graph 0 (make-T-bias scene-bb))
-       maze (maze->polylines (vals graph) r-w)
-       w (+ (- x-max x-min) pen-width)
-       h (+ (- y-max y-min) pen-width)
-       paint! (partial draw-scene! (dom/by-id "maze") w h)]
-    (paint! (map (partial svg-polyline "#00F" pen-width)
-               (->> maze
-                    (transform-polylines (partial m/+  (m/- (barycenter [(vec2 0 0)(vec2 w h)]) (barycenter scene-bb))))
-                    (remove-min less-than-seg?) (remove-min (complement less-than-seg?)))))
-    ))
-(println "Done !")
-
-(def error-state (r/atom nil))
-
-(defn set-error!
-  [err]
-  (reset! error-state err)
-  (when err
-    (js/setTimeout #(set-error! nil) 1000)))
-
 (defn swap*!
   "Similar to clojure.core/swap!, but records history and returns atom."
   [ref f & args]
-  (swap! ref
-         (fn [ref-val] (apply f ref-val  args)))
-  (do-paint!)
+  (swap! ref (fn [ref-val] (apply f ref-val  args)))
   ref)
 
-;; Components
+(defn update-maze-display![]
+  (let[{:keys [maze size line-width]} @app-state
+       zoomed-maze (transform-polylines #(g/scale % size) maze)
+       scene-bb (bounding-box zoomed-maze)
+       [[x-min y-min][x-max y-max]] scene-bb
+       w (max 64 (+ (- x-max x-min) line-width))
+       h (max 64 (+ (- y-max y-min) line-width))
+       paint! (partial draw-scene! (dom/by-id "maze") w h)
+       _ (swap*! app-state assoc :dummy nil)]
+    (paint! (map (partial svg-polyline "#00F" line-width)
+                 (->> zoomed-maze
+                      (transform-polylines (partial m/+  (m/- (barycenter [(vec2 0 0)(vec2 w h)]) (barycenter scene-bb)))))))))
 
-(defn user-error
-  "Component displaying current error message"
-  []
-  (when-let [err @error-state]
-    [:p {:style {:background "red" :padding "10px" :color "white"}} err]))
+;; TODO make it memoized (and recursive ?)
+(defn compute-maze[indexed-cells bias-f]
+  (let[cells (vals indexed-cells)
+       bias  (->> cells (map :borders) bounding-box bias-f)]
+    (->> indexed-cells (remove-walls 0 bias) (maze->polylines cells) (remove-min less-than-seg?) (remove-min (complement less-than-seg?)))))
+
+(defn update-maze![]
+  (let[{:keys [indexed-cells bias]} @app-state
+       bias-f (condp = bias
+                "vertical" make-vertical-bias
+                "horizontal" make-horizontal-bias
+                "T" make-T-bias
+                (fn[_] no-bias))]
+    (do (swap*! app-state assoc :maze (compute-maze indexed-cells bias-f))
+        (update-maze-display!))))
+
+
+(defn compute-cells [rows cols]
+  (scene->graph (square-grid rows cols 1.)))
+
+(defn update-cells![]
+  (let[{:keys [rows cols]} @app-state]
+    (do
+      (swap*! app-state assoc :indexed-cells (compute-cells rows cols))
+      (update-maze!))))
+
+(def callbacks {:cols update-cells!
+                :rows update-cells!
+                :size update-maze-display!
+                :line-width update-maze-display!
+                :bias update-maze!})
+
+;; Components
 (defn slider [param value min max width]
   [:input {:type "range" :value value :min min :max max
            :style {:width (str width "%")}
            :on-change (fn [e]
-                        (swap*! app-state assoc param (int (.-target.value e))))}])
+                        (do (swap*! app-state assoc param (int (.-target.value e)))
+                            ((param callbacks))))}])
 
+(defn menu [id param values]
+(let [current (param @app-state)]
+  [:select {:id current :name current :value current :on-change #(do (swap*! app-state assoc param (.-target.value %))
+                                                                     ((param callbacks)))}
+   (for [v values]
+     ^{:key v}[:option v])]))
 
 (defn main-panel
   "Application root component"
   []
   [:div
-   [user-error]
-   [:p [slider :cols (:cols @app-state) 2 40 50] "cols: " (:cols @app-state)  ]
-   [:p [slider :rows (:rows @app-state) 2 40 50] "rows : " (:rows @app-state) ]
-   [:p [slider :size (:size @app-state) 10 100 50] "size : " (:size @app-state) ]
+   [:p [slider :cols (:cols @app-state) 2 100 50] "cols: " (:cols @app-state)]
+   [:p [slider :rows (:rows @app-state) 2 100 50] "rows : " (:rows @app-state)]
+   [:p [slider :size (:size @app-state) 10 100 50] "size : " (:size @app-state)]
+   [:p [slider :line-width (:line-width @app-state) 1 10 20] "line width : " (:line-width @app-state)]
+   (menu "Bias" :bias ["unbiased" "vertical" "horizontal" "T"])
    ])
 
 (defn init-app
   "Initializes app-state atom with default state"
   []
-  (swap*! app-state merge
+  (do
+    (swap*! app-state merge
           {:cols 2
            :rows 2
-           :size 32}))
+           :size 32
+           :line-width 5
+           :bias "unbiased"})
+    (update-cells!)))
 
 (defn main
   "Application main entry point. Initializes app-state and
@@ -247,7 +271,6 @@
   (init-app)
   (r/render-component
     [main-panel]
-    ;;(.-body js/document)
     (.getElementById js/document "app")))
 
 

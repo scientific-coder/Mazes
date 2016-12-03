@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.9.293 {:static-fns true, :optimize-constants true}
+// Compiled by ClojureScript 1.9.293 {}
 goog.provide('thi.ng.geom.core');
 goog.require('cljs.core');
 thi.ng.geom.core.native_simd_QMARK_ = !(((self["SIMD"]) == null));
@@ -17,13 +17,13 @@ return _.thi$ng$geom$core$IDistance$dist$arity$2(_,a);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.dist[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,a) : m__8103__auto__.call(null,_,a));
+return m__8103__auto__.call(null,_,a);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.dist["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,a) : m__8103__auto____$1.call(null,_,a));
+return m__8103__auto____$1.call(null,_,a);
 } else {
-throw cljs.core.missing_protocol("IDistance.dist",_);
+throw cljs.core.missing_protocol.call(null,"IDistance.dist",_);
 }
 }
 }
@@ -36,13 +36,13 @@ return _.thi$ng$geom$core$IDistance$dist_squared$arity$2(_,a);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.dist_squared[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,a) : m__8103__auto__.call(null,_,a));
+return m__8103__auto__.call(null,_,a);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.dist_squared["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,a) : m__8103__auto____$1.call(null,_,a));
+return m__8103__auto____$1.call(null,_,a);
 } else {
-throw cljs.core.missing_protocol("IDistance.dist-squared",_);
+throw cljs.core.missing_protocol.call(null,"IDistance.dist-squared",_);
 }
 }
 }
@@ -61,13 +61,13 @@ return _.thi$ng$geom$core$IHeading$heading$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.heading[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.heading["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IHeading.heading",_);
+throw cljs.core.missing_protocol.call(null,"IHeading.heading",_);
 }
 }
 }
@@ -80,13 +80,13 @@ return _.thi$ng$geom$core$IHeading$heading_xy$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.heading_xy[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.heading_xy["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IHeading.heading-xy",_);
+throw cljs.core.missing_protocol.call(null,"IHeading.heading-xy",_);
 }
 }
 }
@@ -99,13 +99,13 @@ return _.thi$ng$geom$core$IHeading$heading_xz$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.heading_xz[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.heading_xz["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IHeading.heading-xz",_);
+throw cljs.core.missing_protocol.call(null,"IHeading.heading-xz",_);
 }
 }
 }
@@ -118,13 +118,13 @@ return _.thi$ng$geom$core$IHeading$heading_yz$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.heading_yz[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.heading_yz["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IHeading.heading-yz",_);
+throw cljs.core.missing_protocol.call(null,"IHeading.heading-yz",_);
 }
 }
 }
@@ -137,13 +137,13 @@ return _.thi$ng$geom$core$IHeading$angle_between$arity$2(_,a);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.angle_between[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,a) : m__8103__auto__.call(null,_,a));
+return m__8103__auto__.call(null,_,a);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.angle_between["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,a) : m__8103__auto____$1.call(null,_,a));
+return m__8103__auto____$1.call(null,_,a);
 } else {
-throw cljs.core.missing_protocol("IHeading.angle-between",_);
+throw cljs.core.missing_protocol.call(null,"IHeading.angle-between",_);
 }
 }
 }
@@ -156,13 +156,13 @@ return _.thi$ng$geom$core$IHeading$slope_xy$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.slope_xy[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.slope_xy["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IHeading.slope-xy",_);
+throw cljs.core.missing_protocol.call(null,"IHeading.slope-xy",_);
 }
 }
 }
@@ -175,13 +175,13 @@ return _.thi$ng$geom$core$IHeading$slope_xz$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.slope_xz[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.slope_xz["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IHeading.slope-xz",_);
+throw cljs.core.missing_protocol.call(null,"IHeading.slope-xz",_);
 }
 }
 }
@@ -194,13 +194,13 @@ return _.thi$ng$geom$core$IHeading$slope_yz$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.slope_yz[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.slope_yz["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IHeading.slope-yz",_);
+throw cljs.core.missing_protocol.call(null,"IHeading.slope-yz",_);
 }
 }
 }
@@ -213,23 +213,23 @@ throw cljs.core.missing_protocol("IHeading.slope-yz",_);
 thi.ng.geom.core.INormal = function(){};
 
 thi.ng.geom.core.normal = (function thi$ng$geom$core$normal(var_args){
-var args13901 = [];
-var len__8605__auto___13904 = arguments.length;
-var i__8606__auto___13905 = (0);
+var args9048 = [];
+var len__8605__auto___9051 = arguments.length;
+var i__8606__auto___9052 = (0);
 while(true){
-if((i__8606__auto___13905 < len__8605__auto___13904)){
-args13901.push((arguments[i__8606__auto___13905]));
+if((i__8606__auto___9052 < len__8605__auto___9051)){
+args9048.push((arguments[i__8606__auto___9052]));
 
-var G__13906 = (i__8606__auto___13905 + (1));
-i__8606__auto___13905 = G__13906;
+var G__9053 = (i__8606__auto___9052 + (1));
+i__8606__auto___9052 = G__9053;
 continue;
 } else {
 }
 break;
 }
 
-var G__13903 = args13901.length;
-switch (G__13903) {
+var G__9050 = args9048.length;
+switch (G__9050) {
 case 1:
 return thi.ng.geom.core.normal.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -239,7 +239,7 @@ return thi.ng.geom.core.normal.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(a
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args13901.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9048.length)].join('')));
 
 }
 });
@@ -251,13 +251,13 @@ return _.thi$ng$geom$core$INormal$normal$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.normal[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.normal["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("INormal.normal",_);
+throw cljs.core.missing_protocol.call(null,"INormal.normal",_);
 }
 }
 }
@@ -270,13 +270,13 @@ return _.thi$ng$geom$core$INormal$normal$arity$2(_,a);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.normal[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,a) : m__8103__auto__.call(null,_,a));
+return m__8103__auto__.call(null,_,a);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.normal["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,a) : m__8103__auto____$1.call(null,_,a));
+return m__8103__auto____$1.call(null,_,a);
 } else {
-throw cljs.core.missing_protocol("INormal.normal",_);
+throw cljs.core.missing_protocol.call(null,"INormal.normal",_);
 }
 }
 }
@@ -298,13 +298,13 @@ return _.thi$ng$geom$core$IPolar$as_polar$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.as_polar[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.as_polar["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IPolar.as-polar",_);
+throw cljs.core.missing_protocol.call(null,"IPolar.as-polar",_);
 }
 }
 }
@@ -317,13 +317,13 @@ return _.thi$ng$geom$core$IPolar$as_cartesian$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.as_cartesian[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.as_cartesian["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IPolar.as-cartesian",_);
+throw cljs.core.missing_protocol.call(null,"IPolar.as-cartesian",_);
 }
 }
 }
@@ -342,13 +342,13 @@ return _.thi$ng$geom$core$IReflect$reflect$arity$2(_,r);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.reflect[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,r) : m__8103__auto__.call(null,_,r));
+return m__8103__auto__.call(null,_,r);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.reflect["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,r) : m__8103__auto____$1.call(null,_,r));
+return m__8103__auto____$1.call(null,_,r);
 } else {
-throw cljs.core.missing_protocol("IReflect.reflect",_);
+throw cljs.core.missing_protocol.call(null,"IReflect.reflect",_);
 }
 }
 }
@@ -361,23 +361,23 @@ throw cljs.core.missing_protocol("IReflect.reflect",_);
 thi.ng.geom.core.IVectorReduce = function(){};
 
 thi.ng.geom.core.reduce_vector = (function thi$ng$geom$core$reduce_vector(var_args){
-var args13908 = [];
-var len__8605__auto___13911 = arguments.length;
-var i__8606__auto___13912 = (0);
+var args9055 = [];
+var len__8605__auto___9058 = arguments.length;
+var i__8606__auto___9059 = (0);
 while(true){
-if((i__8606__auto___13912 < len__8605__auto___13911)){
-args13908.push((arguments[i__8606__auto___13912]));
+if((i__8606__auto___9059 < len__8605__auto___9058)){
+args9055.push((arguments[i__8606__auto___9059]));
 
-var G__13913 = (i__8606__auto___13912 + (1));
-i__8606__auto___13912 = G__13913;
+var G__9060 = (i__8606__auto___9059 + (1));
+i__8606__auto___9059 = G__9060;
 continue;
 } else {
 }
 break;
 }
 
-var G__13910 = args13908.length;
-switch (G__13910) {
+var G__9057 = args9055.length;
+switch (G__9057) {
 case 3:
 return thi.ng.geom.core.reduce_vector.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -387,7 +387,7 @@ return thi.ng.geom.core.reduce_vector.cljs$core$IFn$_invoke$arity$4((arguments[(
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args13908.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9055.length)].join('')));
 
 }
 });
@@ -399,13 +399,13 @@ return _.thi$ng$geom$core$IVectorReduce$reduce_vector$arity$3(_,f,xs);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.reduce_vector[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$3(_,f,xs) : m__8103__auto__.call(null,_,f,xs));
+return m__8103__auto__.call(null,_,f,xs);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.reduce_vector["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3(_,f,xs) : m__8103__auto____$1.call(null,_,f,xs));
+return m__8103__auto____$1.call(null,_,f,xs);
 } else {
-throw cljs.core.missing_protocol("IVectorReduce.reduce-vector",_);
+throw cljs.core.missing_protocol.call(null,"IVectorReduce.reduce-vector",_);
 }
 }
 }
@@ -418,13 +418,13 @@ return _.thi$ng$geom$core$IVectorReduce$reduce_vector$arity$4(_,f,f2,xs);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.reduce_vector[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$4 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$4(_,f,f2,xs) : m__8103__auto__.call(null,_,f,f2,xs));
+return m__8103__auto__.call(null,_,f,f2,xs);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.reduce_vector["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$4 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$4(_,f,f2,xs) : m__8103__auto____$1.call(null,_,f,f2,xs));
+return m__8103__auto____$1.call(null,_,f,f2,xs);
 } else {
-throw cljs.core.missing_protocol("IVectorReduce.reduce-vector",_);
+throw cljs.core.missing_protocol.call(null,"IVectorReduce.reduce-vector",_);
 }
 }
 }
@@ -446,13 +446,13 @@ return _.thi$ng$geom$core$IRotate$rotate$arity$2(_,t);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.rotate[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,t) : m__8103__auto__.call(null,_,t));
+return m__8103__auto__.call(null,_,t);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.rotate["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,t) : m__8103__auto____$1.call(null,_,t));
+return m__8103__auto____$1.call(null,_,t);
 } else {
-throw cljs.core.missing_protocol("IRotate.rotate",_);
+throw cljs.core.missing_protocol.call(null,"IRotate.rotate",_);
 }
 }
 }
@@ -471,13 +471,13 @@ return _.thi$ng$geom$core$IRotate3D$rotate_x$arity$2(_,t);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.rotate_x[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,t) : m__8103__auto__.call(null,_,t));
+return m__8103__auto__.call(null,_,t);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.rotate_x["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,t) : m__8103__auto____$1.call(null,_,t));
+return m__8103__auto____$1.call(null,_,t);
 } else {
-throw cljs.core.missing_protocol("IRotate3D.rotate-x",_);
+throw cljs.core.missing_protocol.call(null,"IRotate3D.rotate-x",_);
 }
 }
 }
@@ -490,13 +490,13 @@ return _.thi$ng$geom$core$IRotate3D$rotate_y$arity$2(_,t);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.rotate_y[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,t) : m__8103__auto__.call(null,_,t));
+return m__8103__auto__.call(null,_,t);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.rotate_y["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,t) : m__8103__auto____$1.call(null,_,t));
+return m__8103__auto____$1.call(null,_,t);
 } else {
-throw cljs.core.missing_protocol("IRotate3D.rotate-y",_);
+throw cljs.core.missing_protocol.call(null,"IRotate3D.rotate-y",_);
 }
 }
 }
@@ -509,13 +509,13 @@ return _.thi$ng$geom$core$IRotate3D$rotate_z$arity$2(_,t);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.rotate_z[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,t) : m__8103__auto__.call(null,_,t));
+return m__8103__auto__.call(null,_,t);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.rotate_z["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,t) : m__8103__auto____$1.call(null,_,t));
+return m__8103__auto____$1.call(null,_,t);
 } else {
-throw cljs.core.missing_protocol("IRotate3D.rotate-z",_);
+throw cljs.core.missing_protocol.call(null,"IRotate3D.rotate-z",_);
 }
 }
 }
@@ -528,13 +528,13 @@ return _.thi$ng$geom$core$IRotate3D$rotate_around_axis$arity$3(_,a,t);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.rotate_around_axis[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$3(_,a,t) : m__8103__auto__.call(null,_,a,t));
+return m__8103__auto__.call(null,_,a,t);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.rotate_around_axis["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3(_,a,t) : m__8103__auto____$1.call(null,_,a,t));
+return m__8103__auto____$1.call(null,_,a,t);
 } else {
-throw cljs.core.missing_protocol("IRotate3D.rotate-around-axis",_);
+throw cljs.core.missing_protocol.call(null,"IRotate3D.rotate-around-axis",_);
 }
 }
 }
@@ -553,13 +553,13 @@ return _.thi$ng$geom$core$IScale$scale$arity$2(_,s);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.scale[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,s) : m__8103__auto__.call(null,_,s));
+return m__8103__auto__.call(null,_,s);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.scale["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,s) : m__8103__auto____$1.call(null,_,s));
+return m__8103__auto____$1.call(null,_,s);
 } else {
-throw cljs.core.missing_protocol("IScale.scale",_);
+throw cljs.core.missing_protocol.call(null,"IScale.scale",_);
 }
 }
 }
@@ -572,13 +572,13 @@ return _.thi$ng$geom$core$IScale$scale_size$arity$2(_,s);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.scale_size[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,s) : m__8103__auto__.call(null,_,s));
+return m__8103__auto__.call(null,_,s);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.scale_size["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,s) : m__8103__auto____$1.call(null,_,s));
+return m__8103__auto____$1.call(null,_,s);
 } else {
-throw cljs.core.missing_protocol("IScale.scale-size",_);
+throw cljs.core.missing_protocol.call(null,"IScale.scale-size",_);
 }
 }
 }
@@ -597,13 +597,13 @@ return _.thi$ng$geom$core$IShear$shear$arity$2(_,s);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.shear[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,s) : m__8103__auto__.call(null,_,s));
+return m__8103__auto__.call(null,_,s);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.shear["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,s) : m__8103__auto____$1.call(null,_,s));
+return m__8103__auto____$1.call(null,_,s);
 } else {
-throw cljs.core.missing_protocol("IShear.shear",_);
+throw cljs.core.missing_protocol.call(null,"IShear.shear",_);
 }
 }
 }
@@ -622,13 +622,13 @@ return _.thi$ng$geom$core$ITransform$transform$arity$2(_,tx);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.transform[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,tx) : m__8103__auto__.call(null,_,tx));
+return m__8103__auto__.call(null,_,tx);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.transform["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,tx) : m__8103__auto____$1.call(null,_,tx));
+return m__8103__auto____$1.call(null,_,tx);
 } else {
-throw cljs.core.missing_protocol("ITransform.transform",_);
+throw cljs.core.missing_protocol.call(null,"ITransform.transform",_);
 }
 }
 }
@@ -647,13 +647,13 @@ return _.thi$ng$geom$core$ITranslate$translate$arity$2(_,t);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.translate[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,t) : m__8103__auto__.call(null,_,t));
+return m__8103__auto__.call(null,_,t);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.translate["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,t) : m__8103__auto____$1.call(null,_,t));
+return m__8103__auto____$1.call(null,_,t);
 } else {
-throw cljs.core.missing_protocol("ITranslate.translate",_);
+throw cljs.core.missing_protocol.call(null,"ITranslate.translate",_);
 }
 }
 }
@@ -672,13 +672,13 @@ return _.thi$ng$geom$core$IVectorTransform$transform_vector$arity$2(_,v);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.transform_vector[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,v) : m__8103__auto__.call(null,_,v));
+return m__8103__auto__.call(null,_,v);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.transform_vector["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,v) : m__8103__auto____$1.call(null,_,v));
+return m__8103__auto____$1.call(null,_,v);
 } else {
-throw cljs.core.missing_protocol("IVectorTransform.transform-vector",_);
+throw cljs.core.missing_protocol.call(null,"IVectorTransform.transform-vector",_);
 }
 }
 }
@@ -691,23 +691,23 @@ throw cljs.core.missing_protocol("IVectorTransform.transform-vector",_);
 thi.ng.geom.core.IMatrixConvert = function(){};
 
 thi.ng.geom.core.as_matrix = (function thi$ng$geom$core$as_matrix(var_args){
-var args13915 = [];
-var len__8605__auto___13918 = arguments.length;
-var i__8606__auto___13919 = (0);
+var args9062 = [];
+var len__8605__auto___9065 = arguments.length;
+var i__8606__auto___9066 = (0);
 while(true){
-if((i__8606__auto___13919 < len__8605__auto___13918)){
-args13915.push((arguments[i__8606__auto___13919]));
+if((i__8606__auto___9066 < len__8605__auto___9065)){
+args9062.push((arguments[i__8606__auto___9066]));
 
-var G__13920 = (i__8606__auto___13919 + (1));
-i__8606__auto___13919 = G__13920;
+var G__9067 = (i__8606__auto___9066 + (1));
+i__8606__auto___9066 = G__9067;
 continue;
 } else {
 }
 break;
 }
 
-var G__13917 = args13915.length;
-switch (G__13917) {
+var G__9064 = args9062.length;
+switch (G__9064) {
 case 1:
 return thi.ng.geom.core.as_matrix.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -717,7 +717,7 @@ return thi.ng.geom.core.as_matrix.cljs$core$IFn$_invoke$arity$2((arguments[(0)])
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args13915.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9062.length)].join('')));
 
 }
 });
@@ -729,13 +729,13 @@ return _.thi$ng$geom$core$IMatrixConvert$as_matrix$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.as_matrix[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.as_matrix["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IMatrixConvert.as-matrix",_);
+throw cljs.core.missing_protocol.call(null,"IMatrixConvert.as-matrix",_);
 }
 }
 }
@@ -748,13 +748,13 @@ return _.thi$ng$geom$core$IMatrixConvert$as_matrix$arity$2(_,opts);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.as_matrix[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto__.call(null,_,opts));
+return m__8103__auto__.call(null,_,opts);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.as_matrix["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto____$1.call(null,_,opts));
+return m__8103__auto____$1.call(null,_,opts);
 } else {
-throw cljs.core.missing_protocol("IMatrixConvert.as-matrix",_);
+throw cljs.core.missing_protocol.call(null,"IMatrixConvert.as-matrix",_);
 }
 }
 }
@@ -776,13 +776,13 @@ return _.thi$ng$geom$core$IGraph$connected_components$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.connected_components[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.connected_components["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IGraph.connected-components",_);
+throw cljs.core.missing_protocol.call(null,"IGraph.connected-components",_);
 }
 }
 }
@@ -795,13 +795,13 @@ return _.thi$ng$geom$core$IGraph$cyclic_QMARK_$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.cyclic_QMARK_[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.cyclic_QMARK_["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IGraph.cyclic?",_);
+throw cljs.core.missing_protocol.call(null,"IGraph.cyclic?",_);
 }
 }
 }
@@ -814,13 +814,13 @@ return _.thi$ng$geom$core$IGraph$vertex_valence$arity$2(_,v);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.vertex_valence[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,v) : m__8103__auto__.call(null,_,v));
+return m__8103__auto__.call(null,_,v);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.vertex_valence["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,v) : m__8103__auto____$1.call(null,_,v));
+return m__8103__auto____$1.call(null,_,v);
 } else {
-throw cljs.core.missing_protocol("IGraph.vertex-valence",_);
+throw cljs.core.missing_protocol.call(null,"IGraph.vertex-valence",_);
 }
 }
 }
@@ -833,13 +833,13 @@ return _.thi$ng$geom$core$IGraph$vertex_neighbors$arity$2(_,v);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.vertex_neighbors[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,v) : m__8103__auto__.call(null,_,v));
+return m__8103__auto__.call(null,_,v);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.vertex_neighbors["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,v) : m__8103__auto____$1.call(null,_,v));
+return m__8103__auto____$1.call(null,_,v);
 } else {
-throw cljs.core.missing_protocol("IGraph.vertex-neighbors",_);
+throw cljs.core.missing_protocol.call(null,"IGraph.vertex-neighbors",_);
 }
 }
 }
@@ -852,13 +852,13 @@ return _.thi$ng$geom$core$IGraph$remove_vertex$arity$2(_,v);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.remove_vertex[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,v) : m__8103__auto__.call(null,_,v));
+return m__8103__auto__.call(null,_,v);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.remove_vertex["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,v) : m__8103__auto____$1.call(null,_,v));
+return m__8103__auto____$1.call(null,_,v);
 } else {
-throw cljs.core.missing_protocol("IGraph.remove-vertex",_);
+throw cljs.core.missing_protocol.call(null,"IGraph.remove-vertex",_);
 }
 }
 }
@@ -871,13 +871,13 @@ return _.thi$ng$geom$core$IGraph$replace_vertex$arity$3(_,a,b);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.replace_vertex[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$3(_,a,b) : m__8103__auto__.call(null,_,a,b));
+return m__8103__auto__.call(null,_,a,b);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.replace_vertex["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3(_,a,b) : m__8103__auto____$1.call(null,_,a,b));
+return m__8103__auto____$1.call(null,_,a,b);
 } else {
-throw cljs.core.missing_protocol("IGraph.replace-vertex",_);
+throw cljs.core.missing_protocol.call(null,"IGraph.replace-vertex",_);
 }
 }
 }
@@ -890,13 +890,13 @@ return _.thi$ng$geom$core$IGraph$merge_vertices$arity$3(_,a,b);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.merge_vertices[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$3(_,a,b) : m__8103__auto__.call(null,_,a,b));
+return m__8103__auto__.call(null,_,a,b);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.merge_vertices["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3(_,a,b) : m__8103__auto____$1.call(null,_,a,b));
+return m__8103__auto____$1.call(null,_,a,b);
 } else {
-throw cljs.core.missing_protocol("IGraph.merge-vertices",_);
+throw cljs.core.missing_protocol.call(null,"IGraph.merge-vertices",_);
 }
 }
 }
@@ -915,13 +915,13 @@ return _.thi$ng$geom$core$IDirectedGraph$in_vertices$arity$2(_,v);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.in_vertices[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,v) : m__8103__auto__.call(null,_,v));
+return m__8103__auto__.call(null,_,v);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.in_vertices["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,v) : m__8103__auto____$1.call(null,_,v));
+return m__8103__auto____$1.call(null,_,v);
 } else {
-throw cljs.core.missing_protocol("IDirectedGraph.in-vertices",_);
+throw cljs.core.missing_protocol.call(null,"IDirectedGraph.in-vertices",_);
 }
 }
 }
@@ -934,13 +934,13 @@ return _.thi$ng$geom$core$IDirectedGraph$out_vertices$arity$2(_,v);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.out_vertices[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,v) : m__8103__auto__.call(null,_,v));
+return m__8103__auto__.call(null,_,v);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.out_vertices["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,v) : m__8103__auto____$1.call(null,_,v));
+return m__8103__auto____$1.call(null,_,v);
 } else {
-throw cljs.core.missing_protocol("IDirectedGraph.out-vertices",_);
+throw cljs.core.missing_protocol.call(null,"IDirectedGraph.out-vertices",_);
 }
 }
 }
@@ -953,23 +953,23 @@ throw cljs.core.missing_protocol("IDirectedGraph.out-vertices",_);
 thi.ng.geom.core.IGraphConvert = function(){};
 
 thi.ng.geom.core.as_graph = (function thi$ng$geom$core$as_graph(var_args){
-var args13922 = [];
-var len__8605__auto___13925 = arguments.length;
-var i__8606__auto___13926 = (0);
+var args9069 = [];
+var len__8605__auto___9072 = arguments.length;
+var i__8606__auto___9073 = (0);
 while(true){
-if((i__8606__auto___13926 < len__8605__auto___13925)){
-args13922.push((arguments[i__8606__auto___13926]));
+if((i__8606__auto___9073 < len__8605__auto___9072)){
+args9069.push((arguments[i__8606__auto___9073]));
 
-var G__13927 = (i__8606__auto___13926 + (1));
-i__8606__auto___13926 = G__13927;
+var G__9074 = (i__8606__auto___9073 + (1));
+i__8606__auto___9073 = G__9074;
 continue;
 } else {
 }
 break;
 }
 
-var G__13924 = args13922.length;
-switch (G__13924) {
+var G__9071 = args9069.length;
+switch (G__9071) {
 case 1:
 return thi.ng.geom.core.as_graph.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -979,7 +979,7 @@ return thi.ng.geom.core.as_graph.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args13922.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9069.length)].join('')));
 
 }
 });
@@ -991,13 +991,13 @@ return _.thi$ng$geom$core$IGraphConvert$as_graph$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.as_graph[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.as_graph["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IGraphConvert.as-graph",_);
+throw cljs.core.missing_protocol.call(null,"IGraphConvert.as-graph",_);
 }
 }
 }
@@ -1010,13 +1010,13 @@ return _.thi$ng$geom$core$IGraphConvert$as_graph$arity$2(_,opts);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.as_graph[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto__.call(null,_,opts));
+return m__8103__auto__.call(null,_,opts);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.as_graph["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto____$1.call(null,_,opts));
+return m__8103__auto____$1.call(null,_,opts);
 } else {
-throw cljs.core.missing_protocol("IGraphConvert.as-graph",_);
+throw cljs.core.missing_protocol.call(null,"IGraphConvert.as-graph",_);
 }
 }
 }
@@ -1032,23 +1032,23 @@ thi.ng.geom.core.as_graph.cljs$lang$maxFixedArity = 2;
 thi.ng.geom.core.IVertexAccess = function(){};
 
 thi.ng.geom.core.vertices = (function thi$ng$geom$core$vertices(var_args){
-var args13929 = [];
-var len__8605__auto___13932 = arguments.length;
-var i__8606__auto___13933 = (0);
+var args9076 = [];
+var len__8605__auto___9079 = arguments.length;
+var i__8606__auto___9080 = (0);
 while(true){
-if((i__8606__auto___13933 < len__8605__auto___13932)){
-args13929.push((arguments[i__8606__auto___13933]));
+if((i__8606__auto___9080 < len__8605__auto___9079)){
+args9076.push((arguments[i__8606__auto___9080]));
 
-var G__13934 = (i__8606__auto___13933 + (1));
-i__8606__auto___13933 = G__13934;
+var G__9081 = (i__8606__auto___9080 + (1));
+i__8606__auto___9080 = G__9081;
 continue;
 } else {
 }
 break;
 }
 
-var G__13931 = args13929.length;
-switch (G__13931) {
+var G__9078 = args9076.length;
+switch (G__9078) {
 case 1:
 return thi.ng.geom.core.vertices.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -1058,7 +1058,7 @@ return thi.ng.geom.core.vertices.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args13929.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9076.length)].join('')));
 
 }
 });
@@ -1070,13 +1070,13 @@ return _.thi$ng$geom$core$IVertexAccess$vertices$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.vertices[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.vertices["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IVertexAccess.vertices",_);
+throw cljs.core.missing_protocol.call(null,"IVertexAccess.vertices",_);
 }
 }
 }
@@ -1089,13 +1089,13 @@ return _.thi$ng$geom$core$IVertexAccess$vertices$arity$2(_,opts);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.vertices[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto__.call(null,_,opts));
+return m__8103__auto__.call(null,_,opts);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.vertices["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto____$1.call(null,_,opts));
+return m__8103__auto____$1.call(null,_,opts);
 } else {
-throw cljs.core.missing_protocol("IVertexAccess.vertices",_);
+throw cljs.core.missing_protocol.call(null,"IVertexAccess.vertices",_);
 }
 }
 }
@@ -1111,23 +1111,23 @@ thi.ng.geom.core.vertices.cljs$lang$maxFixedArity = 2;
 thi.ng.geom.core.IEdgeAccess = function(){};
 
 thi.ng.geom.core.edges = (function thi$ng$geom$core$edges(var_args){
-var args13936 = [];
-var len__8605__auto___13939 = arguments.length;
-var i__8606__auto___13940 = (0);
+var args9083 = [];
+var len__8605__auto___9086 = arguments.length;
+var i__8606__auto___9087 = (0);
 while(true){
-if((i__8606__auto___13940 < len__8605__auto___13939)){
-args13936.push((arguments[i__8606__auto___13940]));
+if((i__8606__auto___9087 < len__8605__auto___9086)){
+args9083.push((arguments[i__8606__auto___9087]));
 
-var G__13941 = (i__8606__auto___13940 + (1));
-i__8606__auto___13940 = G__13941;
+var G__9088 = (i__8606__auto___9087 + (1));
+i__8606__auto___9087 = G__9088;
 continue;
 } else {
 }
 break;
 }
 
-var G__13938 = args13936.length;
-switch (G__13938) {
+var G__9085 = args9083.length;
+switch (G__9085) {
 case 1:
 return thi.ng.geom.core.edges.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -1137,7 +1137,7 @@ return thi.ng.geom.core.edges.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(ar
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args13936.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9083.length)].join('')));
 
 }
 });
@@ -1149,13 +1149,13 @@ return _.thi$ng$geom$core$IEdgeAccess$edges$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.edges[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.edges["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IEdgeAccess.edges",_);
+throw cljs.core.missing_protocol.call(null,"IEdgeAccess.edges",_);
 }
 }
 }
@@ -1168,13 +1168,13 @@ return _.thi$ng$geom$core$IEdgeAccess$edges$arity$2(_,opts);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.edges[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto__.call(null,_,opts));
+return m__8103__auto__.call(null,_,opts);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.edges["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto____$1.call(null,_,opts));
+return m__8103__auto____$1.call(null,_,opts);
 } else {
-throw cljs.core.missing_protocol("IEdgeAccess.edges",_);
+throw cljs.core.missing_protocol.call(null,"IEdgeAccess.edges",_);
 }
 }
 }
@@ -1201,13 +1201,13 @@ return _.thi$ng$geom$core$IFaceAccess$add_face$arity$2(_,face);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.add_face[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,face) : m__8103__auto__.call(null,_,face));
+return m__8103__auto__.call(null,_,face);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.add_face["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,face) : m__8103__auto____$1.call(null,_,face));
+return m__8103__auto____$1.call(null,_,face);
 } else {
-throw cljs.core.missing_protocol("IFaceAccess.add-face",_);
+throw cljs.core.missing_protocol.call(null,"IFaceAccess.add-face",_);
 }
 }
 }
@@ -1221,23 +1221,23 @@ throw cljs.core.missing_protocol("IFaceAccess.add-face",_);
  *  they're returned as the 2nd element in each face vector.
  */
 thi.ng.geom.core.faces = (function thi$ng$geom$core$faces(var_args){
-var args13943 = [];
-var len__8605__auto___13946 = arguments.length;
-var i__8606__auto___13947 = (0);
+var args9090 = [];
+var len__8605__auto___9093 = arguments.length;
+var i__8606__auto___9094 = (0);
 while(true){
-if((i__8606__auto___13947 < len__8605__auto___13946)){
-args13943.push((arguments[i__8606__auto___13947]));
+if((i__8606__auto___9094 < len__8605__auto___9093)){
+args9090.push((arguments[i__8606__auto___9094]));
 
-var G__13948 = (i__8606__auto___13947 + (1));
-i__8606__auto___13947 = G__13948;
+var G__9095 = (i__8606__auto___9094 + (1));
+i__8606__auto___9094 = G__9095;
 continue;
 } else {
 }
 break;
 }
 
-var G__13945 = args13943.length;
-switch (G__13945) {
+var G__9092 = args9090.length;
+switch (G__9092) {
 case 1:
 return thi.ng.geom.core.faces.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -1247,7 +1247,7 @@ return thi.ng.geom.core.faces.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(ar
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args13943.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9090.length)].join('')));
 
 }
 });
@@ -1259,13 +1259,13 @@ return _.thi$ng$geom$core$IFaceAccess$faces$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.faces[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.faces["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IFaceAccess.faces",_);
+throw cljs.core.missing_protocol.call(null,"IFaceAccess.faces",_);
 }
 }
 }
@@ -1278,13 +1278,13 @@ return _.thi$ng$geom$core$IFaceAccess$faces$arity$2(_,opts);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.faces[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto__.call(null,_,opts));
+return m__8103__auto__.call(null,_,opts);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.faces["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto____$1.call(null,_,opts));
+return m__8103__auto____$1.call(null,_,opts);
 } else {
-throw cljs.core.missing_protocol("IFaceAccess.faces",_);
+throw cljs.core.missing_protocol.call(null,"IFaceAccess.faces",_);
 }
 }
 }
@@ -1304,13 +1304,13 @@ return _.thi$ng$geom$core$IFaceAccess$remove_face$arity$2(_,fverts);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.remove_face[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,fverts) : m__8103__auto__.call(null,_,fverts));
+return m__8103__auto__.call(null,_,fverts);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.remove_face["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,fverts) : m__8103__auto____$1.call(null,_,fverts));
+return m__8103__auto____$1.call(null,_,fverts);
 } else {
-throw cljs.core.missing_protocol("IFaceAccess.remove-face",_);
+throw cljs.core.missing_protocol.call(null,"IFaceAccess.remove-face",_);
 }
 }
 }
@@ -1326,13 +1326,13 @@ return _.thi$ng$geom$core$IFaceAccess$vertex_faces$arity$2(_,v);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.vertex_faces[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,v) : m__8103__auto__.call(null,_,v));
+return m__8103__auto__.call(null,_,v);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.vertex_faces["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,v) : m__8103__auto____$1.call(null,_,v));
+return m__8103__auto____$1.call(null,_,v);
 } else {
-throw cljs.core.missing_protocol("IFaceAccess.vertex-faces",_);
+throw cljs.core.missing_protocol.call(null,"IFaceAccess.vertex-faces",_);
 }
 }
 }
@@ -1351,13 +1351,13 @@ return _.thi$ng$geom$core$INormalAccess$compute_face_normals$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.compute_face_normals[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.compute_face_normals["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("INormalAccess.compute-face-normals",_);
+throw cljs.core.missing_protocol.call(null,"INormalAccess.compute-face-normals",_);
 }
 }
 }
@@ -1370,13 +1370,13 @@ return _.thi$ng$geom$core$INormalAccess$compute_vertex_normals$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.compute_vertex_normals[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.compute_vertex_normals["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("INormalAccess.compute-vertex-normals",_);
+throw cljs.core.missing_protocol.call(null,"INormalAccess.compute-vertex-normals",_);
 }
 }
 }
@@ -1389,13 +1389,13 @@ return _.thi$ng$geom$core$INormalAccess$face_normals$arity$2(_,force_QMARK_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.face_normals[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,force_QMARK_) : m__8103__auto__.call(null,_,force_QMARK_));
+return m__8103__auto__.call(null,_,force_QMARK_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.face_normals["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,force_QMARK_) : m__8103__auto____$1.call(null,_,force_QMARK_));
+return m__8103__auto____$1.call(null,_,force_QMARK_);
 } else {
-throw cljs.core.missing_protocol("INormalAccess.face-normals",_);
+throw cljs.core.missing_protocol.call(null,"INormalAccess.face-normals",_);
 }
 }
 }
@@ -1408,13 +1408,13 @@ return _.thi$ng$geom$core$INormalAccess$face_normal$arity$2(_,f);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.face_normal[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,f) : m__8103__auto__.call(null,_,f));
+return m__8103__auto__.call(null,_,f);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.face_normal["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,f) : m__8103__auto____$1.call(null,_,f));
+return m__8103__auto____$1.call(null,_,f);
 } else {
-throw cljs.core.missing_protocol("INormalAccess.face-normal",_);
+throw cljs.core.missing_protocol.call(null,"INormalAccess.face-normal",_);
 }
 }
 }
@@ -1427,13 +1427,13 @@ return _.thi$ng$geom$core$INormalAccess$vertex_normals$arity$2(_,force_QMARK_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.vertex_normals[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,force_QMARK_) : m__8103__auto__.call(null,_,force_QMARK_));
+return m__8103__auto__.call(null,_,force_QMARK_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.vertex_normals["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,force_QMARK_) : m__8103__auto____$1.call(null,_,force_QMARK_));
+return m__8103__auto____$1.call(null,_,force_QMARK_);
 } else {
-throw cljs.core.missing_protocol("INormalAccess.vertex-normals",_);
+throw cljs.core.missing_protocol.call(null,"INormalAccess.vertex-normals",_);
 }
 }
 }
@@ -1446,13 +1446,13 @@ return _.thi$ng$geom$core$INormalAccess$vertex_normal$arity$2(_,v);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.vertex_normal[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,v) : m__8103__auto__.call(null,_,v));
+return m__8103__auto__.call(null,_,v);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.vertex_normal["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,v) : m__8103__auto____$1.call(null,_,v));
+return m__8103__auto____$1.call(null,_,v);
 } else {
-throw cljs.core.missing_protocol("INormalAccess.vertex-normal",_);
+throw cljs.core.missing_protocol.call(null,"INormalAccess.vertex-normal",_);
 }
 }
 }
@@ -1465,23 +1465,23 @@ throw cljs.core.missing_protocol("INormalAccess.vertex-normal",_);
 thi.ng.geom.core.IAttributeAccess = function(){};
 
 thi.ng.geom.core.attribs = (function thi$ng$geom$core$attribs(var_args){
-var args13950 = [];
-var len__8605__auto___13953 = arguments.length;
-var i__8606__auto___13954 = (0);
+var args9097 = [];
+var len__8605__auto___9100 = arguments.length;
+var i__8606__auto___9101 = (0);
 while(true){
-if((i__8606__auto___13954 < len__8605__auto___13953)){
-args13950.push((arguments[i__8606__auto___13954]));
+if((i__8606__auto___9101 < len__8605__auto___9100)){
+args9097.push((arguments[i__8606__auto___9101]));
 
-var G__13955 = (i__8606__auto___13954 + (1));
-i__8606__auto___13954 = G__13955;
+var G__9102 = (i__8606__auto___9101 + (1));
+i__8606__auto___9101 = G__9102;
 continue;
 } else {
 }
 break;
 }
 
-var G__13952 = args13950.length;
-switch (G__13952) {
+var G__9099 = args9097.length;
+switch (G__9099) {
 case 2:
 return thi.ng.geom.core.attribs.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -1491,7 +1491,7 @@ return thi.ng.geom.core.attribs.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args13950.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9097.length)].join('')));
 
 }
 });
@@ -1503,13 +1503,13 @@ return _.thi$ng$geom$core$IAttributeAccess$attribs$arity$2(_,ctx);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.attribs[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,ctx) : m__8103__auto__.call(null,_,ctx));
+return m__8103__auto__.call(null,_,ctx);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.attribs["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,ctx) : m__8103__auto____$1.call(null,_,ctx));
+return m__8103__auto____$1.call(null,_,ctx);
 } else {
-throw cljs.core.missing_protocol("IAttributeAccess.attribs",_);
+throw cljs.core.missing_protocol.call(null,"IAttributeAccess.attribs",_);
 }
 }
 }
@@ -1522,13 +1522,13 @@ return _.thi$ng$geom$core$IAttributeAccess$attribs$arity$3(_,ctx,attr);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.attribs[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$3(_,ctx,attr) : m__8103__auto__.call(null,_,ctx,attr));
+return m__8103__auto__.call(null,_,ctx,attr);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.attribs["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3(_,ctx,attr) : m__8103__auto____$1.call(null,_,ctx,attr));
+return m__8103__auto____$1.call(null,_,ctx,attr);
 } else {
-throw cljs.core.missing_protocol("IAttributeAccess.attribs",_);
+throw cljs.core.missing_protocol.call(null,"IAttributeAccess.attribs",_);
 }
 }
 }
@@ -1550,13 +1550,13 @@ return _.thi$ng$geom$core$IRawAccess$raw$arity$2(_,ctx);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.raw[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,ctx) : m__8103__auto__.call(null,_,ctx));
+return m__8103__auto__.call(null,_,ctx);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.raw["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,ctx) : m__8103__auto____$1.call(null,_,ctx));
+return m__8103__auto____$1.call(null,_,ctx);
 } else {
-throw cljs.core.missing_protocol("IRawAccess.raw",_);
+throw cljs.core.missing_protocol.call(null,"IRawAccess.raw",_);
 }
 }
 }
@@ -1578,13 +1578,13 @@ return _.thi$ng$geom$core$IAlign$align_with$arity$3(_,x,opts);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.align_with[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$3(_,x,opts) : m__8103__auto__.call(null,_,x,opts));
+return m__8103__auto__.call(null,_,x,opts);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.align_with["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3(_,x,opts) : m__8103__auto____$1.call(null,_,x,opts));
+return m__8103__auto____$1.call(null,_,x,opts);
 } else {
-throw cljs.core.missing_protocol("IAlign.align-with",_);
+throw cljs.core.missing_protocol.call(null,"IAlign.align-with",_);
 }
 }
 }
@@ -1606,13 +1606,13 @@ return _.thi$ng$geom$core$IArea$area$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.area[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.area["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IArea.area",_);
+throw cljs.core.missing_protocol.call(null,"IArea.area",_);
 }
 }
 }
@@ -1631,13 +1631,13 @@ return _.thi$ng$geom$core$IBoundary$contains_entity_QMARK_$arity$2(_,s);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.contains_entity_QMARK_[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,s) : m__8103__auto__.call(null,_,s));
+return m__8103__auto__.call(null,_,s);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.contains_entity_QMARK_["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,s) : m__8103__auto____$1.call(null,_,s));
+return m__8103__auto____$1.call(null,_,s);
 } else {
-throw cljs.core.missing_protocol("IBoundary.contains-entity?",_);
+throw cljs.core.missing_protocol.call(null,"IBoundary.contains-entity?",_);
 }
 }
 }
@@ -1650,13 +1650,13 @@ return _.thi$ng$geom$core$IBoundary$contains_point_QMARK_$arity$2(_,p);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.contains_point_QMARK_[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,p) : m__8103__auto__.call(null,_,p));
+return m__8103__auto__.call(null,_,p);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.contains_point_QMARK_["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,p) : m__8103__auto____$1.call(null,_,p));
+return m__8103__auto____$1.call(null,_,p);
 } else {
-throw cljs.core.missing_protocol("IBoundary.contains-point?",_);
+throw cljs.core.missing_protocol.call(null,"IBoundary.contains-point?",_);
 }
 }
 }
@@ -1675,13 +1675,13 @@ return _.thi$ng$geom$core$IBoundingCircle$bounding_circle$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.bounding_circle[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.bounding_circle["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IBoundingCircle.bounding-circle",_);
+throw cljs.core.missing_protocol.call(null,"IBoundingCircle.bounding-circle",_);
 }
 }
 }
@@ -1700,13 +1700,13 @@ return _.thi$ng$geom$core$IBoundingSphere$bounding_sphere$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.bounding_sphere[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.bounding_sphere["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IBoundingSphere.bounding-sphere",_);
+throw cljs.core.missing_protocol.call(null,"IBoundingSphere.bounding-sphere",_);
 }
 }
 }
@@ -1728,13 +1728,13 @@ return _.thi$ng$geom$core$IBounds$bounds$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.bounds[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.bounds["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IBounds.bounds",_);
+throw cljs.core.missing_protocol.call(null,"IBounds.bounds",_);
 }
 }
 }
@@ -1750,13 +1750,13 @@ return _.thi$ng$geom$core$IBounds$depth$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.depth[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.depth["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IBounds.depth",_);
+throw cljs.core.missing_protocol.call(null,"IBounds.depth",_);
 }
 }
 }
@@ -1772,13 +1772,13 @@ return _.thi$ng$geom$core$IBounds$height$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.height[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.height["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IBounds.height",_);
+throw cljs.core.missing_protocol.call(null,"IBounds.height",_);
 }
 }
 }
@@ -1794,13 +1794,13 @@ return _.thi$ng$geom$core$IBounds$width$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.width[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.width["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IBounds.width",_);
+throw cljs.core.missing_protocol.call(null,"IBounds.width",_);
 }
 }
 }
@@ -1816,23 +1816,23 @@ thi.ng.geom.core.ICenter = function(){};
  * Returns updated entity centered around world origin or given point
  */
 thi.ng.geom.core.center = (function thi$ng$geom$core$center(var_args){
-var args13957 = [];
-var len__8605__auto___13960 = arguments.length;
-var i__8606__auto___13961 = (0);
+var args9104 = [];
+var len__8605__auto___9107 = arguments.length;
+var i__8606__auto___9108 = (0);
 while(true){
-if((i__8606__auto___13961 < len__8605__auto___13960)){
-args13957.push((arguments[i__8606__auto___13961]));
+if((i__8606__auto___9108 < len__8605__auto___9107)){
+args9104.push((arguments[i__8606__auto___9108]));
 
-var G__13962 = (i__8606__auto___13961 + (1));
-i__8606__auto___13961 = G__13962;
+var G__9109 = (i__8606__auto___9108 + (1));
+i__8606__auto___9108 = G__9109;
 continue;
 } else {
 }
 break;
 }
 
-var G__13959 = args13957.length;
-switch (G__13959) {
+var G__9106 = args9104.length;
+switch (G__9106) {
 case 1:
 return thi.ng.geom.core.center.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -1842,7 +1842,7 @@ return thi.ng.geom.core.center.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(a
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args13957.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9104.length)].join('')));
 
 }
 });
@@ -1854,13 +1854,13 @@ return _.thi$ng$geom$core$ICenter$center$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.center[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.center["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("ICenter.center",_);
+throw cljs.core.missing_protocol.call(null,"ICenter.center",_);
 }
 }
 }
@@ -1873,13 +1873,13 @@ return _.thi$ng$geom$core$ICenter$center$arity$2(_,p);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.center[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,p) : m__8103__auto__.call(null,_,p));
+return m__8103__auto__.call(null,_,p);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.center["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,p) : m__8103__auto____$1.call(null,_,p));
+return m__8103__auto____$1.call(null,_,p);
 } else {
-throw cljs.core.missing_protocol("ICenter.center",_);
+throw cljs.core.missing_protocol.call(null,"ICenter.center",_);
 }
 }
 }
@@ -1898,13 +1898,13 @@ return _.thi$ng$geom$core$ICenter$centroid$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.centroid[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.centroid["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("ICenter.centroid",_);
+throw cljs.core.missing_protocol.call(null,"ICenter.centroid",_);
 }
 }
 }
@@ -1926,13 +1926,13 @@ return _.thi$ng$geom$core$ICircumference$circumference$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.circumference[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.circumference["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("ICircumference.circumference",_);
+throw cljs.core.missing_protocol.call(null,"ICircumference.circumference",_);
 }
 }
 }
@@ -1951,13 +1951,13 @@ return _.thi$ng$geom$core$IClassify$classify_point$arity$2(_,p);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.classify_point[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,p) : m__8103__auto__.call(null,_,p));
+return m__8103__auto__.call(null,_,p);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.classify_point["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,p) : m__8103__auto____$1.call(null,_,p));
+return m__8103__auto____$1.call(null,_,p);
 } else {
-throw cljs.core.missing_protocol("IClassify.classify-point",_);
+throw cljs.core.missing_protocol.call(null,"IClassify.classify-point",_);
 }
 }
 }
@@ -1976,13 +1976,13 @@ return _.thi$ng$geom$core$IClear$clear_STAR_$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.clear_STAR_[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.clear_STAR_["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IClear.clear*",_);
+throw cljs.core.missing_protocol.call(null,"IClear.clear*",_);
 }
 }
 }
@@ -1995,13 +1995,13 @@ return _.thi$ng$geom$core$IClear$clear_BANG_$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.clear_BANG_[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.clear_BANG_["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IClear.clear!",_);
+throw cljs.core.missing_protocol.call(null,"IClear.clear!",_);
 }
 }
 }
@@ -2020,13 +2020,13 @@ return _.thi$ng$geom$core$IClip$clip_with$arity$2(_,s);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.clip_with[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,s) : m__8103__auto__.call(null,_,s));
+return m__8103__auto__.call(null,_,s);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.clip_with["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,s) : m__8103__auto____$1.call(null,_,s));
+return m__8103__auto____$1.call(null,_,s);
 } else {
-throw cljs.core.missing_protocol("IClip.clip-with",_);
+throw cljs.core.missing_protocol.call(null,"IClip.clip-with",_);
 }
 }
 }
@@ -2045,13 +2045,13 @@ return _.thi$ng$geom$core$IConvexHull$convex_hull$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.convex_hull[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.convex_hull["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IConvexHull.convex-hull",_);
+throw cljs.core.missing_protocol.call(null,"IConvexHull.convex-hull",_);
 }
 }
 }
@@ -2070,13 +2070,13 @@ return _.thi$ng$geom$core$IExtrude$extrude$arity$2(_,opts);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.extrude[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto__.call(null,_,opts));
+return m__8103__auto__.call(null,_,opts);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.extrude["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto____$1.call(null,_,opts));
+return m__8103__auto____$1.call(null,_,opts);
 } else {
-throw cljs.core.missing_protocol("IExtrude.extrude",_);
+throw cljs.core.missing_protocol.call(null,"IExtrude.extrude",_);
 }
 }
 }
@@ -2089,13 +2089,13 @@ return _.thi$ng$geom$core$IExtrude$extrude_shell$arity$2(_,opts);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.extrude_shell[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto__.call(null,_,opts));
+return m__8103__auto__.call(null,_,opts);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.extrude_shell["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto____$1.call(null,_,opts));
+return m__8103__auto____$1.call(null,_,opts);
 } else {
-throw cljs.core.missing_protocol("IExtrude.extrude-shell",_);
+throw cljs.core.missing_protocol.call(null,"IExtrude.extrude-shell",_);
 }
 }
 }
@@ -2114,13 +2114,13 @@ return _.thi$ng$geom$core$IFlip$flip$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.flip[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.flip["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IFlip.flip",_);
+throw cljs.core.missing_protocol.call(null,"IFlip.flip",_);
 }
 }
 }
@@ -2139,13 +2139,13 @@ return _.thi$ng$geom$core$IGeomContainer$into$arity$2(_,m);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.into[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,m) : m__8103__auto__.call(null,_,m));
+return m__8103__auto__.call(null,_,m);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.into["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,m) : m__8103__auto____$1.call(null,_,m));
+return m__8103__auto____$1.call(null,_,m);
 } else {
-throw cljs.core.missing_protocol("IGeomContainer.into",_);
+throw cljs.core.missing_protocol.call(null,"IGeomContainer.into",_);
 }
 }
 }
@@ -2164,13 +2164,13 @@ return _.thi$ng$geom$core$IInset$inset$arity$2(_,inset);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.inset[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,inset) : m__8103__auto__.call(null,_,inset));
+return m__8103__auto__.call(null,_,inset);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.inset["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,inset) : m__8103__auto____$1.call(null,_,inset));
+return m__8103__auto____$1.call(null,_,inset);
 } else {
-throw cljs.core.missing_protocol("IInset.inset",_);
+throw cljs.core.missing_protocol.call(null,"IInset.inset",_);
 }
 }
 }
@@ -2183,23 +2183,23 @@ throw cljs.core.missing_protocol("IInset.inset",_);
 thi.ng.geom.core.IIntersect = function(){};
 
 thi.ng.geom.core.intersect_line = (function thi$ng$geom$core$intersect_line(var_args){
-var args13964 = [];
-var len__8605__auto___13970 = arguments.length;
-var i__8606__auto___13971 = (0);
+var args9111 = [];
+var len__8605__auto___9117 = arguments.length;
+var i__8606__auto___9118 = (0);
 while(true){
-if((i__8606__auto___13971 < len__8605__auto___13970)){
-args13964.push((arguments[i__8606__auto___13971]));
+if((i__8606__auto___9118 < len__8605__auto___9117)){
+args9111.push((arguments[i__8606__auto___9118]));
 
-var G__13972 = (i__8606__auto___13971 + (1));
-i__8606__auto___13971 = G__13972;
+var G__9119 = (i__8606__auto___9118 + (1));
+i__8606__auto___9118 = G__9119;
 continue;
 } else {
 }
 break;
 }
 
-var G__13966 = args13964.length;
-switch (G__13966) {
+var G__9113 = args9111.length;
+switch (G__9113) {
 case 2:
 return thi.ng.geom.core.intersect_line.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -2209,7 +2209,7 @@ return thi.ng.geom.core.intersect_line.cljs$core$IFn$_invoke$arity$3((arguments[
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args13964.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9111.length)].join('')));
 
 }
 });
@@ -2221,13 +2221,13 @@ return _.thi$ng$geom$core$IIntersect$intersect_line$arity$2(_,l);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.intersect_line[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,l) : m__8103__auto__.call(null,_,l));
+return m__8103__auto__.call(null,_,l);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.intersect_line["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,l) : m__8103__auto____$1.call(null,_,l));
+return m__8103__auto____$1.call(null,_,l);
 } else {
-throw cljs.core.missing_protocol("IIntersect.intersect-line",_);
+throw cljs.core.missing_protocol.call(null,"IIntersect.intersect-line",_);
 }
 }
 }
@@ -2240,13 +2240,13 @@ return _.thi$ng$geom$core$IIntersect$intersect_line$arity$3(_,p,q);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.intersect_line[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$3(_,p,q) : m__8103__auto__.call(null,_,p,q));
+return m__8103__auto__.call(null,_,p,q);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.intersect_line["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3(_,p,q) : m__8103__auto____$1.call(null,_,p,q));
+return m__8103__auto____$1.call(null,_,p,q);
 } else {
-throw cljs.core.missing_protocol("IIntersect.intersect-line",_);
+throw cljs.core.missing_protocol.call(null,"IIntersect.intersect-line",_);
 }
 }
 }
@@ -2256,23 +2256,23 @@ thi.ng.geom.core.intersect_line.cljs$lang$maxFixedArity = 3;
 
 
 thi.ng.geom.core.intersect_ray = (function thi$ng$geom$core$intersect_ray(var_args){
-var args13967 = [];
-var len__8605__auto___13974 = arguments.length;
-var i__8606__auto___13975 = (0);
+var args9114 = [];
+var len__8605__auto___9121 = arguments.length;
+var i__8606__auto___9122 = (0);
 while(true){
-if((i__8606__auto___13975 < len__8605__auto___13974)){
-args13967.push((arguments[i__8606__auto___13975]));
+if((i__8606__auto___9122 < len__8605__auto___9121)){
+args9114.push((arguments[i__8606__auto___9122]));
 
-var G__13976 = (i__8606__auto___13975 + (1));
-i__8606__auto___13975 = G__13976;
+var G__9123 = (i__8606__auto___9122 + (1));
+i__8606__auto___9122 = G__9123;
 continue;
 } else {
 }
 break;
 }
 
-var G__13969 = args13967.length;
-switch (G__13969) {
+var G__9116 = args9114.length;
+switch (G__9116) {
 case 2:
 return thi.ng.geom.core.intersect_ray.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -2282,7 +2282,7 @@ return thi.ng.geom.core.intersect_ray.cljs$core$IFn$_invoke$arity$3((arguments[(
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args13967.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9114.length)].join('')));
 
 }
 });
@@ -2294,13 +2294,13 @@ return _.thi$ng$geom$core$IIntersect$intersect_ray$arity$2(_,r);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.intersect_ray[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,r) : m__8103__auto__.call(null,_,r));
+return m__8103__auto__.call(null,_,r);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.intersect_ray["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,r) : m__8103__auto____$1.call(null,_,r));
+return m__8103__auto____$1.call(null,_,r);
 } else {
-throw cljs.core.missing_protocol("IIntersect.intersect-ray",_);
+throw cljs.core.missing_protocol.call(null,"IIntersect.intersect-ray",_);
 }
 }
 }
@@ -2313,13 +2313,13 @@ return _.thi$ng$geom$core$IIntersect$intersect_ray$arity$3(_,p,dir);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.intersect_ray[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$3(_,p,dir) : m__8103__auto__.call(null,_,p,dir));
+return m__8103__auto__.call(null,_,p,dir);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.intersect_ray["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3(_,p,dir) : m__8103__auto____$1.call(null,_,p,dir));
+return m__8103__auto____$1.call(null,_,p,dir);
 } else {
-throw cljs.core.missing_protocol("IIntersect.intersect-ray",_);
+throw cljs.core.missing_protocol.call(null,"IIntersect.intersect-ray",_);
 }
 }
 }
@@ -2335,13 +2335,13 @@ return _.thi$ng$geom$core$IIntersect$intersect_shape$arity$2(_,s);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.intersect_shape[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,s) : m__8103__auto__.call(null,_,s));
+return m__8103__auto__.call(null,_,s);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.intersect_shape["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,s) : m__8103__auto____$1.call(null,_,s));
+return m__8103__auto____$1.call(null,_,s);
 } else {
-throw cljs.core.missing_protocol("IIntersect.intersect-shape",_);
+throw cljs.core.missing_protocol.call(null,"IIntersect.intersect-shape",_);
 }
 }
 }
@@ -2357,23 +2357,23 @@ thi.ng.geom.core.IMeshConvert = function(){};
  * Transforms the current enitity into a mesh instance
  */
 thi.ng.geom.core.as_mesh = (function thi$ng$geom$core$as_mesh(var_args){
-var args13978 = [];
-var len__8605__auto___13981 = arguments.length;
-var i__8606__auto___13982 = (0);
+var args9125 = [];
+var len__8605__auto___9128 = arguments.length;
+var i__8606__auto___9129 = (0);
 while(true){
-if((i__8606__auto___13982 < len__8605__auto___13981)){
-args13978.push((arguments[i__8606__auto___13982]));
+if((i__8606__auto___9129 < len__8605__auto___9128)){
+args9125.push((arguments[i__8606__auto___9129]));
 
-var G__13983 = (i__8606__auto___13982 + (1));
-i__8606__auto___13982 = G__13983;
+var G__9130 = (i__8606__auto___9129 + (1));
+i__8606__auto___9129 = G__9130;
 continue;
 } else {
 }
 break;
 }
 
-var G__13980 = args13978.length;
-switch (G__13980) {
+var G__9127 = args9125.length;
+switch (G__9127) {
 case 1:
 return thi.ng.geom.core.as_mesh.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -2383,7 +2383,7 @@ return thi.ng.geom.core.as_mesh.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args13978.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9125.length)].join('')));
 
 }
 });
@@ -2395,13 +2395,13 @@ return _.thi$ng$geom$core$IMeshConvert$as_mesh$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.as_mesh[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.as_mesh["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IMeshConvert.as-mesh",_);
+throw cljs.core.missing_protocol.call(null,"IMeshConvert.as-mesh",_);
 }
 }
 }
@@ -2414,13 +2414,13 @@ return _.thi$ng$geom$core$IMeshConvert$as_mesh$arity$2(_,opts);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.as_mesh[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto__.call(null,_,opts));
+return m__8103__auto__.call(null,_,opts);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.as_mesh["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto____$1.call(null,_,opts));
+return m__8103__auto____$1.call(null,_,opts);
 } else {
-throw cljs.core.missing_protocol("IMeshConvert.as-mesh",_);
+throw cljs.core.missing_protocol.call(null,"IMeshConvert.as-mesh",_);
 }
 }
 }
@@ -2442,13 +2442,13 @@ return _.thi$ng$geom$core$IPointMap$map_point$arity$2(_,p);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.map_point[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,p) : m__8103__auto__.call(null,_,p));
+return m__8103__auto__.call(null,_,p);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.map_point["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,p) : m__8103__auto____$1.call(null,_,p));
+return m__8103__auto____$1.call(null,_,p);
 } else {
-throw cljs.core.missing_protocol("IPointMap.map-point",_);
+throw cljs.core.missing_protocol.call(null,"IPointMap.map-point",_);
 }
 }
 }
@@ -2461,13 +2461,13 @@ return _.thi$ng$geom$core$IPointMap$unmap_point$arity$2(_,p);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.unmap_point[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,p) : m__8103__auto__.call(null,_,p));
+return m__8103__auto__.call(null,_,p);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.unmap_point["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,p) : m__8103__auto____$1.call(null,_,p));
+return m__8103__auto____$1.call(null,_,p);
 } else {
-throw cljs.core.missing_protocol("IPointMap.unmap-point",_);
+throw cljs.core.missing_protocol.call(null,"IPointMap.unmap-point",_);
 }
 }
 }
@@ -2483,23 +2483,23 @@ thi.ng.geom.core.IPolygonConvert = function(){};
  * Transforms current entity into a Polygon2 instance
  */
 thi.ng.geom.core.as_polygon = (function thi$ng$geom$core$as_polygon(var_args){
-var args13985 = [];
-var len__8605__auto___13988 = arguments.length;
-var i__8606__auto___13989 = (0);
+var args9132 = [];
+var len__8605__auto___9135 = arguments.length;
+var i__8606__auto___9136 = (0);
 while(true){
-if((i__8606__auto___13989 < len__8605__auto___13988)){
-args13985.push((arguments[i__8606__auto___13989]));
+if((i__8606__auto___9136 < len__8605__auto___9135)){
+args9132.push((arguments[i__8606__auto___9136]));
 
-var G__13990 = (i__8606__auto___13989 + (1));
-i__8606__auto___13989 = G__13990;
+var G__9137 = (i__8606__auto___9136 + (1));
+i__8606__auto___9136 = G__9137;
 continue;
 } else {
 }
 break;
 }
 
-var G__13987 = args13985.length;
-switch (G__13987) {
+var G__9134 = args9132.length;
+switch (G__9134) {
 case 1:
 return thi.ng.geom.core.as_polygon.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -2509,7 +2509,7 @@ return thi.ng.geom.core.as_polygon.cljs$core$IFn$_invoke$arity$2((arguments[(0)]
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args13985.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9132.length)].join('')));
 
 }
 });
@@ -2521,13 +2521,13 @@ return _.thi$ng$geom$core$IPolygonConvert$as_polygon$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.as_polygon[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.as_polygon["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IPolygonConvert.as-polygon",_);
+throw cljs.core.missing_protocol.call(null,"IPolygonConvert.as-polygon",_);
 }
 }
 }
@@ -2540,13 +2540,13 @@ return _.thi$ng$geom$core$IPolygonConvert$as_polygon$arity$2(_,res);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.as_polygon[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,res) : m__8103__auto__.call(null,_,res));
+return m__8103__auto__.call(null,_,res);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.as_polygon["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,res) : m__8103__auto____$1.call(null,_,res));
+return m__8103__auto____$1.call(null,_,res);
 } else {
-throw cljs.core.missing_protocol("IPolygonConvert.as-polygon",_);
+throw cljs.core.missing_protocol.call(null,"IPolygonConvert.as-polygon",_);
 }
 }
 }
@@ -2568,13 +2568,13 @@ return _.thi$ng$geom$core$IProximity$closest_point$arity$2(_,p);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.closest_point[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,p) : m__8103__auto__.call(null,_,p));
+return m__8103__auto__.call(null,_,p);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.closest_point["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,p) : m__8103__auto____$1.call(null,_,p));
+return m__8103__auto____$1.call(null,_,p);
 } else {
-throw cljs.core.missing_protocol("IProximity.closest-point",_);
+throw cljs.core.missing_protocol.call(null,"IProximity.closest-point",_);
 }
 }
 }
@@ -2587,23 +2587,23 @@ throw cljs.core.missing_protocol("IProximity.closest-point",_);
 thi.ng.geom.core.ISample = function(){};
 
 thi.ng.geom.core.point_at = (function thi$ng$geom$core$point_at(var_args){
-var args13992 = [];
-var len__8605__auto___13995 = arguments.length;
-var i__8606__auto___13996 = (0);
+var args9139 = [];
+var len__8605__auto___9142 = arguments.length;
+var i__8606__auto___9143 = (0);
 while(true){
-if((i__8606__auto___13996 < len__8605__auto___13995)){
-args13992.push((arguments[i__8606__auto___13996]));
+if((i__8606__auto___9143 < len__8605__auto___9142)){
+args9139.push((arguments[i__8606__auto___9143]));
 
-var G__13997 = (i__8606__auto___13996 + (1));
-i__8606__auto___13996 = G__13997;
+var G__9144 = (i__8606__auto___9143 + (1));
+i__8606__auto___9143 = G__9144;
 continue;
 } else {
 }
 break;
 }
 
-var G__13994 = args13992.length;
-switch (G__13994) {
+var G__9141 = args9139.length;
+switch (G__9141) {
 case 2:
 return thi.ng.geom.core.point_at.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -2613,7 +2613,7 @@ return thi.ng.geom.core.point_at.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args13992.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9139.length)].join('')));
 
 }
 });
@@ -2625,13 +2625,13 @@ return _.thi$ng$geom$core$ISample$point_at$arity$2(_,t);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.point_at[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,t) : m__8103__auto__.call(null,_,t));
+return m__8103__auto__.call(null,_,t);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.point_at["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,t) : m__8103__auto____$1.call(null,_,t));
+return m__8103__auto____$1.call(null,_,t);
 } else {
-throw cljs.core.missing_protocol("ISample.point-at",_);
+throw cljs.core.missing_protocol.call(null,"ISample.point-at",_);
 }
 }
 }
@@ -2644,13 +2644,13 @@ return _.thi$ng$geom$core$ISample$point_at$arity$3(_,u,v);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.point_at[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$3(_,u,v) : m__8103__auto__.call(null,_,u,v));
+return m__8103__auto__.call(null,_,u,v);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.point_at["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3(_,u,v) : m__8103__auto____$1.call(null,_,u,v));
+return m__8103__auto____$1.call(null,_,u,v);
 } else {
-throw cljs.core.missing_protocol("ISample.point-at",_);
+throw cljs.core.missing_protocol.call(null,"ISample.point-at",_);
 }
 }
 }
@@ -2666,13 +2666,13 @@ return _.thi$ng$geom$core$ISample$random_point$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.random_point[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.random_point["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("ISample.random-point",_);
+throw cljs.core.missing_protocol.call(null,"ISample.random-point",_);
 }
 }
 }
@@ -2685,13 +2685,13 @@ return _.thi$ng$geom$core$ISample$random_point_inside$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.random_point_inside[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.random_point_inside["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("ISample.random-point-inside",_);
+throw cljs.core.missing_protocol.call(null,"ISample.random-point-inside",_);
 }
 }
 }
@@ -2704,13 +2704,13 @@ return _.thi$ng$geom$core$ISample$sample_uniform$arity$3(_,dist,include_last_QMA
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.sample_uniform[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$3(_,dist,include_last_QMARK_) : m__8103__auto__.call(null,_,dist,include_last_QMARK_));
+return m__8103__auto__.call(null,_,dist,include_last_QMARK_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.sample_uniform["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3(_,dist,include_last_QMARK_) : m__8103__auto____$1.call(null,_,dist,include_last_QMARK_));
+return m__8103__auto____$1.call(null,_,dist,include_last_QMARK_);
 } else {
-throw cljs.core.missing_protocol("ISample.sample-uniform",_);
+throw cljs.core.missing_protocol.call(null,"ISample.sample-uniform",_);
 }
 }
 }
@@ -2723,13 +2723,13 @@ return _.thi$ng$geom$core$ISample$sample_with_resolution$arity$2(_,res);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.sample_with_resolution[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,res) : m__8103__auto__.call(null,_,res));
+return m__8103__auto__.call(null,_,res);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.sample_with_resolution["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,res) : m__8103__auto____$1.call(null,_,res));
+return m__8103__auto____$1.call(null,_,res);
 } else {
-throw cljs.core.missing_protocol("ISample.sample-with-resolution",_);
+throw cljs.core.missing_protocol.call(null,"ISample.sample-with-resolution",_);
 }
 }
 }
@@ -2742,23 +2742,23 @@ throw cljs.core.missing_protocol("ISample.sample-with-resolution",_);
 thi.ng.geom.core.ISlice = function(){};
 
 thi.ng.geom.core.slice_with = (function thi$ng$geom$core$slice_with(var_args){
-var args13999 = [];
-var len__8605__auto___14002 = arguments.length;
-var i__8606__auto___14003 = (0);
+var args9146 = [];
+var len__8605__auto___9149 = arguments.length;
+var i__8606__auto___9150 = (0);
 while(true){
-if((i__8606__auto___14003 < len__8605__auto___14002)){
-args13999.push((arguments[i__8606__auto___14003]));
+if((i__8606__auto___9150 < len__8605__auto___9149)){
+args9146.push((arguments[i__8606__auto___9150]));
 
-var G__14004 = (i__8606__auto___14003 + (1));
-i__8606__auto___14003 = G__14004;
+var G__9151 = (i__8606__auto___9150 + (1));
+i__8606__auto___9150 = G__9151;
 continue;
 } else {
 }
 break;
 }
 
-var G__14001 = args13999.length;
-switch (G__14001) {
+var G__9148 = args9146.length;
+switch (G__9148) {
 case 2:
 return thi.ng.geom.core.slice_with.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -2772,7 +2772,7 @@ return thi.ng.geom.core.slice_with.cljs$core$IFn$_invoke$arity$4((arguments[(0)]
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args13999.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9146.length)].join('')));
 
 }
 });
@@ -2784,13 +2784,13 @@ return _.thi$ng$geom$core$ISlice$slice_with$arity$2(_,e);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.slice_with[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,e) : m__8103__auto__.call(null,_,e));
+return m__8103__auto__.call(null,_,e);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.slice_with["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,e) : m__8103__auto____$1.call(null,_,e));
+return m__8103__auto____$1.call(null,_,e);
 } else {
-throw cljs.core.missing_protocol("ISlice.slice-with",_);
+throw cljs.core.missing_protocol.call(null,"ISlice.slice-with",_);
 }
 }
 }
@@ -2803,13 +2803,13 @@ return _.thi$ng$geom$core$ISlice$slice_with$arity$3(_,e,classifier);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.slice_with[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$3(_,e,classifier) : m__8103__auto__.call(null,_,e,classifier));
+return m__8103__auto__.call(null,_,e,classifier);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.slice_with["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3(_,e,classifier) : m__8103__auto____$1.call(null,_,e,classifier));
+return m__8103__auto____$1.call(null,_,e,classifier);
 } else {
-throw cljs.core.missing_protocol("ISlice.slice-with",_);
+throw cljs.core.missing_protocol.call(null,"ISlice.slice-with",_);
 }
 }
 }
@@ -2822,13 +2822,13 @@ return _.thi$ng$geom$core$ISlice$slice_with$arity$4(_,e,classifier,parts);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.slice_with[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$4 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$4(_,e,classifier,parts) : m__8103__auto__.call(null,_,e,classifier,parts));
+return m__8103__auto__.call(null,_,e,classifier,parts);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.slice_with["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$4 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$4(_,e,classifier,parts) : m__8103__auto____$1.call(null,_,e,classifier,parts));
+return m__8103__auto____$1.call(null,_,e,classifier,parts);
 } else {
-throw cljs.core.missing_protocol("ISlice.slice-with",_);
+throw cljs.core.missing_protocol.call(null,"ISlice.slice-with",_);
 }
 }
 }
@@ -2844,23 +2844,23 @@ thi.ng.geom.core.slice_with.cljs$lang$maxFixedArity = 4;
 thi.ng.geom.core.ISubdivide = function(){};
 
 thi.ng.geom.core.subdivide = (function thi$ng$geom$core$subdivide(var_args){
-var args14006 = [];
-var len__8605__auto___14009 = arguments.length;
-var i__8606__auto___14010 = (0);
+var args9153 = [];
+var len__8605__auto___9156 = arguments.length;
+var i__8606__auto___9157 = (0);
 while(true){
-if((i__8606__auto___14010 < len__8605__auto___14009)){
-args14006.push((arguments[i__8606__auto___14010]));
+if((i__8606__auto___9157 < len__8605__auto___9156)){
+args9153.push((arguments[i__8606__auto___9157]));
 
-var G__14011 = (i__8606__auto___14010 + (1));
-i__8606__auto___14010 = G__14011;
+var G__9158 = (i__8606__auto___9157 + (1));
+i__8606__auto___9157 = G__9158;
 continue;
 } else {
 }
 break;
 }
 
-var G__14008 = args14006.length;
-switch (G__14008) {
+var G__9155 = args9153.length;
+switch (G__9155) {
 case 1:
 return thi.ng.geom.core.subdivide.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -2870,7 +2870,7 @@ return thi.ng.geom.core.subdivide.cljs$core$IFn$_invoke$arity$2((arguments[(0)])
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args14006.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9153.length)].join('')));
 
 }
 });
@@ -2882,13 +2882,13 @@ return _.thi$ng$geom$core$ISubdivide$subdivide$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.subdivide[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.subdivide["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("ISubdivide.subdivide",_);
+throw cljs.core.missing_protocol.call(null,"ISubdivide.subdivide",_);
 }
 }
 }
@@ -2901,13 +2901,13 @@ return _.thi$ng$geom$core$ISubdivide$subdivide$arity$2(_,opts);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.subdivide[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto__.call(null,_,opts));
+return m__8103__auto__.call(null,_,opts);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.subdivide["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto____$1.call(null,_,opts));
+return m__8103__auto____$1.call(null,_,opts);
 } else {
-throw cljs.core.missing_protocol("ISubdivide.subdivide",_);
+throw cljs.core.missing_protocol.call(null,"ISubdivide.subdivide",_);
 }
 }
 }
@@ -2923,13 +2923,13 @@ return _.thi$ng$geom$core$ISubdivide$subdivide_edge$arity$4(_,a,b,splits);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.subdivide_edge[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$4 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$4(_,a,b,splits) : m__8103__auto__.call(null,_,a,b,splits));
+return m__8103__auto__.call(null,_,a,b,splits);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.subdivide_edge["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$4 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$4(_,a,b,splits) : m__8103__auto____$1.call(null,_,a,b,splits));
+return m__8103__auto____$1.call(null,_,a,b,splits);
 } else {
-throw cljs.core.missing_protocol("ISubdivide.subdivide-edge",_);
+throw cljs.core.missing_protocol.call(null,"ISubdivide.subdivide-edge",_);
 }
 }
 }
@@ -2942,13 +2942,13 @@ return _.thi$ng$geom$core$ISubdivide$subdivide_face$arity$5(_,f,p,displace,split
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.subdivide_face[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$5 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$5(_,f,p,displace,splits) : m__8103__auto__.call(null,_,f,p,displace,splits));
+return m__8103__auto__.call(null,_,f,p,displace,splits);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.subdivide_face["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$5 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$5(_,f,p,displace,splits) : m__8103__auto____$1.call(null,_,f,p,displace,splits));
+return m__8103__auto____$1.call(null,_,f,p,displace,splits);
 } else {
-throw cljs.core.missing_protocol("ISubdivide.subdivide-face",_);
+throw cljs.core.missing_protocol.call(null,"ISubdivide.subdivide-face",_);
 }
 }
 }
@@ -2961,23 +2961,23 @@ throw cljs.core.missing_protocol("ISubdivide.subdivide-face",_);
 thi.ng.geom.core.ITessellate = function(){};
 
 thi.ng.geom.core.tessellate = (function thi$ng$geom$core$tessellate(var_args){
-var args14013 = [];
-var len__8605__auto___14016 = arguments.length;
-var i__8606__auto___14017 = (0);
+var args9160 = [];
+var len__8605__auto___9163 = arguments.length;
+var i__8606__auto___9164 = (0);
 while(true){
-if((i__8606__auto___14017 < len__8605__auto___14016)){
-args14013.push((arguments[i__8606__auto___14017]));
+if((i__8606__auto___9164 < len__8605__auto___9163)){
+args9160.push((arguments[i__8606__auto___9164]));
 
-var G__14018 = (i__8606__auto___14017 + (1));
-i__8606__auto___14017 = G__14018;
+var G__9165 = (i__8606__auto___9164 + (1));
+i__8606__auto___9164 = G__9165;
 continue;
 } else {
 }
 break;
 }
 
-var G__14015 = args14013.length;
-switch (G__14015) {
+var G__9162 = args9160.length;
+switch (G__9162) {
 case 1:
 return thi.ng.geom.core.tessellate.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -2987,7 +2987,7 @@ return thi.ng.geom.core.tessellate.cljs$core$IFn$_invoke$arity$2((arguments[(0)]
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args14013.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9160.length)].join('')));
 
 }
 });
@@ -2999,13 +2999,13 @@ return _.thi$ng$geom$core$ITessellate$tessellate$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.tessellate[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.tessellate["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("ITessellate.tessellate",_);
+throw cljs.core.missing_protocol.call(null,"ITessellate.tessellate",_);
 }
 }
 }
@@ -3018,13 +3018,13 @@ return _.thi$ng$geom$core$ITessellate$tessellate$arity$2(_,opts);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.tessellate[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto__.call(null,_,opts));
+return m__8103__auto__.call(null,_,opts);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.tessellate["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,opts) : m__8103__auto____$1.call(null,_,opts));
+return m__8103__auto____$1.call(null,_,opts);
 } else {
-throw cljs.core.missing_protocol("ITessellate.tessellate",_);
+throw cljs.core.missing_protocol.call(null,"ITessellate.tessellate",_);
 }
 }
 }
@@ -3049,13 +3049,13 @@ return _.thi$ng$geom$core$IVolume$volume$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.volume[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.volume["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IVolume.volume",_);
+throw cljs.core.missing_protocol.call(null,"IVolume.volume",_);
 }
 }
 }
@@ -3068,13 +3068,13 @@ return _.thi$ng$geom$core$IVolume$signed_volume$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.signed_volume[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.signed_volume["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("IVolume.signed-volume",_);
+throw cljs.core.missing_protocol.call(null,"IVolume.signed-volume",_);
 }
 }
 }
@@ -3093,13 +3093,13 @@ return _.thi$ng$geom$core$ISpatialTree$add_point$arity$3(_,p,d);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.add_point[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$3(_,p,d) : m__8103__auto__.call(null,_,p,d));
+return m__8103__auto__.call(null,_,p,d);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.add_point["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3(_,p,d) : m__8103__auto____$1.call(null,_,p,d));
+return m__8103__auto____$1.call(null,_,p,d);
 } else {
-throw cljs.core.missing_protocol("ISpatialTree.add-point",_);
+throw cljs.core.missing_protocol.call(null,"ISpatialTree.add-point",_);
 }
 }
 }
@@ -3112,13 +3112,13 @@ return _.thi$ng$geom$core$ISpatialTree$delete_point$arity$2(_,p);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.delete_point[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,p) : m__8103__auto__.call(null,_,p));
+return m__8103__auto__.call(null,_,p);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.delete_point["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,p) : m__8103__auto____$1.call(null,_,p));
+return m__8103__auto____$1.call(null,_,p);
 } else {
-throw cljs.core.missing_protocol("ISpatialTree.delete-point",_);
+throw cljs.core.missing_protocol.call(null,"ISpatialTree.delete-point",_);
 }
 }
 }
@@ -3131,13 +3131,13 @@ return _.thi$ng$geom$core$ISpatialTree$get_point$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.get_point[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.get_point["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("ISpatialTree.get-point",_);
+throw cljs.core.missing_protocol.call(null,"ISpatialTree.get-point",_);
 }
 }
 }
@@ -3150,13 +3150,13 @@ return _.thi$ng$geom$core$ISpatialTree$get_point_data$arity$1(_);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.get_point_data[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto__.call(null,_));
+return m__8103__auto__.call(null,_);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.get_point_data["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$1(_) : m__8103__auto____$1.call(null,_));
+return m__8103__auto____$1.call(null,_);
 } else {
-throw cljs.core.missing_protocol("ISpatialTree.get-point-data",_);
+throw cljs.core.missing_protocol.call(null,"ISpatialTree.get-point-data",_);
 }
 }
 }
@@ -3175,13 +3175,13 @@ return _.thi$ng$geom$core$IMutableProps$get_prop$arity$2(_,k);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.get_prop[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$2(_,k) : m__8103__auto__.call(null,_,k));
+return m__8103__auto__.call(null,_,k);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.get_prop["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$2(_,k) : m__8103__auto____$1.call(null,_,k));
+return m__8103__auto____$1.call(null,_,k);
 } else {
-throw cljs.core.missing_protocol("IMutableProps.get-prop",_);
+throw cljs.core.missing_protocol.call(null,"IMutableProps.get-prop",_);
 }
 }
 }
@@ -3194,13 +3194,13 @@ return _.thi$ng$geom$core$IMutableProps$set_prop_BANG_$arity$3(_,k,v);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.set_prop_BANG_[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$3(_,k,v) : m__8103__auto__.call(null,_,k,v));
+return m__8103__auto__.call(null,_,k,v);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.set_prop_BANG_["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3(_,k,v) : m__8103__auto____$1.call(null,_,k,v));
+return m__8103__auto____$1.call(null,_,k,v);
 } else {
-throw cljs.core.missing_protocol("IMutableProps.set-prop!",_);
+throw cljs.core.missing_protocol.call(null,"IMutableProps.set-prop!",_);
 }
 }
 }
@@ -3213,15 +3213,17 @@ return _.thi$ng$geom$core$IMutableProps$update_prop_BANG_$arity$3(_,k,f);
 var x__8102__auto__ = (((_ == null))?null:_);
 var m__8103__auto__ = (thi.ng.geom.core.update_prop_BANG_[goog.typeOf(x__8102__auto__)]);
 if(!((m__8103__auto__ == null))){
-return (m__8103__auto__.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto__.cljs$core$IFn$_invoke$arity$3(_,k,f) : m__8103__auto__.call(null,_,k,f));
+return m__8103__auto__.call(null,_,k,f);
 } else {
 var m__8103__auto____$1 = (thi.ng.geom.core.update_prop_BANG_["_"]);
 if(!((m__8103__auto____$1 == null))){
-return (m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3 ? m__8103__auto____$1.cljs$core$IFn$_invoke$arity$3(_,k,f) : m__8103__auto____$1.call(null,_,k,f));
+return m__8103__auto____$1.call(null,_,k,f);
 } else {
-throw cljs.core.missing_protocol("IMutableProps.update-prop!",_);
+throw cljs.core.missing_protocol.call(null,"IMutableProps.update-prop!",_);
 }
 }
 }
 });
 
+
+//# sourceMappingURL=core.js.map
