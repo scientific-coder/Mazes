@@ -10,6 +10,7 @@
    [reagent.core :as r]
    [kdtree :as kd]
    [shodan.inspection :as shodan]))
+(enable-console-print!)
 
 (defn abs[n]
   (if (<= 0 n) n (- n)))
@@ -29,9 +30,28 @@
 (defn square-grid [n-rows n-cols cell-size]
   (for [r (range n-rows)
         c (range n-cols)]
-    (square (map (comp (partial + (/ cell-size 2)) (partial * cell-size))
-                 [r c])
-            (/ cell-size SQRT2))))
+    (let[x (-> c (* cell-size) (+ (/ cell-size 2) ))]
+      (square (map (comp (partial + (/ cell-size 2)) (partial * cell-size))
+                   [r c])
+              (/ cell-size SQRT2)))))
+
+(defn hexagon[[x y] r]
+    (map (comp (partial m/+ (vec2 x y)) #(g/scale % r) (partial rotate (/ PI 6)))
+         (regular-polygon 6)))
+(defn sqrt[x]
+  (.sqrt js/Math x))
+
+(defn hexagon-grid[n-rows n-cols cell-size]
+  (let [v0 (rotate (/ PI 6) (vec2 cell-size 0.))
+        [x0 y0] v0
+        d-odd (vec2 x0 (* 2 y0))
+        d-even (vec2 0 1)]
+    (for[r (range n-rows)
+         c (range n-cols)]
+      (let[x (* 2. x0 c)
+           y (* 1.5  r)
+           center (vec2 x y)]
+        (hexagon (m/+ (if (odd? r) d-odd d-even) center) cell-size )))))
 
 (defn barycenter[xys]
   (g/scale (reduce m/+ xys) (/ 1. (count xys))))
@@ -44,11 +64,25 @@
 (defn index-cells[cells]
   (kd/build-tree (reduce into [] (map cell->barys-id cells))))
 
+(def my-eps 0.001)
+
+(defn rel= [v0 v1]
+  (let[abs0 (abs v0)
+       abs1 (abs v1)
+       diff (abs (- v1 v0))]
+    (cond
+      (= v0 v1) true
+      (or (zero? v0) (zero? v1)) (< diff my-eps)
+      :else (< (/ diff (+ abs0 abs1)) my-eps))))
+
+(defn delta= [[x0 y0] [x1 y1]]
+  (and (rel= x0 x1) (rel= y0 y1)))
+
 (defn matching-seg[t id seg ]
   (let[b (barycenter seg)]
     (->> (kd/nearest-neighbor t b 2)
          (map #(vector (meta %) (:point %)))
-         (filter (fn[[id-t b-t]] (and (not= id-t id) (m/delta= b-t b))))
+         (filter (fn[[id-t b-t]] (and (not= id-t id) (delta= b-t b))))
          (map first)
          first)))
 ;; TODO add :border-angles
@@ -173,7 +207,6 @@
             [[] (first vs)]
             (rest vs)))))
 
-(enable-console-print!)
 (defonce app-state (r/atom {}))
 (defn swap*!
   "Similar to clojure.core/swap!, but records history and returns atom."
@@ -211,19 +244,30 @@
         (update-maze-display!))))
 
 
-(defn compute-cells [rows cols]
-  (scene->graph (square-grid rows cols 1.)))
+(defn compute-cells [shape-f rows cols]
+  (scene->graph (shape-f rows cols 1.)))
 
 (defn update-cells![]
-  (let[{:keys [rows cols]} @app-state]
+  (let[{:keys [shape rows cols]} @app-state
+       shape-f (condp = shape
+                 "hexagon" hexagon-grid
+                 "square" square-grid
+                 square-grid)]
     (do
-      (swap*! app-state assoc :indexed-cells (compute-cells rows cols))
-      (update-maze!))))
+      (swap*! app-state assoc :indexed-cells (compute-cells shape-f rows cols))
+      (update-maze!)
+      )))
 
+;; (def callbacks {:cols update-cells!
+;;                 :rows update-cells!
+;;                 :size update-cells!
+;;                 :line-width update-cells!
+;;                 :bias update-cells!})
 (def callbacks {:cols update-cells!
                 :rows update-cells!
                 :size update-maze-display!
                 :line-width update-maze-display!
+                :shape update-cells!
                 :bias update-maze!})
 
 ;; Components
@@ -245,10 +289,11 @@
   "Application root component"
   []
   [:div
-   [:p [slider :cols (:cols @app-state) 2 100 50] "cols: " (:cols @app-state)]
-   [:p [slider :rows (:rows @app-state) 2 100 50] "rows : " (:rows @app-state)]
+   [:p [slider :cols (:cols @app-state) 1 100 50] "cols: " (:cols @app-state)]
+   [:p [slider :rows (:rows @app-state) 1 100 50] "rows : " (:rows @app-state)]
    [:p [slider :size (:size @app-state) 10 100 50] "size : " (:size @app-state)]
    [:p [slider :line-width (:line-width @app-state) 1 10 20] "line width : " (:line-width @app-state)]
+   (menu "shape" :shape ["square" "hexagon"])
    (menu "Bias" :bias ["unbiased" "vertical" "horizontal" "T"])
    ])
 
@@ -261,6 +306,7 @@
            :rows 2
            :size 32
            :line-width 5
+           :shape "square"
            :bias "unbiased"})
     (update-cells!)))
 
@@ -271,7 +317,8 @@
   (init-app)
   (r/render-component
     [main-panel]
-    (.getElementById js/document "app")))
+    (.getElementById js/document "app"))
+  )
 
 
 (main)
