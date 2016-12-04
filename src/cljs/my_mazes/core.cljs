@@ -24,12 +24,16 @@
 (def rotate (flip-2 g/rotate))
 
 (defn transform-polylines[f polys] (map (partial map f) polys))
+
 (defn barycenter[xys]
   (g/scale (reduce m/+ xys) (/ 1. (count xys))))
+
 (defn rotate-around [a c p]
   (-> p (m/- c) (g/rotate a) (m/+ c)))
+
 (defn rotate-centered [a xys] ;; assume CLOSED poly : removes the first value (= last value) !
     (map (partial rotate-around a (barycenter (rest xys))) xys))
+
 (defn regular-polygon[n]
   (take (inc n) (iterate (partial rotate(/ TWO_PI n)) (vec2 1. 0))))
 
@@ -42,7 +46,7 @@
         c (range n-cols)]
     (let[x (-> c (* cell-size) (+ (/ cell-size 2) ))]
       (square (map (comp (partial + (/ cell-size 2)) (partial * cell-size))
-                   [r c])
+                   [c r])
               (/ cell-size SQRT2)))))
 
 (defn hexagon[[x y] r]
@@ -61,11 +65,9 @@
            center (vec2 x y)]
         (hexagon (m/+ (if (odd? r) d-odd d-even) center) cell-size )))))
 
-
 (defn triangle[[x y] r]
   (map (comp (partial m/+ (vec2 x y)) #(g/scale % r) (partial rotate (/ PI 6)))
        (regular-polygon 3)))
-
 
 (defn triangle-grid[n-rows n-cols cell-size]
   (let [ side (/ (* 3 cell-size) (sqrt 3))
@@ -77,8 +79,6 @@
                        (if (even? (+ c r)) (vec2 0 (/ (- cell-size c-i) 2)) (vec2 0 (/ (- c-i cell-size) 2))))
            shape (triangle center  cell-size)]
         (if (odd? (+ c r)) (rotate-centered PI shape) shape)))))
-
-
 
 ;; create an index of segments (the middle of the segments) with id of the cell as meta data
 
@@ -109,67 +109,72 @@
          (filter (fn[[id-t b-t]] (and (not= id-t id) (delta= b-t b))))
          (map first)
          first)))
-;; TODO add :border-angles
-;; or normal vectors (https://github.com/thi-ng/geom/blob/develop/src/utils/utils.org)(defn ortho-normal 
-;;(if (> (abs dx) eps) (.atan js/Math (/ dy dx)) 
-;; 
 
 (defn scene->graph[polys]
   (let [cells (map-indexed #(hash-map :id %1  :borders %2) polys)
         t (index-cells cells)
-        indexed (zipmap (iterate inc 0) cells)
-        neighbors #(map (partial (partition 2 1 (:borders %))))]
-    (reduce-kv #(assoc %1 %2 (assoc %3 :neighbors (map (partial matching-seg t %2) (partition 2 1 (:borders %3)))))
+        indexed (zipmap (iterate inc 0) cells)]
+    (reduce-kv #(assoc %1 %2 (let [segments (->> %3 :borders (partition 2 1))]
+                               (assoc %3
+                                      :neighbors (map (partial matching-seg t %2) segments)
+                                      :normalized-segs (map (fn[[p0 p1]](m/normalize (m/- p1 p0))) segments))))
                {} indexed)))
 
-;; TODO make-bias w h a-ref -> bias x y -> f (cos (- a-ref angle))
-
-;; pick-random-non-nil
-;; in : f neighbors-id-or-nil angles
-;; seq des coeffs (f angle) ou nil si neighbor-id est nil
-;; remove les nils des deux seqs
-;; rescale des coefs ->> #(let [min-b (apply min %)](map (partial (flip2 -) min-b) %)
-;; #(let[scale (apply + %)](map (partial * ( 1. scale)) %))
-;; (nth xs-non-nil (first (keep-indexed ))(reductions + ))
-(defn pick-random-non-nil[bias xs]
+(defn pick-random-non-nil[bias xs vs]
+  ;;(println (str "xs: " xs " vs:" vs " bias (vec21 0):" bias))
   (when (seq (keep identity xs))
-    (let [bias-s (bias (count xs))
-          [bias-non-nil xs-non-nil nb-nils delta](reduce (fn[[bias-non-nil xs-non-nil nb-nils delta last-b] [bias-b v]]
-                                                           (if v
-                                                             [(conj bias-non-nil (- bias-b delta)) (conj xs-non-nil v) nb-nils delta bias-b]
-                                                             [bias-non-nil xs-non-nil (inc nb-nils) (+ delta (- bias-b last-b)) bias-b]))
-                                                         [[] [] 0 0. 0.]
-                                                         (map vector bias-s xs))
-          bias-rescaled (mapv (partial * (/ 1. (peek bias-non-nil))) bias-non-nil)
-          rnd (rand)]
-      (nth xs-non-nil (first (keep-indexed #(when (> %2 rnd) %1) bias-rescaled))))))
+    (let [[vsnn xsnn](reduce (fn[[vnn xnn] [v x]](if x [(conj vnn v) (conj xnn x)] [vnn xnn])) [[][]] (map vector vs xs))
+          scores (map bias vsnn)
+          sum-s (apply + scores)
+          scores-s (map #(/ %  sum-s) scores)
+          rnd (rand)
+          idx (first (keep-indexed #(when (> %2 rnd) %1) (reductions + scores-s)))]
+      (nth xsnn idx))))
 
-(defn no-bias [[x y]]
-  #(let[delta (/ 1. %)](->> delta (iterate (partial + delta)) (take %))))
+(defn make-no-bias[v-ref]
+  (fn[bounding-box]
+    (fn[[x y]]
+      (fn[_] 1))))
 
-(defn alternate-bias[f]
-  (fn[xy]
-    (fn[n]
-      (let[n-v0 (quot n 2)
-           n-v1 (- n n-v0)
-           delta (f xy)]
-        (reductions + (take n (interleave (repeat (/ delta n-v0)) (repeat (/ (- 1. delta) n-v1)))))))))
+(defn make-horizontal-bias[v-ref]
+  (fn[[[x-min y-min][x-max y-max]]]
+    (let[w (- x-max x-min)
+         f (fn [[x y]] (/ (- x x-min) w))]
+      (fn[xy]
+        (let[v (rotate (* (f xy) PI) v-ref)]
+          (fn[normed-v]
+            (max (abs (m/dot v normed-v)) 0.1)))))))
 
-(defn make-horizontal-bias[[[x-min y-min][x-max y-max]]]
-  (let[w (- x-max x-min)](alternate-bias (fn [[x y]] (/ x w)))))
+(defn make-vertical-bias[v-ref]
+  (fn[[[x-min y-min][x-max y-max]]]
+    (let[h (- y-max y-min)
+         f (fn [[x y]] (/ (- y y-min) h))]
+      (fn[xy]
+        (let[v (rotate (* (f xy) PI) v-ref)]
+          (fn[normed-v]
+            (max (abs (m/dot v normed-v)) 0.1)))))))
 
-(defn make-vertical-bias[[[x-min y-min][x-max y-max]]]
-  (let[h (- y-max y-min)](alternate-bias (fn [[x y]] (/ y h)))))
+(defn make-T-bias[v-ref]
+  (fn[[[x-min y-min][x-max y-max]]]
+    (let[y-T (+ y-min (/ (- y-max y-min) 4))
+         x-d (/ (- x-max x-min) 8)
+         x-center (/ (+ x-min x-max) 2)
+         f (fn [[x y]](if (or (< y y-T) (< (abs (- x x-center)) x-d))
+                        0.05
+                        0.55) )]
+      (fn[xy]
+        (let[v (rotate (* (f xy) PI) v-ref)]
+          (fn[normed-v]
+            (max (abs (m/dot v normed-v)) 0.1)))))))
 
-
-(defn make-T-bias [[[x-min y-min][x-max y-max]]]
-  (let[y-T (+ y-min (/ (- y-max y-min) 4))
-       x-d (/ (- x-max x-min) 8)
-       x-center (/ (+ x-min x-max) 2)]
-    (alternate-bias (fn[[x y]]
-                      (if (or (< y y-T) (< (abs (- x x-center)) x-d))
-                        0.1
-                        0.9)))))
+;; (defn make-T-bias [[[x-min y-min][x-max y-max]]]
+;;   (let[y-T (+ y-min (/ (- y-max y-min) 4))
+;;        x-d (/ (- x-max x-min) 8)
+;;        x-center (/ (+ x-min x-max) 2)]
+;;     (alternate-bias (fn[[x y]]
+;;                       (if (or (< y y-T) (< (abs (- x x-center)) x-d))
+;;                         0.1
+;;                         0.9)))))
 
 (defn remove-walls [id-start bias-f indexed-cells]
   (loop[visited #{}
@@ -180,7 +185,9 @@
            visiting-cell (get indexed-cells visiting)
            to-visit (pop to-visit)
            visited (conj visited visiting)
-           next-visit (pick-random-non-nil (bias-f (barycenter (:borders visiting-cell)))(map #(when (not (visited %1)) %1) (:neighbors visiting-cell)))]
+           next-visit (pick-random-non-nil (bias-f (barycenter (:borders visiting-cell)))
+                                           (map #(when (not (visited %1)) %1) (:neighbors visiting-cell))
+                                           (:normalized-segs visiting-cell))]
         (recur visited (if next-visit
                           [(conj to-visit visiting next-visit) (conj connections #{visiting next-visit})]
                           [to-visit connections]))))))
@@ -256,13 +263,13 @@
     (->> indexed-cells (remove-walls 0 bias) (maze->polylines cells) (remove-min less-than-seg?) (remove-min (complement less-than-seg?)))))
 
 (defn update-maze![]
-  (let[{:keys [indexed-cells bias]} @app-state
+  (let[{:keys [indexed-cells bias v-ref]} @app-state
        bias-f (condp = bias
                 "vertical" make-vertical-bias
                 "horizontal" make-horizontal-bias
                 "T" make-T-bias
-                (fn[_] no-bias))]
-    (do (swap*! app-state assoc :maze (compute-maze indexed-cells bias-f))
+                make-no-bias)]
+    (do (swap*! app-state assoc :maze (compute-maze indexed-cells (bias-f (rotate (* PI v-ref 0.01) (vec2 1. 0)))))
         (update-maze-display!))))
 
 
@@ -281,17 +288,13 @@
       (update-maze!)
       )))
 
-;; (def callbacks {:cols update-cells!
-;;                 :rows update-cells!
-;;                 :size update-cells!
-;;                 :line-width update-cells!
-;;                 :bias update-cells!})
 (def callbacks {:cols update-cells!
                 :rows update-cells!
                 :size update-maze-display!
                 :line-width update-maze-display!
                 :shape update-cells!
-                :bias update-maze!})
+                :bias update-maze!
+                :v-ref update-maze!})
 
 ;; Components
 (defn slider [param value min max width]
@@ -314,10 +317,11 @@
   [:div
    [:p [slider :cols (:cols @app-state) 1 100 50] "cols: " (:cols @app-state)]
    [:p [slider :rows (:rows @app-state) 1 100 50] "rows : " (:rows @app-state)]
-   [:p [slider :size (:size @app-state) 10 100 50] "size : " (:size @app-state)]
+   [:p [slider :size (:size @app-state) 4 100 50] "size : " (:size @app-state)]
    [:p [slider :line-width (:line-width @app-state) 1 10 20] "line width : " (:line-width @app-state)]
    (menu "shape" :shape ["square" "hexagon" "triangle"])
    (menu "Bias" :bias ["unbiased" "vertical" "horizontal" "T"])
+   [:p [slider :v-ref (:v-ref @app-state) 0 100 20] "v-ref angle : " (:v-ref @app-state) "%"]
    ])
 
 (defn init-app
@@ -330,7 +334,8 @@
            :size 32
            :line-width 5
            :shape "square"
-           :bias "unbiased"})
+           :bias "unbiased"
+           :v-ref 0.})
     (update-cells!)))
 
 (defn main
@@ -340,9 +345,7 @@
   (init-app)
   (r/render-component
     [main-panel]
-    (.getElementById js/document "app"))
-  )
-
+    (.getElementById js/document "app")))
 
 (main)
 (println "main called")
