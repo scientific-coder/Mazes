@@ -15,11 +15,21 @@
 (defn abs[n]
   (if (<= 0 n) n (- n)))
 
+(defn sqrt[x]
+  (.sqrt js/Math x))
+
 (defn flip-2[f]
   #(f %2 %1))
 
 (def rotate (flip-2 g/rotate))
 
+(defn transform-polylines[f polys] (map (partial map f) polys))
+(defn barycenter[xys]
+  (g/scale (reduce m/+ xys) (/ 1. (count xys))))
+(defn rotate-around [a c p]
+  (-> p (m/- c) (g/rotate a) (m/+ c)))
+(defn rotate-centered [a xys] ;; assume CLOSED poly : removes the first value (= last value) !
+    (map (partial rotate-around a (barycenter (rest xys))) xys))
 (defn regular-polygon[n]
   (take (inc n) (iterate (partial rotate(/ TWO_PI n)) (vec2 1. 0))))
 
@@ -38,14 +48,12 @@
 (defn hexagon[[x y] r]
     (map (comp (partial m/+ (vec2 x y)) #(g/scale % r) (partial rotate (/ PI 6)))
          (regular-polygon 6)))
-(defn sqrt[x]
-  (.sqrt js/Math x))
 
 (defn hexagon-grid[n-rows n-cols cell-size]
   (let [v0 (rotate (/ PI 6) (vec2 cell-size 0.))
         [x0 y0] v0
         d-odd (vec2 x0 (* 2 y0))
-        d-even (vec2 0 1)]
+        d-even (vec2 0. cell-size)]
     (for[r (range n-rows)
          c (range n-cols)]
       (let[x (* 2. x0 c)
@@ -53,8 +61,24 @@
            center (vec2 x y)]
         (hexagon (m/+ (if (odd? r) d-odd d-even) center) cell-size )))))
 
-(defn barycenter[xys]
-  (g/scale (reduce m/+ xys) (/ 1. (count xys))))
+
+(defn triangle[[x y] r]
+  (map (comp (partial m/+ (vec2 x y)) #(g/scale % r) (partial rotate (/ PI 6)))
+       (regular-polygon 3)))
+
+
+(defn triangle-grid[n-rows n-cols cell-size]
+  (let [ side (/ (* 3 cell-size) (sqrt 3))
+        c-i (/ (* side (sqrt 3)) 6)
+        h (* side (sqrt 3) 0.5)]
+    (for[r (range n-rows)
+         c (range n-cols)]
+      (let[center (m/+ (m/+ (g/scale (vec2 (/ side 2) 0.) c) (g/scale (vec2 0 h) r))
+                       (if (even? (+ c r)) (vec2 0 (/ (- cell-size c-i) 2)) (vec2 0 (/ (- c-i cell-size) 2))))
+           shape (triangle center  cell-size)]
+        (if (odd? (+ c r)) (rotate-centered PI shape) shape)))))
+
+
 
 ;; create an index of segments (the middle of the segments) with id of the cell as meta data
 
@@ -176,8 +200,6 @@
                                             [(vec2 (min x-min x) (min y-min y)) (vec2 (max x-max x) (max y-max y))])
                                           [(vec2 INF+ INF+) (vec2 INF- INF-)])))
 
-(defn transform-polylines[f polys] (map (partial map f) polys))
-
 (defn draw-scene![root width height scene]
   (->> root (dom/clear!)
        (dom/create-dom! (svg/svg
@@ -196,7 +218,7 @@
 (defn less-than-seg?[s0 s1]
   (let[[xy0-0 xy0-1] (apply order-seg s0)
        [xy1-0 xy1-1] (apply order-seg s1)]
-    (less-than-xy? xy0-0 xy1-0)))
+    (less-than-xy? (barycenter s0) (barycenter s1))))
 
 (defn remove-min [lt vs]
   (when (seq vs)
@@ -252,6 +274,7 @@
        shape-f (condp = shape
                  "hexagon" hexagon-grid
                  "square" square-grid
+                 "triangle" triangle-grid
                  square-grid)]
     (do
       (swap*! app-state assoc :indexed-cells (compute-cells shape-f rows cols))
@@ -293,7 +316,7 @@
    [:p [slider :rows (:rows @app-state) 1 100 50] "rows : " (:rows @app-state)]
    [:p [slider :size (:size @app-state) 10 100 50] "size : " (:size @app-state)]
    [:p [slider :line-width (:line-width @app-state) 1 10 20] "line width : " (:line-width @app-state)]
-   (menu "shape" :shape ["square" "hexagon"])
+   (menu "shape" :shape ["square" "hexagon" "triangle"])
    (menu "Bias" :bias ["unbiased" "vertical" "horizontal" "T"])
    ])
 
