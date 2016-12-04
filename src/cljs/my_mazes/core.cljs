@@ -10,6 +10,7 @@
    [reagent.core :as r]
    [kdtree :as kd]
    [shodan.inspection :as shodan]))
+
 (enable-console-print!)
 
 (defn abs[n]
@@ -134,7 +135,7 @@
 (defn make-no-bias[v-ref]
   (fn[bounding-box]
     (fn[[x y]]
-      (fn[_] 1))))
+      (fn[_] 1.))))
 
 (defn make-horizontal-bias[v-ref]
   (fn[[[x-min y-min][x-max y-max]]]
@@ -143,7 +144,7 @@
       (fn[xy]
         (let[v (rotate (* (f xy) PI) v-ref)]
           (fn[normed-v]
-            (max (abs (m/dot v normed-v)) 0.1)))))))
+            (max (abs (m/dot v normed-v)) 0.01)))))))
 
 (defn make-vertical-bias[v-ref]
   (fn[[[x-min y-min][x-max y-max]]]
@@ -152,7 +153,19 @@
       (fn[xy]
         (let[v (rotate (* (f xy) PI) v-ref)]
           (fn[normed-v]
-            (max (abs (m/dot v normed-v)) 0.1)))))))
+            (max (abs (m/dot v normed-v)) 0.01)))))))
+
+(defn make-circle-bias[v-ref]
+  (fn[[[x-min y-min][x-max y-max]]]
+    (let[center (g/scale (vec2 (+ x-max x-min) (+ y-max y-min)) 0.5)
+         [x-center y-center] center
+         d2-border (min (g/dist-squared center (vec2 x-center y-min))
+                        (g/dist-squared center (vec2 x-min y-center)))
+         f (fn [xy] (min (/ (g/dist-squared xy center) d2-border) 1.))]
+      (fn[xy]
+        (let[v (rotate (* (f xy) PI) v-ref)]
+          (fn[normed-v]
+            (max (abs (m/dot v normed-v)) 0.01)))))))
 
 (defn make-T-bias[v-ref]
   (fn[[[x-min y-min][x-max y-max]]]
@@ -160,21 +173,12 @@
          x-d (/ (- x-max x-min) 8)
          x-center (/ (+ x-min x-max) 2)
          f (fn [[x y]](if (or (< y y-T) (< (abs (- x x-center)) x-d))
-                        0.05
-                        0.55) )]
+                        0.01
+                        0.99) )]
       (fn[xy]
         (let[v (rotate (* (f xy) PI) v-ref)]
           (fn[normed-v]
             (max (abs (m/dot v normed-v)) 0.1)))))))
-
-;; (defn make-T-bias [[[x-min y-min][x-max y-max]]]
-;;   (let[y-T (+ y-min (/ (- y-max y-min) 4))
-;;        x-d (/ (- x-max x-min) 8)
-;;        x-center (/ (+ x-min x-max) 2)]
-;;     (alternate-bias (fn[[x y]]
-;;                       (if (or (< y y-T) (< (abs (- x x-center)) x-d))
-;;                         0.1
-;;                         0.9)))))
 
 (defn remove-walls [id-start bias-f indexed-cells]
   (loop[visited #{}
@@ -237,6 +241,7 @@
             (rest vs)))))
 
 (defonce app-state (r/atom {}))
+
 (defn swap*!
   "Similar to clojure.core/swap!, but records history and returns atom."
   [ref f & args]
@@ -256,7 +261,6 @@
                  (->> zoomed-maze
                       (transform-polylines (partial m/+  (m/- (barycenter [(vec2 0 0)(vec2 w h)]) (barycenter scene-bb)))))))))
 
-;; TODO make it memoized (and recursive ?)
 (defn compute-maze[indexed-cells bias-f]
   (let[cells (vals indexed-cells)
        bias  (->> cells (map :borders) bounding-box bias-f)]
@@ -267,12 +271,14 @@
        bias-f (condp = bias
                 "vertical" make-vertical-bias
                 "horizontal" make-horizontal-bias
+                "circle" make-circle-bias
                 "T" make-T-bias
                 make-no-bias)]
     (do (swap*! app-state assoc :maze (compute-maze indexed-cells (bias-f (rotate (* PI v-ref 0.01) (vec2 1. 0)))))
         (update-maze-display!))))
 
 
+;; TODO make it memoized (and recursive ?)
 (defn compute-cells [shape-f rows cols]
   (scene->graph (shape-f rows cols 1.)))
 
@@ -285,8 +291,7 @@
                  square-grid)]
     (do
       (swap*! app-state assoc :indexed-cells (compute-cells shape-f rows cols))
-      (update-maze!)
-      )))
+      (update-maze!))))
 
 (def callbacks {:cols update-cells!
                 :rows update-cells!
@@ -320,7 +325,7 @@
    [:p [slider :size (:size @app-state) 4 100 50] "size : " (:size @app-state)]
    [:p [slider :line-width (:line-width @app-state) 1 10 20] "line width : " (:line-width @app-state)]
    (menu "shape" :shape ["square" "hexagon" "triangle"])
-   (menu "Bias" :bias ["unbiased" "vertical" "horizontal" "T"])
+   (menu "Bias" :bias ["unbiased" "vertical" "horizontal" "circle" "T"])
    [:p [slider :v-ref (:v-ref @app-state) 0 100 20] "v-ref angle : " (:v-ref @app-state) "%"]
    ])
 
