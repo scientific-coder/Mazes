@@ -320,6 +320,9 @@
   "Application root component"
   []
   [:div
+   [:p [:input.toggle {:type "checkbox" :checked (:ui @app-state) :on-change #(swap*! app-state assoc :ui (not (:ui @app-state)))}] "ui"]
+   (when (:ui @app-state)
+  [:div
    [:p [slider :cols (:cols @app-state) 1 100 50] "cols: " (:cols @app-state)]
    [:p [slider :rows (:rows @app-state) 1 100 50] "rows : " (:rows @app-state)]
    [:p [slider :size (:size @app-state) 4 100 50] "size : " (:size @app-state)]
@@ -327,7 +330,7 @@
    (menu "shape" :shape ["square" "hexagon" "triangle"])
    (menu "Bias" :bias ["unbiased" "vertical" "horizontal" "circle" "T"])
    [:p [slider :v-ref (:v-ref @app-state) 0 100 20] "v-ref angle : " (:v-ref @app-state) "%"]
-   ])
+   ])])
 
 (defn init-app
   "Initializes app-state atom with default state"
@@ -340,7 +343,8 @@
            :line-width 5
            :shape "square"
            :bias "unbiased"
-           :v-ref 0.})
+           :v-ref 0.
+           :ui true})
     (update-cells!)))
 
 (defn main
