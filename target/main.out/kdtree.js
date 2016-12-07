@@ -35,11 +35,11 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.cljs$core$IFn$_invoke$arity$3(this__8059__auto____$1,k__8060__auto__,null);
 });
 
-kdtree.Node.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k22886,else__8062__auto__){
+kdtree.Node.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k21584,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__22888 = (((k22886 instanceof cljs.core.Keyword))?k22886.fqn:null);
-switch (G__22888) {
+var G__21586 = (((k21584 instanceof cljs.core.Keyword))?k21584.fqn:null);
+switch (G__21586) {
 case "left":
 return self__.left;
 
@@ -53,7 +53,7 @@ return self__.value;
 
 break;
 default:
-return cljs.core.get.cljs$core$IFn$_invoke$arity$3(self__.__extmap,k22886,else__8062__auto__);
+return cljs.core.get.cljs$core$IFn$_invoke$arity$3(self__.__extmap,k21584,else__8062__auto__);
 
 }
 });
@@ -71,10 +71,10 @@ return cljs.core.pr_sequential_writer(writer__8074__auto__,pr_pair__8076__auto__
 
 kdtree.Node.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-kdtree.Node.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__22885){
+kdtree.Node.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__21583){
 var self__ = this;
-var G__22885__$1 = this;
-return (new cljs.core.RecordIter((0),G__22885__$1,3,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$left,cljs.core.cst$kw$right,cljs.core.cst$kw$value], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator(self__.__extmap):cljs.core.nil_iter())));
+var G__21583__$1 = this;
+return (new cljs.core.RecordIter((0),G__21583__$1,3,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$left,cljs.core.cst$kw$right,cljs.core.cst$kw$value], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator(self__.__extmap):cljs.core.nil_iter())));
 });
 
 kdtree.Node.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -140,30 +140,30 @@ return (new kdtree.Node(self__.left,self__.right,self__.value,self__.__meta,cljs
 }
 });
 
-kdtree.Node.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__22885){
+kdtree.Node.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__21583){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__22889 = cljs.core.keyword_identical_QMARK_;
-var expr__22890 = k__8067__auto__;
-if(cljs.core.truth_((function (){var G__22892 = cljs.core.cst$kw$left;
-var G__22893 = expr__22890;
-return (pred__22889.cljs$core$IFn$_invoke$arity$2 ? pred__22889.cljs$core$IFn$_invoke$arity$2(G__22892,G__22893) : pred__22889.call(null,G__22892,G__22893));
+var pred__21587 = cljs.core.keyword_identical_QMARK_;
+var expr__21588 = k__8067__auto__;
+if(cljs.core.truth_((function (){var G__21590 = cljs.core.cst$kw$left;
+var G__21591 = expr__21588;
+return (pred__21587.cljs$core$IFn$_invoke$arity$2 ? pred__21587.cljs$core$IFn$_invoke$arity$2(G__21590,G__21591) : pred__21587.call(null,G__21590,G__21591));
 })())){
-return (new kdtree.Node(G__22885,self__.right,self__.value,self__.__meta,self__.__extmap,null));
+return (new kdtree.Node(G__21583,self__.right,self__.value,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_((function (){var G__22894 = cljs.core.cst$kw$right;
-var G__22895 = expr__22890;
-return (pred__22889.cljs$core$IFn$_invoke$arity$2 ? pred__22889.cljs$core$IFn$_invoke$arity$2(G__22894,G__22895) : pred__22889.call(null,G__22894,G__22895));
+if(cljs.core.truth_((function (){var G__21592 = cljs.core.cst$kw$right;
+var G__21593 = expr__21588;
+return (pred__21587.cljs$core$IFn$_invoke$arity$2 ? pred__21587.cljs$core$IFn$_invoke$arity$2(G__21592,G__21593) : pred__21587.call(null,G__21592,G__21593));
 })())){
-return (new kdtree.Node(self__.left,G__22885,self__.value,self__.__meta,self__.__extmap,null));
+return (new kdtree.Node(self__.left,G__21583,self__.value,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_((function (){var G__22896 = cljs.core.cst$kw$value;
-var G__22897 = expr__22890;
-return (pred__22889.cljs$core$IFn$_invoke$arity$2 ? pred__22889.cljs$core$IFn$_invoke$arity$2(G__22896,G__22897) : pred__22889.call(null,G__22896,G__22897));
+if(cljs.core.truth_((function (){var G__21594 = cljs.core.cst$kw$value;
+var G__21595 = expr__21588;
+return (pred__21587.cljs$core$IFn$_invoke$arity$2 ? pred__21587.cljs$core$IFn$_invoke$arity$2(G__21594,G__21595) : pred__21587.call(null,G__21594,G__21595));
 })())){
-return (new kdtree.Node(self__.left,self__.right,G__22885,self__.__meta,self__.__extmap,null));
+return (new kdtree.Node(self__.left,self__.right,G__21583,self__.__meta,self__.__extmap,null));
 } else {
-return (new kdtree.Node(self__.left,self__.right,self__.value,self__.__meta,cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(self__.__extmap,k__8067__auto__,G__22885),null));
+return (new kdtree.Node(self__.left,self__.right,self__.value,self__.__meta,cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(self__.__extmap,k__8067__auto__,G__21583),null));
 }
 }
 }
@@ -175,10 +175,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq(cljs.core.concat.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[cljs.core.cst$kw$left,self__.left],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[cljs.core.cst$kw$right,self__.right],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[cljs.core.cst$kw$value,self__.value],null))], null),self__.__extmap));
 });
 
-kdtree.Node.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__22885){
+kdtree.Node.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__21583){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new kdtree.Node(self__.left,self__.right,self__.value,G__22885,self__.__extmap,self__.__hash));
+return (new kdtree.Node(self__.left,self__.right,self__.value,G__21583,self__.__extmap,self__.__hash));
 });
 
 kdtree.Node.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -209,8 +209,8 @@ kdtree.__GT_Node = (function kdtree$__GT_Node(left,right,value){
 return (new kdtree.Node(left,right,value,null,null,null));
 });
 
-kdtree.map__GT_Node = (function kdtree$map__GT_Node(G__22887){
-return (new kdtree.Node(cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(G__22887),cljs.core.cst$kw$right.cljs$core$IFn$_invoke$arity$1(G__22887),cljs.core.cst$kw$value.cljs$core$IFn$_invoke$arity$1(G__22887),null,cljs.core.dissoc.cljs$core$IFn$_invoke$arity$variadic(G__22887,cljs.core.cst$kw$left,cljs.core.array_seq([cljs.core.cst$kw$right,cljs.core.cst$kw$value], 0)),null));
+kdtree.map__GT_Node = (function kdtree$map__GT_Node(G__21585){
+return (new kdtree.Node(cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(G__21585),cljs.core.cst$kw$right.cljs$core$IFn$_invoke$arity$1(G__21585),cljs.core.cst$kw$value.cljs$core$IFn$_invoke$arity$1(G__21585),null,cljs.core.dissoc.cljs$core$IFn$_invoke$arity$variadic(G__21585,cljs.core.cst$kw$left,cljs.core.array_seq([cljs.core.cst$kw$right,cljs.core.cst$kw$value], 0)),null));
 });
 
 
@@ -246,11 +246,11 @@ var this__8059__auto____$1 = this;
 return cljs.core._lookup.cljs$core$IFn$_invoke$arity$3(this__8059__auto____$1,k__8060__auto__,null);
 });
 
-kdtree.Result.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k22900,else__8062__auto__){
+kdtree.Result.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__8061__auto__,k21598,else__8062__auto__){
 var self__ = this;
 var this__8061__auto____$1 = this;
-var G__22902 = (((k22900 instanceof cljs.core.Keyword))?k22900.fqn:null);
-switch (G__22902) {
+var G__21600 = (((k21598 instanceof cljs.core.Keyword))?k21598.fqn:null);
+switch (G__21600) {
 case "point":
 return self__.point;
 
@@ -260,7 +260,7 @@ return self__.dist_squared;
 
 break;
 default:
-return cljs.core.get.cljs$core$IFn$_invoke$arity$3(self__.__extmap,k22900,else__8062__auto__);
+return cljs.core.get.cljs$core$IFn$_invoke$arity$3(self__.__extmap,k21598,else__8062__auto__);
 
 }
 });
@@ -278,10 +278,10 @@ return cljs.core.pr_sequential_writer(writer__8074__auto__,pr_pair__8076__auto__
 
 kdtree.Result.prototype.cljs$core$IIterable$ = cljs.core.PROTOCOL_SENTINEL;
 
-kdtree.Result.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__22899){
+kdtree.Result.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__21597){
 var self__ = this;
-var G__22899__$1 = this;
-return (new cljs.core.RecordIter((0),G__22899__$1,2,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$point,cljs.core.cst$kw$dist_DASH_squared], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator(self__.__extmap):cljs.core.nil_iter())));
+var G__21597__$1 = this;
+return (new cljs.core.RecordIter((0),G__21597__$1,2,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$point,cljs.core.cst$kw$dist_DASH_squared], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator(self__.__extmap):cljs.core.nil_iter())));
 });
 
 kdtree.Result.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__8057__auto__){
@@ -347,24 +347,24 @@ return (new kdtree.Result(self__.point,self__.dist_squared,self__.__meta,cljs.co
 }
 });
 
-kdtree.Result.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__22899){
+kdtree.Result.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__8066__auto__,k__8067__auto__,G__21597){
 var self__ = this;
 var this__8066__auto____$1 = this;
-var pred__22903 = cljs.core.keyword_identical_QMARK_;
-var expr__22904 = k__8067__auto__;
-if(cljs.core.truth_((function (){var G__22906 = cljs.core.cst$kw$point;
-var G__22907 = expr__22904;
-return (pred__22903.cljs$core$IFn$_invoke$arity$2 ? pred__22903.cljs$core$IFn$_invoke$arity$2(G__22906,G__22907) : pred__22903.call(null,G__22906,G__22907));
+var pred__21601 = cljs.core.keyword_identical_QMARK_;
+var expr__21602 = k__8067__auto__;
+if(cljs.core.truth_((function (){var G__21604 = cljs.core.cst$kw$point;
+var G__21605 = expr__21602;
+return (pred__21601.cljs$core$IFn$_invoke$arity$2 ? pred__21601.cljs$core$IFn$_invoke$arity$2(G__21604,G__21605) : pred__21601.call(null,G__21604,G__21605));
 })())){
-return (new kdtree.Result(G__22899,self__.dist_squared,self__.__meta,self__.__extmap,null));
+return (new kdtree.Result(G__21597,self__.dist_squared,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_((function (){var G__22908 = cljs.core.cst$kw$dist_DASH_squared;
-var G__22909 = expr__22904;
-return (pred__22903.cljs$core$IFn$_invoke$arity$2 ? pred__22903.cljs$core$IFn$_invoke$arity$2(G__22908,G__22909) : pred__22903.call(null,G__22908,G__22909));
+if(cljs.core.truth_((function (){var G__21606 = cljs.core.cst$kw$dist_DASH_squared;
+var G__21607 = expr__21602;
+return (pred__21601.cljs$core$IFn$_invoke$arity$2 ? pred__21601.cljs$core$IFn$_invoke$arity$2(G__21606,G__21607) : pred__21601.call(null,G__21606,G__21607));
 })())){
-return (new kdtree.Result(self__.point,G__22899,self__.__meta,self__.__extmap,null));
+return (new kdtree.Result(self__.point,G__21597,self__.__meta,self__.__extmap,null));
 } else {
-return (new kdtree.Result(self__.point,self__.dist_squared,self__.__meta,cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(self__.__extmap,k__8067__auto__,G__22899),null));
+return (new kdtree.Result(self__.point,self__.dist_squared,self__.__meta,cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(self__.__extmap,k__8067__auto__,G__21597),null));
 }
 }
 });
@@ -375,10 +375,10 @@ var this__8071__auto____$1 = this;
 return cljs.core.seq(cljs.core.concat.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[cljs.core.cst$kw$point,self__.point],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[cljs.core.cst$kw$dist_DASH_squared,self__.dist_squared],null))], null),self__.__extmap));
 });
 
-kdtree.Result.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__22899){
+kdtree.Result.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__8058__auto__,G__21597){
 var self__ = this;
 var this__8058__auto____$1 = this;
-return (new kdtree.Result(self__.point,self__.dist_squared,G__22899,self__.__extmap,self__.__hash));
+return (new kdtree.Result(self__.point,self__.dist_squared,G__21597,self__.__extmap,self__.__hash));
 });
 
 kdtree.Result.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__8064__auto__,entry__8065__auto__){
@@ -409,8 +409,8 @@ kdtree.__GT_Result = (function kdtree$__GT_Result(point,dist_squared){
 return (new kdtree.Result(point,dist_squared,null,null,null));
 });
 
-kdtree.map__GT_Result = (function kdtree$map__GT_Result(G__22901){
-return (new kdtree.Result(cljs.core.cst$kw$point.cljs$core$IFn$_invoke$arity$1(G__22901),cljs.core.cst$kw$dist_DASH_squared.cljs$core$IFn$_invoke$arity$1(G__22901),null,cljs.core.dissoc.cljs$core$IFn$_invoke$arity$variadic(G__22901,cljs.core.cst$kw$point,cljs.core.array_seq([cljs.core.cst$kw$dist_DASH_squared], 0)),null));
+kdtree.map__GT_Result = (function kdtree$map__GT_Result(G__21599){
+return (new kdtree.Result(cljs.core.cst$kw$point.cljs$core$IFn$_invoke$arity$1(G__21599),cljs.core.cst$kw$dist_DASH_squared.cljs$core$IFn$_invoke$arity$1(G__21599),null,cljs.core.dissoc.cljs$core$IFn$_invoke$arity$variadic(G__21599,cljs.core.cst$kw$point,cljs.core.array_seq([cljs.core.cst$kw$dist_DASH_squared], 0)),null));
 });
 
 /**
@@ -424,10 +424,10 @@ if((ind === a.length)){
 return res;
 } else {
 var v = ((a[ind]) - (b[ind]));
-var G__22911 = (res + (v * v));
-var G__22912 = (ind + (1));
-res = G__22911;
-ind = G__22912;
+var G__21609 = (res + (v * v));
+var G__21610 = (ind + (1));
+res = G__21609;
+ind = G__21610;
 continue;
 }
 break;
@@ -441,8 +441,8 @@ var point_count = cljs.core.count(points);
 var k = cljs.core.count(cljs.core.nth.cljs$core$IFn$_invoke$arity$2(points,(0)));
 var dimension = cljs.core.mod(depth,k);
 var points__$1 = cljs.core.vec(cljs.core.sort_by.cljs$core$IFn$_invoke$arity$2(((function (point_count,k,dimension){
-return (function (p1__22913_SHARP_){
-return cljs.core.nth.cljs$core$IFn$_invoke$arity$2(p1__22913_SHARP_,dimension);
+return (function (p1__21611_SHARP_){
+return cljs.core.nth.cljs$core$IFn$_invoke$arity$2(p1__21611_SHARP_,dimension);
 });})(point_count,k,dimension))
 ,points));
 var median = cljs.core.quot(point_count,(2));
@@ -451,11 +451,11 @@ while(true){
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((0),n)){
 return n;
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.nth.cljs$core$IFn$_invoke$arity$2((points__$1.cljs$core$IFn$_invoke$arity$1 ? points__$1.cljs$core$IFn$_invoke$arity$1(n) : points__$1.call(null,n)),dimension),cljs.core.nth.cljs$core$IFn$_invoke$arity$2((function (){var G__22919 = (n - (1));
-return (points__$1.cljs$core$IFn$_invoke$arity$1 ? points__$1.cljs$core$IFn$_invoke$arity$1(G__22919) : points__$1.call(null,G__22919));
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.nth.cljs$core$IFn$_invoke$arity$2((points__$1.cljs$core$IFn$_invoke$arity$1 ? points__$1.cljs$core$IFn$_invoke$arity$1(n) : points__$1.call(null,n)),dimension),cljs.core.nth.cljs$core$IFn$_invoke$arity$2((function (){var G__21617 = (n - (1));
+return (points__$1.cljs$core$IFn$_invoke$arity$1 ? points__$1.cljs$core$IFn$_invoke$arity$1(G__21617) : points__$1.call(null,G__21617));
 })(),dimension))){
-var G__22924 = (n - (1));
-n = G__22924;
+var G__21622 = (n - (1));
+n = G__21622;
 continue;
 } else {
 return n;
@@ -465,13 +465,13 @@ return n;
 break;
 }
 })();
-var left_tree = (function (){var G__22920 = cljs.core.subvec.cljs$core$IFn$_invoke$arity$3(points__$1,(0),split_point);
-var G__22921 = (depth + (1));
-return (kdtree.build_tree_internal.cljs$core$IFn$_invoke$arity$2 ? kdtree.build_tree_internal.cljs$core$IFn$_invoke$arity$2(G__22920,G__22921) : kdtree.build_tree_internal.call(null,G__22920,G__22921));
+var left_tree = (function (){var G__21618 = cljs.core.subvec.cljs$core$IFn$_invoke$arity$3(points__$1,(0),split_point);
+var G__21619 = (depth + (1));
+return (kdtree.build_tree_internal.cljs$core$IFn$_invoke$arity$2 ? kdtree.build_tree_internal.cljs$core$IFn$_invoke$arity$2(G__21618,G__21619) : kdtree.build_tree_internal.call(null,G__21618,G__21619));
 })();
-var right_tree = (function (){var G__22922 = cljs.core.subvec.cljs$core$IFn$_invoke$arity$2(points__$1,(split_point + (1)));
-var G__22923 = (depth + (1));
-return (kdtree.build_tree_internal.cljs$core$IFn$_invoke$arity$2 ? kdtree.build_tree_internal.cljs$core$IFn$_invoke$arity$2(G__22922,G__22923) : kdtree.build_tree_internal.call(null,G__22922,G__22923));
+var right_tree = (function (){var G__21620 = cljs.core.subvec.cljs$core$IFn$_invoke$arity$2(points__$1,(split_point + (1)));
+var G__21621 = (depth + (1));
+return (kdtree.build_tree_internal.cljs$core$IFn$_invoke$arity$2 ? kdtree.build_tree_internal.cljs$core$IFn$_invoke$arity$2(G__21620,G__21621) : kdtree.build_tree_internal.call(null,G__21620,G__21621));
 })();
 return cljs.core.with_meta((new kdtree.Node(left_tree,right_tree,cljs.core.double_array.cljs$core$IFn$_invoke$arity$1(cljs.core.nth.cljs$core$IFn$_invoke$arity$2(points__$1,split_point)),null,null,null)),cljs.core.meta(cljs.core.nth.cljs$core$IFn$_invoke$arity$2(points__$1,split_point)));
 }
@@ -491,17 +491,17 @@ return cljs.core.with_meta((new kdtree.Node(null,null,point,null,null,null)),poi
 } else {
 var value = cljs.core.cst$kw$value.cljs$core$IFn$_invoke$arity$1(tree);
 var go_to_left_QMARK_ = ((point[dimension]) < (value[dimension]));
-var left = ((go_to_left_QMARK_)?(function (){var G__22933 = cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree);
-var G__22934 = point;
-var G__22935 = (depth + (1));
-var G__22936 = point_meta;
-return (kdtree.insert_internal.cljs$core$IFn$_invoke$arity$4 ? kdtree.insert_internal.cljs$core$IFn$_invoke$arity$4(G__22933,G__22934,G__22935,G__22936) : kdtree.insert_internal.call(null,G__22933,G__22934,G__22935,G__22936));
+var left = ((go_to_left_QMARK_)?(function (){var G__21631 = cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree);
+var G__21632 = point;
+var G__21633 = (depth + (1));
+var G__21634 = point_meta;
+return (kdtree.insert_internal.cljs$core$IFn$_invoke$arity$4 ? kdtree.insert_internal.cljs$core$IFn$_invoke$arity$4(G__21631,G__21632,G__21633,G__21634) : kdtree.insert_internal.call(null,G__21631,G__21632,G__21633,G__21634));
 })():cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree));
-var right = ((!(go_to_left_QMARK_))?(function (){var G__22937 = cljs.core.cst$kw$right.cljs$core$IFn$_invoke$arity$1(tree);
-var G__22938 = point;
-var G__22939 = (depth + (1));
-var G__22940 = point_meta;
-return (kdtree.insert_internal.cljs$core$IFn$_invoke$arity$4 ? kdtree.insert_internal.cljs$core$IFn$_invoke$arity$4(G__22937,G__22938,G__22939,G__22940) : kdtree.insert_internal.call(null,G__22937,G__22938,G__22939,G__22940));
+var right = ((!(go_to_left_QMARK_))?(function (){var G__21635 = cljs.core.cst$kw$right.cljs$core$IFn$_invoke$arity$1(tree);
+var G__21636 = point;
+var G__21637 = (depth + (1));
+var G__21638 = point_meta;
+return (kdtree.insert_internal.cljs$core$IFn$_invoke$arity$4 ? kdtree.insert_internal.cljs$core$IFn$_invoke$arity$4(G__21635,G__21636,G__21637,G__21638) : kdtree.insert_internal.call(null,G__21635,G__21636,G__21637,G__21638));
 })():cljs.core.cst$kw$right.cljs$core$IFn$_invoke$arity$1(tree));
 return cljs.core.with_meta((new kdtree.Node(left,right,value,null,null,null)),cljs.core.meta(tree));
 }
@@ -529,25 +529,25 @@ return node2;
 ;
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(dimension,cljs.core.mod(depth,k))){
 if(cljs.core.truth_(cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree))){
-var G__22953 = cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree);
-var G__22954 = dimension;
-var G__22955 = (depth + (1));
-tree = G__22953;
-dimension = G__22954;
-depth = G__22955;
+var G__21651 = cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree);
+var G__21652 = dimension;
+var G__21653 = (depth + (1));
+tree = G__21651;
+dimension = G__21652;
+depth = G__21653;
 continue;
 } else {
 return tree;
 }
 } else {
-return min_node(min_node(tree,(function (){var G__22947 = cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree);
-var G__22948 = dimension;
-var G__22949 = (depth + (1));
-return (kdtree.find_min_internal.cljs$core$IFn$_invoke$arity$3 ? kdtree.find_min_internal.cljs$core$IFn$_invoke$arity$3(G__22947,G__22948,G__22949) : kdtree.find_min_internal.call(null,G__22947,G__22948,G__22949));
-})()),(function (){var G__22950 = cljs.core.cst$kw$right.cljs$core$IFn$_invoke$arity$1(tree);
-var G__22951 = dimension;
-var G__22952 = (depth + (1));
-return (kdtree.find_min_internal.cljs$core$IFn$_invoke$arity$3 ? kdtree.find_min_internal.cljs$core$IFn$_invoke$arity$3(G__22950,G__22951,G__22952) : kdtree.find_min_internal.call(null,G__22950,G__22951,G__22952));
+return min_node(min_node(tree,(function (){var G__21645 = cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree);
+var G__21646 = dimension;
+var G__21647 = (depth + (1));
+return (kdtree.find_min_internal.cljs$core$IFn$_invoke$arity$3 ? kdtree.find_min_internal.cljs$core$IFn$_invoke$arity$3(G__21645,G__21646,G__21647) : kdtree.find_min_internal.call(null,G__21645,G__21646,G__21647));
+})()),(function (){var G__21648 = cljs.core.cst$kw$right.cljs$core$IFn$_invoke$arity$1(tree);
+var G__21649 = dimension;
+var G__21650 = (depth + (1));
+return (kdtree.find_min_internal.cljs$core$IFn$_invoke$arity$3 ? kdtree.find_min_internal.cljs$core$IFn$_invoke$arity$3(G__21648,G__21649,G__21650) : kdtree.find_min_internal.call(null,G__21648,G__21649,G__21650));
 })());
 }
 } else {
@@ -575,8 +575,8 @@ if((i === a.length)){
 return true;
 } else {
 if(((a[i]) === (b[i]))){
-var G__22956 = (i + (1));
-i = G__22956;
+var G__21654 = (i + (1));
+i = G__21654;
 continue;
 } else {
 return false;
@@ -593,32 +593,32 @@ var k = value.length;
 var dimension = cljs.core.mod(depth,k);
 if(cljs.core.not(kdtree.points_EQ_(point,value))){
 var go_to_left_QMARK_ = ((point[dimension]) < (value[dimension]));
-var left = ((go_to_left_QMARK_)?(function (){var G__22969 = cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree);
-var G__22970 = point;
-var G__22971 = (depth + (1));
-return (kdtree.delete_internal.cljs$core$IFn$_invoke$arity$3 ? kdtree.delete_internal.cljs$core$IFn$_invoke$arity$3(G__22969,G__22970,G__22971) : kdtree.delete_internal.call(null,G__22969,G__22970,G__22971));
+var left = ((go_to_left_QMARK_)?(function (){var G__21667 = cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree);
+var G__21668 = point;
+var G__21669 = (depth + (1));
+return (kdtree.delete_internal.cljs$core$IFn$_invoke$arity$3 ? kdtree.delete_internal.cljs$core$IFn$_invoke$arity$3(G__21667,G__21668,G__21669) : kdtree.delete_internal.call(null,G__21667,G__21668,G__21669));
 })():cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree));
-var right = ((!(go_to_left_QMARK_))?(function (){var G__22972 = cljs.core.cst$kw$right.cljs$core$IFn$_invoke$arity$1(tree);
-var G__22973 = point;
-var G__22974 = (depth + (1));
-return (kdtree.delete_internal.cljs$core$IFn$_invoke$arity$3 ? kdtree.delete_internal.cljs$core$IFn$_invoke$arity$3(G__22972,G__22973,G__22974) : kdtree.delete_internal.call(null,G__22972,G__22973,G__22974));
+var right = ((!(go_to_left_QMARK_))?(function (){var G__21670 = cljs.core.cst$kw$right.cljs$core$IFn$_invoke$arity$1(tree);
+var G__21671 = point;
+var G__21672 = (depth + (1));
+return (kdtree.delete_internal.cljs$core$IFn$_invoke$arity$3 ? kdtree.delete_internal.cljs$core$IFn$_invoke$arity$3(G__21670,G__21671,G__21672) : kdtree.delete_internal.call(null,G__21670,G__21671,G__21672));
 })():cljs.core.cst$kw$right.cljs$core$IFn$_invoke$arity$1(tree));
 return cljs.core.with_meta((new kdtree.Node(left,right,cljs.core.cst$kw$value.cljs$core$IFn$_invoke$arity$1(tree),null,null,null)),cljs.core.meta(tree));
 } else {
 if(cljs.core.truth_(cljs.core.cst$kw$right.cljs$core$IFn$_invoke$arity$1(tree))){
 var min = kdtree.find_min_internal(cljs.core.cst$kw$right.cljs$core$IFn$_invoke$arity$1(tree),dimension,(depth + (1)));
-return cljs.core.with_meta((new kdtree.Node(cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree),(function (){var G__22975 = cljs.core.cst$kw$right.cljs$core$IFn$_invoke$arity$1(tree);
-var G__22976 = cljs.core.cst$kw$value.cljs$core$IFn$_invoke$arity$1(min);
-var G__22977 = (depth + (1));
-return (kdtree.delete_internal.cljs$core$IFn$_invoke$arity$3 ? kdtree.delete_internal.cljs$core$IFn$_invoke$arity$3(G__22975,G__22976,G__22977) : kdtree.delete_internal.call(null,G__22975,G__22976,G__22977));
+return cljs.core.with_meta((new kdtree.Node(cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree),(function (){var G__21673 = cljs.core.cst$kw$right.cljs$core$IFn$_invoke$arity$1(tree);
+var G__21674 = cljs.core.cst$kw$value.cljs$core$IFn$_invoke$arity$1(min);
+var G__21675 = (depth + (1));
+return (kdtree.delete_internal.cljs$core$IFn$_invoke$arity$3 ? kdtree.delete_internal.cljs$core$IFn$_invoke$arity$3(G__21673,G__21674,G__21675) : kdtree.delete_internal.call(null,G__21673,G__21674,G__21675));
 })(),cljs.core.cst$kw$value.cljs$core$IFn$_invoke$arity$1(min),null,null,null)),cljs.core.meta(min));
 } else {
 if(cljs.core.truth_(cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree))){
 var min = kdtree.find_min_internal(cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree),dimension,(depth + (1)));
-return cljs.core.with_meta((new kdtree.Node(null,(function (){var G__22978 = cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree);
-var G__22979 = cljs.core.cst$kw$value.cljs$core$IFn$_invoke$arity$1(min);
-var G__22980 = (depth + (1));
-return (kdtree.delete_internal.cljs$core$IFn$_invoke$arity$3 ? kdtree.delete_internal.cljs$core$IFn$_invoke$arity$3(G__22978,G__22979,G__22980) : kdtree.delete_internal.call(null,G__22978,G__22979,G__22980));
+return cljs.core.with_meta((new kdtree.Node(null,(function (){var G__21676 = cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree);
+var G__21677 = cljs.core.cst$kw$value.cljs$core$IFn$_invoke$arity$1(min);
+var G__21678 = (depth + (1));
+return (kdtree.delete_internal.cljs$core$IFn$_invoke$arity$3 ? kdtree.delete_internal.cljs$core$IFn$_invoke$arity$3(G__21676,G__21677,G__21678) : kdtree.delete_internal.call(null,G__21676,G__21677,G__21678));
 })(),cljs.core.cst$kw$value.cljs$core$IFn$_invoke$arity$1(min),null,null,null)),cljs.core.meta(min));
 } else {
 return null;
@@ -656,20 +656,20 @@ return cljs.core.conj_BANG_.cljs$core$IFn$_invoke$arity$2(vec__$1,value__$1);
 } else {
 var existing = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(vec__$1,ind);
 if((cljs.core.cst$kw$dist_DASH_squared.cljs$core$IFn$_invoke$arity$1(value__$1) < cljs.core.cst$kw$dist_DASH_squared.cljs$core$IFn$_invoke$arity$1(existing))){
-var G__22981 = (ind + (1));
-var G__22982 = existing;
-var G__22983 = cljs.core.assoc_BANG_.cljs$core$IFn$_invoke$arity$3(vec__$1,ind,value__$1);
-ind = G__22981;
-value__$1 = G__22982;
-vec__$1 = G__22983;
+var G__21679 = (ind + (1));
+var G__21680 = existing;
+var G__21681 = cljs.core.assoc_BANG_.cljs$core$IFn$_invoke$arity$3(vec__$1,ind,value__$1);
+ind = G__21679;
+value__$1 = G__21680;
+vec__$1 = G__21681;
 continue;
 } else {
-var G__22984 = (ind + (1));
-var G__22985 = value__$1;
-var G__22986 = vec__$1;
-ind = G__22984;
-value__$1 = G__22985;
-vec__$1 = G__22986;
+var G__21682 = (ind + (1));
+var G__21683 = value__$1;
+var G__21684 = vec__$1;
+ind = G__21682;
+value__$1 = G__21683;
+vec__$1 = G__21684;
 continue;
 }
 
@@ -694,16 +694,16 @@ var best_with_cur = kdtree.insert_sorted_BANG_(best,cljs.core.with_meta((new kdt
 var best_near = (kdtree.nearest_neighbor_internal.cljs$core$IFn$_invoke$arity$5 ? kdtree.nearest_neighbor_internal.cljs$core$IFn$_invoke$arity$5(closest_semiplane,point,n,next_dimension,best_with_cur) : kdtree.nearest_neighbor_internal.call(null,closest_semiplane,point,n,next_dimension,best_with_cur));
 var worst_nearest = cljs.core.cst$kw$dist_DASH_squared.cljs$core$IFn$_invoke$arity$1(cljs.core.nth.cljs$core$IFn$_invoke$arity$2(best_near,(cljs.core.count(best_near) - (1))));
 if(((dim_dist * dim_dist) < worst_nearest)){
-var G__22987 = farthest_semiplane;
-var G__22988 = point;
-var G__22989 = n;
-var G__22990 = next_dimension;
-var G__22991 = best_near;
-tree = G__22987;
-point = G__22988;
-n = G__22989;
-dimension = G__22990;
-best = G__22991;
+var G__21685 = farthest_semiplane;
+var G__21686 = point;
+var G__21687 = n;
+var G__21688 = next_dimension;
+var G__21689 = best_near;
+tree = G__21685;
+point = G__21686;
+n = G__21687;
+dimension = G__21688;
+best = G__21689;
 continue;
 } else {
 return best_near;
@@ -718,23 +718,23 @@ break;
  * otherwise, the result is a list of length n.
  */
 kdtree.nearest_neighbor = (function kdtree$nearest_neighbor(var_args){
-var args22993 = [];
-var len__8605__auto___22996 = arguments.length;
-var i__8606__auto___22997 = (0);
+var args21691 = [];
+var len__8605__auto___21694 = arguments.length;
+var i__8606__auto___21695 = (0);
 while(true){
-if((i__8606__auto___22997 < len__8605__auto___22996)){
-args22993.push((arguments[i__8606__auto___22997]));
+if((i__8606__auto___21695 < len__8605__auto___21694)){
+args21691.push((arguments[i__8606__auto___21695]));
 
-var G__22998 = (i__8606__auto___22997 + (1));
-i__8606__auto___22997 = G__22998;
+var G__21696 = (i__8606__auto___21695 + (1));
+i__8606__auto___21695 = G__21696;
 continue;
 } else {
 }
 break;
 }
 
-var G__22995 = args22993.length;
-switch (G__22995) {
+var G__21693 = args21691.length;
+switch (G__21693) {
 case 2:
 return kdtree.nearest_neighbor.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -744,7 +744,7 @@ return kdtree.nearest_neighbor.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(a
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args22993.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args21691.length)].join('')));
 
 }
 });
@@ -754,8 +754,8 @@ return cljs.core.first(kdtree.nearest_neighbor.cljs$core$IFn$_invoke$arity$3(tre
 });
 
 kdtree.nearest_neighbor.cljs$core$IFn$_invoke$arity$3 = (function (tree,point,n){
-return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__22992_SHARP_){
-return cljs.core.update_in.cljs$core$IFn$_invoke$arity$3(p1__22992_SHARP_,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$point], null),cljs.core.vec);
+return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__21690_SHARP_){
+return cljs.core.update_in.cljs$core$IFn$_invoke$arity$3(p1__21690_SHARP_,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$point], null),cljs.core.vec);
 }),cljs.core.persistent_BANG_(kdtree.nearest_neighbor_internal(tree,cljs.core.double_array.cljs$core$IFn$_invoke$arity$1(point),n,(0),cljs.core.transient$(cljs.core.PersistentVector.EMPTY))));
 });
 
@@ -773,8 +773,8 @@ var left = (axis_intv[(0)]);
 var right = (axis_intv[(1)]);
 var value = (point[ind]);
 if(((left <= value)) && ((value <= right))){
-var G__23000 = (ind + (1));
-ind = G__23000;
+var G__21698 = (ind + (1));
+ind = G__21698;
 continue;
 } else {
 return false;
@@ -794,17 +794,17 @@ var dim_value = (point[k]);
 var dim_boundaries = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(interval,k);
 var left_boundary = (dim_boundaries[(0)]);
 var right_boundary = (dim_boundaries[(1)]);
-var accum__$2 = (((dim_value <= right_boundary))?(function (){var G__23009 = cljs.core.cst$kw$right.cljs$core$IFn$_invoke$arity$1(tree);
-var G__23010 = interval;
-var G__23011 = (depth + (1));
-var G__23012 = accum__$1;
-return (kdtree.interval_search_internal.cljs$core$IFn$_invoke$arity$4 ? kdtree.interval_search_internal.cljs$core$IFn$_invoke$arity$4(G__23009,G__23010,G__23011,G__23012) : kdtree.interval_search_internal.call(null,G__23009,G__23010,G__23011,G__23012));
+var accum__$2 = (((dim_value <= right_boundary))?(function (){var G__21707 = cljs.core.cst$kw$right.cljs$core$IFn$_invoke$arity$1(tree);
+var G__21708 = interval;
+var G__21709 = (depth + (1));
+var G__21710 = accum__$1;
+return (kdtree.interval_search_internal.cljs$core$IFn$_invoke$arity$4 ? kdtree.interval_search_internal.cljs$core$IFn$_invoke$arity$4(G__21707,G__21708,G__21709,G__21710) : kdtree.interval_search_internal.call(null,G__21707,G__21708,G__21709,G__21710));
 })():accum__$1);
-var accum__$3 = (((dim_value > left_boundary))?(function (){var G__23013 = cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree);
-var G__23014 = interval;
-var G__23015 = (depth + (1));
-var G__23016 = accum__$2;
-return (kdtree.interval_search_internal.cljs$core$IFn$_invoke$arity$4 ? kdtree.interval_search_internal.cljs$core$IFn$_invoke$arity$4(G__23013,G__23014,G__23015,G__23016) : kdtree.interval_search_internal.call(null,G__23013,G__23014,G__23015,G__23016));
+var accum__$3 = (((dim_value > left_boundary))?(function (){var G__21711 = cljs.core.cst$kw$left.cljs$core$IFn$_invoke$arity$1(tree);
+var G__21712 = interval;
+var G__21713 = (depth + (1));
+var G__21714 = accum__$2;
+return (kdtree.interval_search_internal.cljs$core$IFn$_invoke$arity$4 ? kdtree.interval_search_internal.cljs$core$IFn$_invoke$arity$4(G__21711,G__21712,G__21713,G__21714) : kdtree.interval_search_internal.call(null,G__21711,G__21712,G__21713,G__21714));
 })():accum__$2);
 return accum__$3;
 }

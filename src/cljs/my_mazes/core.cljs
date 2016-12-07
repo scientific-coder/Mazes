@@ -110,11 +110,67 @@
          (filter (fn[[id-t b-t]] (and (not= id-t id) (delta= b-t b))))
          (map first)
          first)))
+;;
+;;goldenRatio = 1/((1 + math.sqrt(5)) / 2)
+ 
+
+(def golden-ratio (/ (inc (sqrt 5)) 2))
+(def inv-golden-ratio (/ 1. golden-ratio))
+
+(defn subdivide-triangle[{:keys [kind points]}]
+  (let[[p0 p1 p2] points
+       scale-seg #(m/+ (g/scale (m/- %2 %1) inv-golden-ratio) %1)]
+    (if kind
+      (let[p10 (scale-seg p1 p0)]
+        [{:kind true :points [p10 p2 p0]} {:kind false :points [p2 p10 p1]}])
+      (let[p01 (scale-seg p0 p1)
+           p02 (scale-seg p0 p2)]
+        [{:kind false :points [p02 p01 p0]} {:kind false :points [p2 p02 p1]} {:kind true :points [p01 p02 p1]}]))))
+
+(defn penrose-triangles[size n]
+  (let[p0 (vec2 0. 0.)
+       unit (vec2 size 0)
+       a (/ PI 10)
+       init (map #(let[p1 (rotate (* a (dec %)) unit)
+                       p2 (rotate (* a (inc %)) unit)]
+                    {:kind true :points (if (zero? (mod % 4))
+                                          [p2 p0 p1]
+                                          [p1 p0 p2])})
+                 (range 0 20 2))]
+    (nth (iterate #(reduce into [] (map subdivide-triangle %)) init) n)))
+(defn triangles->quadrilateral [ts]
+  (let[indexed-ts (zipmap (range) ts)
+       tree (kd/build-tree (reduce conj [] (map (fn[[id [p0 p1 p2]]](with-meta (barycenter [p0 p2]) {:id id})) indexed-ts)))
+       matching-triangle (fn[id [p0 p1 p2]]
+                           (let[
+                                b (barycenter [p0 p2])]
+                                (->> (kd/nearest-neighbor tree b 2)
+                                (map #(vector (:id (meta %)) (:point %)))
+                                (filter (fn[[id-t b-t]](and (not= id-t id) (delta= b-t b))))
+                                (map first)
+                                first)))]
+    (first (reduce (fn[[res matched] [id t]]
+              (if (matched id)
+                [res matched]
+                (let[match (matching-triangle id t)]
+                  (if match
+                    [(let[[p0 p1 p2] t
+                          [a0 a1 a2] (get indexed-ts match)]
+                       (conj res [p0 p1 p2 a1 p0]))
+                     (conj matched match)]
+                    [res matched]))))
+            [[] #{}]
+            indexed-ts))))
+
+(defn penrose-grid[n-rows n-cols cell-size]
+  (->> (penrose-triangles 10 (inc (quot (max n-rows n-cols) 10)))
+       (map :points)
+       triangles->quadrilateral))
 
 (defn scene->graph[polys]
   (let [cells (map-indexed #(hash-map :id %1  :borders %2) polys)
         t (index-cells cells)
-        indexed (zipmap (iterate inc 0) cells)]
+        indexed (zipmap (range) cells)]
     (reduce-kv #(assoc %1 %2 (let [segments (->> %3 :borders (partition 2 1))]
                                (assoc %3
                                       :neighbors (map (partial matching-seg t %2) segments)
@@ -142,7 +198,7 @@
     (let[w (- x-max x-min)
          f (fn [[x y]] (/ (- x x-min) w))]
       (fn[xy]
-        (let[v (rotate (* (f xy) PI) v-ref)]
+        (let[v (rotate (* (f xy) PI 0.5) v-ref)]
           (fn[normed-v]
             (max (abs (m/dot v normed-v)) 0.01)))))))
 
@@ -151,7 +207,7 @@
     (let[h (- y-max y-min)
          f (fn [[x y]] (/ (- y y-min) h))]
       (fn[xy]
-        (let[v (rotate (* (f xy) PI) v-ref)]
+        (let[v (rotate (* (f xy) PI 0.5) v-ref)]
           (fn[normed-v]
             (max (abs (m/dot v normed-v)) 0.01)))))))
 
@@ -163,7 +219,7 @@
                         (g/dist-squared center (vec2 x-min y-center)))
          f (fn [xy] (min (/ (g/dist-squared xy center) d2-border) 1.))]
       (fn[xy]
-        (let[v (rotate (* (f xy) PI) v-ref)]
+        (let[v (rotate (* (f xy) PI 0.5) v-ref)]
           (fn[normed-v]
             (max (abs (m/dot v normed-v)) 0.01)))))))
 
@@ -173,10 +229,10 @@
          x-d (/ (- x-max x-min) 8)
          x-center (/ (+ x-min x-max) 2)
          f (fn [[x y]](if (or (< y y-T) (< (abs (- x x-center)) x-d))
-                        0.01
-                        0.99) )]
+                        0.00001
+                        0.99999) )]
       (fn[xy]
-        (let[v (rotate (* (f xy) PI) v-ref)]
+        (let[v (rotate (* (f xy) PI 0.5) v-ref)]
           (fn[normed-v]
             (max (abs (m/dot v normed-v)) 0.1)))))))
 
@@ -288,6 +344,7 @@
                  "hexagon" hexagon-grid
                  "square" square-grid
                  "triangle" triangle-grid
+                 "penrose" penrose-grid
                  square-grid)]
     (do
       (swap*! app-state assoc :indexed-cells (compute-cells shape-f rows cols))
@@ -327,7 +384,7 @@
    [:p [slider :rows (:rows @app-state) 1 100 50] "rows : " (:rows @app-state)]
    [:p [slider :size (:size @app-state) 4 100 50] "size : " (:size @app-state)]
    [:p [slider :line-width (:line-width @app-state) 1 10 20] "line width : " (:line-width @app-state)]
-   (menu "shape" :shape ["square" "hexagon" "triangle"])
+   (menu "shape" :shape ["square" "hexagon" "triangle" "penrose"])
    (menu "Bias" :bias ["unbiased" "vertical" "horizontal" "circle" "T"])
    [:p [slider :v-ref (:v-ref @app-state) 0 100 20] "v-ref angle : " (:v-ref @app-state) "%"]
    ])])
@@ -337,8 +394,8 @@
   []
   (do
     (swap*! app-state merge
-          {:cols 2
-           :rows 2
+          {:cols 4
+           :rows 4
            :size 32
            :line-width 5
            :shape "square"
@@ -351,6 +408,11 @@
   "Application main entry point. Initializes app-state and
   kicks off React component lifecycle."
   []
+  ;; (draw-scene! (dom/by-id "test") 10244 1024
+  ;;              (concat (map (partial svg-polyline "#00F" 3)
+  ;;                           (triangles->quadrilateral (transform-polylines (partial m/+ (vec2 512 512))(map :points (penrose-triangles 512 2)))))
+  ;;                      (map (partial svg-polyline "#0F0" 1)
+  ;;                           (transform-polylines (partial m/+ (vec2 512 512))(map :points (penrose-triangles 200 2)))) ))
   (init-app)
   (r/render-component
     [main-panel]
